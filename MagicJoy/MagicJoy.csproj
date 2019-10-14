@@ -54,6 +54,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,16 +67,99 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Business\LoginBusiness.cs" />
+    <Compile Include="DataBase\LoginDataBase.cs" />
+    <Compile Include="Entityes\magicjoydb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>magicjoydb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Entityes\magicjoydb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\magicjoydb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>magicjoydb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_beneficio.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_cliente.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_compra.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_compra_item.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_controle_ponto.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_despesas.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_estoque.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_folha_pagamento.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_fornecedor.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_funcionario.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_produto.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_produto_venda.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_usuario.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_venda.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entityes\tb_venda_item.cs">
+      <DependentUpon>magicjoydb.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\Login\frmEsqueciSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login\frmEsqueciSenha.Designer.cs">
+      <DependentUpon>frmEsqueciSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Login\frmNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login\frmNovoUsuario.Designer.cs">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Splash\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Splash\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
+      <DependentUpon>frmEsqueciSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +171,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Entityes\magicjoydb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>magicjoydb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entityes\magicjoydb.edmx.diagram">
+      <DependentUpon>magicjoydb.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,14 +199,60 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
-    <Folder Include="DataBase\" />
-    <Folder Include="Entityes\" />
     <Folder Include="Telas\Estoque\" />
-    <Folder Include="Telas\Login\" />
     <Folder Include="Telas\RH\" />
-    <Folder Include="Telas\Splash\" />
     <Folder Include="Telas\Suprimentos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novo plano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carregando2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58387.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user-vector-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130877.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222-2226413_clipart-resolution-12541253-email-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entityes\magicjoydb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>magicjoydb.edmx</DependentUpon>
+      <LastGenOutput>magicjoydb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entityes\magicjoydb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>magicjoydb.edmx</DependentUpon>
+      <LastGenOutput>magicjoydb.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
