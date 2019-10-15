@@ -20,7 +20,16 @@ namespace MagicJoy.DataBase
        public List<Entityes.tb_usuario> ListarTodosUsuarios()
        {
             List<Entityes.tb_usuario> tabela = db.tb_usuario.ToList();
-            return tabela;  
+            return tabela;
+                         
        }
+
+       public Entityes.tb_usuario PesquisarParaLogar(string nome, string senha)
+        {
+            Entityes.tb_usuario usuario = db.tb_usuario.FirstOrDefault(t => t.nm_usuario == nome
+                                                                         && t.nm_senha == senha);
+
+            return usuario;
+        }          
     }
 }

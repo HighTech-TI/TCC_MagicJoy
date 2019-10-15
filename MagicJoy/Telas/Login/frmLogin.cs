@@ -16,8 +16,7 @@ namespace MagicJoy.Telas.Login
         {
             InitializeComponent();
         }
-        Entityes.tb_usuario usuario = new Entityes.tb_usuario();
-
+     
         private void frmLogin_Load(object sender, EventArgs e)
         {
             Business.LoginBusiness logbusiness = new Business.LoginBusiness();
@@ -39,12 +38,13 @@ namespace MagicJoy.Telas.Login
         {
             try
             {
+                string nome = cbousuario.Text;
+                string senha = txtsenha.Text;
                              
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
-     
-
-              
-                if (cbousuario.Text == usuario.nm_usuario && txtsenha.Text == usuario.nm_senha)
+                Entityes.tb_usuario usuario = businesslog.PesquisarParaLogar(nome, senha);           
+                   
+                if (nome == usuario.nm_usuario && senha == usuario.nm_senha)
                 {
                     Telas.Menu.frmMenu tela = new Menu.frmMenu();
                     tela.Show();

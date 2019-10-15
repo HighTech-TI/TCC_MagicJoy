@@ -47,6 +47,14 @@ namespace MagicJoy.Business
 
             return pesquisa;
         }
+        
+        public Entityes.tb_usuario PesquisarParaLogar(string nome, string senha)
+        {
+            DataBase.LoginDataBase logdatabase = new DataBase.LoginDataBase();
+            Entityes.tb_usuario usuario = logdatabase.PesquisarParaLogar(nome, senha);
+
+            return usuario;
+        }
       
     }
 }
