@@ -19,7 +19,7 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            try
+           // try
             {
                 Entityes.tb_usuario usuario = new Entityes.tb_usuario();
                 usuario.nm_usuario = txtUsuario.Text;
@@ -34,12 +34,33 @@ namespace MagicJoy.Telas.Login
                  "Login", MessageBoxButtons.OK);
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocorreu um erro, tente novamente mais tarde.",
-                  "Login", MessageBoxButtons.OK);
+           // catch (Exception ex)
+           {
+                //MessageBox.Show("Ocorreu um erro, tente novamente mais tarde.",
+                 // "Login", MessageBoxButtons.OK);
 
-            }
+           }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+                if (this.WindowState == FormWindowState.Minimized)
+                {
+                    this.Hide();
+                }
+                else
+                {
+                    this.Show();
+                    this.BringToFront();
+                }
+            
+            
         }
     }
 }

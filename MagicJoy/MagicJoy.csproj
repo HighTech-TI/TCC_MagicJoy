@@ -67,70 +67,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\LoginBusiness.cs" />
-    <Compile Include="DataBase\LoginDataBase.cs" />
-    <Compile Include="Entityes\magicjoydb.Context.cs">
+    <Compile Include="Business\Login\LoginBusiness.cs" />
+    <Compile Include="DataBase\Login\LoginDataBase.cs" />
+    <Compile Include="Entityes\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>magicjoydb.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entityes\magicjoydb.cs">
+    <Compile Include="Entityes\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entityes\magicjoydb.Designer.cs">
+    <Compile Include="Entityes\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>magicjoydb.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_beneficio.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_cliente.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_compra.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_compra_item.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_controle_ponto.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_despesas.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_estoque.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_folha_pagamento.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_fornecedor.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_funcionario.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_produto.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_produto_venda.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_usuario.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_venda.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entityes\tb_venda_item.cs">
-      <DependentUpon>magicjoydb.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\Login\Email.cs" />
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,12 @@
     </Compile>
     <Compile Include="Telas\Login\frmNovoUsuario.Designer.cs">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Menu\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Menu\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Splash\frmSplash.cs">
       <SubType>Form</SubType>
@@ -177,12 +184,12 @@
     <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Entityes\magicjoydb.edmx">
+    <EntityDeploy Include="Entityes\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>magicjoydb.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Entityes\magicjoydb.edmx.diagram">
-      <DependentUpon>magicjoydb.edmx</DependentUpon>
+    <None Include="Entityes\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -243,15 +250,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entityes\magicjoydb.Context.tt">
+    <Content Include="Entityes\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>magicjoydb.edmx</DependentUpon>
-      <LastGenOutput>magicjoydb.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Entityes\magicjoydb.tt">
+    <Content Include="Entityes\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>magicjoydb.edmx</DependentUpon>
-      <LastGenOutput>magicjoydb.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,5 +28,52 @@ namespace MagicJoy.Telas.Login
             tela.Show();
             tela.Hide();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Business.LoginBusiness businesslog = new Business.LoginBusiness();
+                Entityes.tb_usuario usuario = new Entityes.tb_usuario();
+
+                if (cbousuario.Text == usuario.nm_usuario && txtsenha.Text == usuario.nm_senha)
+                {
+                    Telas.Menu.frmMenu tela = new Menu.frmMenu();
+                    tela.Show();
+                    tela.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Senha incorreta",
+                        "Login", MessageBoxButtons.OK);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro, tente novamente!",
+                        "Login", MessageBoxButtons.OK);
+
+            }
+           
+
+        }
+
+        private void cbousuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Entityes.tb_usuario usuario = new Entityes.tb_usuario();
+            cbousuario.Text = usuario.nm_usuario;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Telas.Login.frmNovoUsuario tela = new frmNovoUsuario();
+            tela.Show();
+            tela.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -36,5 +36,16 @@ namespace MagicJoy.Telas.Login
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Entityes.tb_usuario usuario = new Entityes.tb_usuario();
+            cbousuario.Text = usuario.nm_usuario;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
