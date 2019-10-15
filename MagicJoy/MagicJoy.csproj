@@ -131,6 +131,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\Financeiro\frmTelaTluxoDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmTelaTluxoDeCaixa.Designer.cs">
+      <DependentUpon>frmTelaTluxoDeCaixa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     <Compile Include="Telas\Splash\frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Financeiro\frmTelaTluxoDeCaixa.resx">
+      <DependentUpon>frmTelaTluxoDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,7 +216,6 @@
   <ItemGroup>
     <Folder Include="Objetos\" />
     <Folder Include="Telas\Estoque\" />
-    <Folder Include="Telas\Financeiro\" />
     <Folder Include="Telas\RH\" />
     <Folder Include="Telas\Suprimentos\" />
     <Folder Include="Utils\" />
