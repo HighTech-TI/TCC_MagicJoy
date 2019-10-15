@@ -16,10 +16,16 @@ namespace MagicJoy.Telas.Login
         {
             InitializeComponent();
         }
+        Entityes.tb_usuario usuario = new Entityes.tb_usuario();
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            Business.LoginBusiness logbusiness = new Business.LoginBusiness();
 
+            List<Entityes.tb_usuario> users = logbusiness.ListarTodosUsuarios();
+
+            cbousuario.DisplayMember = nameof(Entityes.tb_usuario.nm_usuario);
+            cbousuario.DataSource = users;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -33,9 +39,11 @@ namespace MagicJoy.Telas.Login
         {
             try
             {
+                             
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
-                Entityes.tb_usuario usuario = new Entityes.tb_usuario();
+     
 
+              
                 if (cbousuario.Text == usuario.nm_usuario && txtsenha.Text == usuario.nm_senha)
                 {
                     Telas.Menu.frmMenu tela = new Menu.frmMenu();
@@ -52,17 +60,14 @@ namespace MagicJoy.Telas.Login
             {
                 MessageBox.Show("Ocorreu um erro, tente novamente!",
                         "Login", MessageBoxButtons.OK);
-
-            }
-           
+            }         
 
         }
 
         private void cbousuario_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Entityes.tb_usuario usuario = new Entityes.tb_usuario();
-            cbousuario.Text = usuario.nm_usuario;
-        }
+            
+        } 
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {

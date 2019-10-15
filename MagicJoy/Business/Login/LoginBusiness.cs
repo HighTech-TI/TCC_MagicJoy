@@ -14,12 +14,7 @@ namespace MagicJoy.Business
             {
                 throw new ArgumentException("Usuário obrigatório!");
             }
-
-            //if(usuario.nm_usuario == usuario.nm_usuario)
-            {
-                ;// throw new ArgumentException("Este nome de usuário já esta em uso!");
-            }
-
+         
             if(usuario.nm_senha == string.Empty)
             {
                 throw new ArgumentException("Senha é obrigatório");
@@ -44,16 +39,14 @@ namespace MagicJoy.Business
             db.inserir(usuario);
 
         }
-        public List<Entityes.tb_usuario> ConsultarParaLogar(string nome)
+
+        public List<Entityes.tb_usuario> ListarTodosUsuarios()
         {
-            DataBase.LoginDataBase db = new DataBase.LoginDataBase();
-            List<Entityes.tb_usuario> usuario = db.ConsultarParaLogar(nome);
+            DataBase.LoginDataBase logdata = new DataBase.LoginDataBase();
+            List<Entityes.tb_usuario> pesquisa = logdata.ListarTodosUsuarios();
 
-                    
-
-            return usuario;
-
-            
+            return pesquisa;
         }
+      
     }
 }

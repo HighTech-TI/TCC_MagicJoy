@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities3 db = new Entityes.magicjoydbEntities3();
+        Entityes.magicjoydbEntities4 db = new Entityes.magicjoydbEntities4();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -17,12 +17,10 @@ namespace MagicJoy.DataBase
             db.SaveChanges();
         }
 
-        public List<Entityes.tb_usuario> ConsultarParaLogar(string nome)
-        {
-
-            List<Entityes.tb_usuario> usario = db.tb_usuario.Where(t => t.nm_usuario == nome).ToList();
-
-            return usario;
-        }
+       public List<Entityes.tb_usuario> ListarTodosUsuarios()
+       {
+            List<Entityes.tb_usuario> tabela = db.tb_usuario.ToList();
+            return tabela;  
+       }
     }
 }

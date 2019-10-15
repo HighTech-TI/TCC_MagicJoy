@@ -131,7 +131,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\Login\Email.cs" />
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,9 +205,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Objetos\" />
     <Folder Include="Telas\Estoque\" />
+    <Folder Include="Telas\Financeiro\" />
     <Folder Include="Telas\RH\" />
     <Folder Include="Telas\Suprimentos\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\novo plano.png" />
