@@ -48,7 +48,7 @@ namespace MagicJoy.Telas.Login
                 {
                     Telas.Menu.frmMenu tela = new Menu.frmMenu();
                     tela.Show();
-                    tela.Hide();
+                    this.Hide();
                 }
                 else
                 {
@@ -80,5 +80,11 @@ namespace MagicJoy.Telas.Login
         {
             Application.Exit();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
     }
 }

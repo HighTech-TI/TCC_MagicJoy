@@ -160,7 +160,7 @@
     <Property Name="tb_produto_venda_id_produto" Type="Int32" Nullable="false" />
     <Property Name="tb_venda_id_venda" Type="Int32" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="magicjoydbEntities4" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="magicjoydbEntities5" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
