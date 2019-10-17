@@ -83,15 +83,7 @@ namespace MagicJoy.Telas.Login
 
             private void pictureBox2_Click(object sender, EventArgs e)
             {
-                if (this.WindowState == FormWindowState.Minimized)
-                {
-                    this.Hide();
-                }
-                else
-                {
-                    this.Show();
-                    this.BringToFront();
-                }
+              this.WindowState = FormWindowState.Minimized;
             }
                                                            
             private void txtUsuario_TextChanged(object sender, EventArgs e)
