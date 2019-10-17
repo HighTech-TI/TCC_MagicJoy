@@ -140,7 +140,6 @@
     <Property Name="nm_senha" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="ds_email" Type="varchar" MaxLength="65" Nullable="false" />
     <Property Name="ds_cargo" Type="varchar" MaxLength="65" Nullable="false" />
-    <Property Name="ds_recuperacao" Type="varchar" MaxLength="6" />
   </EntityType>
   <EntityType Name="tb_venda">
     <Key>

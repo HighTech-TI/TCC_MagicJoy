@@ -25,10 +25,7 @@ namespace MagicJoy.Business
                 throw new ArgumentException("Email obrigatório!");
             }
 
-            if(usuario.ds_email.Contains("@") == false && usuario.ds_email.Contains("."))
-            {
-                throw new ArgumentException("Email incorreto");
-            }
+            
             
             if(usuario.ds_cargo == string.Empty)
             {
@@ -55,6 +52,18 @@ namespace MagicJoy.Business
 
             return usuario;
         }
-      
+
+        public Entityes.tb_usuario PesquisarusuariosIguasi(string nome)
+        {
+            DataBase.LoginDataBase logdatabase = new DataBase.LoginDataBase();
+            Entityes.tb_usuario usuario = logdatabase.PesquisarusuariosIguasi(nome);
+
+            return usuario;
+
+
+        }
+
+
+
     }
 }

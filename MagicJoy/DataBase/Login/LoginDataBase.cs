@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities5 db = new Entityes.magicjoydbEntities5();
+        Entityes.magicjoydbEntities10 db = new Entityes.magicjoydbEntities10();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -30,6 +30,14 @@ namespace MagicJoy.DataBase
                                                                          && t.nm_senha == senha);
 
             return usuario;
-        }          
+       }
+
+        public Entityes.tb_usuario PesquisarusuariosIguasi(string nome)
+        {
+            Entityes.tb_usuario usuario = db.tb_usuario.FirstOrDefault(t => t.nm_usuario == nome);
+                                                                         
+            return usuario;
+        }
+
     }
 }

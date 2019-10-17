@@ -40,28 +40,37 @@ namespace MagicJoy.Telas.Login
             {
                 string nome = cbousuario.Text;
                 string senha = txtsenha.Text;
-                             
+
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
-                Entityes.tb_usuario usuario = businesslog.PesquisarParaLogar(nome, senha);           
-                   
-                if (nome == usuario.nm_usuario && senha == usuario.nm_senha)
+                Entityes.tb_usuario usuario = businesslog.PesquisarParaLogar(nome, senha);
+
+                try
                 {
-                    Telas.Menu.frmMenu tela = new Menu.frmMenu();
-                    tela.Show();
-                    this.Hide();
+                    if (nome == usuario.nm_usuario && senha == usuario.nm_senha)
+                    {
+                        Telas.Menu.frmMenu tela = new Menu.frmMenu();
+                        tela.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
                 }
-                else
+                catch (Exception)
                 {
-                    MessageBox.Show("Senha incorreta",
-                        "Login", MessageBoxButtons.OK);
+
+                    MessageBox.Show("Senha incorreta!", "login", MessageBoxButtons.OK);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Ocorreu um erro, tente novamente!",
-                        "Login", MessageBoxButtons.OK);
-            }         
+                MessageBox.Show("ocorreu um erro, tente novamente mais tarde!", "login", MessageBoxButtons.OK);
 
+            }
+                
+                
+           
         }
 
         private void cbousuario_SelectedIndexChanged(object sender, EventArgs e)
