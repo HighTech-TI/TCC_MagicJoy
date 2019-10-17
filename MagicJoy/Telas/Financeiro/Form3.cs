@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Financeiro
 {
-    public partial class frmTelaTluxoDeCaixa : Form
+    public partial class Form3 : Form
     {
-        public frmTelaTluxoDeCaixa()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
