@@ -215,6 +215,18 @@
     <Compile Include="Telas\Splash\frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Suprimentos\frmCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmCompras.Designer.cs">
+      <DependentUpon>frmCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmConsultarCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmConsultarCompras.Designer.cs">
+      <DependentUpon>frmConsultarCompras.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Telas\Estoque\frmConsultar Estoque.resx">
       <DependentUpon>frmConsultar Estoque.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +276,12 @@
     <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Suprimentos\frmCompras.resx">
+      <DependentUpon>frmCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Suprimentos\frmConsultarCompras.resx">
+      <DependentUpon>frmConsultarCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Entityes\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -288,7 +306,6 @@
   <ItemGroup>
     <Folder Include="Objetos\" />
     <Folder Include="Telas\RH\" />
-    <Folder Include="Telas\Suprimentos\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
