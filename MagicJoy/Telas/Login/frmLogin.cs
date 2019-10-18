@@ -80,9 +80,9 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Telas.Login.frmNovoUsuario tela = new frmNovoUsuario();
+            frmNovoUsuario tela = new frmNovoUsuario();
             tela.Show();
-            tela.Hide();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
