@@ -209,6 +209,18 @@
     <Compile Include="Telas\Menu\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\RH\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RH\frmFolhaDePagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmFolhaDePagamento.Designer.cs">
+      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Splash\frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +285,12 @@
     <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmFolhaDePagamento.resx">
+      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,7 +323,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objetos\" />
-    <Folder Include="Telas\RH\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
