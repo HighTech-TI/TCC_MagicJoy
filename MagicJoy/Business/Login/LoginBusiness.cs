@@ -24,9 +24,7 @@ namespace MagicJoy.Business
             {
                 throw new ArgumentException("Email obrigatório!");
             }
-
-            
-            
+                     
             if(usuario.ds_cargo == string.Empty)
             {
                 throw new ArgumentException("Cargo obrigatório!");

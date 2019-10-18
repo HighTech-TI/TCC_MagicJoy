@@ -19,60 +19,71 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+           // try
+           // {
+                Entityes.tb_usuario tabela = new Entityes.tb_usuario();
+                                
+                tabela.ds_email = txtEmail.Text;
+                tabela.ds_cargo = txtCargo.Text;
+                tabela.nm_usuario = txtUsuario.Text;
+                tabela.nm_senha = txtUsuario.Text;
+
+                Business.LoginBusiness businesslog = new Business.LoginBusiness();
+                Entityes.tb_usuario usuario = businesslog.PesquisarusuariosIguasi(txtUsuario.Text);
             try
             {
-                try
+                if (txtUsuario.Text != tabela.nm_usuario)
                 {
-                    string usuario = txtUsuario.Text;
-                    string email = txtEmail.Text;
-                    string cargo = txtCargo.Text;
-                    string senha = txtSenha.Text;
-                    string confirmsenha = txtonfirmaao.Text;
+                    txtUsuario.BackColor = System.Drawing.Color.White;
+                    
 
-                    Business.LoginBusiness businesslog = new Business.LoginBusiness();
-                    Entityes.tb_usuario user = businesslog.PesquisarusuariosIguasi(usuario);
+                    businesslog.inserir(tabela);
 
-                    Entityes.tb_usuario tabela = new Entityes.tb_usuario();
-
-                    if (txtonfirmaao.Text == txtSenha.Text)
-                    {
-                        tabela.nm_usuario = txtUsuario.Text;
-                        businesslog.inserir(tabela);
-                    }
-
-                    if (txtonfirmaao.Text != txtSenha.Text)
-                    {
-                        try
-                        {
-                            throw new Exception();
-                        }
-                        catch (Exception)
-                        {
-
-                            MessageBox.Show("Senhas não se coincidem!",
-                                            "Cadastro de usuário", MessageBoxButtons.OK);
-                        }
-                    }
+                   
                 }
-                catch (Exception)
+                else if (txtUsuario.Text == tabela.nm_usuario)
                 {
-
-
-                    MessageBox.Show("cdastrado com sucesso",
-                                "Cadastro de usuário", MessageBoxButtons.OK);
+                    throw new Exception();
 
                 }
-                
             }
             catch (Exception)
             {
-                MessageBox.Show("Erro",
-                                "Cadastro de usuário", MessageBoxButtons.OK);
 
+                MessageBox.Show("Usuário ja existente!", "Cadastro", MessageBoxButtons.OK);
             }
+               
+                 
+                if (txtonfirmaao.Text != txtSenha.Text)
+                {
+                        txtonfirmaao.BackColor = System.Drawing.Color.Red;
+                      
 
-                         
-                                      
+                       throw new Exception();
+
+                }
+                else if (txtonfirmaao.Text == txtSenha.Text)
+                {
+                        txtSenha.BackColor = System.Drawing.Color.White;
+                    
+                        
+                        businesslog.inserir(tabela);
+                }
+               
+                Business.LoginBusiness businesslllog = new Business.LoginBusiness();
+                businesslllog.inserir(tabela);
+                
+                MessageBox.Show("Cadastrado com sucesso!", 
+                                "Cadastro", MessageBoxButtons.OK);
+               
+           // }
+           // catch (Exception)
+           // {
+
+               // MessageBox.Show("Ocorreu um erro, " +
+                              //  "tente novamente mais tarde", "Login", 
+                          // MessageBoxButtons.OK);
+           // }
         }
 
 
@@ -88,43 +99,47 @@ namespace MagicJoy.Telas.Login
                                                            
             private void txtUsuario_TextChanged(object sender, EventArgs e)
             {
-
+            
+            
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
                 Entityes.tb_usuario usuario = businesslog.PesquisarusuariosIguasi(txtUsuario.Text);
 
                 if (txtUsuario.Text == usuario.nm_usuario || usuario.nm_usuario == txtUsuario.Text)
                 {
-                   try
-                   {
+                    try
+                    {
 
-                    txtUsuario.BackColor = System.Drawing.Color.Red;
-                    lblusuario.Visible = true;
-                    
-                    throw new Exception();
-                   }
-                   
-                   catch (Exception)
-                   {
+                        txtUsuario.BackColor = System.Drawing.Color.Red;
+                        lblusuario.Visible = true;
 
-                    MessageBox.Show("Nome de usuário já está em uso!",
-                                    "Cadastro de usuário", MessageBoxButtons.OK);
-                   }
+                        throw new Exception();
+                    }
 
-               
+                    catch (Exception)
+                    {
+
+                        MessageBox.Show("Nome de usuário já está em uso!",
+                                        "Cadastro de usuário", MessageBoxButtons.OK);
+                    }
+
+
                 }
-               
-                if (txtUsuario.Text != usuario.nm_usuario || usuario.nm_usuario != txtUsuario.Text)
+
+                if (txtUsuario.Text != usuario.nm_usuario)
                 {
                     Entityes.tb_usuario tabela = new Entityes.tb_usuario();
-                   
 
-                   businesslog.inserir(tabela);
-                   string usuariiio = txtUsuario.Text;
 
-                   txtUsuario.BackColor = System.Drawing.Color.White;
-                   lblusuario.Visible = false;
+                    businesslog.inserir(tabela);
+                    tabela.nm_usuario = txtUsuario.Text;
+
+                    txtUsuario.BackColor = System.Drawing.Color.White;
+                    lblusuario.Visible = false;
 
                 }
+            
+           
+               
 
 
             }
