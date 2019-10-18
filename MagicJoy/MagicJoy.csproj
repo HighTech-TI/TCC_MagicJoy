@@ -209,6 +209,24 @@
     <Compile Include="Telas\Menu\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\RH\frmAlterarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmAlterarFuncionario.Designer.cs">
+      <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.Designer.cs">
+      <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\RH\frmConsutarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmConsutarFuncionario.Designer.cs">
+      <DependentUpon>frmConsutarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\RH\frmControleDePonto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +302,15 @@
     </Compile>
     <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmAlterarFuncionario.resx">
+      <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmConsultaFolhaDePagamento.resx">
+      <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmConsutarFuncionario.resx">
+      <DependentUpon>frmConsutarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmControleDePonto.resx">
       <DependentUpon>frmControleDePonto.cs</DependentUpon>
