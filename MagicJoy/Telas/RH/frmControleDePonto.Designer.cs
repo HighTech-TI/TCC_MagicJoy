@@ -105,7 +105,7 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Observação";
             // 
-            // Form1
+            // frmControleDePonto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +118,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Name = "Form1";
+            this.Name = "frmControleDePonto";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
