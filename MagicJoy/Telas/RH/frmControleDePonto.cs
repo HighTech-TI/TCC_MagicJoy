@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.RH
 {
-    public partial class Form1 : Form
+    public partial class frmControleDePonto : Form
     {
-        public Form1()
+        public frmControleDePonto()
         {
             InitializeComponent();
         }

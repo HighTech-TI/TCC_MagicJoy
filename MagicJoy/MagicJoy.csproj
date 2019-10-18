@@ -209,11 +209,11 @@
     <Compile Include="Telas\Menu\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\RH\Form1.cs">
+    <Compile Include="Telas\RH\frmControleDePonto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\RH\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\RH\frmControleDePonto.Designer.cs">
+      <DependentUpon>frmControleDePonto.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\RH\frmFolhaDePagamento.cs">
       <SubType>Form</SubType>
@@ -285,8 +285,8 @@
     <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\RH\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\RH\frmControleDePonto.resx">
+      <DependentUpon>frmControleDePonto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmFolhaDePagamento.resx">
       <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>

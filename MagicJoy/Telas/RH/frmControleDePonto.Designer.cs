@@ -1,6 +1,6 @@
 ﻿namespace MagicJoy.Telas.RH
 {
-    partial class Form1
+    partial class frmControleDePonto
     {
         /// <summary>
         /// Required designer variable.
