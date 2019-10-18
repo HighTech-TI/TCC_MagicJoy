@@ -131,11 +131,59 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\Financeiro\frmTelaTluxoDeCaixa.cs">
+    <Compile Include="Telas\Financeiro\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Financeiro\frmTelaTluxoDeCaixa.Designer.cs">
-      <DependentUpon>frmTelaTluxoDeCaixa.cs</DependentUpon>
+    <Compile Include="Telas\Financeiro\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.Designer.cs">
+      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmConsultar Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmConsultar Estoque.Designer.cs">
+      <DependentUpon>frmConsultar Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmInserir Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmInserir Estoque.Designer.cs">
+      <DependentUpon>frmInserir Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.Designer.cs">
+      <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultaContasAPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultaContasAPagar.Designer.cs">
+      <DependentUpon>frmConsultaContasAPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.Designer.cs">
+      <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmFluxoDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmFluxoDeCaixa.Designer.cs">
+      <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
@@ -167,8 +215,32 @@
     <Compile Include="Telas\Splash\frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Telas\Financeiro\frmTelaTluxoDeCaixa.resx">
-      <DependentUpon>frmTelaTluxoDeCaixa.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Estoque\frmConsultar Estoque.resx">
+      <DependentUpon>frmConsultar Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\frmInserir Estoque.resx">
+      <DependentUpon>frmInserir Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
+      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmConsultaContasAReceber.resx">
+      <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmConsultaContasAPagar.resx">
+      <DependentUpon>frmConsultaContasAPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.resx">
+      <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmFluxoDeCaixa.resx">
+      <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>
@@ -215,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objetos\" />
-    <Folder Include="Telas\Estoque\" />
     <Folder Include="Telas\RH\" />
     <Folder Include="Telas\Suprimentos\" />
     <Folder Include="Utils\" />

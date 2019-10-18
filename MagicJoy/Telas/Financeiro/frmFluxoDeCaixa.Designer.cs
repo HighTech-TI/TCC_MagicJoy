@@ -1,6 +1,6 @@
 ﻿namespace MagicJoy.Telas.Financeiro
 {
-    partial class frmTelaTluxoDeCaixa
+    partial class frmFluxoDeCaixa
     {
         /// <summary>
         /// Required designer variable.
