@@ -58,7 +58,6 @@ namespace MagicJoy.Business
 
             return usuario;
 
-
         }
 
 

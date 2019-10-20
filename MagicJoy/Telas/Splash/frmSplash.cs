@@ -21,5 +21,14 @@ namespace MagicJoy.Telas.Splash
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Telas.Login.frmLogin tela = new Login.frmLogin();
+            tela.Show();
+            this.Hide();
+            
+            timer1.Stop();
+        }
     }
 }

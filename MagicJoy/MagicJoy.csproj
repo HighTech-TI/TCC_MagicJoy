@@ -67,8 +67,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Estoque\EstoqueBusiness.cs" />
+    <Compile Include="Business\Estoque\ProdutoBusiness.cs" />
+    <Compile Include="Business\Financeiro\ClienteBusiness.cs" />
+    <Compile Include="Business\Financeiro\DespesaBusiness.cs" />
     <Compile Include="Business\Login\LoginBusiness.cs" />
+    <Compile Include="Business\RH\ControleDePontoBusiness.cs" />
+    <Compile Include="Business\RH\FolhaDePagamentoBusiness.cs" />
+    <Compile Include="Business\RH\FuncionarioBusiness.cs" />
+    <Compile Include="Business\Suprimentos\CompraBusiness.cs" />
+    <Compile Include="Business\Suprimentos\FornecedorBusiness.cs" />
+    <Compile Include="Business\Suprimentos\VendaBusiness.cs" />
+    <Compile Include="DataBase\Estoque\EstoqueDataBase.cs" />
+    <Compile Include="DataBase\Estoque\ProdutoDataBase.cs" />
+    <Compile Include="DataBase\Financeiro\ClienteDataBase.cs" />
+    <Compile Include="DataBase\Financeiro\DespesasDataBase.cs" />
     <Compile Include="DataBase\Login\LoginDataBase.cs" />
+    <Compile Include="DataBase\RH\ControleDePontoDataBase.cs" />
+    <Compile Include="DataBase\RH\FolhaDepagamentoDataBase.cs" />
+    <Compile Include="DataBase\RH\FuncionarioDataBase.cs" />
+    <Compile Include="DataBase\Suprimentos\CompraDataBase.cs" />
+    <Compile Include="DataBase\Suprimentos\FornecedorDataBase.cs" />
+    <Compile Include="DataBase\Suprimentos\VendaDataBase.cs" />
     <Compile Include="Entityes\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -221,6 +241,12 @@
     <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.Designer.cs">
       <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\RH\frmConsultar_Alterar_RemoverControleDePonto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmConsultar_Alterar_RemoverControleDePonto.Designer.cs">
+      <DependentUpon>frmConsultar_Alterar_RemoverControleDePonto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\RH\frmConsutarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +335,9 @@
     <EmbeddedResource Include="Telas\RH\frmConsultaFolhaDePagamento.resx">
       <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmConsultar_Alterar_RemoverControleDePonto.resx">
+      <DependentUpon>frmConsultar_Alterar_RemoverControleDePonto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmConsutarFuncionario.resx">
       <DependentUpon>frmConsutarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +379,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objetos\" />
+    <Folder Include="Telas\Cliente\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
@@ -402,6 +432,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\gif para splash.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
