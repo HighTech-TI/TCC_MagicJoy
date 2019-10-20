@@ -78,3 +78,6 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmFolhaDePagamento.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmCompras.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarCompras.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenu.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultar_Alterar_RemoverControleDePonto.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenuu.resources

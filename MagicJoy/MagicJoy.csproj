@@ -223,11 +223,11 @@
     <Compile Include="Telas\Login\frmNovoUsuario.Designer.cs">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Menu\frmMenu.cs">
+    <Compile Include="Telas\Menu\frmMenuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Menu\frmMenu.Designer.cs">
-      <DependentUpon>frmMenu.cs</DependentUpon>
+    <Compile Include="Telas\Menu\frmMenuu.Designer.cs">
+      <DependentUpon>frmMenuu.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\RH\frmAlterarFuncionario.cs">
       <SubType>Form</SubType>
@@ -328,6 +328,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Menu\frmMenuu.resx">
+      <DependentUpon>frmMenuu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmAlterarFuncionario.resx">
       <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
@@ -432,6 +435,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\desligar.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\mazimizar verdadeira.png" />
+    <None Include="Resources\maximizar.png" />
     <None Include="Resources\gif para splash.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
