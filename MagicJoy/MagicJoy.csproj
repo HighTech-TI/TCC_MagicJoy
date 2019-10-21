@@ -235,6 +235,12 @@
     <Compile Include="Telas\RH\frmAlterarFuncionario.Designer.cs">
       <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\RH\frmCadastroDeFuncionários.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\RH\frmCadastroDeFuncionários.Designer.cs">
+      <DependentUpon>frmCadastroDeFuncionários.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmAlterarFuncionario.resx">
       <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\RH\frmCadastroDeFuncionários.resx">
+      <DependentUpon>frmCadastroDeFuncionários.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmConsultaFolhaDePagamento.resx">
       <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
