@@ -21,5 +21,10 @@ namespace MagicJoy.Telas.Financeiro
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

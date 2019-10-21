@@ -41,44 +41,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(140, 84);
+            this.label1.Location = new System.Drawing.Point(141, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Agência ";
+            this.label1.Text = "Agência:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(80, 158);
+            this.label7.Location = new System.Drawing.Point(52, 155);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 13);
+            this.label7.Size = new System.Drawing.Size(158, 16);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Data De Vencimento ";
+            this.label7.Text = "Data De Vencimento: ";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(224, 151);
+            this.dateTimePicker1.Location = new System.Drawing.Point(239, 151);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
             this.dateTimePicker1.TabIndex = 15;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(224, 81);
+            this.textBox1.Location = new System.Drawing.Point(239, 81);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(118, 20);
             this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(239, 217);
+            this.button1.Location = new System.Drawing.Point(239, 228);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 41);
             this.button1.TabIndex = 17;
@@ -94,7 +97,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(571, 151);
             this.dataGridView1.TabIndex = 19;
             // 
-            // ConsultaContasAReceber
+            // frmConsultaContasAReceber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,7 +108,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Name = "ConsultaContasAReceber";
+            this.Name = "frmConsultaContasAReceber";
             this.Text = "ConsultaContasAReceber";
             this.Load += new System.EventHandler(this.ConsultaContasAReceber_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
