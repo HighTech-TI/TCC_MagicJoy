@@ -151,6 +151,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\Estoque\frmConsultarEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmConsultarEstoque.Designer.cs">
+      <DependentUpon>frmConsultarEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmInserirEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmInserirEstoque.Designer.cs">
+      <DependentUpon>frmInserirEstoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Financeiro\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,18 +174,6 @@
     </Compile>
     <Compile Include="Telas\Financeiro\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Estoque\frmConsultar Estoque.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Estoque\frmConsultar Estoque.Designer.cs">
-      <DependentUpon>frmConsultar Estoque.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Estoque\frmInserir Estoque.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Estoque\frmInserir Estoque.Designer.cs">
-      <DependentUpon>frmInserir Estoque.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.cs">
       <SubType>Form</SubType>
@@ -289,11 +289,11 @@
     <Compile Include="Telas\Suprimentos\frmConsultarCompras.Designer.cs">
       <DependentUpon>frmConsultarCompras.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Telas\Estoque\frmConsultar Estoque.resx">
-      <DependentUpon>frmConsultar Estoque.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Estoque\frmConsultarEstoque.resx">
+      <DependentUpon>frmConsultarEstoque.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Estoque\frmInserir Estoque.resx">
-      <DependentUpon>frmInserir Estoque.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Estoque\frmInserirEstoque.resx">
+      <DependentUpon>frmInserirEstoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

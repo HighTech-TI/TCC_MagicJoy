@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Estoque
 {
-    public partial class Consultar_Estoque : Form
+    public partial class frmInserirEstoque : Form
     {
-        public Consultar_Estoque()
+        public frmInserirEstoque()
         {
             InitializeComponent();
         }
