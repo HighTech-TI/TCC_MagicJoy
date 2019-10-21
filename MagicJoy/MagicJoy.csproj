@@ -163,12 +163,6 @@
     <Compile Include="Telas\Financeiro\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.Designer.cs">
-      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Estoque\frmConsultar Estoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +198,12 @@
     </Compile>
     <Compile Include="Telas\Financeiro\frmFluxoDeCaixa.Designer.cs">
       <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.Designer.cs">
+      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
@@ -301,9 +301,6 @@
     <EmbeddedResource Include="Telas\Financeiro\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
-      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmConsultaContasAReceber.resx">
       <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
     </EmbeddedResource>
@@ -315,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmFluxoDeCaixa.resx">
       <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
+      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>

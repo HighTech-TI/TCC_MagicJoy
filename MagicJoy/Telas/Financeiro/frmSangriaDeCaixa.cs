@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MagicJoy.Telas.Estoque
+namespace MagicJoy.Telas.Financeiro
 {
     public partial class frmSangriaDeCaixa : Form
     {
