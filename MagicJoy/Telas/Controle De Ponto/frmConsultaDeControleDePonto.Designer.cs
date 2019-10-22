@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,10 +51,19 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Location = new System.Drawing.Point(130, 29);
+            this.panel1.Location = new System.Drawing.Point(142, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(272, 119);
             this.panel1.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(38, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Nome";
             // 
             // label6
             // 
@@ -88,15 +97,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Nome";
             // 
             // dataGridView1
             // 
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 316);
+            this.ClientSize = new System.Drawing.Size(537, 316);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "frmConsultaDeControleDePonto";

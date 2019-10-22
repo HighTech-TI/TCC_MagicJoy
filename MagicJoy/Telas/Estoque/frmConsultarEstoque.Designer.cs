@@ -47,21 +47,23 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(139, 134);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(163, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(25, 16);
             this.label2.TabIndex = 13;
-            this.label2.Text = "ID :";
+            this.label2.Text = "Id:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(96, 71);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(125, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 14;
-            this.label1.Text = "PRODUTO :";
+            this.label1.Text = "Produto:";
             // 
             // textBox1
             // 
