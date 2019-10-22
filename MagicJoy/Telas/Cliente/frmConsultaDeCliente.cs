@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MagicJoy.Telas.RH
+namespace MagicJoy.Telas.Cliente
 {
-    public partial class frmFolhaDePagamento : Form
+    public partial class frmConsultaDeCliente : Form
     {
-        public frmFolhaDePagamento()
+        public frmConsultaDeCliente()
         {
             InitializeComponent();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

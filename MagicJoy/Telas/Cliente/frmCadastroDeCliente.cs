@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MagicJoy.Telas.Financeiro
+namespace MagicJoy.Telas.Cliente
 {
-    public partial class Form2 : Form
+    public partial class frmCadastroDeCliente : Form
     {
-        public Form2()
+        public frmCadastroDeCliente()
         {
             InitializeComponent();
         }

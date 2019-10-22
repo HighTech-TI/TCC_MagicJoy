@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MagicJoy.Telas.RH
+namespace MagicJoy.Telas.Controle_De_Ponto
 {
-    public partial class frmAlterarFuncionario : Form
+    public partial class frmConsultaDeControleDePonto : Form
     {
-        public frmAlterarFuncionario()
+        public frmConsultaDeControleDePonto()
         {
             InitializeComponent();
         }
