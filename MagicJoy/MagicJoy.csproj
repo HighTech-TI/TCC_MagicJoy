@@ -163,18 +163,6 @@
     <Compile Include="Telas\Cliente\frmConsultaDeCliente.Designer.cs">
       <DependentUpon>frmConsultaDeCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Controle De Ponto\frmConsultaDeControleDePonto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Controle De Ponto\frmConsultaDeControleDePonto.Designer.cs">
-      <DependentUpon>frmConsultaDeControleDePonto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Controle De Ponto\frmControleDePonto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Controle De Ponto\frmControleDePonto.Designer.cs">
-      <DependentUpon>frmControleDePonto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Estoque\frmConsultarEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,12 +282,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cliente\frmConsultaDeCliente.resx">
       <DependentUpon>frmConsultaDeCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Controle De Ponto\frmConsultaDeControleDePonto.resx">
-      <DependentUpon>frmConsultaDeControleDePonto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Controle De Ponto\frmControleDePonto.resx">
-      <DependentUpon>frmControleDePonto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Estoque\frmConsultarEstoque.resx">
       <DependentUpon>frmConsultarEstoque.cs</DependentUpon>
