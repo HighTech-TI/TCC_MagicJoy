@@ -43,22 +43,22 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 73);
+            this.label2.Location = new System.Drawing.Point(68, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Descrição ";
+            this.label2.Text = "Descrição:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 89);
+            this.textBox1.Location = new System.Drawing.Point(157, 89);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 18;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(88, 185);
+            this.textBox2.Location = new System.Drawing.Point(157, 165);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 19;
@@ -68,27 +68,27 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 166);
+            this.label3.Location = new System.Drawing.Point(98, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 20;
-            this.label3.Text = " Valor ";
+            this.label3.Text = " Valor:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(381, 73);
+            this.label4.Location = new System.Drawing.Point(336, 93);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 16);
+            this.label4.Size = new System.Drawing.Size(133, 16);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Data Da Retirada";
+            this.label4.Text = "Data Da Retirada:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(394, 89);
+            this.dateTimePicker1.Location = new System.Drawing.Point(475, 89);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 22;
