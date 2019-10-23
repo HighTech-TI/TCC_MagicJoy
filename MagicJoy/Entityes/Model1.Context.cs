@@ -40,5 +40,20 @@ namespace MagicJoy.Entityes
         public virtual DbSet<tb_usuario> tb_usuario { get; set; }
         public virtual DbSet<tb_venda> tb_venda { get; set; }
         public virtual DbSet<tb_venda_item> tb_venda_item { get; set; }
+        public virtual DbSet<tb_beneficio1> tb_beneficio1Set { get; set; }
+        public virtual DbSet<tb_cliente1> tb_cliente1Set { get; set; }
+        public virtual DbSet<tb_compra1> tb_compra1Set { get; set; }
+        public virtual DbSet<tb_compra_item1> tb_compra_item1Set { get; set; }
+        public virtual DbSet<tb_controle_ponto1> tb_controle_ponto1Set { get; set; }
+        public virtual DbSet<tb_despesa> tb_despesa { get; set; }
+        public virtual DbSet<tb_estoque1> tb_estoque1Set { get; set; }
+        public virtual DbSet<tb_folha_pagamento1> tb_folha_pagamento1Set { get; set; }
+        public virtual DbSet<tb_fornecedor1> tb_fornecedor1Set { get; set; }
+        public virtual DbSet<tb_funcionario1> tb_funcionario1Set { get; set; }
+        public virtual DbSet<tb_produto1> tb_produto1Set { get; set; }
+        public virtual DbSet<tb_produto_venda1> tb_produto_venda1Set { get; set; }
+        public virtual DbSet<tb_usuario1> tb_usuario1Set { get; set; }
+        public virtual DbSet<tb_venda1> tb_venda1Set { get; set; }
+        public virtual DbSet<tb_venda_item1> tb_venda_item1Set { get; set; }
     }
 }
