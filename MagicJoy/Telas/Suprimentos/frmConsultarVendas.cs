@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Suprimentos
 {
-    public partial class frmCompras : Form
+    public partial class frmConsultarVendas : Form
     {
-        public frmCompras()
+        public frmConsultarVendas()
         {
             InitializeComponent();
         }

@@ -41,8 +41,8 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,7 +146,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label2);
@@ -161,17 +160,8 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(94, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 325);
+            this.panel1.Size = new System.Drawing.Size(304, 279);
             this.panel1.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(98, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 41);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -182,12 +172,22 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Cadastro De Clientes";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(192, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 41);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmCadastroDeCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 525);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button1);
             this.Name = "frmCadastroDeCliente";
             this.Text = "frmCadastroDeCliente";
             this.panel1.ResumeLayout(false);

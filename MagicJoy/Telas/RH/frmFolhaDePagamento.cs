@@ -21,5 +21,10 @@ namespace MagicJoy.Telas.RH
         {
 
         }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,5 +64,10 @@ namespace MagicJoy.Telas.RH
                 dtpcontrole.DataSource = consultar;
             
         }
+
+        private void frmConsultaControleDePonto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

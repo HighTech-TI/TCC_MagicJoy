@@ -185,8 +185,10 @@
             // 
             // frmConsultaControleDePonto
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(542, 473);
             this.Controls.Add(this.dtpcontrole);
             this.Controls.Add(this.numericUpDown1);
@@ -196,6 +198,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultaControleDePonto";
             this.Text = "frmConsultaControleDePonto";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.frmConsultaControleDePonto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpcontrole)).EndInit();
             this.ResumeLayout(false);

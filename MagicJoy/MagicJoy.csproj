@@ -262,17 +262,23 @@
     <Compile Include="Telas\Splash\frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Suprimentos\frmCompras.cs">
+    <Compile Include="Telas\Suprimentos\frmAlmoxarifado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Suprimentos\frmCompras.Designer.cs">
-      <DependentUpon>frmCompras.cs</DependentUpon>
+    <Compile Include="Telas\Suprimentos\frmAlmoxarifado.Designer.cs">
+      <DependentUpon>frmAlmoxarifado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Suprimentos\frmConsultarCompras.cs">
+    <Compile Include="Telas\Suprimentos\frmVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Suprimentos\frmConsultarCompras.Designer.cs">
-      <DependentUpon>frmConsultarCompras.cs</DependentUpon>
+    <Compile Include="Telas\Suprimentos\frmVendas.Designer.cs">
+      <DependentUpon>frmVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmConsultarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmConsultarVendas.Designer.cs">
+      <DependentUpon>frmConsultarVendas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Telas\Cliente\frmCadastroDeCliente.resx">
       <DependentUpon>frmCadastroDeCliente.cs</DependentUpon>
@@ -344,11 +350,14 @@
     <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Suprimentos\frmCompras.resx">
-      <DependentUpon>frmCompras.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Suprimentos\frmAlmoxarifado.resx">
+      <DependentUpon>frmAlmoxarifado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Suprimentos\frmConsultarCompras.resx">
-      <DependentUpon>frmConsultarCompras.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Suprimentos\frmVendas.resx">
+      <DependentUpon>frmVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Suprimentos\frmConsultarVendas.resx">
+      <DependentUpon>frmConsultarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Entityes\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
