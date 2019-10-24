@@ -20,9 +20,7 @@ namespace MagicJoy.Entityes
         public decimal vl_salario_bruto { get; set; }
         public int ds_faltas { get; set; }
         public decimal ds_gratificacao { get; set; }
-        public decimal ds_plr { get; set; }
-        public int hr_extras { get; set; }
-        public decimal vl_transporte { get; set; }
-        public System.DateTime dt_data { get; set; }
+        public Nullable<decimal> ds_plr { get; set; }
+        public Nullable<int> hr_extras { get; set; }
     }
 }

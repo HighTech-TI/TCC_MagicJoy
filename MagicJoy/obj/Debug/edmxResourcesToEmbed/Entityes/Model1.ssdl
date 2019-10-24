@@ -5,7 +5,13 @@
       <PropertyRef Name="id_beneficios" />
     </Key>
     <Property Name="id_beneficios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vl_valerefeicao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="vl_alimentacao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
     <Property Name="vl_transporte" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="ds_sugurodevida" Type="bool" Nullable="false" />
+    <Property Name="ds_odonto" Type="bool" Nullable="false" />
+    <Property Name="ds_saude" Type="bool" Nullable="false" />
+    <Property Name="ds_periculosidade" Type="bool" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_cliente">
     <Key>
@@ -24,7 +30,7 @@
     <Key>
       <PropertyRef Name="id_compras" />
     </Key>
-    <Property Name="id_compras" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_compras" Type="int" Nullable="false" />
     <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="qts_produtos" Type="int" Nullable="false" />
     <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
@@ -45,13 +51,13 @@
     </Key>
     <Property Name="id_controle_ponto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="tb_funcionario_id_funcionario" Type="int" Nullable="false" />
+    <Property Name="dt_dia" Type="date" Nullable="false" />
     <Property Name="hr_entrada" Type="datetime" Precision="0" Nullable="false" />
     <Property Name="hr_intervalo" Type="datetime" Precision="0" Nullable="false" />
     <Property Name="hr_retorno" Type="datetime" Precision="0" Nullable="false" />
     <Property Name="hr_saida" Type="datetime" Precision="0" Nullable="false" />
-    <Property Name="dt_dia" Type="date" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_despesas">
+  <EntityType Name="tb_despesa">
     <Key>
       <PropertyRef Name="id_despesa" />
     </Key>
@@ -80,10 +86,8 @@
     <Property Name="vl_salario_bruto" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_faltas" Type="int" Nullable="false" />
     <Property Name="ds_gratificacao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-    <Property Name="ds_plr" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-    <Property Name="hr_extras" Type="int" Nullable="false" />
-    <Property Name="vl_transporte" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-    <Property Name="dt_data" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="ds_plr" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="hr_extras" Type="int" />
   </EntityType>
   <EntityType Name="tb_fornecedor">
     <Key>
@@ -122,15 +126,6 @@
     <Property Name="vl_preco" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="tb_estoque_id_estoque" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_produto_venda">
-    <Key>
-      <PropertyRef Name="id_produto" />
-    </Key>
-    <Property Name="id_produto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="vl_produto" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-    <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-  </EntityType>
   <EntityType Name="tb_usuario">
     <Key>
       <PropertyRef Name="id_usuario" />
@@ -141,39 +136,18 @@
     <Property Name="ds_email" Type="varchar" MaxLength="65" Nullable="false" />
     <Property Name="ds_cargo" Type="varchar" MaxLength="45" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_venda">
-    <Key>
-      <PropertyRef Name="id_venda" />
-    </Key>
-    <Property Name="id_venda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="qts_produtos" Type="int" Nullable="false" />
-    <Property Name="dt_compra" Type="date" Nullable="false" />
-    <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-  </EntityType>
-  <EntityType Name="tb_venda_item">
-    <Key>
-      <PropertyRef Name="id_venda" />
-    </Key>
-    <Property Name="id_venda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="tb_produto_venda_id_produto" Type="int" Nullable="false" />
-    <Property Name="tb_venda_id_venda" Type="int" Nullable="false" />
-  </EntityType>
   <EntityContainer Name="magicjoydbModelStoreContainer">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_compra_item" EntityType="Self.tb_compra_item" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_controle_ponto" EntityType="Self.tb_controle_ponto" Schema="magicjoydb" store:Type="Tables" />
-    <EntitySet Name="tb_despesas" EntityType="Self.tb_despesas" Schema="magicjoydb" store:Type="Tables" />
+    <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="magicjoydb" store:Type="Tables" />
-    <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" Schema="magicjoydb" store:Type="Tables" />
     <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" Schema="magicjoydb" store:Type="Tables" />
-    <EntitySet Name="tb_venda" EntityType="Self.tb_venda" Schema="magicjoydb" store:Type="Tables" />
-    <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" Schema="magicjoydb" store:Type="Tables" />
   </EntityContainer>
 </Schema>

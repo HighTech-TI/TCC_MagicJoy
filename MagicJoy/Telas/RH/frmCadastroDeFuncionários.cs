@@ -17,6 +17,14 @@ namespace MagicJoy.Telas.RH
             InitializeComponent();
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Entityes.tb_funcionario db = new Entityes.tb_funcionario();
+
+            db.nm_nome = txtNome.Text;
+
+            Business.RH.FuncionarioBusiness businesslog = new Business.RH.FuncionarioBusiness();
+            businesslog.InserirFuncionario(db);
+        }
     }
 }

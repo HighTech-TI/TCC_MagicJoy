@@ -14,7 +14,8 @@ namespace MagicJoy.Business.RH
             {
                 throw new ArgumentException("Selecione o ID do funcionário");
             }
-
+            
+            
             DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
             db.InserirControleDePonto(ponto);
 

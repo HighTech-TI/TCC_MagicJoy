@@ -41,7 +41,7 @@ namespace MagicJoy.Telas.Login
 
                 try
                 {
-                    if (txtUsuario.Text == txtUsuario.Text)
+                    if (txtUsuario.Text == usuario.nm_usuario)
                     {
                         txtUsuario.BackColor = System.Drawing.Color.Red;
 

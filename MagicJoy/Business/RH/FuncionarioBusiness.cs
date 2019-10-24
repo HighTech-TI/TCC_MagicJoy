@@ -8,15 +8,11 @@ namespace MagicJoy.Business.RH
 {
     class FuncionarioBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
-        {
-            if (ponto.tb_funcionario_id_funcionario == 0)
-            {
-                throw new ArgumentException("Selecione o ID do funcionário");
-            }
+        public void InserirFuncionario(Entityes.tb_funcionario ponto)
+        {         
 
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
+            DataBase.RH.FuncionarioDataBase db = new DataBase.RH.FuncionarioDataBase();
+            db.InserirFuncionario(ponto);
 
         }
 

@@ -92,8 +92,17 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
