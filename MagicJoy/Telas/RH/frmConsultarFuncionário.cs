@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.RH
 {
-    public partial class frmConsutarFuncionario : Form
+    public partial class frmConsultarFuncionário : Form
     {
-        public frmConsutarFuncionario()
+        public frmConsultarFuncionário()
         {
             InitializeComponent();
         }

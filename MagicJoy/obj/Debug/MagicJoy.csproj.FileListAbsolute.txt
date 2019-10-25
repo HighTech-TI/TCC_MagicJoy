@@ -125,3 +125,6 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.
 C:\Users\infod14\Source\Repos\TCC_MagicJoy20\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod14\Source\Repos\TCC_MagicJoy20\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\infod14\Source\Repos\TCC_MagicJoy20\MagicJoy\obj\Debug\MagicJoy.pdb
+C:\Users\infod14\Source\Repos\TCC_MagicJoy22\MagicJoy\bin\Debug\MagicJoy.exe.config
+C:\Users\infod14\Source\Repos\TCC_MagicJoy22\MagicJoy\obj\Debug\MagicJoy.exe
+C:\Users\infod14\Source\Repos\TCC_MagicJoy22\MagicJoy\obj\Debug\MagicJoy.pdb
