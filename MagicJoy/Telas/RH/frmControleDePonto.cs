@@ -64,7 +64,7 @@ namespace MagicJoy.Telas.RH
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Entityes.tb_controle_ponto controleponto = d as Entityes.tb_controle_ponto;
+            
 
         }
     }
