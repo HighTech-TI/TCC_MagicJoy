@@ -162,7 +162,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(179, 399);
+            this.button2.Location = new System.Drawing.Point(188, 400);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 41);
             this.button2.TabIndex = 23;
