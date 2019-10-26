@@ -63,6 +63,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12a {
+            get {
+                object obj = ResourceManager.GetObject("12a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _130877 {
             get {
                 object obj = ResourceManager.GetObject("130877", resourceCulture);
@@ -76,6 +86,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap _222_2226413_clipart_resolution_12541253_email_icon {
             get {
                 object obj = ResourceManager.GetObject("222-2226413_clipart-resolution-12541253-email-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _514cb82d9 {
+            get {
+                object obj = ResourceManager.GetObject("514cb82d9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,46 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap carregando2 {
             get {
                 object obj = ResourceManager.GetObject("carregando2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Como_criar_e_gerenciar_um_portfólio_de_inovação {
+            get {
+                object obj = ResourceManager.GetObject("Como-criar-e-gerenciar-um-portfólio-de-inovação", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap controle_estoque {
+            get {
+                object obj = ResourceManager.GetObject("controle_estoque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap criar_um_blog_670x419 {
+            get {
+                object obj = ResourceManager.GetObject("criar-um-blog-670x419", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Criar_um_ebook_e_ganhar_dinheiro_na_internet_1 {
+            get {
+                object obj = ResourceManager.GetObject("Criar-um-ebook-e-ganhar-dinheiro-na-internet-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +233,36 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__5_ {
+            get {
+                object obj = ResourceManager.GetObject("download (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap estoquue {
+            get {
+                object obj = ResourceManager.GetObject("estoquue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ferramenta_microsoft_slides {
+            get {
+                object obj = ResourceManager.GetObject("ferramenta-microsoft-slides", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gif_para_splash {
             get {
                 object obj = ResourceManager.GetObject("gif para splash", resourceCulture);
@@ -193,9 +283,40 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icone_financeiro__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icone-financeiro (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_computer_icons_estoque_clip_art_5af342d01d1e63_6870665815258917921193 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-computer-icons-estoque-clip-art-5af342d01d1e63.6870665815258917921193", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_syrma_technology_supply_chain_management_new_produ_syrma_robust_supply_chain_icon_electronic_manufa_5ba3953faa26b5_3025197715374472316969 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-syrma-technology-supply-chain-management-new-produ-syrma-robust-supply-ch" +
+                        "ain-icon-electronic-manufa-5ba3953faa26b5.3025197715374472316969", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +354,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mudança_de_identidade_visual_384x215 {
+            get {
+                object obj = ResourceManager.GetObject("mudança-de-identidade-visual-384x215", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap novo_plano {
             get {
                 object obj = ResourceManager.GetObject("novo plano", resourceCulture);
@@ -246,6 +377,66 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap oie_transparent {
             get {
                 object obj = ResourceManager.GetObject("oie_transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent__1_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent__6_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent1 {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap path12_1024x572_696x389 {
+            get {
+                object obj = ResourceManager.GetObject("path12-1024x572-696x389", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap people_02109c81 {
+            get {
+                object obj = ResourceManager.GetObject("people.02109c81", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap powerpoint_background {
+            get {
+                object obj = ResourceManager.GetObject("powerpoint-background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

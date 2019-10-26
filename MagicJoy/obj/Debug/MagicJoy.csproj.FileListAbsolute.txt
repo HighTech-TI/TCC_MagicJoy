@@ -67,11 +67,8 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Fin
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.Form1.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmFluxoDeCaixa.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaFolhaDePagamento.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsutarFuncionario.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmControleDePonto.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmFolhaDePagamento.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmCompras.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarCompras.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenuu.resources
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.exe
@@ -165,3 +162,7 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\MySql.Data.dll
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\EntityFramework.xml
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultarFuncionário.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmAlmoxarifado.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmVendas.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarVendas.resources

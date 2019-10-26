@@ -26,7 +26,7 @@ namespace MagicJoy.Telas.Login
                 tabela.ds_email = txtEmail.Text;
                 tabela.ds_cargo = txtCargo.Text;
                 tabela.nm_usuario = txtUsuario.Text;
-                tabela.nm_senha = txtUsuario.Text;
+                tabela.nm_senha = txtSenha.Text; 
 
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
                 Entityes.tb_usuario usuario = businesslog.PesquisarusuariosIguasi(txtUsuario.Text);

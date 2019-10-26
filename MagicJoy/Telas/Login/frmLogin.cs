@@ -48,6 +48,9 @@ namespace MagicJoy.Telas.Login
                 {
                     if (nome == usuario.nm_usuario && senha == usuario.nm_senha)
                     {
+                        Objetos.UsuarioLogado.Id = usuario.id_usuario;
+                        Objetos.UsuarioLogado.Nome = usuario.nm_usuario;
+
                         Telas.Menu.frmMenuu tela = new Menu.frmMenuu();
                         tela.Show();
                         this.Hide();
