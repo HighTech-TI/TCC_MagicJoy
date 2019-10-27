@@ -5,14 +5,15 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Menu
 {
-    public partial class frmMenuu : Form
+    public partial class menuFluxo : Form
     {
-        public frmMenuu()
+        public menuFluxo()
         {
             InitializeComponent();
 
@@ -55,16 +56,48 @@ namespace MagicJoy.Telas.Menu
         {
             label4.Text = DateTime.Today.ToShortDateString();
 
-            timer2.Start();
+            Thread t = new Thread(new ThreadStart(ChangeLabelColor));
+            t.Start();
 
+        }
+        private void ChangeLabelColor()
+        {
+            while(true)
+            {
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Maroon;
+                label6.ForeColor = Color.Maroon;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Pink;
+                label6.ForeColor = Color.Pink;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Purple;
+                label6.ForeColor = Color.Purple;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.BlueViolet;
+                label6.ForeColor = Color.BlueViolet;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Yellow;
+                label6.ForeColor = Color.Yellow;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Green;
+                label6.ForeColor = Color.Green;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.OrangeRed;
+                label6.ForeColor = Color.OrangeRed;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Blue;
+                label6.ForeColor = Color.Blue;
+                Thread.Sleep(1000);
+                label3.ForeColor = Color.Red;
+                label6.ForeColor = Color.Red;
+            }
            
-
-
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
@@ -80,116 +113,65 @@ namespace MagicJoy.Telas.Menu
         {
             
            
-            if(pic1.Visible == true)
-            {
-                pic2.Visible = true;
-                pic4.Visible = false;
-                pic5.Visible = false;
-                pic6.Visible = false;
-                lblDaMagic.Visible = false;
-                pic8.Visible = false;
-            }
-            if (pic4.Visible == true)
-            {
-                pic2.Visible = false;
-                pic4.Visible = false;
-                pic5.Visible = false;
-                pic6.Visible = false;
-                lblDaMagic.Visible = false;
-                pic8.Visible = false;
-            }
-            else if(pic2.Visible == true)
-            {
-                pic1.Visible = false;
-                pic4.Visible = false;
-                pic5.Visible = false;
-                pic6.Visible = false;
-                lblDaMagic.Visible = false;
-                pic8.Visible = false;
-            }
-            else if (pic5.Visible == true)
-            {
-                pic1.Visible = false;
-                pic4.Visible = false;
-                pic2.Visible = false;
-                pic6.Visible = false;
-                lblDaMagic.Visible = false;
-                pic8.Visible = false;
-            }
-            else if (pic6.Visible == true)
-            {
-                pic1.Visible = false;
-                pic4.Visible = false;
-                pic2.Visible = false;
-                pic5.Visible = false;
-                lblDaMagic.Visible = false;
-                pic8.Visible = false;
-            }
-            else if (lblDaMagic.Visible == true)
-            {
-                pic1.Visible = false;
-                pic4.Visible = false;
-                pic2.Visible = false;
-                pic5.Visible = false;
-                pic6.Visible = false;
-                pic8.Visible = false;
-            }
-            else if (pic8.Visible == true)
-            {
-                pic1.Visible = false;
-                pic4.Visible = false;
-                pic2.Visible = false;
-                pic5.Visible = false;
-                pic6.Visible = false;
-                lblDaMagic.Visible = false;
-            }
+            
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
 
 
-            bool loop = true;
+           
 
-            while (loop)
+            
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal)
             {
-                if (label3.ForeColor == Color.White && label4.ForeColor == Color.White)
-                {
-                    label3.ForeColor = Color.Maroon;
-                    label4.ForeColor = Color.Maroon;
-                }
-                if (label3.ForeColor == Color.Maroon && label4.ForeColor == Color.Maroon)
-                {
-                    label3.ForeColor = Color.Pink;
-                    label4.ForeColor = Color.Pink;
-                }
-                if (label3.ForeColor == Color.Pink && label4.ForeColor == Color.Pink)
-                {
-                    label3.ForeColor = Color.Purple;
-                    label4.ForeColor = Color.Purple;
-                }
-                if (label3.ForeColor == Color.Purple && label4.ForeColor == Color.Purple)
-                {
-                    label3.ForeColor = Color.BlueViolet;
-                    label4.ForeColor = Color.BlueViolet;
-                }
-                if (label3.ForeColor == Color.BlueViolet && label4.ForeColor == Color.BlueViolet)
-                {
-                    label3.ForeColor = Color.Yellow;
-                    label4.ForeColor = Color.Yellow;
-                }
-                if (label3.ForeColor == Color.Yellow && label4.ForeColor == Color.Yellow)
-                {
-                    label3.ForeColor = Color.Green;
-                    label4.ForeColor = Color.Green;
-                }
-                if (label3.ForeColor == Color.Yellow && label4.ForeColor == Color.Yellow)
-                {
-                    label3.ForeColor = Color.OrangeRed;
-                    label4.ForeColor = Color.OrangeRed;
-                }
-
+                this.WindowState = FormWindowState.Maximized;
             }
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void opçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            picfluxo.Visible = true;
+            menuFC.Visible = true;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            picCompra.Visible = true;
+            menuStrip1.Visible = true;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuFC_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
         }
     }

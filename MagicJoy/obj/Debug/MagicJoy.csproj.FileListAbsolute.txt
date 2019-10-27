@@ -69,7 +69,6 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Fin
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaFolhaDePagamento.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmControleDePonto.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmFolhaDePagamento.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenuu.resources
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.pdb
@@ -166,3 +165,4 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmAlmoxarifado.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmVendas.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarVendas.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.lbl1.resources

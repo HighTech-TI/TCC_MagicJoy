@@ -442,6 +442,27 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\fluxo de caixa.png" />
+    <None Include="Resources\Vendas.png" />
+    <None Include="Resources\produtos.png" />
+    <None Include="Resources\preço.png" />
+    <None Include="Resources\ocultar senha1.png" />
+    <None Include="Resources\Funcionários.png" />
+    <None Include="Resources\Fornecedores.png" />
+    <None Include="Resources\folha-de-pagamento.png" />
+    <None Include="Resources\fluco de caixa.jpg" />
+    <None Include="Resources\controle de ponto.png" />
+    <None Include="Resources\confirmar1.png" />
+    <None Include="Resources\compras.png" />
+    <None Include="Resources\clientes.png" />
+    <None Include="Resources\confirmar.png" />
+    <None Include="Resources\novo usuario.png" />
+    <None Include="Resources\the-background-1304388_960_720.png" />
+    <None Include="Resources\tela de fundo login.jpg" />
+    <None Include="Resources\background-atacado-semi-joias-2.jpg" />
+    <None Include="Resources\template-fundo-site-conseitos-opticos-4.jpg" />
+    <None Include="Resources\Senha.png" />
+    <None Include="Resources\ocultar senha.png" />
     <None Include="Resources\path12-1024x572-696x389.png" />
     <None Include="Resources\mudança-de-identidade-visual-384x215.jpg" />
     <None Include="Resources\ferramenta-microsoft-slides.jpg" />

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
@@ -44,24 +43,28 @@
             this.txtonfirmaao = new System.Windows.Forms.TextBox();
             this.lblsenhas = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Magic Joy";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(319, 157);
+            this.txtSenha.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenha.Location = new System.Drawing.Point(413, 159);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(0);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(207, 20);
@@ -69,21 +72,30 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(319, 99);
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Location = new System.Drawing.Point(412, 102);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(207, 20);
             this.txtEmail.TabIndex = 9;
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(320, 127);
+            this.txtCargo.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCargo.Location = new System.Drawing.Point(413, 130);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(0);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(207, 20);
             this.txtCargo.TabIndex = 10;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(316, 73);
+            this.txtUsuario.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsuario.Location = new System.Drawing.Point(413, 76);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(207, 20);
             this.txtUsuario.TabIndex = 7;
@@ -92,47 +104,56 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(233, 71);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(324, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "Usuário:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(243, 157);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(339, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(68, 25);
             this.label3.TabIndex = 12;
             this.label3.Text = "Senha:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(245, 99);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(334, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 20);
+            this.label4.Size = new System.Drawing.Size(75, 25);
             this.label4.TabIndex = 13;
             this.label4.Text = "E-mail:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(248, 125);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(343, 127);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 20);
+            this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 14;
             this.label5.Text = "Cargo:";
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::MagicJoy.Properties.Resources.download__4_;
-            this.pictureBox5.Location = new System.Drawing.Point(409, 214);
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::MagicJoy.Properties.Resources.confirmar;
+            this.pictureBox5.Location = new System.Drawing.Point(536, 222);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(49, 49);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -165,16 +186,21 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(115, 183);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(211, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 20);
+            this.label6.Size = new System.Drawing.Size(199, 25);
             this.label6.TabIndex = 18;
             this.label6.Text = "Confirmação de senha:";
             // 
             // txtonfirmaao
             // 
-            this.txtonfirmaao.Location = new System.Drawing.Point(320, 183);
+            this.txtonfirmaao.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtonfirmaao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtonfirmaao.Location = new System.Drawing.Point(413, 186);
+            this.txtonfirmaao.Margin = new System.Windows.Forms.Padding(0);
             this.txtonfirmaao.Name = "txtonfirmaao";
             this.txtonfirmaao.PasswordChar = '*';
             this.txtonfirmaao.Size = new System.Drawing.Size(207, 20);
@@ -184,9 +210,12 @@
             // lblsenhas
             // 
             this.lblsenhas.AutoSize = true;
-            this.lblsenhas.Location = new System.Drawing.Point(25, 235);
+            this.lblsenhas.BackColor = System.Drawing.Color.Transparent;
+            this.lblsenhas.Font = new System.Drawing.Font("High Tower Text", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsenhas.ForeColor = System.Drawing.Color.Red;
+            this.lblsenhas.Location = new System.Drawing.Point(231, 222);
             this.lblsenhas.Name = "lblsenhas";
-            this.lblsenhas.Size = new System.Drawing.Size(135, 13);
+            this.lblsenhas.Size = new System.Drawing.Size(217, 22);
             this.lblsenhas.TabIndex = 19;
             this.lblsenhas.Text = "Senhas não se conincidem";
             this.lblsenhas.Visible = false;
@@ -194,18 +223,109 @@
             // lblusuario
             // 
             this.lblusuario.AutoSize = true;
-            this.lblusuario.Location = new System.Drawing.Point(99, 76);
+            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblusuario.Font = new System.Drawing.Font("High Tower Text", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.Color.Red;
+            this.lblusuario.Location = new System.Drawing.Point(405, 45);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(128, 13);
+            this.lblusuario.Size = new System.Drawing.Size(225, 22);
             this.lblusuario.TabIndex = 20;
-            this.lblusuario.Text = "Nome de usuário já existe";
+            this.lblusuario.Text = "Nome de usuário existente";
             this.lblusuario.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(663, 32);
+            this.panel2.TabIndex = 21;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::MagicJoy.Properties.Resources.minimizar;
+            this.pictureBox3.Location = new System.Drawing.Point(604, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 59;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::MagicJoy.Properties.Resources._130877;
+            this.pictureBox4.Location = new System.Drawing.Point(635, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 60;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("High Tower Text", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(6, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 19);
+            this.label7.TabIndex = 58;
+            this.label7.Text = "Login";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Back to Black Bold Demo", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label1.Location = new System.Drawing.Point(43, 144);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 99);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Joy";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Back to Black Bold Demo", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(1, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(258, 99);
+            this.label8.TabIndex = 61;
+            this.label8.Text = "Magic ";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::MagicJoy.Properties.Resources._58387;
+            this.pictureBox6.Location = new System.Drawing.Point(481, 222);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(49, 49);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 63;
+            this.pictureBox6.TabStop = false;
             // 
             // frmNovoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 275);
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.the_background_1304388_960_720;
+            this.ClientSize = new System.Drawing.Size(663, 275);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.lblsenhas);
             this.Controls.Add(this.label6);
@@ -221,13 +341,17 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNovoUsuario";
             this.Text = "frmNovoUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +361,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCargo;
@@ -251,5 +374,12 @@
         private System.Windows.Forms.TextBox txtonfirmaao;
         private System.Windows.Forms.Label lblsenhas;
         private System.Windows.Forms.Label lblusuario;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
