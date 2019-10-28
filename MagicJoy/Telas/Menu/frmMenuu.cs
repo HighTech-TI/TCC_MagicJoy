@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Menu
 {
-    public partial class menuFluxo : Form
+    public partial class frmMenu : Form
     {
-        public menuFluxo()
+        public frmMenu()
         {
             InitializeComponent();
 
@@ -32,7 +32,7 @@ namespace MagicJoy.Telas.Menu
 
         private void pictureBox25_Click(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Maximized)
+            if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
             }
@@ -62,7 +62,7 @@ namespace MagicJoy.Telas.Menu
         }
         private void ChangeLabelColor()
         {
-            while(true)
+            while (true)
             {
                 Thread.Sleep(1000);
                 label3.ForeColor = Color.Maroon;
@@ -92,7 +92,7 @@ namespace MagicJoy.Telas.Menu
                 label3.ForeColor = Color.Red;
                 label6.ForeColor = Color.Red;
             }
-           
+
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -108,21 +108,21 @@ namespace MagicJoy.Telas.Menu
         private void pictureBox5_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
-        }       
+        }
         private void timer2_Tick(object sender, EventArgs e)
         {
-            
-           
-            
+
+
+
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
 
 
-           
 
-            
+
+
 
         }
 
@@ -133,7 +133,7 @@ namespace MagicJoy.Telas.Menu
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if(this.WindowState == FormWindowState.Normal)
+            if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
             }
@@ -171,6 +171,11 @@ namespace MagicJoy.Telas.Menu
         }
 
         private void menuFC_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void lblLogado_Click(object sender, EventArgs e)
         {
 
         }

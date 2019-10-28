@@ -53,6 +53,7 @@ namespace MagicJoy.Business
 
         public Entityes.tb_usuario PesquisarusuariosIguasi(string nome)
         {
+
             DataBase.LoginDataBase logdatabase = new DataBase.LoginDataBase();
             Entityes.tb_usuario usuario = logdatabase.PesquisarusuariosIguasi(nome);
 

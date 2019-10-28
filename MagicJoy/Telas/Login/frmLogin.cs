@@ -51,7 +51,7 @@ namespace MagicJoy.Telas.Login
                         Objetos.UsuarioLogado.Id = usuario.id_usuario;
                         Objetos.UsuarioLogado.Nome = usuario.nm_usuario;
 
-                        Telas.Menu.menuFluxo tela = new Menu.menuFluxo();
+                        Telas.Menu.frmMenu tela = new Menu.frmMenu();
                         tela.Show();
                         this.Hide();
                     }

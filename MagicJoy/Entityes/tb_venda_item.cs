@@ -12,12 +12,10 @@ namespace MagicJoy.Entityes
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_compra
+    public partial class tb_venda_item
     {
-        public int id_compras { get; set; }
-        public string nm_produto { get; set; }
-        public int qts_produtos { get; set; }
-        public decimal vl_total { get; set; }
-        public System.DateTime dt_compra { get; set; }
+        public int id_venda { get; set; }
+        public int tb_produto_venda_id_produto { get; set; }
+        public int tb_venda_id_venda { get; set; }
     }
 }

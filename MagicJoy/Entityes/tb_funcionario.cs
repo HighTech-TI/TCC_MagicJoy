@@ -25,5 +25,7 @@ namespace MagicJoy.Entityes
         public System.DateTime dt_demissao { get; set; }
         public int tb_beneficios_id_beneficios { get; set; }
         public int tb_beneficio_id_beneficios { get; set; }
+        public string ds_telefone { get; set; }
+        public string ds_celular { get; set; }
     }
 }

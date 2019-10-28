@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class DespesasDataBase
     {
-        Entityes.magicjoydbEntities14 db = new Entityes.magicjoydbEntities14();
+        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
         public void InserirDespesas(Entityes.tb_despesa despesas)
         {
 
@@ -41,7 +41,7 @@ namespace MagicJoy.DataBase.Financeiro
             Entityes.tb_despesa altera = db.tb_despesa.First(a => a.id_despesa == despesa.id_despesa);
             altera.ds_descricao = despesa.ds_descricao;
             altera.vl_valor = despesa.vl_valor;
-            altera.dt_vencimento = despesa.dt_vencimento;
+            altera.dt_datadevencimento = despesa.dt_datadevencimento;
 
 
             db.SaveChanges();
@@ -52,7 +52,7 @@ namespace MagicJoy.DataBase.Financeiro
             Entityes.tb_despesa altera = db.tb_despesa.First(a => a.ds_descricao == despesa.ds_descricao);
             altera.ds_descricao = despesa.ds_descricao;
             altera.vl_valor = despesa.vl_valor;
-            altera.dt_vencimento = despesa.dt_vencimento;
+            altera.dt_datadevencimento = despesa.dt_datadevencimento;
 
             db.SaveChanges();
         }

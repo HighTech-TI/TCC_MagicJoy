@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class ClienteDataBase
     {
-        Entityes.magicjoydbEntities14 db = new Entityes.magicjoydbEntities14();
+        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
         public void InserirClientes(Entityes.tb_cliente cliente)
         {
 
@@ -43,8 +43,8 @@ namespace MagicJoy.DataBase.Financeiro
             altera.ds_endereço = cliente.ds_endereço;
             altera.nm_nome = cliente.nm_nome;
             altera.dt_nascimento = cliente.dt_nascimento;
-            altera.ds_CPF = cliente.ds_CPF;
-            altera.tb_compra_id_compras = cliente.tb_compra_id_compras;            
+            altera.ds_cpf = cliente.ds_cpf;
+                     
 
             db.SaveChanges();
         }
@@ -56,8 +56,8 @@ namespace MagicJoy.DataBase.Financeiro
             altera.ds_endereço = cliente.ds_endereço;
             altera.nm_nome = cliente.nm_nome;
             altera.dt_nascimento = cliente.dt_nascimento;
-            altera.ds_CPF = cliente.ds_CPF;
-            altera.tb_compra_id_compras = cliente.tb_compra_id_compras;
+            altera.ds_cpf = cliente.ds_cpf;
+          
         }
         public void RemoverCliente(int id)
         {

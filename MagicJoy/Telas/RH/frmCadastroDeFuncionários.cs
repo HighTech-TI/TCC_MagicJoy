@@ -22,6 +22,7 @@ namespace MagicJoy.Telas.RH
             Entityes.tb_funcionario db = new Entityes.tb_funcionario();
 
             db.nm_nome = txtNome.Text;
+       
 
             Business.RH.FuncionarioBusiness businesslog = new Business.RH.FuncionarioBusiness();
             businesslog.InserirFuncionario(db);

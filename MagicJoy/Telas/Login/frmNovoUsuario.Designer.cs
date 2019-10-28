@@ -235,7 +235,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.label7);
@@ -284,11 +284,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Back to Black Bold Demo", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
             this.label1.Location = new System.Drawing.Point(43, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 99);
+            this.label1.Size = new System.Drawing.Size(135, 73);
             this.label1.TabIndex = 62;
             this.label1.Text = "Joy";
             // 
@@ -296,11 +296,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Back to Black Bold Demo", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1, 45);
+            this.label8.Location = new System.Drawing.Point(12, 71);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(258, 99);
+            this.label8.Size = new System.Drawing.Size(226, 73);
             this.label8.TabIndex = 61;
             this.label8.Text = "Magic ";
             // 
@@ -320,7 +320,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagicJoy.Properties.Resources.the_background_1304388_960_720;
             this.ClientSize = new System.Drawing.Size(663, 275);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label1);

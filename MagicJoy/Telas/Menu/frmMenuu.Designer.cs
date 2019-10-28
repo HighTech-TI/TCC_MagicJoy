@@ -1,6 +1,6 @@
 ﻿namespace MagicJoy.Telas.Menu
 {
-    partial class menuFluxo
+    partial class frmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -94,10 +94,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Digital-7 Italic", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(271, 51);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(279, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 64);
+            this.label1.Size = new System.Drawing.Size(284, 73);
             this.label1.TabIndex = 5;
             this.label1.Text = "00:00:00";
             // 
@@ -127,22 +127,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Back to Black Bold Demo", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(53, 74);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 74);
+            this.label6.Size = new System.Drawing.Size(102, 55);
             this.label6.TabIndex = 8;
             this.label6.Text = "Joy";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Back to Black Bold Demo", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(28, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 74);
+            this.label3.Size = new System.Drawing.Size(171, 55);
             this.label3.TabIndex = 7;
             this.label3.Text = "Magic ";
             // 
@@ -212,10 +212,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Digital-7 Italic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(296, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 33);
+            this.label4.Size = new System.Drawing.Size(189, 37);
             this.label4.TabIndex = 10;
             this.label4.Text = "00/00/0000";
             // 
@@ -223,14 +223,15 @@
             // 
             this.lblLogado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLogado.AutoSize = true;
-            this.lblLogado.BackColor = System.Drawing.Color.DarkBlue;
+            this.lblLogado.BackColor = System.Drawing.Color.Maroon;
             this.lblLogado.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblLogado.Font = new System.Drawing.Font("Barbecue Personal Use", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogado.Location = new System.Drawing.Point(559, 0);
+            this.lblLogado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogado.Location = new System.Drawing.Point(560, 9);
             this.lblLogado.Name = "lblLogado";
-            this.lblLogado.Size = new System.Drawing.Size(150, 34);
+            this.lblLogado.Size = new System.Drawing.Size(154, 16);
             this.lblLogado.TabIndex = 11;
             this.lblLogado.Text = "Seja Bem-Vindo [Nome]";
+            this.lblLogado.Click += new System.EventHandler(this.lblLogado_Click);
             // 
             // timer2
             // 
@@ -258,10 +259,10 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox5.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = global::MagicJoy.Properties.Resources.desligar;
-            this.pictureBox5.Location = new System.Drawing.Point(263, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(264, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -272,7 +273,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox4.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::MagicJoy.Properties.Resources.minimizar;
             this.pictureBox4.Location = new System.Drawing.Point(910, 4);
@@ -286,7 +287,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox3.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::MagicJoy.Properties.Resources.mazimizar_verdadeira;
             this.pictureBox3.Location = new System.Drawing.Point(941, 4);
@@ -300,7 +301,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox2.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::MagicJoy.Properties.Resources._130877;
             this.pictureBox2.Location = new System.Drawing.Point(972, 4);
@@ -313,7 +314,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(257, 0);
@@ -490,6 +491,7 @@
             this.menuFC.Size = new System.Drawing.Size(144, 24);
             this.menuFC.TabIndex = 1;
             this.menuFC.Text = "menuStrip3";
+            this.menuFC.Visible = false;
             this.menuFC.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuFC_ItemClicked);
             // 
             // opçõesFluxoDeCaixaToolStripMenuItem
@@ -498,11 +500,11 @@
             this.opçõesFluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.opçõesFluxoDeCaixaToolStripMenuItem.Text = "Opções - Fluxo de Caixa";
             // 
-            // menuFluxo
+            // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1002, 557);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -523,7 +525,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "menuFluxo";
+            this.Name = "frmMenu";
             this.Text = "frmMenuu";
             this.Load += new System.EventHandler(this.frmMenuu_Load);
             this.panel1.ResumeLayout(false);

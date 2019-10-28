@@ -17,6 +17,6 @@ namespace MagicJoy.Entityes
         public int id_despesa { get; set; }
         public decimal vl_valor { get; set; }
         public string ds_descricao { get; set; }
-        public System.DateTime dt_vencimento { get; set; }
+        public System.DateTime dt_datadevencimento { get; set; }
     }
 }

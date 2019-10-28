@@ -16,11 +16,10 @@ namespace MagicJoy.Entityes
     {
         public int id_cliente { get; set; }
         public string nm_nome { get; set; }
-        public int ds_telefone { get; set; }
+        public string ds_telefone { get; set; }
         public System.DateTime dt_nascimento { get; set; }
-        public decimal ds_CPF { get; set; }
+        public string ds_cpf { get; set; }
         public string ds_endereço { get; set; }
-        public int tb_vendas_cd_atributo { get; set; }
-        public int tb_compra_id_compras { get; set; }
+        public string ds_celular { get; set; }
     }
 }

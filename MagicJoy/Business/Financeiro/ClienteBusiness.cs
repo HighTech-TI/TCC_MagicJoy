@@ -8,15 +8,29 @@ namespace MagicJoy.Business.Financeiro
 {
     class ClienteBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void InserirCliente(Entityes.tb_cliente cliente)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+            if(cliente.nm_nome == string.Empty)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                throw new ArgumentException("Nome obrigatório");
             }
 
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
+            if(cliente.ds_cpf == string.Empty)
+            {
+                throw new ArgumentException("Cpf obrigatório");
+               
+            }
+            if(cliente.ds_endereço == string.Empty)
+            {
+                throw new ArgumentException("Endereço obrigatório");
+            }
+            if(cliente.ds_telefone == string.Empty)
+            {
+                throw new ArgumentException("Telefone obrigatório");
+            }
+            
+            DataBase.Financeiro.ClienteDataBase db = new DataBase.Financeiro.ClienteDataBase();
+            db.InserirClientes(cliente);
 
         }
 

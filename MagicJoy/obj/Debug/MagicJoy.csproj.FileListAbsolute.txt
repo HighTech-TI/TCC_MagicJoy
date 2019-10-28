@@ -141,7 +141,6 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Log
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Login.frmLogin.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Properties.Resources.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Login.frmNovoUsuario.resources
-C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenuu.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmCadastroDeFuncionários.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaControleDePonto.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaFolhaDePagamento.resources
@@ -166,3 +165,4 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Sup
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmVendas.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarVendas.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.lbl1.resources
+C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenu.resources
