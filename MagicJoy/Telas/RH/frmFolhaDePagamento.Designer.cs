@@ -179,11 +179,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(282, 61);
+            this.label15.Location = new System.Drawing.Point(269, 61);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(19, 13);
+            this.label15.Size = new System.Drawing.Size(32, 13);
             this.label15.TabIndex = 14;
-            this.label15.Text = "Irrf";
+            this.label15.Text = "IRRF";
             // 
             // textBox2
             // 
