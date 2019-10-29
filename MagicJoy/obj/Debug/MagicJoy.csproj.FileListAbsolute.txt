@@ -166,3 +166,6 @@ C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Sup
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmConsultarVendas.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.lbl1.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenu.resources
+C:\Users\infod14\Source\Repos\TCC_MagicJoy24\MagicJoy\bin\Debug\MagicJoy.exe.config
+C:\Users\infod14\Source\Repos\TCC_MagicJoy24\MagicJoy\obj\Debug\MagicJoy.exe
+C:\Users\infod14\Source\Repos\TCC_MagicJoy24\MagicJoy\obj\Debug\MagicJoy.pdb
