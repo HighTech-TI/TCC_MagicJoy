@@ -8,5 +8,16 @@ namespace MagicJoy.DataBase.Estoque
 {
     class EstoqueDataBase
     {
+        public List<Database.Entity.tb_estoque> ListarIdEstoque(int id)
+        {
+            if (id == 0)
+            {
+                throw new ArgumentException(" numero de id invalido");
+            }
+            EstoqueDataBase db = new EstoqueDataBase();
+            List<EstoqueDataBase.Entity.tb_estoque> est = db.ListarIdEstoque(id);
+
+            return Estoque;
+        }
     }
 }
