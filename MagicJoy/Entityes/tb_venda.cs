@@ -17,7 +17,7 @@ namespace MagicJoy.Entityes
         public int id_venda { get; set; }
         public string nm_produto { get; set; }
         public int qts_produtos { get; set; }
-        public System.DateTime dt_venda { get; set; }
+        public System.DateTime dt_compra { get; set; }
         public decimal vl_total { get; set; }
     }
 }

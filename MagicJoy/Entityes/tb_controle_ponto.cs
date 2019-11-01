@@ -16,10 +16,10 @@ namespace MagicJoy.Entityes
     {
         public int id_controle_ponto { get; set; }
         public int tb_funcionario_id_funcionario { get; set; }
+        public Nullable<System.DateTime> dt_dia { get; set; }
         public System.DateTime hr_entrada { get; set; }
         public System.DateTime hr_intervalo { get; set; }
         public System.DateTime hr_retorno { get; set; }
         public System.DateTime hr_saida { get; set; }
-        public System.DateTime dt_dia { get; set; }
     }
 }

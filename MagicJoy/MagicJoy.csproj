@@ -134,9 +134,6 @@
     <Compile Include="Entityes\tb_funcionario.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entityes\tb_pedido.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Entityes\tb_produto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -152,6 +149,7 @@
     <Compile Include="Entityes\tb_venda_item.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Objetos\EnviarEmail.cs" />
     <Compile Include="Objetos\SlidesMenu.cs" />
     <Compile Include="Objetos\UsuarioLogado.cs" />
     <Compile Include="Program.cs" />

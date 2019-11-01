@@ -15,19 +15,19 @@ namespace MagicJoy.Business.Financeiro
                 throw new ArgumentException("Nome obrigatório");
             }
 
-            if(cliente.ds_cpf == string.Empty)
-            {
-                throw new ArgumentException("Cpf obrigatório");
+            //if(cliente.ds_CPF == string.Empty)
+          //  {
+           //     throw new ArgumentException("Cpf obrigatório");
                
-            }
+         //   }
             if(cliente.ds_endereço == string.Empty)
             {
                 throw new ArgumentException("Endereço obrigatório");
             }
-            if(cliente.ds_telefone == string.Empty)
-            {
-                throw new ArgumentException("Telefone obrigatório");
-            }
+           // if(cliente.ds_telefone == string.Empty)
+           // {
+           //     throw new ArgumentException("Telefone obrigatório");
+           // }
             
             DataBase.Financeiro.ClienteDataBase db = new DataBase.Financeiro.ClienteDataBase();
             db.InserirClientes(cliente);
