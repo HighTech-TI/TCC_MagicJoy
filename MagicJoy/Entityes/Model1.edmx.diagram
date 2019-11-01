@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4f59fa3d2a264545ae379e258d7e4415" Name="Diagram1">
+      <Diagram DiagramId="822dd2af45644f5cbf2013c925ce4d71" Name="Diagram1">
         <EntityTypeShape EntityType="magicjoydbModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_cliente" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_compra" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
@@ -15,12 +15,11 @@
         <EntityTypeShape EntityType="magicjoydbModel.tb_folha_pagamento" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_fornecedor" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_funcionario" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_pedido" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_produto" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_produto_venda" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_usuario" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_venda" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_venda_item" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_produto" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_produto_venda" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_usuario" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_venda" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_venda_item" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

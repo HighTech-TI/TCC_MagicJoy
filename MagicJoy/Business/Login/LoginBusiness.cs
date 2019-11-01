@@ -60,8 +60,18 @@ namespace MagicJoy.Business
             return usuario;
 
         }
+        public void Alterar(Entityes.tb_usuario usuario)
+        {
+            DataBase.LoginDataBase db = new DataBase.LoginDataBase();
+            db.AlterarDadosUsuario(usuario);
 
+        }
+        public Entityes.tb_usuario PesquisarParaEmail(string email)
+        {
+            DataBase.LoginDataBase gdatabloase = new DataBase.LoginDataBase();
+            Entityes.tb_usuario usuario = gdatabloase.PesquisarParaRecuperar(email);
 
-
+            return usuario;
+        }
     }
 }

@@ -5,7 +5,13 @@
       <PropertyRef Name="id_beneficios" />
     </Key>
     <Property Name="id_beneficios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vl_valerefeicao" Type="Decimal" Nullable="false" />
+    <Property Name="vl_alimentacao" Type="Decimal" Nullable="false" />
     <Property Name="vl_transporte" Type="Decimal" Nullable="false" />
+    <Property Name="ds_sugurodevida" Type="Boolean" Nullable="false" />
+    <Property Name="ds_odonto" Type="Boolean" Nullable="false" />
+    <Property Name="ds_saude" Type="Boolean" Nullable="false" />
+    <Property Name="ds_periculosidade" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_cliente">
     <Key>
@@ -13,20 +19,22 @@
     </Key>
     <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_telefone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_telefone" Type="Int32" Nullable="false" />
     <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-    <Property Name="ds_cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_CPF" Type="Decimal" Nullable="false" />
     <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_celular" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tb_vendas_cd_atributo" Type="Int32" Nullable="false" />
+    <Property Name="tb_compra_id_compras" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_compra">
     <Key>
       <PropertyRef Name="id_compras" />
     </Key>
-    <Property Name="id_compras" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_compras" Type="Int32" Nullable="false" />
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="qts_produtos" Type="Int32" Nullable="false" />
     <Property Name="vl_total" Type="Decimal" Nullable="false" />
+    <Property Name="ds_frete" Type="Decimal" Nullable="false" />
     <Property Name="dt_compra" Type="DateTime" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_compra_item">
@@ -43,11 +51,11 @@
     </Key>
     <Property Name="id_controle_ponto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tb_funcionario_id_funcionario" Type="Int32" Nullable="false" />
+    <Property Name="dt_dia" Type="DateTime" />
     <Property Name="hr_entrada" Type="DateTime" Nullable="false" />
     <Property Name="hr_intervalo" Type="DateTime" Nullable="false" />
     <Property Name="hr_retorno" Type="DateTime" Nullable="false" />
     <Property Name="hr_saida" Type="DateTime" Nullable="false" />
-    <Property Name="dt_dia" Type="DateTime" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_despesa">
     <Key>
@@ -74,14 +82,12 @@
     </Key>
     <Property Name="id_folha_pagamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_funcionario" Type="Int32" Nullable="false" />
+    <Property Name="vl_salario_liquido" Type="Decimal" Nullable="false" />
+    <Property Name="vl_salario_bruto" Type="Decimal" Nullable="false" />
     <Property Name="ds_faltas" Type="Int32" Nullable="false" />
-    <Property Name="vl_fgts" Type="Decimal" Nullable="false" />
-    <Property Name="ds_inss" Type="Decimal" Nullable="false" />
-    <Property Name="vl_irrf" Type="Decimal" Nullable="false" />
-    <Property Name="vl_salario_familia" Type="Decimal" Nullable="false" />
-    <Property Name="vl_VT" Type="Decimal" Nullable="false" />
-    <Property Name="ds_ferias" Type="Int32" Nullable="false" />
-    <Property Name="vl_13_" Type="Decimal" Nullable="false" />
+    <Property Name="ds_gratificacao" Type="Decimal" Nullable="false" />
+    <Property Name="ds_plr" Type="Decimal" />
+    <Property Name="hr_extras" Type="Int32" />
   </EntityType>
   <EntityType Name="tb_fornecedor">
     <Key>
@@ -89,14 +95,11 @@
     </Key>
     <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nm_fornecedor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_cnpj" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nm_CNPJ_CPF" Type="Decimal" Nullable="false" />
     <Property Name="ds_endereço" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_telefone" Type="Decimal" Nullable="false" />
     <Property Name="ds_email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="tb_pedido_id_pedido" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_funcionario">
     <Key>
@@ -111,19 +114,7 @@
     <Property Name="ds_endereco" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_admissao" Type="DateTime" Nullable="false" />
     <Property Name="dt_demissao" Type="DateTime" Nullable="false" />
-    <Property Name="tb_beneficios_id_beneficios" Type="Int32" Nullable="false" />
     <Property Name="tb_beneficio_id_beneficios" Type="Int32" Nullable="false" />
-    <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-  </EntityType>
-  <EntityType Name="tb_pedido">
-    <Key>
-      <PropertyRef Name="id_pedido" />
-    </Key>
-    <Property Name="id_pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_pedido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="nm_pedinte" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="dt_pedido" Type="DateTime" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -152,6 +143,7 @@
     <Property Name="nm_senha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_email" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cargo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_recuperacao" Type="Int32" />
   </EntityType>
   <EntityType Name="tb_venda">
     <Key>
@@ -160,7 +152,7 @@
     <Property Name="id_venda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="qts_produtos" Type="Int32" Nullable="false" />
-    <Property Name="dt_venda" Type="DateTime" Nullable="false" />
+    <Property Name="dt_compra" Type="DateTime" Nullable="false" />
     <Property Name="vl_total" Type="Decimal" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_venda_item">
@@ -171,7 +163,7 @@
     <Property Name="tb_produto_venda_id_produto" Type="Int32" Nullable="false" />
     <Property Name="tb_venda_id_venda" Type="Int32" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="magicjoydbEntities18" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="magicjoydbEntities19" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -182,7 +174,6 @@
     <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" />
     <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" />
     <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" />
-    <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" />
     <EntitySet Name="tb_produto" EntityType="Self.tb_produto" />
     <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" />
     <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" />
