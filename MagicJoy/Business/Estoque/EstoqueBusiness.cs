@@ -16,7 +16,7 @@ namespace MagicJoy.Business.Estoque
             }
 
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            db.InserirEstoque(Estoque);
+            db.InserirEstoque(estoque);
 
         }
 
@@ -28,41 +28,29 @@ namespace MagicJoy.Business.Estoque
             return pesquisa;
         }
 
-        public List<Entityes.tb_estoque> PesquisarPorData(int id)
-        {
-            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
-            List<Entityes.tb_estoque> pesquisa = ddb.PesquisarPorid(id);
-
-            return pesquisa;
-        }
         public List<Entityes.tb_estoque> PesquisarPorID(int id)
         {
             DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
-            List<Entityes.tb_estoque> pesquisa = ddb.PesquisarPorId(id);
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarIdEstoque(id);
 
             return pesquisa;
         }
         public void Alterar(Entityes.tb_estoque estoque)
         {
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            db.Alterarestoque(estoque);
+            db.AlterarEstoque(estoque);
 
         }
         public void AlterarPorData(Entityes.tb_controle_ponto ponto)
         {
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            db.AlterarEstoquePorId(Estoque);
+            //db.AlterarEstoquePorId(Estoque);
 
         }
-        public void Remover(int id)
+        public void Remover(Entityes.tb_estoque estoque)
         {
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            db.Removerestoque(id);
-        }
-        public void RemoverPorId(int id)
-        {
-            DataBase.Estoque.es db = new DataBase.Estoque.EstoqueDataBase();
-            db.RemoverEstoque(id);
+            db.RemoverEstoque(estoque);
         }
     }
 }

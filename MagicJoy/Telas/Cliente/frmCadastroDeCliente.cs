@@ -23,11 +23,12 @@ namespace MagicJoy.Telas.Cliente
 
             txtnome.Text = tabela.nm_nome;
             txtendereco.Text = tabela.ds_endereço;
-            txtcpf.Text = tabela.ds_cpf;
             dtpnascimento.MinDate = tabela.dt_nascimento;
             mkttele.Text = tabela.ds_telefone;
             mktcell.Text = tabela.ds_celular;
-           
+            DataBase.Financeiro.ClienteDataBase.Cpf(txtcpf.Text);
+            string cpf = DataBase.Financeiro.ClienteDataBase.maskCpf(txtcpf.Text);
+            cpf = tabela.ds_cpf;
 
             Business.Financeiro.ClienteBusiness business = new Business.Financeiro.ClienteBusiness();
             business.InserirCliente(tabela);
@@ -35,6 +36,11 @@ namespace MagicJoy.Telas.Cliente
             MessageBox.Show("Cliente inserido com sucesso");
 
             
+        }
+
+        private void txtcpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
