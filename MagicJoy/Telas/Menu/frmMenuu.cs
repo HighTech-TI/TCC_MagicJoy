@@ -155,14 +155,12 @@ namespace MagicJoy.Telas.Menu
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            picfluxo.Visible = true;
-            menuFC.Visible = true;
+           
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            picCompra.Visible = true;
-            menuStrip1.Visible = true;
+            
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class ControleDePontoDataBase
     {
-        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
+        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
         public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
         {
 

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class ClienteDataBase
     {
-        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
+        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
         public void InserirClientes(Entityes.tb_cliente cliente)
         {
 

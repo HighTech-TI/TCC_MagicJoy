@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class FuncionarioDataBase
     {
-        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
+        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
         public void InserirFuncionario(Entityes.tb_funcionario funcionario)
         {
 

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities19 db = new Entityes.magicjoydbEntities19();
+        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -66,7 +66,7 @@ namespace MagicJoy.DataBase
             //Salvando o codigo no banco
             //
            Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.id_usuario == tb.id_usuario);
-            alterar.ds_recuperacao = Cod;
+           // alterar.ds_recuperacao = Cod;
             db.SaveChanges();
 
         }

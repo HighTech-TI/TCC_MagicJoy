@@ -30,10 +30,10 @@ namespace MagicJoy.Telas.RH
 
                 db.tb_funcionario_id_funcionario = Convert.ToInt32(nudId.Value);
                 db.dt_dia = dtDia.Value;
-                db.hr_entrada = dtpEntrada.Value;
-                db.hr_intervalo = dtpIntervalo.Value;
-                db.hr_retorno = dtpRetornoIntervalo.Value;
-                db.hr_saida = dtpSaida.Value;
+               // db.hr_entrada = dtpEntrada.Value;
+              //  db.hr_intervalo = dtpIntervalo.Value;
+              //  db.hr_retorno = dtpRetornoIntervalo.Value;
+               // db.hr_saida = dtpSaida.Value;
 
                 Business.RH.ControleDePontoBusiness businesslog = new Business.RH.ControleDePontoBusiness();
                 businesslog.InserirControleDePonto(db);

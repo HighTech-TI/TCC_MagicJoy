@@ -19,6 +19,5 @@ namespace MagicJoy.Entityes
         public string nm_senha { get; set; }
         public string ds_email { get; set; }
         public string ds_cargo { get; set; }
-        public Nullable<int> ds_recuperacao { get; set; }
     }
 }

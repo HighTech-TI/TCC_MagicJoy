@@ -53,22 +53,6 @@
             this.picVenda = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuFC = new System.Windows.Forms.MenuStrip();
-            this.opçõesFluxoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -84,11 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
-            this.menuFC.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -373,142 +352,12 @@
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Visible = false;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.menuStrip1);
-            this.panel2.Location = new System.Drawing.Point(443, 151);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(144, 27);
-            this.panel2.TabIndex = 17;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opçõesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(144, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
-            // 
-            // opçõesToolStripMenuItem
-            // 
-            this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.alterarToolStripMenuItem,
-            this.removerToolStripMenuItem});
-            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.opçõesToolStripMenuItem.Text = "Opções - Compras";
-            this.opçõesToolStripMenuItem.Click += new System.EventHandler(this.opçõesToolStripMenuItem_Click);
-            // 
-            // cadastrarToolStripMenuItem
-            // 
-            this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.cadastrarToolStripMenuItem.Text = "Cadastrar";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // alterarToolStripMenuItem
-            // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // removerToolStripMenuItem
-            // 
-            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
-            this.removerToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.removerToolStripMenuItem.Text = "Remover";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.menuStrip2);
-            this.panel3.Controls.Add(this.menuFC);
-            this.panel3.Location = new System.Drawing.Point(443, 242);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(144, 27);
-            this.panel3.TabIndex = 18;
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(144, 24);
-            this.menuStrip2.TabIndex = 0;
-            this.menuStrip2.Text = "menuStrip2";
-            this.menuStrip2.Visible = false;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(118, 20);
-            this.toolStripMenuItem1.Text = "Opções - Compras";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
-            this.toolStripMenuItem2.Text = "Cadastrar";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
-            this.toolStripMenuItem3.Text = "Consultar";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(125, 22);
-            this.toolStripMenuItem4.Text = "Alterar";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(125, 22);
-            this.toolStripMenuItem5.Text = "Remover";
-            // 
-            // menuFC
-            // 
-            this.menuFC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opçõesFluxoDeCaixaToolStripMenuItem});
-            this.menuFC.Location = new System.Drawing.Point(0, 0);
-            this.menuFC.Name = "menuFC";
-            this.menuFC.Size = new System.Drawing.Size(144, 24);
-            this.menuFC.TabIndex = 1;
-            this.menuFC.Text = "menuStrip3";
-            this.menuFC.Visible = false;
-            this.menuFC.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuFC_ItemClicked);
-            // 
-            // opçõesFluxoDeCaixaToolStripMenuItem
-            // 
-            this.opçõesFluxoDeCaixaToolStripMenuItem.Name = "opçõesFluxoDeCaixaToolStripMenuItem";
-            this.opçõesFluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
-            this.opçõesFluxoDeCaixaToolStripMenuItem.Text = "Opções - Fluxo de Caixa";
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1002, 557);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.picVenda);
@@ -525,7 +374,6 @@
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
             this.Text = "frmMenuu";
             this.Load += new System.EventHandler(this.frmMenuu_Load);
@@ -545,16 +393,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picVenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
-            this.menuFC.ResumeLayout(false);
-            this.menuFC.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -585,21 +423,5 @@
         private System.Windows.Forms.PictureBox picVenda;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.MenuStrip menuFC;
-        private System.Windows.Forms.ToolStripMenuItem opçõesFluxoDeCaixaToolStripMenuItem;
     }
 }

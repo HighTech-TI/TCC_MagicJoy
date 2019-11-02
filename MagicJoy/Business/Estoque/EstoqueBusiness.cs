@@ -10,9 +10,21 @@ namespace MagicJoy.Business.Estoque
     {
         public void InserirEstoque(Entityes.tb_estoque estoque)
         {
-            if (estoque.id_estoque == 0)
+            if (estoque.nm_produto == string.Empty)
             {
-                throw new ArgumentException("Selecione o ID do produto");
+                throw new ArgumentException("Nome do produto é obrigatório");
+            }
+            if(estoque.ds_qtd == 0)
+            {
+                throw new ArgumentException("Quantidade do produto é obrigatório");
+            }
+            if(estoque.vl_custo == 0)
+            {
+                throw new ArgumentException("Valor de custo é obrigatório");
+            }
+            if(estoque.tb_Fornecedor_id_fornecedor == 0)
+            {
+                throw new ArgumentException("Id do fornecedor é obrigatório");
             }
 
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();

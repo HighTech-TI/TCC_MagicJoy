@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Suprimentos
 {
     class FornecedorDataBase
     {
-        Entityes.magicjoydbEntities18 db = new Entityes.magicjoydbEntities18();
+        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
        
         public void InserirForncedor(Entityes.tb_fornecedor fornecedor)
         {

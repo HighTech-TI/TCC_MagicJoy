@@ -30,17 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtqtds = new System.Windows.Forms.TextBox();
+            this.txtvlcusto = new System.Windows.Forms.TextBox();
+            this.txtproduto = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.nudidforncedor = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudidforncedor)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 135);
+            this.label1.Location = new System.Drawing.Point(58, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 3;
@@ -59,136 +58,105 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 84);
+            this.label6.Location = new System.Drawing.Point(32, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = "Quantidade:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(291, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 16);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Preço Da Venda:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(297, 84);
+            this.label3.Location = new System.Drawing.Point(12, 125);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 16);
+            this.label3.Size = new System.Drawing.Size(112, 16);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Preço Do Custo:";
+            this.label3.Text = "Valor de custo:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(105, 189);
+            this.label2.Location = new System.Drawing.Point(12, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 16);
+            this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Id:";
+            this.label2.Text = "Id do forncedor:";
             // 
-            // button1
+            // txtqtds
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(227, 243);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 41);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtqtds.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtqtds.Location = new System.Drawing.Point(135, 88);
+            this.txtqtds.Name = "txtqtds";
+            this.txtqtds.Size = new System.Drawing.Size(100, 20);
+            this.txtqtds.TabIndex = 21;
             // 
-            // textBox5
+            // txtvlcusto
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(136, 80);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 21;
+            this.txtvlcusto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtvlcusto.Location = new System.Drawing.Point(135, 125);
+            this.txtvlcusto.Name = "txtvlcusto";
+            this.txtvlcusto.Size = new System.Drawing.Size(100, 20);
+            this.txtvlcusto.TabIndex = 24;
             // 
-            // textBox1
+            // txtproduto
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(136, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
+            this.txtproduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtproduto.Location = new System.Drawing.Point(135, 50);
+            this.txtproduto.Name = "txtproduto";
+            this.txtproduto.Size = new System.Drawing.Size(160, 20);
+            this.txtproduto.TabIndex = 25;
             // 
-            // textBox2
+            // dataGridView1
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(423, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 23;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(301, 33);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(376, 255);
+            this.dataGridView1.TabIndex = 26;
             // 
-            // textBox3
+            // btnsalvar
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(423, 80);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
+            this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalvar.Location = new System.Drawing.Point(21, 232);
+            this.btnsalvar.Name = "btnsalvar";
+            this.btnsalvar.Size = new System.Drawing.Size(103, 41);
+            this.btnsalvar.TabIndex = 28;
+            this.btnsalvar.Text = "Salvar";
+            this.btnsalvar.UseVisualStyleBackColor = true;
+            this.btnsalvar.Click += new System.EventHandler(this.Salvar_Click);
             // 
-            // textBox4
+            // nudidforncedor
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(136, 131);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(325, 189);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 16);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Fornecedor:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(423, 185);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 27;
+            this.nudidforncedor.Location = new System.Drawing.Point(135, 169);
+            this.nudidforncedor.Name = "nudidforncedor";
+            this.nudidforncedor.Size = new System.Drawing.Size(62, 20);
+            this.nudidforncedor.TabIndex = 29;
             // 
             // frmInserirEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 350);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(689, 299);
+            this.Controls.Add(this.nudidforncedor);
+            this.Controls.Add(this.btnsalvar);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtproduto);
+            this.Controls.Add(this.txtvlcusto);
+            this.Controls.Add(this.txtqtds);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInserirEstoque";
             this.Text = "frmInserirEstoque";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudidforncedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,16 +166,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtqtds;
+        private System.Windows.Forms.TextBox txtvlcusto;
+        private System.Windows.Forms.TextBox txtproduto;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnsalvar;
+        private System.Windows.Forms.NumericUpDown nudidforncedor;
     }
 }

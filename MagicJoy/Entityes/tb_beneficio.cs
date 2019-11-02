@@ -15,12 +15,6 @@ namespace MagicJoy.Entityes
     public partial class tb_beneficio
     {
         public int id_beneficios { get; set; }
-        public decimal vl_valerefeicao { get; set; }
-        public decimal vl_alimentacao { get; set; }
         public decimal vl_transporte { get; set; }
-        public bool ds_sugurodevida { get; set; }
-        public bool ds_odonto { get; set; }
-        public bool ds_saude { get; set; }
-        public bool ds_periculosidade { get; set; }
     }
 }

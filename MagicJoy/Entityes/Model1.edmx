@@ -4,19 +4,13 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="magicjoydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="magicjoydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_beneficio">
           <Key>
             <PropertyRef Name="id_beneficios" />
           </Key>
           <Property Name="id_beneficios" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="vl_valerefeicao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-          <Property Name="vl_alimentacao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
           <Property Name="vl_transporte" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-          <Property Name="ds_sugurodevida" Type="bool" Nullable="false" />
-          <Property Name="ds_odonto" Type="bool" Nullable="false" />
-          <Property Name="ds_saude" Type="bool" Nullable="false" />
-          <Property Name="ds_periculosidade" Type="bool" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_cliente">
           <Key>
@@ -24,22 +18,23 @@
           </Key>
           <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
-          <Property Name="ds_telefone" Type="int" Nullable="false" />
+          <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
-          <Property Name="ds_CPF" Type="decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="ds_cpf" Type="decimal" Precision="11" Scale="0" Nullable="false" />
           <Property Name="ds_endereço" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="tb_vendas_cd_atributo" Type="int" Nullable="false" />
           <Property Name="tb_compra_id_compras" Type="int" Nullable="false" />
+          <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="ds_rg" Type="varchar" MaxLength="15" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
             <PropertyRef Name="id_compras" />
           </Key>
-          <Property Name="id_compras" Type="int" Nullable="false" />
+          <Property Name="id_compras" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="qts_produtos" Type="int" Nullable="false" />
           <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-          <Property Name="ds_frete" Type="decimal" Precision="15" Scale="2" Nullable="false" />
           <Property Name="dt_compra" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_compra_item">
@@ -56,11 +51,11 @@
           </Key>
           <Property Name="id_controle_ponto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tb_funcionario_id_funcionario" Type="int" Nullable="false" />
-          <Property Name="dt_dia" Type="date" />
-          <Property Name="hr_entrada" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="hr_intervalo" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="hr_retorno" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="hr_saida" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="hr_entrada" Type="time" Precision="0" Nullable="false" />
+          <Property Name="hr_intervalo" Type="time" Precision="0" Nullable="false" />
+          <Property Name="hr_retorno" Type="time" Precision="0" Nullable="false" />
+          <Property Name="hr_saida" Type="time" Precision="0" Nullable="false" />
+          <Property Name="dt_dia" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_despesa">
           <Key>
@@ -70,6 +65,8 @@
           <Property Name="vl_valor" Type="decimal" Precision="15" Scale="2" Nullable="false" />
           <Property Name="ds_descricao" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="dt_datadevencimento" Type="date" Nullable="false" />
+          <Property Name="vl_despesa" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="dt_pagamento" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_estoque">
           <Key>
@@ -87,12 +84,18 @@
           </Key>
           <Property Name="id_folha_pagamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_funcionario" Type="int" Nullable="false" />
-          <Property Name="vl_salario_liquido" Type="decimal" Precision="10" Scale="0" Nullable="false" />
-          <Property Name="vl_salario_bruto" Type="decimal" Precision="10" Scale="0" Nullable="false" />
           <Property Name="ds_faltas" Type="int" Nullable="false" />
-          <Property Name="ds_gratificacao" Type="decimal" Precision="15" Scale="2" Nullable="false" />
-          <Property Name="ds_plr" Type="decimal" Precision="15" Scale="2" />
-          <Property Name="hr_extras" Type="int" />
+          <Property Name="vl_fgts" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="ds_inss" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="vl_irrf" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="vl_salario_familia" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="vl_VT" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="ds_ferias" Type="int" Nullable="false" />
+          <Property Name="vl_13°" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="vl_liquido" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="vl_bruto" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="dt_pagamento" Type="date" Nullable="false" />
+          <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_fornecedor">
           <Key>
@@ -100,11 +103,14 @@
           </Key>
           <Property Name="id_fornecedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_fornecedor" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="nm_CNPJ_CPF" Type="decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="ds_cnpj" Type="varchar" MaxLength="11" Nullable="false" />
           <Property Name="ds_endereço" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="ds_telefone" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="ds_email" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="tb_pedido_id_pedido" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
@@ -119,7 +125,19 @@
           <Property Name="ds_endereco" Type="varchar" MaxLength="60" Nullable="false" />
           <Property Name="dt_admissao" Type="date" Nullable="false" />
           <Property Name="dt_demissao" Type="date" Nullable="false" />
+          <Property Name="tb_beneficios_id_beneficios" Type="int" Nullable="false" />
           <Property Name="tb_beneficio_id_beneficios" Type="int" Nullable="false" />
+          <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_pedido">
+          <Key>
+            <PropertyRef Name="id_pedido" />
+          </Key>
+          <Property Name="id_pedido" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nm_pedido" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="nm_pedinte" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="dt_pedido" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
@@ -148,7 +166,6 @@
           <Property Name="nm_senha" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="ds_email" Type="varchar" MaxLength="65" Nullable="false" />
           <Property Name="ds_cargo" Type="varchar" MaxLength="45" Nullable="false" />
-          <Property Name="ds_recuperacao" Type="int" />
         </EntityType>
         <EntityType Name="tb_venda">
           <Key>
@@ -157,7 +174,7 @@
           <Property Name="id_venda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="qts_produtos" Type="int" Nullable="false" />
-          <Property Name="dt_compra" Type="date" Nullable="false" />
+          <Property Name="dt_venda" Type="date" Nullable="false" />
           <Property Name="vl_total" Type="decimal" Precision="15" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_venda_item">
@@ -167,6 +184,17 @@
           <Property Name="id_venda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tb_produto_venda_id_produto" Type="int" Nullable="false" />
           <Property Name="tb_venda_id_venda" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.magicjoydb.vw_fuxo_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_fuxo_caixa">
+          <Key>
+            <PropertyRef Name="dt_pagamento" />
+            <PropertyRef Name="tp_operacao" />
+          </Key>
+          <Property Name="dt_pagamento" Type="date" Nullable="false" />
+          <Property Name="vl_total" Type="double" />
+          <Property Name="tp_operacao" Type="varchar" MaxLength="7" Nullable="false" />
         </EntityType>
         <EntityContainer Name="magicjoydbModelStoreContainer">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="magicjoydb" store:Type="Tables" />
@@ -179,11 +207,19 @@
           <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="magicjoydb" store:Type="Tables" />
+          <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_venda" EntityType="Self.tb_venda" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" Schema="magicjoydb" store:Type="Tables" />
+          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" store:Type="Views" store:Schema="magicjoydb">
+            <DefiningQuery>SELECT
+`vw_fuxo_caixa`.`dt_pagamento`, 
+`vw_fuxo_caixa`.`vl_total`, 
+`vw_fuxo_caixa`.`tp_operacao`
+FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -195,13 +231,7 @@
             <PropertyRef Name="id_beneficios" />
           </Key>
           <Property Name="id_beneficios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="vl_valerefeicao" Type="Decimal" Nullable="false" />
-          <Property Name="vl_alimentacao" Type="Decimal" Nullable="false" />
           <Property Name="vl_transporte" Type="Decimal" Nullable="false" />
-          <Property Name="ds_sugurodevida" Type="Boolean" Nullable="false" />
-          <Property Name="ds_odonto" Type="Boolean" Nullable="false" />
-          <Property Name="ds_saude" Type="Boolean" Nullable="false" />
-          <Property Name="ds_periculosidade" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_cliente">
           <Key>
@@ -209,22 +239,23 @@
           </Key>
           <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_telefone" Type="Int32" Nullable="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-          <Property Name="ds_CPF" Type="Decimal" Nullable="false" />
+          <Property Name="ds_cpf" Type="Decimal" Nullable="false" />
           <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="tb_vendas_cd_atributo" Type="Int32" Nullable="false" />
           <Property Name="tb_compra_id_compras" Type="Int32" Nullable="false" />
+          <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
             <PropertyRef Name="id_compras" />
           </Key>
-          <Property Name="id_compras" Type="Int32" Nullable="false" />
+          <Property Name="id_compras" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="qts_produtos" Type="Int32" Nullable="false" />
           <Property Name="vl_total" Type="Decimal" Nullable="false" />
-          <Property Name="ds_frete" Type="Decimal" Nullable="false" />
           <Property Name="dt_compra" Type="DateTime" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_compra_item">
@@ -241,11 +272,11 @@
           </Key>
           <Property Name="id_controle_ponto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tb_funcionario_id_funcionario" Type="Int32" Nullable="false" />
-          <Property Name="dt_dia" Type="DateTime" />
-          <Property Name="hr_entrada" Type="DateTime" Nullable="false" />
-          <Property Name="hr_intervalo" Type="DateTime" Nullable="false" />
-          <Property Name="hr_retorno" Type="DateTime" Nullable="false" />
-          <Property Name="hr_saida" Type="DateTime" Nullable="false" />
+          <Property Name="hr_entrada" Type="Time" Nullable="false" />
+          <Property Name="hr_intervalo" Type="Time" Nullable="false" />
+          <Property Name="hr_retorno" Type="Time" Nullable="false" />
+          <Property Name="hr_saida" Type="Time" Nullable="false" />
+          <Property Name="dt_dia" Type="DateTime" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_despesa">
           <Key>
@@ -255,6 +286,8 @@
           <Property Name="vl_valor" Type="Decimal" Nullable="false" />
           <Property Name="ds_descricao" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_datadevencimento" Type="DateTime" Nullable="false" />
+          <Property Name="vl_despesa" Type="Decimal" Nullable="false" />
+          <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_estoque">
           <Key>
@@ -272,12 +305,18 @@
           </Key>
           <Property Name="id_folha_pagamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="id_funcionario" Type="Int32" Nullable="false" />
-          <Property Name="vl_salario_liquido" Type="Decimal" Nullable="false" />
-          <Property Name="vl_salario_bruto" Type="Decimal" Nullable="false" />
           <Property Name="ds_faltas" Type="Int32" Nullable="false" />
-          <Property Name="ds_gratificacao" Type="Decimal" Nullable="false" />
-          <Property Name="ds_plr" Type="Decimal" />
-          <Property Name="hr_extras" Type="Int32" />
+          <Property Name="vl_fgts" Type="Decimal" Nullable="false" />
+          <Property Name="ds_inss" Type="Decimal" Nullable="false" />
+          <Property Name="vl_irrf" Type="Decimal" Nullable="false" />
+          <Property Name="vl_salario_familia" Type="Decimal" Nullable="false" />
+          <Property Name="vl_VT" Type="Decimal" Nullable="false" />
+          <Property Name="ds_ferias" Type="Int32" Nullable="false" />
+          <Property Name="vl_13_" Type="Decimal" Nullable="false" />
+          <Property Name="vl_liquido" Type="Decimal" Nullable="false" />
+          <Property Name="vl_bruto" Type="Decimal" Nullable="false" />
+          <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
+          <Property Name="vl_total" Type="Decimal" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_fornecedor">
           <Key>
@@ -285,11 +324,14 @@
           </Key>
           <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_fornecedor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nm_CNPJ_CPF" Type="Decimal" Nullable="false" />
+          <Property Name="ds_cnpj" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_endereço" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_telefone" Type="Decimal" Nullable="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tb_pedido_id_pedido" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
@@ -304,7 +346,19 @@
           <Property Name="ds_endereco" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_admissao" Type="DateTime" Nullable="false" />
           <Property Name="dt_demissao" Type="DateTime" Nullable="false" />
+          <Property Name="tb_beneficios_id_beneficios" Type="Int32" Nullable="false" />
           <Property Name="tb_beneficio_id_beneficios" Type="Int32" Nullable="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_pedido">
+          <Key>
+            <PropertyRef Name="id_pedido" />
+          </Key>
+          <Property Name="id_pedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nm_pedido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_pedinte" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dt_pedido" Type="DateTime" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
@@ -333,7 +387,6 @@
           <Property Name="nm_senha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_email" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cargo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_recuperacao" Type="Int32" />
         </EntityType>
         <EntityType Name="tb_venda">
           <Key>
@@ -342,7 +395,7 @@
           <Property Name="id_venda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="qts_produtos" Type="Int32" Nullable="false" />
-          <Property Name="dt_compra" Type="DateTime" Nullable="false" />
+          <Property Name="dt_venda" Type="DateTime" Nullable="false" />
           <Property Name="vl_total" Type="Decimal" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_venda_item">
@@ -353,7 +406,16 @@
           <Property Name="tb_produto_venda_id_produto" Type="Int32" Nullable="false" />
           <Property Name="tb_venda_id_venda" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="magicjoydbEntities19" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="vw_fuxo_caixa">
+          <Key>
+            <PropertyRef Name="dt_pagamento" />
+            <PropertyRef Name="tp_operacao" />
+          </Key>
+          <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
+          <Property Name="vl_total" Type="Double" />
+          <Property Name="tp_operacao" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="magicjoydbEntities20" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -364,29 +426,25 @@
           <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" />
           <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" />
           <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" />
+          <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" />
           <EntitySet Name="tb_produto" EntityType="Self.tb_produto" />
           <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" />
           <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" />
           <EntitySet Name="tb_venda" EntityType="Self.tb_venda" />
           <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" />
+          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities19">
+        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities20">
           <EntitySetMapping Name="tb_beneficio">
             <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">
                 <ScalarProperty Name="id_beneficios" ColumnName="id_beneficios" />
-                <ScalarProperty Name="vl_valerefeicao" ColumnName="vl_valerefeicao" />
-                <ScalarProperty Name="vl_alimentacao" ColumnName="vl_alimentacao" />
                 <ScalarProperty Name="vl_transporte" ColumnName="vl_transporte" />
-                <ScalarProperty Name="ds_sugurodevida" ColumnName="ds_sugurodevida" />
-                <ScalarProperty Name="ds_odonto" ColumnName="ds_odonto" />
-                <ScalarProperty Name="ds_saude" ColumnName="ds_saude" />
-                <ScalarProperty Name="ds_periculosidade" ColumnName="ds_periculosidade" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -397,10 +455,12 @@
                 <ScalarProperty Name="nm_nome" ColumnName="nm_nome" />
                 <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
                 <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-                <ScalarProperty Name="ds_CPF" ColumnName="ds_CPF" />
+                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
                 <ScalarProperty Name="ds_endereço" ColumnName="ds_endereço" />
                 <ScalarProperty Name="tb_vendas_cd_atributo" ColumnName="tb_vendas_cd_atributo" />
                 <ScalarProperty Name="tb_compra_id_compras" ColumnName="tb_compra_id_compras" />
+                <ScalarProperty Name="ds_celular" ColumnName="ds_celular" />
+                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -411,7 +471,6 @@
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="qts_produtos" ColumnName="qts_produtos" />
                 <ScalarProperty Name="vl_total" ColumnName="vl_total" />
-                <ScalarProperty Name="ds_frete" ColumnName="ds_frete" />
                 <ScalarProperty Name="dt_compra" ColumnName="dt_compra" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -430,11 +489,11 @@
               <MappingFragment StoreEntitySet="tb_controle_ponto">
                 <ScalarProperty Name="id_controle_ponto" ColumnName="id_controle_ponto" />
                 <ScalarProperty Name="tb_funcionario_id_funcionario" ColumnName="tb_funcionario_id_funcionario" />
-                <ScalarProperty Name="dt_dia" ColumnName="dt_dia" />
                 <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
                 <ScalarProperty Name="hr_intervalo" ColumnName="hr_intervalo" />
                 <ScalarProperty Name="hr_retorno" ColumnName="hr_retorno" />
                 <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
+                <ScalarProperty Name="dt_dia" ColumnName="dt_dia" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -445,6 +504,8 @@
                 <ScalarProperty Name="vl_valor" ColumnName="vl_valor" />
                 <ScalarProperty Name="ds_descricao" ColumnName="ds_descricao" />
                 <ScalarProperty Name="dt_datadevencimento" ColumnName="dt_datadevencimento" />
+                <ScalarProperty Name="vl_despesa" ColumnName="vl_despesa" />
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -464,12 +525,18 @@
               <MappingFragment StoreEntitySet="tb_folha_pagamento">
                 <ScalarProperty Name="id_folha_pagamento" ColumnName="id_folha_pagamento" />
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-                <ScalarProperty Name="vl_salario_liquido" ColumnName="vl_salario_liquido" />
-                <ScalarProperty Name="vl_salario_bruto" ColumnName="vl_salario_bruto" />
                 <ScalarProperty Name="ds_faltas" ColumnName="ds_faltas" />
-                <ScalarProperty Name="ds_gratificacao" ColumnName="ds_gratificacao" />
-                <ScalarProperty Name="ds_plr" ColumnName="ds_plr" />
-                <ScalarProperty Name="hr_extras" ColumnName="hr_extras" />
+                <ScalarProperty Name="vl_fgts" ColumnName="vl_fgts" />
+                <ScalarProperty Name="ds_inss" ColumnName="ds_inss" />
+                <ScalarProperty Name="vl_irrf" ColumnName="vl_irrf" />
+                <ScalarProperty Name="vl_salario_familia" ColumnName="vl_salario_familia" />
+                <ScalarProperty Name="vl_VT" ColumnName="vl_VT" />
+                <ScalarProperty Name="ds_ferias" ColumnName="ds_ferias" />
+                <ScalarProperty Name="vl_13_" ColumnName="vl_13°" />
+                <ScalarProperty Name="vl_liquido" ColumnName="vl_liquido" />
+                <ScalarProperty Name="vl_bruto" ColumnName="vl_bruto" />
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
+                <ScalarProperty Name="vl_total" ColumnName="vl_total" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -478,11 +545,14 @@
               <MappingFragment StoreEntitySet="tb_fornecedor">
                 <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
                 <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
-                <ScalarProperty Name="nm_CNPJ_CPF" ColumnName="nm_CNPJ_CPF" />
+                <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
                 <ScalarProperty Name="ds_endereço" ColumnName="ds_endereço" />
                 <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
                 <ScalarProperty Name="ds_email" ColumnName="ds_email" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
+                <ScalarProperty Name="ds_celular" ColumnName="ds_celular" />
+                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
+                <ScalarProperty Name="tb_pedido_id_pedido" ColumnName="tb_pedido_id_pedido" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -498,7 +568,20 @@
                 <ScalarProperty Name="ds_endereco" ColumnName="ds_endereco" />
                 <ScalarProperty Name="dt_admissao" ColumnName="dt_admissao" />
                 <ScalarProperty Name="dt_demissao" ColumnName="dt_demissao" />
+                <ScalarProperty Name="tb_beneficios_id_beneficios" ColumnName="tb_beneficios_id_beneficios" />
                 <ScalarProperty Name="tb_beneficio_id_beneficios" ColumnName="tb_beneficio_id_beneficios" />
+                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
+                <ScalarProperty Name="ds_celular" ColumnName="ds_celular" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_pedido">
+            <EntityTypeMapping TypeName="magicjoydbModel.tb_pedido">
+              <MappingFragment StoreEntitySet="tb_pedido">
+                <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+                <ScalarProperty Name="nm_pedido" ColumnName="nm_pedido" />
+                <ScalarProperty Name="nm_pedinte" ColumnName="nm_pedinte" />
+                <ScalarProperty Name="dt_pedido" ColumnName="dt_pedido" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -530,7 +613,6 @@
                 <ScalarProperty Name="nm_senha" ColumnName="nm_senha" />
                 <ScalarProperty Name="ds_email" ColumnName="ds_email" />
                 <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
-                <ScalarProperty Name="ds_recuperacao" ColumnName="ds_recuperacao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -540,7 +622,7 @@
                 <ScalarProperty Name="id_venda" ColumnName="id_venda" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="qts_produtos" ColumnName="qts_produtos" />
-                <ScalarProperty Name="dt_compra" ColumnName="dt_compra" />
+                <ScalarProperty Name="dt_venda" ColumnName="dt_venda" />
                 <ScalarProperty Name="vl_total" ColumnName="vl_total" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -551,6 +633,15 @@
                 <ScalarProperty Name="id_venda" ColumnName="id_venda" />
                 <ScalarProperty Name="tb_produto_venda_id_produto" ColumnName="tb_produto_venda_id_produto" />
                 <ScalarProperty Name="tb_venda_id_venda" ColumnName="tb_venda_id_venda" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_fuxo_caixa">
+            <EntityTypeMapping TypeName="magicjoydbModel.vw_fuxo_caixa">
+              <MappingFragment StoreEntitySet="vw_fuxo_caixa">
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
+                <ScalarProperty Name="vl_total" ColumnName="vl_total" />
+                <ScalarProperty Name="tp_operacao" ColumnName="tp_operacao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
