@@ -8,16 +8,21 @@ namespace MagicJoy.Business.Estoque
 {
     class ProdutoBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void InserirProduto(Entityes.tb_produto produto)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+            if (produto.nm_produto == string.Empty)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                throw new ArgumentException("Nome do produto é obrigatório");
+            }
+            if(produto.vl_preco == 0)
+            {
+                throw new ArgumentException("Preço do produto é obrigatótio");
             }
 
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
-
+            if(produto.id_estoque == 0)
+            {
+                throw new ArgumentException("Id do estoque é obrigatório");
+            }                    
         }
 
         public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()

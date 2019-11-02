@@ -14,19 +14,26 @@ namespace MagicJoy.Entityes
     
     public partial class tb_folha_pagamento
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_folha_pagamento()
+        {
+            this.tb_funcionario = new HashSet<tb_funcionario>();
+        }
+    
         public int id_folha_pagamento { get; set; }
         public int id_funcionario { get; set; }
-        public int ds_faltas { get; set; }
-        public decimal vl_fgts { get; set; }
         public decimal ds_inss { get; set; }
         public decimal vl_irrf { get; set; }
         public decimal vl_salario_familia { get; set; }
         public decimal vl_VT { get; set; }
-        public int ds_ferias { get; set; }
-        public decimal vl_13_ { get; set; }
         public decimal vl_liquido { get; set; }
         public decimal vl_bruto { get; set; }
         public System.DateTime dt_pagamento { get; set; }
         public decimal vl_total { get; set; }
+        public decimal vl_salario { get; set; }
+        public decimal vl_gratificacao { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_funcionario> tb_funcionario { get; set; }
     }
 }

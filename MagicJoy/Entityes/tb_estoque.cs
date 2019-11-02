@@ -14,10 +14,20 @@ namespace MagicJoy.Entityes
     
     public partial class tb_estoque
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_estoque()
+        {
+            this.tb_produto = new HashSet<tb_produto>();
+        }
+    
         public int id_estoque { get; set; }
+        public int id_fornecedor { get; set; }
         public string nm_produto { get; set; }
         public int ds_qtd { get; set; }
-        public decimal vl_custo { get; set; }
-        public int tb_Fornecedor_id_fornecedor { get; set; }
+        public Nullable<decimal> vl_custo { get; set; }
+    
+        public virtual tb_fornecedor tb_fornecedor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_produto> tb_produto { get; set; }
     }
 }

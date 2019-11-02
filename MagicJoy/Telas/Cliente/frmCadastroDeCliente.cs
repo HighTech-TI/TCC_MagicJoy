@@ -28,7 +28,7 @@ namespace MagicJoy.Telas.Cliente
             mktcell.Text = tabela.ds_celular;
             DataBase.Financeiro.ClienteDataBase.Cpf(txtcpf.Text);
             string cpf = DataBase.Financeiro.ClienteDataBase.maskCpf(txtcpf.Text);
-            cpf = tabela.ds_cpf;
+            //cpf = tabela.ds_cpf;
 
             Business.Financeiro.ClienteBusiness business = new Business.Financeiro.ClienteBusiness();
             business.InserirCliente(tabela);

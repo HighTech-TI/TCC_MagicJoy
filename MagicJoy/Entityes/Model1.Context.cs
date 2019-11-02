@@ -13,10 +13,10 @@ namespace MagicJoy.Entityes
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class magicjoydbEntities20 : DbContext
+    public partial class magicjoydbEntities3 : DbContext
     {
-        public magicjoydbEntities20()
-            : base("name=magicjoydbEntities20")
+        public magicjoydbEntities3()
+            : base("name=magicjoydbEntities3")
         {
         }
     
@@ -41,6 +41,5 @@ namespace MagicJoy.Entityes
         public virtual DbSet<tb_usuario> tb_usuario { get; set; }
         public virtual DbSet<tb_venda> tb_venda { get; set; }
         public virtual DbSet<tb_venda_item> tb_venda_item { get; set; }
-        public virtual DbSet<vw_fuxo_caixa> vw_fuxo_caixa { get; set; }
     }
 }

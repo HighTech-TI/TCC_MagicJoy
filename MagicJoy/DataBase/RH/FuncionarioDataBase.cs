@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class FuncionarioDataBase
     {
-        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
+        Entityes.magicjoydbEntities3 db = new Entityes.magicjoydbEntities3();
         public void InserirFuncionario(Entityes.tb_funcionario funcionario)
         {
 
@@ -41,7 +41,7 @@ namespace MagicJoy.DataBase.RH
             Entityes.tb_funcionario altera = db.tb_funcionario.First(a => a.id_funcionario == funcionario.id_funcionario);
             altera.ds_endereco = funcionario.ds_endereco;
             altera.nm_nome = funcionario.nm_nome;
-            altera.tb_folha_pagamento_id_folha_pagamento = funcionario.tb_folha_pagamento_id_folha_pagamento;
+          
             altera.ds_cpf = funcionario.ds_cpf;
             altera.ds_rg = funcionario.ds_rg;
             altera.dt_nascimento = funcionario.dt_nascimento;
@@ -56,7 +56,7 @@ namespace MagicJoy.DataBase.RH
             Entityes.tb_funcionario altera = db.tb_funcionario.First(a => a.nm_nome == funcionario.nm_nome);
             altera.ds_endereco = funcionario.ds_endereco;
             altera.nm_nome = funcionario.nm_nome;
-            altera.tb_folha_pagamento_id_folha_pagamento = funcionario.tb_folha_pagamento_id_folha_pagamento;
+           
             altera.ds_cpf = funcionario.ds_cpf;
             altera.ds_rg = funcionario.ds_rg;
             altera.dt_nascimento = funcionario.dt_nascimento;

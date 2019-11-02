@@ -10,7 +10,7 @@ namespace MagicJoy.Business.Suprimentos
     {
         public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+            if (ponto.id_funcionario == 0)
             {
                 throw new ArgumentException("Selecione o ID do funcionário");
             }

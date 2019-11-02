@@ -20,9 +20,10 @@ namespace MagicJoy.Entityes
         public System.DateTime dt_nascimento { get; set; }
         public decimal ds_cpf { get; set; }
         public string ds_endereço { get; set; }
-        public int tb_vendas_cd_atributo { get; set; }
-        public int tb_compra_id_compras { get; set; }
+        public int id_compras { get; set; }
         public string ds_celular { get; set; }
         public string ds_rg { get; set; }
+    
+        public virtual tb_compra tb_compra { get; set; }
     }
 }

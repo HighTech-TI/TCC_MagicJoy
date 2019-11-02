@@ -14,6 +14,12 @@ namespace MagicJoy.Entityes
     
     public partial class tb_fornecedor
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_fornecedor()
+        {
+            this.tb_estoque = new HashSet<tb_estoque>();
+        }
+    
         public int id_fornecedor { get; set; }
         public string nm_fornecedor { get; set; }
         public string ds_cnpj { get; set; }
@@ -23,6 +29,10 @@ namespace MagicJoy.Entityes
         public string nm_produto { get; set; }
         public string ds_celular { get; set; }
         public string ds_cpf { get; set; }
-        public int tb_pedido_id_pedido { get; set; }
+        public int id_pedido { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_estoque> tb_estoque { get; set; }
+        public virtual tb_pedido tb_pedido { get; set; }
     }
 }

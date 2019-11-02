@@ -4,24 +4,34 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="47431379b2894e2c91b24e1db5e93417" Name="Diagram1">
-        <EntityTypeShape EntityType="magicjoydbModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_cliente" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_compra" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_compra_item" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_controle_ponto" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_despesa" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_estoque" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_folha_pagamento" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_fornecedor" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_funcionario" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_pedido" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_produto" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_produto_venda" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_usuario" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_venda" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.tb_venda_item" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="magicjoydbModel.vw_fuxo_caixa" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="93382da18797435ba50d11d07b0cc50f" Name="Diagram1">
+        <EntityTypeShape EntityType="magicjoydbModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_cliente" Width="1.5" PointX="16.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_compra" Width="1.5" PointX="14.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_compra_item" Width="1.5" PointX="16.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_controle_ponto" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_despesa" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_estoque" Width="1.5" PointX="12.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_folha_pagamento" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_fornecedor" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_funcionario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_pedido" Width="1.5" PointX="7.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_produto" Width="1.5" PointX="14.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_produto_venda" Width="1.5" PointX="5.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_usuario" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_venda" Width="1.5" PointX="5.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="magicjoydbModel.tb_venda_item" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="magicjoydbModel.tb_funcionario_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_cliente_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_compra_item_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_compra_item_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_controle_ponto_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_estoque_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_produto_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_funcionario_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_fornecedor_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_venda_item_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="magicjoydbModel.tb_venda_item_ibfk_2" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

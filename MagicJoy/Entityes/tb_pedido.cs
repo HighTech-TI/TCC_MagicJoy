@@ -14,9 +14,18 @@ namespace MagicJoy.Entityes
     
     public partial class tb_pedido
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_pedido()
+        {
+            this.tb_fornecedor = new HashSet<tb_fornecedor>();
+        }
+    
         public int id_pedido { get; set; }
         public string nm_pedido { get; set; }
         public string nm_pedinte { get; set; }
         public System.DateTime dt_pedido { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_fornecedor> tb_fornecedor { get; set; }
     }
 }

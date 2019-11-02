@@ -8,7 +8,7 @@ namespace MagicJoy.Business.Estoque
 {
     class EstoqueBusiness
     {
-        public void InserirEstoque(Entityes.tb_estoque estoque)
+        public void Inserir(Entityes.tb_estoque estoque)
         {
             if (estoque.nm_produto == string.Empty)
             {
@@ -22,15 +22,27 @@ namespace MagicJoy.Business.Estoque
             {
                 throw new ArgumentException("Valor de custo é obrigatório");
             }
-            if(estoque.tb_Fornecedor_id_fornecedor == 0)
+            if(estoque.id_fornecedor == 0)
             {
                 throw new ArgumentException("Id do fornecedor é obrigatório");
             }
 
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            db.InserirEstoque(estoque);
+            db.Inserir(estoque);
 
         }
+        public void Salvar(Entityes.tb_estoque estoque)
+        {
+            if (estoque.id_estoque == 0)
+            {
+                this.Inserir(estoque);
+            }
+            else
+            {
+                this.Alterar(estoque);
+            }
+        }
+
 
         public List<Entityes.tb_estoque> ListarTodosProdutos()
         {
@@ -47,17 +59,31 @@ namespace MagicJoy.Business.Estoque
 
             return pesquisa;
         }
+        public List<Entityes.tb_estoque> PesquisarPorqtd(int qtd)
+        {
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarQTd(qtd);
+
+            return pesquisa;
+        }
+        public List<Entityes.tb_estoque> PesquisarPorPodruto(string produto)
+        {
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarProduto(produto);
+
+            return pesquisa;
+        }
         public void Alterar(Entityes.tb_estoque estoque)
         {
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
             db.AlterarEstoque(estoque);
+         
 
         }
         public void AlterarPorData(Entityes.tb_controle_ponto ponto)
         {
             DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
-            //db.AlterarEstoquePorId(Estoque);
-
+            
         }
         public void Remover(Entityes.tb_estoque estoque)
         {

@@ -152,9 +152,6 @@
     <Compile Include="Entityes\tb_venda_item.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entityes\vw_fuxo_caixa.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Objetos\EnviarEmail.cs" />
     <Compile Include="Objetos\SlidesMenu.cs" />
     <Compile Include="Objetos\UsuarioLogado.cs" />
@@ -463,6 +460,11 @@
     <None Include="Resources\download %285%29.png" />
     <None Include="Resources\download.png" />
     <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_126646752-stock-illustration-the-trashcan-icon-dustbin-symbol.jpg" />
+    <None Include="Resources\edit-icon-2375785_960_720.png" />
+    <None Include="Resources\100487.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entityes\Model1.Context.tt">

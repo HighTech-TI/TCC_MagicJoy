@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class FolhaDepagamentoDataBase
     {
-        Entityes.magicjoydbEntities20 db = new Entityes.magicjoydbEntities20();
+        Entityes.magicjoydbEntities3 db = new Entityes.magicjoydbEntities3();
         public void inserir(Entityes.tb_folha_pagamento rh)
         {
 
@@ -39,7 +39,7 @@ namespace MagicJoy.DataBase.RH
         {
 
             Entityes.tb_folha_pagamento alterar = db.tb_folha_pagamento.First(a => a.id_folha_pagamento == folha.id_folha_pagamento);
-            alterar.ds_faltas = folha.ds_faltas;
+            
 
             db.SaveChanges();
         }

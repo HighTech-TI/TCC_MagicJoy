@@ -28,7 +28,7 @@ namespace MagicJoy.Telas.RH
             {
                 Entityes.tb_controle_ponto db = new Entityes.tb_controle_ponto();
 
-                db.tb_funcionario_id_funcionario = Convert.ToInt32(nudId.Value);
+                db.id_funcionario = Convert.ToInt32(nudId.Value);
                 db.dt_dia = dtDia.Value;
                // db.hr_entrada = dtpEntrada.Value;
               //  db.hr_intervalo = dtpIntervalo.Value;

@@ -63,6 +63,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _100487 {
+            get {
+                object obj = ResourceManager.GetObject("100487", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _12a {
             get {
                 object obj = ResourceManager.GetObject("12a", resourceCulture);
@@ -233,6 +243,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_126646752-stock-illustration-the-trashcan-icon-dustbin-symbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desligar {
             get {
                 object obj = ResourceManager.GetObject("desligar", resourceCulture);
@@ -296,6 +316,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap download__5_ {
             get {
                 object obj = ResourceManager.GetObject("download (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_icon_2375785_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("edit-icon-2375785_960_720", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

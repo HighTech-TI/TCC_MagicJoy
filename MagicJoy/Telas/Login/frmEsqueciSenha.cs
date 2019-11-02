@@ -39,8 +39,7 @@ namespace MagicJoy.Telas.Login
              
             Entityes.tb_usuario db = new Entityes.tb_usuario();
             Business.LoginBusiness busineslog = new Business.LoginBusiness();
-            Entityes.tb_usuario user = busineslog.Alterar();
-            
+           
 
         }
 
