@@ -193,6 +193,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFluxoDeCaixa";
             this.Text = "frmTelaFluxoDeCaixa";
             this.groupBox1.ResumeLayout(false);

@@ -16,10 +16,10 @@ namespace MagicJoy.Entityes
     {
         public int id_controle_ponto { get; set; }
         public int id_funcionario { get; set; }
-        public System.TimeSpan hr_entrada { get; set; }
-        public System.TimeSpan hr_intervalo { get; set; }
-        public System.TimeSpan hr_retorno { get; set; }
-        public System.TimeSpan hr_saida { get; set; }
+        public System.DateTime hr_entrada { get; set; }
+        public System.DateTime hr_intervalo { get; set; }
+        public System.DateTime hr_retorno { get; set; }
+        public System.DateTime hr_saida { get; set; }
         public System.DateTime dt_dia { get; set; }
     
         public virtual tb_funcionario tb_funcionario { get; set; }

@@ -8,52 +8,66 @@ namespace MagicJoy.Business.Suprimentos
 {
     class VendaBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void Inserir(Entityes.tb_venda venda)
         {
-            if (ponto.id_funcionario == 0)
+
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            db.Inserir(venda);
+
+        }
+        public void Salvar(Entityes.tb_venda venda)
+        {
+            if (venda.id_venda_d == 0)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                this.Inserir(venda);
             }
-
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
-
+            else
+            {
+                this.Alterar(venda);
+            }
         }
-
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+        public List<Entityes.tb_venda> ListarTodos()
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            List<Entityes.tb_venda> pesquisa = db.ListarTodu();
 
             return pesquisa;
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_venda> PesquisarPorData(DateTime data)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            List < Entityes.tb_venda> pesquisa = db.PesquisarPorDataVenda(data);
 
             return pesquisa;
         }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
+        public List<Entityes.tb_venda> PesquisarPorProduto(string nome)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            List<Entityes.tb_venda> pesquisa = db.PesquisarPorProduto(nome);
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
+
+        public List<Entityes.tb_venda> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            List<Entityes.tb_venda> pesquisa = db.PesquisarPorIdVenda(id);
+
+            return pesquisa;
+        }
+        public void Alterar(Entityes.tb_venda venda)
+        {
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            db.Alterar(venda);
 
         }
-       
-       // public void Remover(int id)
-       // {
-         //   DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-         //   db.RemoverControleDePOnto(id);
-        //}
-       
+
+        public void Remover(Entityes.tb_venda venda)
+        {
+            DataBase.Suprimentos.VendaDataBase db = new DataBase.Suprimentos.VendaDataBase();
+            db.Remover(venda);
+        }
+
     }
 }

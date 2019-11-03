@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -192,6 +193,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
+            this.Column10,
             this.Column3,
             this.Column4,
             this.Column6,
@@ -290,6 +292,12 @@
             this.Column2.HeaderText = "ID funcionário";
             this.Column2.Name = "Column2";
             // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "nm_nome";
+            this.Column10.HeaderText = "Nome";
+            this.Column10.Name = "Column10";
+            // 
             // Column3
             // 
             this.Column3.DataPropertyName = "dt_dia";
@@ -370,6 +378,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmControleDePonto";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmControleDePonto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudfuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudcontrole)).EndInit();
@@ -405,6 +414,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;

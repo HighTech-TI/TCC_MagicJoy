@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Suprimentos
 {
     class CompraDataBase
     {
-        Entityes.magicjoydbEntities6 db = new Entityes.magicjoydbEntities6();
+        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
         public void InserirCompras(Entityes.tb_compra compra)
         {
 
@@ -35,6 +35,12 @@ namespace MagicJoy.DataBase.Suprimentos
                                                       (s => s.id_compras == id).ToList();
             return compra;
         }
+        public List<Entityes.tb_compra> PesquisarPorProduto(string nome)
+        {
+            List<Entityes.tb_compra> compra = db.tb_compra.Where
+                                                      (s => s.nm_produto.Contains(nome)).ToList();
+            return compra;
+        }
         public void AlterarCompra(Entityes.tb_compra compra)
         {
 
@@ -45,33 +51,15 @@ namespace MagicJoy.DataBase.Suprimentos
             altera.vl_total = compra.vl_total;
 
             db.SaveChanges();
-        }
-        public void AlterarCompraPorData(Entityes.tb_compra data)
+        }     
+        public void RemoverCompra(Entityes.tb_compra compra)
         {
 
-            Entityes.tb_compra altera = db.tb_compra.First(a => a.dt_compra == data.dt_compra);
-            altera.nm_produto = data.nm_produto;
-            altera.qts_produtos = data.qts_produtos;
-            altera.dt_compra = data.dt_compra;
-            altera.vl_total = data.vl_total;
-
-            db.SaveChanges();
-        }
-        public void RemoverCompra(int id)
-        {
-
-            Entityes.tb_compra remover = db.tb_compra.First(r => r.id_compras == id);
+            Entityes.tb_compra remover = db.tb_compra.First(r => r.id_compras == compra.id_compras);
             db.tb_compra.Remove(remover);
 
             db.SaveChanges();
         }
-        public void RemoverCompraData(DateTime data)
-        {
-
-            Entityes.tb_compra remover = db.tb_compra.First(r => r.dt_compra == data);
-            db.tb_compra.Remove(remover);
-
-            db.SaveChanges();
-        }
+       
     }
 }

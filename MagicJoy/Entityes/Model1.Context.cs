@@ -13,10 +13,10 @@ namespace MagicJoy.Entityes
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class magicjoydbEntities6 : DbContext
+    public partial class magicjoydbEntities11 : DbContext
     {
-        public magicjoydbEntities6()
-            : base("name=magicjoydbEntities6")
+        public magicjoydbEntities11()
+            : base("name=magicjoydbEntities11")
         {
         }
     

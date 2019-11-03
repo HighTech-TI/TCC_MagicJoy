@@ -13,13 +13,13 @@
     </Key>
     <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="ds_telefone" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ds_telefone" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />
-    <Property Name="ds_cpf" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_endereço" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="id_compras" Type="int" Nullable="false" />
-    <Property Name="ds_celular" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="ds_rg" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_rg" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_compra">
     <Key>
@@ -45,11 +45,11 @@
     </Key>
     <Property Name="id_controle_ponto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="id_funcionario" Type="int" Nullable="false" />
-    <Property Name="hr_entrada" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_intervalo" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_retorno" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_saida" Type="time" Precision="0" Nullable="false" />
-    <Property Name="dt_dia" Type="date" Nullable="false" />
+    <Property Name="hr_entrada" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="hr_intervalo" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="hr_retorno" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="hr_saida" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="dt_dia" Type="datetime" Precision="0" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_despesa">
     <Key>
@@ -95,13 +95,13 @@
     </Key>
     <Property Name="id_fornecedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nm_fornecedor" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="ds_cnpj" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ds_cnpj" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_endereço" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ds_telefone" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_email" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
-    <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="id_pedido" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_funcionario">
@@ -109,7 +109,7 @@
       <PropertyRef Name="id_funcionario" />
     </Key>
     <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_nome" Type="varchar" MaxLength="55" Nullable="false" />
+    <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class ControleDePontoDataBase
     {
-        Entityes.magicjoydbEntities6 db = new Entityes.magicjoydbEntities6();
+        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
         public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
         {
 
@@ -38,7 +38,7 @@ namespace MagicJoy.DataBase.RH
         public List<Entityes.tb_controle_ponto> PesquisaPorNomeFuncio (string nome)
         {
             List<Entityes.tb_controle_ponto> ponto = db.tb_controle_ponto.Where
-                                                      (s => s.tb_funcionario.nm_nome == nome).ToList();
+                                                      (s => s.tb_funcionario.nm_nome.Contains(nome)).ToList();
             return ponto;
         }
         public void AlterarControleDePonto(Entityes.tb_controle_ponto ponto)

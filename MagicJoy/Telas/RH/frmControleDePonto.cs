@@ -24,16 +24,16 @@ namespace MagicJoy.Telas.RH
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+           try
             {
                 Entityes.tb_controle_ponto ponto = new Entityes.tb_controle_ponto();
 
                 ponto.dt_dia = dtDia.Value;
                 ponto.id_funcionario = Convert.ToInt32(nudfuncionario.Value);
-                ponto.hr_entrada = dtpEntrada.Value.TimeOfDay;
-                ponto.hr_intervalo = dtpIntervalo.Value.TimeOfDay;
-                ponto.hr_retorno = dtpRetornoIntervalo.Value.TimeOfDay;
-                ponto.hr_saida = dtpSaida.Value.TimeOfDay;
+                ponto.hr_entrada = dtpEntrada.Value;
+                ponto.hr_intervalo = dtpIntervalo.Value;
+                ponto.hr_retorno = dtpRetornoIntervalo.Value;
+                ponto.hr_saida = dtpSaida.Value;
 
                 business.Salvar(ponto);
 
@@ -46,12 +46,12 @@ namespace MagicJoy.Telas.RH
             }
 
 
-            catch (Exception)
+           catch (Exception)
             {
 
                 MessageBox.Show("Ocorreu um erro tente novamente mais tarde, ou contate seu administrador do sistema",
                                 "Magic Joy", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           }
 
         }
         private void ListarTudo()
@@ -122,6 +122,11 @@ namespace MagicJoy.Telas.RH
 
             List<Entityes.tb_controle_ponto> lista = business.PesquisarPorData(dia);
             dataGridView1.DataSource = lista;
+        }
+
+        private void frmControleDePonto_Load(object sender, EventArgs e)
+        {
+            ListarTudo();
         }
     }
          

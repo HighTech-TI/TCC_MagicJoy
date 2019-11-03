@@ -62,8 +62,6 @@ C:\Users\infod14\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.pdb
 C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\obj\Debug\MagicJoy.pdb
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmConsultaContasAReceber.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.Form1.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmFluxoDeCaixa.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaFolhaDePagamento.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmControleDePonto.resources
@@ -156,7 +154,6 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\MySql.Data.dll
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\EntityFramework.xml
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmVendas.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenu.resources
 C:\Users\teste\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\teste\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.exe
@@ -217,3 +214,6 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy7\MagicJoy\obj\Debug\MagicJoy.csproj.G
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.frmMenu.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Estoque.frmProduto.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmDespesa.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmCompra.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.frmFornecedor.resources
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Suprimentos.test.resources

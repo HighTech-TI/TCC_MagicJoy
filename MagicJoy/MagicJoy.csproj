@@ -89,6 +89,7 @@
     <Compile Include="DataBase\Suprimentos\CompraDataBase.cs" />
     <Compile Include="DataBase\Suprimentos\FornecedorDataBase.cs" />
     <Compile Include="DataBase\Suprimentos\VendaDataBase.cs" />
+    <Compile Include="Entityes\Class1.cs" />
     <Compile Include="Entityes\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -175,18 +176,6 @@
     <Compile Include="Telas\Estoque\frmProduto.Designer.cs">
       <DependentUpon>frmProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.Designer.cs">
-      <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.Designer.cs">
-      <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Financeiro\frmDespesa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +248,18 @@
     <Compile Include="Telas\Splash\frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Suprimentos\frmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmCompra.Designer.cs">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Suprimentos\frmFornecedor.Designer.cs">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Suprimentos\frmVendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,12 +274,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Estoque\frmProduto.resx">
       <DependentUpon>frmProduto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Financeiro\frmConsultaContasAReceber.resx">
-      <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.resx">
-      <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmDespesa.resx">
       <DependentUpon>frmDespesa.cs</DependentUpon>
@@ -325,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Splash\frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Suprimentos\frmCompra.resx">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Suprimentos\frmFornecedor.resx">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Suprimentos\frmVendas.resx">
       <DependentUpon>frmVendas.cs</DependentUpon>
