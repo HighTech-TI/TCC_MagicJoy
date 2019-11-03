@@ -9,7 +9,7 @@ namespace MagicJoy.DataBase.Suprimentos
     
     class VendaDataBase      
     {
-        Entityes.magicjoydbEntities3 db = new Entityes.magicjoydbEntities3();
+        Entityes.magicjoydbEntities6 db = new Entityes.magicjoydbEntities6();
      
     }
 }

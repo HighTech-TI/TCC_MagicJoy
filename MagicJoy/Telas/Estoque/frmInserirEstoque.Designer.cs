@@ -36,25 +36,25 @@
             this.txtvlcusto = new System.Windows.Forms.TextBox();
             this.txtproduto = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnsalvar = new System.Windows.Forms.Button();
+            this.nudidforncedor = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtidestoque = new System.Windows.Forms.TextBox();
+            this.txtpesquisaproduto = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtqtdpesquisa = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtidestoquepesquisa = new System.Windows.Forms.TextBox();
             this.id_estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nm_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ds_qtd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vl_custp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_fornecedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ds_image = new System.Windows.Forms.DataGridViewImageColumn();
-            this.ds_remover = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnsalvar = new System.Windows.Forms.Button();
-            this.nudidforncedor = new System.Windows.Forms.NumericUpDown();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtidestoque = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ds_image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.ds_remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudidforncedor)).BeginInit();
             this.SuspendLayout();
@@ -143,57 +143,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(443, 255);
             this.dataGridView1.TabIndex = 26;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // id_estoque
-            // 
-            this.id_estoque.DataPropertyName = "id_estoque";
-            this.id_estoque.HeaderText = "ID estque";
-            this.id_estoque.Name = "id_estoque";
-            // 
-            // nm_produto
-            // 
-            this.nm_produto.DataPropertyName = "nm_produto";
-            this.nm_produto.HeaderText = "Produto";
-            this.nm_produto.Name = "nm_produto";
-            // 
-            // ds_qtd
-            // 
-            this.ds_qtd.DataPropertyName = "ds_qtd";
-            this.ds_qtd.HeaderText = "Quantidade";
-            this.ds_qtd.Name = "ds_qtd";
-            // 
-            // vl_custp
-            // 
-            this.vl_custp.DataPropertyName = "vl_custp";
-            this.vl_custp.HeaderText = "Preço de Custo";
-            this.vl_custp.Name = "vl_custp";
-            // 
-            // id_fornecedor
-            // 
-            this.id_fornecedor.DataPropertyName = "id_fornecedor";
-            this.id_fornecedor.HeaderText = "ID fornecedor";
-            this.id_fornecedor.Name = "id_fornecedor";
-            // 
-            // ds_image
-            // 
-            this.ds_image.HeaderText = "Editar";
-            this.ds_image.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_720;
-            this.ds_image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ds_image.Name = "ds_image";
-            this.ds_image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ds_image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ds_image.Width = 52;
-            // 
-            // ds_remover
-            // 
-            this.ds_remover.HeaderText = "Remover";
-            this.ds_remover.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol;
-            this.ds_remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.ds_remover.Name = "ds_remover";
-            this.ds_remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ds_remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ds_remover.Width = 52;
+     
             // 
             // btnsalvar
             // 
@@ -213,24 +163,6 @@
             this.nudidforncedor.Name = "nudidforncedor";
             this.nudidforncedor.Size = new System.Drawing.Size(62, 20);
             this.nudidforncedor.TabIndex = 29;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "Editar";
-            this.dataGridViewImageColumn1.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_720;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 50;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "Remover";
-            this.dataGridViewImageColumn2.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn2.Width = 50;
             // 
             // label4
             // 
@@ -252,14 +184,14 @@
             this.txtidestoque.Size = new System.Drawing.Size(53, 20);
             this.txtidestoque.TabIndex = 31;
             // 
-            // textBox1
+            // txtpesquisaproduto
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(442, 313);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 20);
-            this.textBox1.TabIndex = 33;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtpesquisaproduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpesquisaproduto.Location = new System.Drawing.Point(442, 313);
+            this.txtpesquisaproduto.Name = "txtpesquisaproduto";
+            this.txtpesquisaproduto.Size = new System.Drawing.Size(160, 20);
+            this.txtpesquisaproduto.TabIndex = 33;
+            this.txtpesquisaproduto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label5
             // 
@@ -272,14 +204,14 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Produto:";
             // 
-            // textBox2
+            // txtqtdpesquisa
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(706, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(58, 20);
-            this.textBox2.TabIndex = 35;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtqtdpesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtqtdpesquisa.Location = new System.Drawing.Point(706, 313);
+            this.txtqtdpesquisa.Name = "txtqtdpesquisa";
+            this.txtqtdpesquisa.Size = new System.Drawing.Size(58, 20);
+            this.txtqtdpesquisa.TabIndex = 35;
+            this.txtqtdpesquisa.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label7
             // 
@@ -303,25 +235,95 @@
             this.label8.TabIndex = 36;
             this.label8.Text = "ID estoque:";
             // 
-            // textBox3
+            // txtidestoquepesquisa
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(321, 314);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(43, 20);
-            this.textBox3.TabIndex = 37;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtidestoquepesquisa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtidestoquepesquisa.Location = new System.Drawing.Point(321, 314);
+            this.txtidestoquepesquisa.Name = "txtidestoquepesquisa";
+            this.txtidestoquepesquisa.Size = new System.Drawing.Size(43, 20);
+            this.txtidestoquepesquisa.TabIndex = 37;
+            this.txtidestoquepesquisa.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // id_estoque
+            // 
+            this.id_estoque.DataPropertyName = "id_estoque";
+            this.id_estoque.HeaderText = "ID estque";
+            this.id_estoque.Name = "id_estoque";
+            // 
+            // nm_produto
+            // 
+            this.nm_produto.DataPropertyName = "nm_produto";
+            this.nm_produto.HeaderText = "Produto";
+            this.nm_produto.Name = "nm_produto";
+            // 
+            // ds_qtd
+            // 
+            this.ds_qtd.DataPropertyName = "ds_qtd";
+            this.ds_qtd.HeaderText = "Quantidade";
+            this.ds_qtd.Name = "ds_qtd";
+            // 
+            // vl_custp
+            // 
+            this.vl_custp.DataPropertyName = "vl_custo";
+            this.vl_custp.HeaderText = "Preço de Custo";
+            this.vl_custp.Name = "vl_custp";
+            // 
+            // id_fornecedor
+            // 
+            this.id_fornecedor.DataPropertyName = "id_fornecedor";
+            this.id_fornecedor.HeaderText = "ID fornecedor";
+            this.id_fornecedor.Name = "id_fornecedor";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Editar";
+            this.dataGridViewImageColumn1.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_720;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 50;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "Remover";
+            this.dataGridViewImageColumn2.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn2.Width = 50;
+            // 
+            // ds_image
+            // 
+            this.ds_image.HeaderText = "Editar";
+            this.ds_image.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_720;
+            this.ds_image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ds_image.Name = "ds_image";
+            this.ds_image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ds_image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ds_image.Width = 52;
+            // 
+            // ds_remover
+            // 
+            this.ds_remover.HeaderText = "Remover";
+            this.ds_remover.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol;
+            this.ds_remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.ds_remover.Name = "ds_remover";
+            this.ds_remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ds_remover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ds_remover.Width = 52;
             // 
             // frmInserirEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 345);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtidestoquepesquisa);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtqtdpesquisa);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtpesquisaproduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtidestoque);
             this.Controls.Add(this.label4);
@@ -362,6 +364,12 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtidestoque;
+        private System.Windows.Forms.TextBox txtpesquisaproduto;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtqtdpesquisa;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtidestoquepesquisa;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_estoque;
         private System.Windows.Forms.DataGridViewTextBoxColumn nm_produto;
         private System.Windows.Forms.DataGridViewTextBoxColumn ds_qtd;
@@ -369,11 +377,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_fornecedor;
         private System.Windows.Forms.DataGridViewImageColumn ds_image;
         private System.Windows.Forms.DataGridViewImageColumn ds_remover;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
     }
 }

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class DespesasDataBase
     {
-        Entityes.magicjoydbEntities3 db = new Entityes.magicjoydbEntities3();
+        Entityes.magicjoydbEntities6 db = new Entityes.magicjoydbEntities6();
         public void InserirDespesas(Entityes.tb_despesa despesas)
         {
 
@@ -16,7 +16,7 @@ namespace MagicJoy.DataBase.Financeiro
 
             db.SaveChanges();
         }
-        public List<Entityes.tb_despesa> ListarTodosClientes()
+        public List<Entityes.tb_despesa> ListarTodos()
         {
             List<Entityes.tb_despesa> tabela = db.tb_despesa.ToList();
             return tabela;
@@ -25,14 +25,20 @@ namespace MagicJoy.DataBase.Financeiro
         public List<Entityes.tb_despesa> PesquisarPorNome(string descricao)
         {
             List<Entityes.tb_despesa> despesas = db.tb_despesa.Where
-                                                      (s => s.ds_descricao == descricao).ToList();
+                                                      (s => s.ds_descricao.Contains(descricao)).ToList();
             return despesas;
 
         }
-        public List<Entityes.tb_despesa> PesquisarPorIdFuncionarios(int id)
+        public List<Entityes.tb_despesa> PesquisarPorI(int id)
         {
             List<Entityes.tb_despesa> despesas = db.tb_despesa.Where
                                                       (s => s.id_despesa == id).ToList();
+            return despesas;
+        }
+        public List<Entityes.tb_despesa> PesquisarPorData(DateTime data)
+        {
+            List<Entityes.tb_despesa> despesas = db.tb_despesa.Where
+                                                      (s => s.dt_datadevencimento == data).ToList();
             return despesas;
         }
         public void AlterarDespesas(Entityes.tb_despesa despesa)
@@ -45,32 +51,15 @@ namespace MagicJoy.DataBase.Financeiro
 
 
             db.SaveChanges();
-        }
-        public void AlterarDespesaPorDescricao (Entityes.tb_despesa despesa)
+        }    
+        public void RemoverDespesa(Entityes.tb_despesa despesa)
         {
 
-            Entityes.tb_despesa altera = db.tb_despesa.First(a => a.ds_descricao == despesa.ds_descricao);
-            altera.ds_descricao = despesa.ds_descricao;
-            altera.vl_valor = despesa.vl_valor;
-            altera.dt_datadevencimento = despesa.dt_datadevencimento;
-
-            db.SaveChanges();
-        }
-        public void RemoverDespesa(int id)
-        {
-
-            Entityes.tb_despesa remover = db.tb_despesa.First(r => r.id_despesa == id);
+            Entityes.tb_despesa remover = db.tb_despesa.First(r => r.id_despesa == despesa.id_despesa);
             db.tb_despesa.Remove(remover);
 
             db.SaveChanges();
         }
-        public void RemoverDesccricaoPorDescricao(string nome)
-        {
-
-            Entityes.tb_despesa remover = db.tb_despesa.First(r => r.ds_descricao == nome);
-            db.tb_despesa.Remove(remover);
-
-            db.SaveChanges();
-        }
+       
     }
 }

@@ -253,6 +253,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol1 {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_126646752-stock-illustration-the-trashcan-icon-dustbin-symbol1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desligar {
             get {
                 object obj = ResourceManager.GetObject("desligar", resourceCulture);
@@ -326,6 +336,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap edit_icon_2375785_960_720 {
             get {
                 object obj = ResourceManager.GetObject("edit-icon-2375785_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_icon_2375785_960_7201 {
+            get {
+                object obj = ResourceManager.GetObject("edit-icon-2375785_960_7201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

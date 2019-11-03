@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Estoque
 {
     class EstoqueDataBase
     {
-        Entityes.magicjoydbEntities3 banco = new Entityes.magicjoydbEntities3();
+        Entityes.magicjoydbEntities6 banco = new Entityes.magicjoydbEntities6();
 
         public void Inserir(Entityes.tb_estoque estoque)
         {
@@ -42,7 +42,7 @@ namespace MagicJoy.DataBase.Estoque
 
         public void AlterarEstoque(Entityes.tb_estoque estoque)
         {
-            Entityes.tb_estoque alterar = banco.tb_estoque.First();
+            Entityes.tb_estoque alterar = banco.tb_estoque.First(s => s.id_estoque == estoque.id_estoque);
             alterar.nm_produto = estoque.nm_produto;
             alterar.ds_qtd = estoque.ds_qtd;
             alterar.vl_custo = estoque.vl_custo;

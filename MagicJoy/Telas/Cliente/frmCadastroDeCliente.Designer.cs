@@ -35,18 +35,42 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtendereco = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.dtpnascimento = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.mkttele = new System.Windows.Forms.MaskedTextBox();
             this.txtcpf = new System.Windows.Forms.MaskedTextBox();
             this.mktcell = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtidCliente = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtidcompra = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.mktrg = new System.Windows.Forms.MaskedTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
+            this.mktcpf = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txttnme = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(97, 105);
+            this.txtnome.Location = new System.Drawing.Point(188, 117);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 20);
             this.txtnome.TabIndex = 2;
@@ -55,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 105);
+            this.label2.Location = new System.Drawing.Point(109, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 3;
@@ -85,7 +109,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 249);
+            this.label5.Location = new System.Drawing.Point(131, 242);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 16);
             this.label5.TabIndex = 8;
@@ -95,7 +119,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(88, 294);
+            this.label6.Location = new System.Drawing.Point(94, 305);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 16);
             this.label6.TabIndex = 10;
@@ -103,20 +127,10 @@
             // 
             // txtendereco
             // 
-            this.txtendereco.Location = new System.Drawing.Point(188, 290);
+            this.txtendereco.Location = new System.Drawing.Point(188, 302);
             this.txtendereco.Name = "txtendereco";
             this.txtendereco.Size = new System.Drawing.Size(100, 20);
             this.txtendereco.TabIndex = 12;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(114, 40);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Cadastro De Clientes";
             // 
             // dtpnascimento
             // 
@@ -130,11 +144,11 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(323, 380);
+            this.button2.Location = new System.Drawing.Point(15, 421);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 41);
             this.button2.TabIndex = 23;
-            this.button2.Text = "Cadastrar";
+            this.button2.Text = "Salvar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -148,7 +162,7 @@
             // 
             // txtcpf
             // 
-            this.txtcpf.Location = new System.Drawing.Point(188, 249);
+            this.txtcpf.Location = new System.Drawing.Point(713, 371);
             this.txtcpf.Mask = "000,000,000-00";
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(100, 20);
@@ -157,7 +171,7 @@
             // 
             // mktcell
             // 
-            this.mktcell.Location = new System.Drawing.Point(188, 329);
+            this.mktcell.Location = new System.Drawing.Point(188, 337);
             this.mktcell.Mask = "(00)0 0000-0000";
             this.mktcell.Name = "mktcell";
             this.mktcell.Size = new System.Drawing.Size(100, 20);
@@ -167,17 +181,227 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 330);
+            this.label1.Location = new System.Drawing.Point(112, 338);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 26;
             this.label1.Text = "Celular:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(90, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 16);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "ID cliente:";
+            // 
+            // txtidCliente
+            // 
+            this.txtidCliente.Location = new System.Drawing.Point(188, 81);
+            this.txtidCliente.Name = "txtidCliente";
+            this.txtidCliente.Size = new System.Drawing.Size(54, 20);
+            this.txtidCliente.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(84, 380);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 16);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "ID compra:";
+            // 
+            // txtidcompra
+            // 
+            this.txtidcompra.Location = new System.Drawing.Point(188, 380);
+            this.txtidcompra.Name = "txtidcompra";
+            this.txtidcompra.Size = new System.Drawing.Size(54, 20);
+            this.txtidcompra.TabIndex = 31;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(132, 275);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 16);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "RG:";
+            // 
+            // mktrg
+            // 
+            this.mktrg.Location = new System.Drawing.Point(188, 270);
+            this.mktrg.Mask = "000,000,000-00";
+            this.mktrg.Name = "mktrg";
+            this.mktrg.Size = new System.Drawing.Size(100, 20);
+            this.mktrg.TabIndex = 33;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11});
+            this.dataGridView1.Location = new System.Drawing.Point(318, 100);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(490, 254);
+            this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(672, 372);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 16);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Cpf:";
+            // 
+            // mktcpf
+            // 
+            this.mktcpf.Location = new System.Drawing.Point(188, 238);
+            this.mktcpf.Mask = "000,000,000-00";
+            this.mktcpf.Name = "mktcpf";
+            this.mktcpf.Size = new System.Drawing.Size(100, 20);
+            this.mktcpf.TabIndex = 36;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(497, 371);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 16);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Nome:";
+            // 
+            // txttnme
+            // 
+            this.txttnme.Location = new System.Drawing.Point(552, 371);
+            this.txttnme.Name = "txttnme";
+            this.txttnme.Size = new System.Drawing.Size(109, 20);
+            this.txttnme.TabIndex = 37;
+            this.txttnme.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(425, 371);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(54, 20);
+            this.textBox4.TabIndex = 40;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(342, 373);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "ID cliente:";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id_cliente";
+            this.Column1.HeaderText = "ID cliente";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "nm_nome";
+            this.Column2.HeaderText = "Nome";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "dt_nascimento";
+            this.Column3.HeaderText = "Data de Nascimento";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "ds_telefone";
+            this.Column4.HeaderText = "Telefone";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "ds_cpf";
+            this.Column5.HeaderText = "CPF";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "ds_rg";
+            this.Column6.HeaderText = "RG";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "ds_endereço";
+            this.Column7.HeaderText = "Endereço";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ds_celular";
+            this.Column8.HeaderText = "Celular";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "id_compras";
+            this.Column9.HeaderText = "ID compra";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Editar";
+            this.Column10.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_720;
+            this.Column10.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 52;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Excluir";
+            this.Column11.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol1;
+            this.Column11.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 52;
+            // 
             // frmCadastroDeCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 474);
+            this.ClientSize = new System.Drawing.Size(820, 474);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txttnme);
+            this.Controls.Add(this.mktcpf);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.mktrg);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtidcompra);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtidCliente);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.mktcell);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcpf);
@@ -191,9 +415,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtnome);
-            this.Controls.Add(this.label7);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadastroDeCliente";
             this.Text = "frmCadastroDeCliente";
+            this.Load += new System.EventHandler(this.frmCadastroDeCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,12 +433,35 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtendereco;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpnascimento;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox mkttele;
         private System.Windows.Forms.MaskedTextBox txtcpf;
         private System.Windows.Forms.MaskedTextBox mktcell;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtidCliente;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtidcompra;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MaskedTextBox mktrg;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.MaskedTextBox mktcpf;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txttnme;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewImageColumn Column10;
+        private System.Windows.Forms.DataGridViewImageColumn Column11;
     }
 }

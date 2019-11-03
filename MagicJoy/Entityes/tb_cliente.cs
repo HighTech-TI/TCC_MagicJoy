@@ -18,7 +18,7 @@ namespace MagicJoy.Entityes
         public string nm_nome { get; set; }
         public string ds_telefone { get; set; }
         public System.DateTime dt_nascimento { get; set; }
-        public decimal ds_cpf { get; set; }
+        public string ds_cpf { get; set; }
         public string ds_endereço { get; set; }
         public int id_compras { get; set; }
         public string ds_celular { get; set; }

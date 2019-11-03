@@ -15,68 +15,76 @@ namespace MagicJoy.Business.Financeiro
                 throw new ArgumentException("Nome obrigatório");
             }
 
-            //if(cliente.ds_CPF == string.Empty)
-          //  {
-           //     throw new ArgumentException("Cpf obrigatório");
+            if(cliente.ds_cpf == string.Empty)
+           {
+                throw new ArgumentException("Cpf obrigatório");
                
-         //   }
+            }
             if(cliente.ds_endereço == string.Empty)
             {
                 throw new ArgumentException("Endereço obrigatório");
             }
-           // if(cliente.ds_telefone == string.Empty)
-           // {
-           //     throw new ArgumentException("Telefone obrigatório");
-           // }
+           if(cliente.ds_telefone == string.Empty)
+            {
+                throw new ArgumentException("Telefone obrigatório");
+           }
             
             DataBase.Financeiro.ClienteDataBase db = new DataBase.Financeiro.ClienteDataBase();
             db.InserirClientes(cliente);
 
         }
-
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+        public void Salvar(Entityes.tb_cliente cliente)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
-
-            return pesquisa;
+            if (cliente.id_cliente == 0)
+            {
+                this.InserirCliente(cliente);
+            }
+            else
+            {
+                this.Alterar(cliente);
+            }
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_cliente> ListarTudo()
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
-
-            return pesquisa;
-        }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
-        {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.Financeiro.ClienteDataBase ddb = new DataBase.Financeiro.ClienteDataBase();
+            List<Entityes.tb_cliente> pesquisa = ddb.ListarTodosClientes();
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
 
-        }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
+        public List<Entityes.tb_cliente> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
+            DataBase.Financeiro.ClienteDataBase dbb = new DataBase.Financeiro.ClienteDataBase();
+            List<Entityes.tb_cliente> pesquisa = dbb.PesquisarPorIdCliente(id);
 
+            return pesquisa;
         }
-        public void Remover(int id)
+        public List<Entityes.tb_cliente> PesquisarPorCpf(string cpf)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
+            DataBase.Financeiro.ClienteDataBase dbb = new DataBase.Financeiro.ClienteDataBase();
+            List<Entityes.tb_cliente> pesquisa = dbb.PesquisarPorCpf(cpf);
+
+            return pesquisa;
         }
-        public void RemoverPorData(DateTime data)
+        public List<Entityes.tb_cliente> PesquisarPorNome(string nome)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
+            DataBase.Financeiro.ClienteDataBase dbb = new DataBase.Financeiro.ClienteDataBase();
+            List<Entityes.tb_cliente> pesquisa = dbb.PesquisarPorNome(nome);
+
+            return pesquisa;
         }
+        public void Alterar(Entityes.tb_cliente cliente)
+        {
+            DataBase.Financeiro.ClienteDataBase db = new DataBase.Financeiro.ClienteDataBase();
+            db.AlterarCliente(cliente);
+
+        }       
+        public void Remover(Entityes.tb_cliente cliente)
+        {
+            DataBase.Financeiro.ClienteDataBase clientee = new DataBase.Financeiro.ClienteDataBase();
+            clientee.RemoverCliente(cliente);
+        }
+      
     }
 }

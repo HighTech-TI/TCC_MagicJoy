@@ -19,7 +19,19 @@ namespace MagicJoy.Business.RH
             DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
             db.InserirControleDePonto(ponto);
 
+        }     
+        public void Salvar(Entityes.tb_controle_ponto ponto)
+        {
+            if (ponto.id_controle_ponto == 0)
+            {
+                this.InserirControleDePonto(ponto);
+            }
+            else
+            {
+                this.Alterar(ponto);
+            }
         }
+
 
         public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
         {
@@ -36,6 +48,13 @@ namespace MagicJoy.Business.RH
 
             return pesquisa;
         }
+        public List<Entityes.tb_controle_ponto> PesquisarPorNome(string nome)
+        {
+            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
+            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisaPorNomeFuncio(nome);
+
+            return pesquisa;
+        }
         public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
         {
             DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
@@ -48,22 +67,12 @@ namespace MagicJoy.Business.RH
             DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
             db.AlterarControleDePonto(ponto);
 
-        }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
+        }      
+        public void Remover(Entityes.tb_controle_ponto ponto)
         {
             DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
-
+            db.RemoverControleDePOnto(ponto);
         }
-        public void Remover(int id)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
-        }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
-        }
+       
     }
 }

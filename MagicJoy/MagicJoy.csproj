@@ -163,17 +163,17 @@
     <Compile Include="Telas\Cliente\frmCadastroDeCliente.Designer.cs">
       <DependentUpon>frmCadastroDeCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Cliente\frmConsultaDeCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Cliente\frmConsultaDeCliente.Designer.cs">
-      <DependentUpon>frmConsultaDeCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Estoque\frmInserirEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Estoque\frmInserirEstoque.Designer.cs">
       <DependentUpon>frmInserirEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmProduto.Designer.cs">
+      <DependentUpon>frmProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Financeiro\frmConsultaContasAReceber.cs">
       <SubType>Form</SubType>
@@ -186,6 +186,12 @@
     </Compile>
     <Compile Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.Designer.cs">
       <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Financeiro\frmDespesa.Designer.cs">
+      <DependentUpon>frmDespesa.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Financeiro\frmFluxoDeCaixa.cs">
       <SubType>Form</SubType>
@@ -229,23 +235,11 @@
     <Compile Include="Telas\RH\frmCadastroDeFuncionários.Designer.cs">
       <DependentUpon>frmCadastroDeFuncionários.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\RH\frmConsultaControleDePonto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\RH\frmConsultaControleDePonto.Designer.cs">
-      <DependentUpon>frmConsultaControleDePonto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\RH\frmConsultaFolhaDePagamento.Designer.cs">
       <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\RH\frmConsultarFuncionário.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\RH\frmConsultarFuncionário.Designer.cs">
-      <DependentUpon>frmConsultarFuncionário.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\RH\frmControleDePonto.cs">
       <SubType>Form</SubType>
@@ -271,26 +265,23 @@
     <Compile Include="Telas\Suprimentos\frmVendas.Designer.cs">
       <DependentUpon>frmVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Suprimentos\frmConsultarVendas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Suprimentos\frmConsultarVendas.Designer.cs">
-      <DependentUpon>frmConsultarVendas.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Telas\Cliente\frmCadastroDeCliente.resx">
       <DependentUpon>frmCadastroDeCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Cliente\frmConsultaDeCliente.resx">
-      <DependentUpon>frmConsultaDeCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Estoque\frmInserirEstoque.resx">
       <DependentUpon>frmInserirEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\frmProduto.resx">
+      <DependentUpon>frmProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmConsultaContasAReceber.resx">
       <DependentUpon>frmConsultaContasAReceber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmConsultarFluxoDeCaixa.resx">
       <DependentUpon>frmConsultarFluxoDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Financeiro\frmDespesa.resx">
+      <DependentUpon>frmDespesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmFluxoDeCaixa.resx">
       <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
@@ -323,14 +314,8 @@
     <EmbeddedResource Include="Telas\RH\frmCadastroDeFuncionários.resx">
       <DependentUpon>frmCadastroDeFuncionários.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\RH\frmConsultaControleDePonto.resx">
-      <DependentUpon>frmConsultaControleDePonto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmConsultaFolhaDePagamento.resx">
       <DependentUpon>frmConsultaFolhaDePagamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\RH\frmConsultarFuncionário.resx">
-      <DependentUpon>frmConsultarFuncionário.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\RH\frmControleDePonto.resx">
       <DependentUpon>frmControleDePonto.cs</DependentUpon>
@@ -343,9 +328,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Suprimentos\frmVendas.resx">
       <DependentUpon>frmVendas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Suprimentos\frmConsultarVendas.resx">
-      <DependentUpon>frmConsultarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Entityes\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -465,6 +447,10 @@
     <None Include="Resources\depositphotos_126646752-stock-illustration-the-trashcan-icon-dustbin-symbol.jpg" />
     <None Include="Resources\edit-icon-2375785_960_720.png" />
     <None Include="Resources\100487.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_126646752-stock-illustration-the-trashcan-icon-dustbin-symbol1.jpg" />
+    <None Include="Resources\edit-icon-2375785_960_7201.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entityes\Model1.Context.tt">

@@ -18,13 +18,13 @@
           </Key>
           <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
-          <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="ds_telefone" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
-          <Property Name="ds_cpf" Type="decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="ds_cpf" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="ds_endereço" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="id_compras" Type="int" Nullable="false" />
-          <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="ds_rg" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="ds_celular" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="ds_rg" Type="varchar" MaxLength="45" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
@@ -114,17 +114,17 @@
             <PropertyRef Name="id_funcionario" />
           </Key>
           <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
-          <Property Name="ds_rg" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="nm_nome" Type="varchar" MaxLength="55" Nullable="false" />
+          <Property Name="ds_rg" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
           <Property Name="id_folha_pagamento" Type="int" Nullable="false" />
           <Property Name="ds_endereco" Type="varchar" MaxLength="60" Nullable="false" />
           <Property Name="dt_admissao" Type="date" Nullable="false" />
           <Property Name="dt_demissao" Type="date" Nullable="false" />
           <Property Name="id_beneficios" Type="int" Nullable="false" />
-          <Property Name="ds_telefone" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="ds_celular" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="ds_telefone" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="nm_cargo" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_pedido">
@@ -395,13 +395,13 @@
           </Key>
           <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-          <Property Name="ds_cpf" Type="Decimal" Nullable="false" />
+          <Property Name="ds_cpf" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_compras" Type="Int32" Nullable="false" />
-          <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_rg" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_celular" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tb_compra" Relationship="Self.tb_cliente_ibfk_1" FromRole="tb_cliente" ToRole="tb_compra" />
         </EntityType>
         <EntityType Name="tb_compra">
@@ -502,17 +502,17 @@
             <PropertyRef Name="id_funcionario" />
           </Key>
           <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_rg" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_nome" Type="String" MaxLength="55" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
           <Property Name="id_folha_pagamento" Type="Int32" Nullable="false" />
           <Property Name="ds_endereco" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_admissao" Type="DateTime" Nullable="false" />
           <Property Name="dt_demissao" Type="DateTime" Nullable="false" />
           <Property Name="id_beneficios" Type="Int32" Nullable="false" />
-          <Property Name="ds_telefone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_celular" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_cargo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tb_beneficio" Relationship="Self.tb_funcionario_ibfk_2" FromRole="tb_funcionario" ToRole="tb_beneficio" />
           <NavigationProperty Name="tb_controle_ponto" Relationship="Self.tb_controle_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_controle_ponto" />
@@ -712,7 +712,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="magicjoydbEntities3" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="magicjoydbEntities6" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -779,7 +779,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities3">
+        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities6">
           <EntitySetMapping Name="tb_beneficio">
             <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">

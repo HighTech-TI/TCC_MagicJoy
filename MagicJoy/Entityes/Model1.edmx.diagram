@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="93382da18797435ba50d11d07b0cc50f" Name="Diagram1">
+      <Diagram DiagramId="e3d3dfa9bcc44f0283d89618e619de43" Name="Diagram1">
         <EntityTypeShape EntityType="magicjoydbModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_cliente" Width="1.5" PointX="16.75" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="magicjoydbModel.tb_compra" Width="1.5" PointX="14.5" PointY="5.5" IsExpanded="true" />

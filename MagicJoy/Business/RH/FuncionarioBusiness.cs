@@ -10,55 +10,62 @@ namespace MagicJoy.Business.RH
     {
         public void InserirFuncionario(Entityes.tb_funcionario ponto)
         {         
-
             DataBase.RH.FuncionarioDataBase db = new DataBase.RH.FuncionarioDataBase();
             db.InserirFuncionario(ponto);
 
         }
 
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+        public void Salvar(Entityes.tb_funcionario funcionario)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
+            if (funcionario.id_funcionario == 0)
+            {
+                this.InserirFuncionario(funcionario);
+            }
+            else
+            {
+                this.Alterar(funcionario);
+            }
+        }
+        public List<Entityes.tb_funcionario> ListarTodos()
+        {
+            DataBase.RH.FuncionarioDataBase ddb = new DataBase.RH.FuncionarioDataBase();
+            List<Entityes.tb_funcionario> pesquisa = ddb.ListarTodos();
 
             return pesquisa;
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_funcionario> PesquisarPorNome(string data)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
+            DataBase.RH.FuncionarioDataBase ddb = new DataBase.RH.FuncionarioDataBase();
+            List<Entityes.tb_funcionario> pesquisa = ddb.PesquisarPorNome(data);
 
             return pesquisa;
         }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
+        public List<Entityes.tb_funcionario> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.RH.FuncionarioDataBase ddb = new DataBase.RH.FuncionarioDataBase();
+            List<Entityes.tb_funcionario> pesquisa = ddb.PesquisarPorIdFuncionarios(id);
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
+        public List<Entityes.tb_funcionario> PesquisarPorRg(string id)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
+            DataBase.RH.FuncionarioDataBase ddb = new DataBase.RH.FuncionarioDataBase();
+            List<Entityes.tb_funcionario> pesquisa = ddb.PesquisarPorRg(id);
 
+            return pesquisa;
         }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
+        public void Alterar(Entityes.tb_funcionario ponto)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
+            DataBase.RH.FuncionarioDataBase db = new DataBase.RH.FuncionarioDataBase();
+            db.AlterarFuncionario(ponto);
 
-        }
-        public void Remover(int id)
+        }       
+        public void Remover(Entityes.tb_funcionario funcionario)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
+            DataBase.RH.FuncionarioDataBase db = new DataBase.RH.FuncionarioDataBase();
+            db.RemoverFuncionario(funcionario);
         }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
-        }
+      
     }
 }

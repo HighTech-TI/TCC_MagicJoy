@@ -68,27 +68,10 @@ namespace MagicJoy.Telas.Estoque
             nudidforncedor.Value = 0;
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var estoque = dataGridView1.CurrentRow.DataBoundItem as Entityes.tb_estoque;
-
-            if(e.ColumnIndex == 5)
-            {
-                Alterar(estoque);
-            }
-
-            if(e.ColumnIndex == 6)
-            {
-               Remover(estoque);
-            }
-
-            
-        }
         private void Alterar(Entityes.tb_estoque estoque)
         {
                        
-            txtproduto.Text = estoque.nm_produto;
-            txtidestoque.Text = estoque.id_estoque.ToString();
+            txtproduto.Text = estoque.nm_produto;            
             txtqtds.Text = estoque.ds_qtd.ToString();                   
             txtvlcusto.Text = estoque.vl_custo.ToString();
             nudidforncedor.Value = estoque.id_fornecedor;
@@ -110,26 +93,33 @@ namespace MagicJoy.Telas.Estoque
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Entityes.tb_estoque estoque = new Entityes.tb_estoque();
-            List<Entityes.tb_estoque> ConsultarPorNome = business.PesquisarPorPodruto(estoque.nm_produto);
+            string produto = txtpesquisaproduto.Text;
+
+            
+            List<Entityes.tb_estoque> ConsultarPorNome = business.PesquisarPorPodruto(produto);
 
             dataGridView1.DataSource = ConsultarPorNome;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            Entityes.tb_estoque estoque = new Entityes.tb_estoque();
-            List<Entityes.tb_estoque> PesquisarId = business.PesquisarPorID(estoque.id_estoque);
+            int id = Convert.ToInt32(txtidestoquepesquisa.Text);
+
+            
+            List<Entityes.tb_estoque> PesquisarId = business.PesquisarPorID(id);
 
             dataGridView1.DataSource = PesquisarId;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            Entityes.tb_estoque estoque = new Entityes.tb_estoque();
-            List<Entityes.tb_estoque> PesquisarId = business.PesquisarPorqtd(estoque.ds_qtd);
+            int qtd = Convert.ToInt32(txtqtdpesquisa.Text); 
+
+            
+            List<Entityes.tb_estoque> PesquisarId = business.PesquisarPorqtd(qtd);
 
             dataGridView1.DataSource = PesquisarId;
         }
+
     }
 }

@@ -48,21 +48,12 @@ namespace MagicJoy.Business.RH
             db.AlterarControleDePonto(ponto);
 
         }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
-
-        }
-        public void Remover(int id)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
-        }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
-        }
+        
+       // public void Remover(int id)
+      //  {
+         //   DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
+           // db.RemoverControleDePOnto(id);
+        //}
+       
     }
 }
