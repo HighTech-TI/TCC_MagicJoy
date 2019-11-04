@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities13 db = new Entityes.magicjoydbEntities13();
         public void inserir (Entityes.tb_usuario usuario)
         {
             

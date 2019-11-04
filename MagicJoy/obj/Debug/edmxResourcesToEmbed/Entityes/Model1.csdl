@@ -112,9 +112,7 @@
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="id_pedido" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_estoque" Relationship="Self.tb_estoque_ibfk_1" FromRole="tb_fornecedor" ToRole="tb_estoque" />
-    <NavigationProperty Name="tb_pedido" Relationship="Self.tb_fornecedor_ibfk_1" FromRole="tb_fornecedor" ToRole="tb_pedido" />
   </EntityType>
   <EntityType Name="tb_funcionario">
     <Key>
@@ -145,7 +143,6 @@
     <Property Name="nm_pedido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nm_pedinte" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_pedido" Type="DateTime" Nullable="false" />
-    <NavigationProperty Name="tb_fornecedor" Relationship="Self.tb_fornecedor_ibfk_1" FromRole="tb_pedido" ToRole="tb_fornecedor" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -198,6 +195,15 @@
     <Property Name="id_venda_d" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_produto_venda" Relationship="Self.tb_venda_item_ibfk_1" FromRole="tb_venda_item" ToRole="tb_produto_venda" />
     <NavigationProperty Name="tb_venda" Relationship="Self.tb_venda_item_ibfk_2" FromRole="tb_venda_item" ToRole="tb_venda" />
+  </EntityType>
+  <EntityType Name="vw_fuxo_caixa">
+    <Key>
+      <PropertyRef Name="dt_pagamento" />
+      <PropertyRef Name="tp_operacao" />
+    </Key>
+    <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
+    <Property Name="vl_total" Type="Decimal" />
+    <Property Name="tp_operacao" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <Association Name="tb_funcionario_ibfk_2">
     <End Role="tb_beneficio" Type="Self.tb_beneficio" Multiplicity="1" />
@@ -295,18 +301,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="tb_fornecedor_ibfk_1">
-    <End Role="tb_pedido" Type="Self.tb_pedido" Multiplicity="1" />
-    <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_pedido">
-        <PropertyRef Name="id_pedido" />
-      </Principal>
-      <Dependent Role="tb_fornecedor">
-        <PropertyRef Name="id_pedido" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="tb_venda_item_ibfk_1">
     <End Role="tb_produto_venda" Type="Self.tb_produto_venda" Multiplicity="1" />
     <End Role="tb_venda_item" Type="Self.tb_venda_item" Multiplicity="*" />
@@ -331,7 +325,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="magicjoydbEntities11" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="magicjoydbEntities13" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -348,6 +342,7 @@
     <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" />
     <EntitySet Name="tb_venda" EntityType="Self.tb_venda" />
     <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" />
+    <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" />
     <AssociationSet Name="tb_funcionario_ibfk_2" Association="Self.tb_funcionario_ibfk_2">
       <End Role="tb_beneficio" EntitySet="tb_beneficio" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
@@ -379,10 +374,6 @@
     <AssociationSet Name="tb_funcionario_ibfk_1" Association="Self.tb_funcionario_ibfk_1">
       <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-    </AssociationSet>
-    <AssociationSet Name="tb_fornecedor_ibfk_1" Association="Self.tb_fornecedor_ibfk_1">
-      <End Role="tb_pedido" EntitySet="tb_pedido" />
-      <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
     </AssociationSet>
     <AssociationSet Name="tb_venda_item_ibfk_1" Association="Self.tb_venda_item_ibfk_1">
       <End Role="tb_produto_venda" EntitySet="tb_produto_venda" />

@@ -8,52 +8,68 @@ namespace MagicJoy.Business.Suprimentos
 {
     class FornecedorBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void InserirFornecedor(Entityes.tb_fornecedor fornecedor)
         {
-            if (ponto.id_funcionario == 0)
+
+
+            DataBase.Suprimentos.FornecedorDataBase db = new DataBase.Suprimentos.FornecedorDataBase();
+            db.InserirForncedor(fornecedor);
+
+        }
+        public void Salvar(Entityes.tb_fornecedor fornecedor)
+        {
+            if (fornecedor.id_fornecedor == 0)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                this.InserirFornecedor(fornecedor);
             }
-
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
-
+            else
+            {
+                this.Alterar(fornecedor);
+            }
         }
 
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+
+        public List<Entityes.tb_fornecedor> ListarTodos()
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
+            DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
+            List<Entityes.tb_fornecedor> pesquisa = ddb.ListarTodas();
 
             return pesquisa;
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_fornecedor> PesquisarPorNome(string nomefornce)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
+            DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
+            List<Entityes.tb_fornecedor> pesquisa = ddb.PesquisarPorNomeFornecedor(nomefornce);
 
             return pesquisa;
         }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
+        public List<Entityes.tb_fornecedor> PesquisarPorNomedeProduto(string nomefornce)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
+            List<Entityes.tb_fornecedor> pesquisa = ddb.PesquisarPorProduto(nomefornce);
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
+        public List<Entityes.tb_fornecedor> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
+            DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
+            List<Entityes.tb_fornecedor> pesquisa = ddb.PesquisarPorIdForncedor(id);
+
+            return pesquisa;
+        }
+        public void Alterar(Entityes.tb_fornecedor fornecedor)
+        {
+            DataBase.Suprimentos.FornecedorDataBase db = new DataBase.Suprimentos.FornecedorDataBase();
+            db.AlterarFornecedor(fornecedor);
 
         }
        
-      //  public void Remover(int id)
-       // {
-          //  DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-          //  db.RemoverControleDePOnto(id);
-       // }
+       public void Remover(Entityes.tb_fornecedor fornecedor)
+        {
+            DataBase.Suprimentos.FornecedorDataBase db = new DataBase.Suprimentos.FornecedorDataBase();
+            db.RemoverFornecedor(fornecedor);
+        }
        
     }
 }

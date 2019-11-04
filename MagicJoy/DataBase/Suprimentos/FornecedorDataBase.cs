@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Suprimentos
 {
     class FornecedorDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities13 db = new Entityes.magicjoydbEntities13();
        
         public void InserirForncedor(Entityes.tb_fornecedor fornecedor)
         {
@@ -17,9 +17,9 @@ namespace MagicJoy.DataBase.Suprimentos
 
             db.SaveChanges();
         }
-        public List<Entityes.tb_folha_pagamento> ListarTodasFolha()
+        public List<Entityes.tb_fornecedor> ListarTodas()
         {
-            List<Entityes.tb_folha_pagamento> tabela = db.tb_folha_pagamento.ToList();
+            List<Entityes.tb_fornecedor> tabela = db.tb_fornecedor.ToList();
             return tabela;
 
         }

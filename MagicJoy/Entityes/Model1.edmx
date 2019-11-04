@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="magicjoydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="magicjoydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_beneficio">
           <Key>
             <PropertyRef Name="id_beneficios" />
@@ -54,7 +54,7 @@
           <Property Name="hr_intervalo" Type="datetime" Precision="0" Nullable="false" />
           <Property Name="hr_retorno" Type="datetime" Precision="0" Nullable="false" />
           <Property Name="hr_saida" Type="datetime" Precision="0" Nullable="false" />
-          <Property Name="dt_dia" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="dt_dia" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_despesa">
           <Key>
@@ -107,7 +107,6 @@
           <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="id_pedido" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
@@ -182,6 +181,17 @@
           <Property Name="id_produto_v" Type="int" Nullable="false" />
           <Property Name="id_venda_d" Type="int" Nullable="false" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.magicjoydb.vw_fuxo_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_fuxo_caixa">
+          <Key>
+            <PropertyRef Name="dt_pagamento" />
+            <PropertyRef Name="tp_operacao" />
+          </Key>
+          <Property Name="dt_pagamento" Type="date" Nullable="false" />
+          <Property Name="vl_total" Type="decimal" Precision="59" Scale="2" />
+          <Property Name="tp_operacao" Type="varchar" MaxLength="7" Nullable="false" />
+        </EntityType>
         <Association Name="tb_cliente_ibfk_1">
           <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="1" />
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="*" />
@@ -239,18 +249,6 @@
             </Principal>
             <Dependent Role="tb_estoque">
               <PropertyRef Name="id_fornecedor" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="tb_fornecedor_ibfk_1">
-          <End Role="tb_pedido" Type="Self.tb_pedido" Multiplicity="1" />
-          <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_pedido">
-              <PropertyRef Name="id_pedido" />
-            </Principal>
-            <Dependent Role="tb_fornecedor">
-              <PropertyRef Name="id_pedido" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -331,6 +329,13 @@
           <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_venda" EntityType="Self.tb_venda" Schema="magicjoydb" store:Type="Tables" />
           <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" Schema="magicjoydb" store:Type="Tables" />
+          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" store:Type="Views" store:Schema="magicjoydb">
+            <DefiningQuery>SELECT
+`vw_fuxo_caixa`.`dt_pagamento`, 
+`vw_fuxo_caixa`.`vl_total`, 
+`vw_fuxo_caixa`.`tp_operacao`
+FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="tb_cliente_ibfk_1" Association="Self.tb_cliente_ibfk_1">
             <End Role="tb_compra" EntitySet="tb_compra" />
             <End Role="tb_cliente" EntitySet="tb_cliente" />
@@ -350,10 +355,6 @@
           <AssociationSet Name="tb_estoque_ibfk_1" Association="Self.tb_estoque_ibfk_1">
             <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
             <End Role="tb_estoque" EntitySet="tb_estoque" />
-          </AssociationSet>
-          <AssociationSet Name="tb_fornecedor_ibfk_1" Association="Self.tb_fornecedor_ibfk_1">
-            <End Role="tb_pedido" EntitySet="tb_pedido" />
-            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
           </AssociationSet>
           <AssociationSet Name="tb_funcionario_ibfk_1" Association="Self.tb_funcionario_ibfk_1">
             <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
@@ -493,9 +494,7 @@
           <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="id_pedido" Type="Int32" Nullable="false" />
           <NavigationProperty Name="tb_estoque" Relationship="Self.tb_estoque_ibfk_1" FromRole="tb_fornecedor" ToRole="tb_estoque" />
-          <NavigationProperty Name="tb_pedido" Relationship="Self.tb_fornecedor_ibfk_1" FromRole="tb_fornecedor" ToRole="tb_pedido" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
@@ -526,7 +525,6 @@
           <Property Name="nm_pedido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_pedinte" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_pedido" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_fornecedor" Relationship="Self.tb_fornecedor_ibfk_1" FromRole="tb_pedido" ToRole="tb_fornecedor" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
@@ -579,6 +577,15 @@
           <Property Name="id_venda_d" Type="Int32" Nullable="false" />
           <NavigationProperty Name="tb_produto_venda" Relationship="Self.tb_venda_item_ibfk_1" FromRole="tb_venda_item" ToRole="tb_produto_venda" />
           <NavigationProperty Name="tb_venda" Relationship="Self.tb_venda_item_ibfk_2" FromRole="tb_venda_item" ToRole="tb_venda" />
+        </EntityType>
+        <EntityType Name="vw_fuxo_caixa">
+          <Key>
+            <PropertyRef Name="dt_pagamento" />
+            <PropertyRef Name="tp_operacao" />
+          </Key>
+          <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
+          <Property Name="vl_total" Type="Decimal" />
+          <Property Name="tp_operacao" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <Association Name="tb_funcionario_ibfk_2">
           <End Role="tb_beneficio" Type="Self.tb_beneficio" Multiplicity="1" />
@@ -676,18 +683,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="tb_fornecedor_ibfk_1">
-          <End Role="tb_pedido" Type="Self.tb_pedido" Multiplicity="1" />
-          <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_pedido">
-              <PropertyRef Name="id_pedido" />
-            </Principal>
-            <Dependent Role="tb_fornecedor">
-              <PropertyRef Name="id_pedido" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="tb_venda_item_ibfk_1">
           <End Role="tb_produto_venda" Type="Self.tb_produto_venda" Multiplicity="1" />
           <End Role="tb_venda_item" Type="Self.tb_venda_item" Multiplicity="*" />
@@ -712,7 +707,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="magicjoydbEntities11" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="magicjoydbEntities13" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -729,6 +724,7 @@
           <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" />
           <EntitySet Name="tb_venda" EntityType="Self.tb_venda" />
           <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" />
+          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" />
           <AssociationSet Name="tb_funcionario_ibfk_2" Association="Self.tb_funcionario_ibfk_2">
             <End Role="tb_beneficio" EntitySet="tb_beneficio" />
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
@@ -761,10 +757,6 @@
             <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
           </AssociationSet>
-          <AssociationSet Name="tb_fornecedor_ibfk_1" Association="Self.tb_fornecedor_ibfk_1">
-            <End Role="tb_pedido" EntitySet="tb_pedido" />
-            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-          </AssociationSet>
           <AssociationSet Name="tb_venda_item_ibfk_1" Association="Self.tb_venda_item_ibfk_1">
             <End Role="tb_produto_venda" EntitySet="tb_produto_venda" />
             <End Role="tb_venda_item" EntitySet="tb_venda_item" />
@@ -779,7 +771,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities11">
+        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities13">
           <EntitySetMapping Name="tb_beneficio">
             <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">
@@ -889,7 +881,6 @@
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="ds_celular" ColumnName="ds_celular" />
                 <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-                <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -970,6 +961,15 @@
                 <ScalarProperty Name="id_venda" ColumnName="id_venda" />
                 <ScalarProperty Name="id_produto_v" ColumnName="id_produto_v" />
                 <ScalarProperty Name="id_venda_d" ColumnName="id_venda_d" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_fuxo_caixa">
+            <EntityTypeMapping TypeName="magicjoydbModel.vw_fuxo_caixa">
+              <MappingFragment StoreEntitySet="vw_fuxo_caixa">
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
+                <ScalarProperty Name="vl_total" ColumnName="vl_total" />
+                <ScalarProperty Name="tp_operacao" ColumnName="tp_operacao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

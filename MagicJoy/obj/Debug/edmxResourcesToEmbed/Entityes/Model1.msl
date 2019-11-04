@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities11">
+  <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities13">
     <EntitySetMapping Name="tb_beneficio">
       <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
         <MappingFragment StoreEntitySet="tb_beneficio">
@@ -110,7 +110,6 @@
           <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
           <ScalarProperty Name="ds_celular" ColumnName="ds_celular" />
           <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -191,6 +190,15 @@
           <ScalarProperty Name="id_venda" ColumnName="id_venda" />
           <ScalarProperty Name="id_produto_v" ColumnName="id_produto_v" />
           <ScalarProperty Name="id_venda_d" ColumnName="id_venda_d" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_fuxo_caixa">
+      <EntityTypeMapping TypeName="magicjoydbModel.vw_fuxo_caixa">
+        <MappingFragment StoreEntitySet="vw_fuxo_caixa">
+          <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
+          <ScalarProperty Name="vl_total" ColumnName="vl_total" />
+          <ScalarProperty Name="tp_operacao" ColumnName="tp_operacao" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

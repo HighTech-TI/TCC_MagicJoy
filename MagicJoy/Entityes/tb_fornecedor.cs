@@ -29,10 +29,8 @@ namespace MagicJoy.Entityes
         public string nm_produto { get; set; }
         public string ds_celular { get; set; }
         public string ds_cpf { get; set; }
-        public int id_pedido { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_estoque> tb_estoque { get; set; }
-        public virtual tb_pedido tb_pedido { get; set; }
     }
 }

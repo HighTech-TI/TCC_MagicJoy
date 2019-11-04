@@ -39,7 +39,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.nudidfornecedor = new System.Windows.Forms.NumericUpDown();
             this.txtnome = new System.Windows.Forms.TextBox();
-            this.mkktcnpj = new System.Windows.Forms.MaskedTextBox();
             this.txtendereco = new System.Windows.Forms.TextBox();
             this.mkttele = new System.Windows.Forms.MaskedTextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -52,6 +51,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.nudpesquisa = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtproduto = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nm_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.mktcnpj = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudidfornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).BeginInit();
@@ -78,7 +91,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 158);
+            this.label3.Location = new System.Drawing.Point(19, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 2;
@@ -132,7 +145,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(32, 198);
+            this.label9.Location = new System.Drawing.Point(29, 211);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 13);
             this.label9.TabIndex = 8;
@@ -152,14 +165,6 @@
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(172, 20);
             this.txtnome.TabIndex = 11;
-            // 
-            // mkktcnpj
-            // 
-            this.mkktcnpj.Location = new System.Drawing.Point(63, 155);
-            this.mkktcnpj.Mask = "__.___.___/____-__";
-            this.mkktcnpj.Name = "mkktcnpj";
-            this.mkktcnpj.Size = new System.Drawing.Size(122, 20);
-            this.mkktcnpj.TabIndex = 12;
             // 
             // txtendereco
             // 
@@ -190,6 +195,7 @@
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.Size = new System.Drawing.Size(166, 20);
             this.txtpesquisa.TabIndex = 69;
+            this.txtpesquisa.TextChanged += new System.EventHandler(this.txtpesquisa_TextChanged);
             // 
             // mkttcell
             // 
@@ -201,7 +207,7 @@
             // 
             // mktcpf
             // 
-            this.mktcpf.Location = new System.Drawing.Point(68, 195);
+            this.mktcpf.Location = new System.Drawing.Point(65, 208);
             this.mktcpf.Mask = "000,000,000-00";
             this.mktcpf.Name = "mktcpf";
             this.mktcpf.Size = new System.Drawing.Size(100, 20);
@@ -210,10 +216,23 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.nm_produto,
+            this.Column10,
+            this.Column11});
             this.dataGridView1.Location = new System.Drawing.Point(321, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(495, 285);
             this.dataGridView1.TabIndex = 73;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button1
             // 
@@ -223,6 +242,7 @@
             this.button1.TabIndex = 74;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtpesquisanome
             // 
@@ -230,6 +250,7 @@
             this.txtpesquisanome.Name = "txtpesquisanome";
             this.txtpesquisanome.Size = new System.Drawing.Size(172, 20);
             this.txtpesquisanome.TabIndex = 76;
+            this.txtpesquisanome.TextChanged += new System.EventHandler(this.txtpesquisanome_TextChanged);
             // 
             // label11
             // 
@@ -246,6 +267,7 @@
             this.nudpesquisa.Name = "nudpesquisa";
             this.nudpesquisa.Size = new System.Drawing.Size(60, 20);
             this.nudpesquisa.TabIndex = 78;
+            this.nudpesquisa.ValueChanged += new System.EventHandler(this.nudpesquisa_ValueChanged);
             // 
             // label10
             // 
@@ -256,11 +278,109 @@
             this.label10.TabIndex = 77;
             this.label10.Text = "ID Fornecedor:";
             // 
+            // txtproduto
+            // 
+            this.txtproduto.Location = new System.Drawing.Point(63, 140);
+            this.txtproduto.Name = "txtproduto";
+            this.txtproduto.Size = new System.Drawing.Size(166, 20);
+            this.txtproduto.TabIndex = 80;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 144);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Produto:";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id_fornecedor";
+            this.Column1.HeaderText = "ID Fornecedor";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "nm_fornecedor";
+            this.Column2.HeaderText = "Nome";
+            this.Column2.Name = "Column2";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "ds_cnpj";
+            this.Column4.HeaderText = "CPNJ";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "ds_cpf";
+            this.Column5.HeaderText = "CPF";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "ds_telefone";
+            this.Column6.HeaderText = "Telefone";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "ds_celular";
+            this.Column7.HeaderText = "Celular";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ds_endereço";
+            this.Column8.HeaderText = "Endereço";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "ds_email";
+            this.Column9.HeaderText = "Email";
+            this.Column9.Name = "Column9";
+            // 
+            // nm_produto
+            // 
+            this.nm_produto.DataPropertyName = "nm_produto";
+            this.nm_produto.HeaderText = "Produto";
+            this.nm_produto.Name = "nm_produto";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Editar";
+            this.Column10.Image = global::MagicJoy.Properties.Resources.edit_icon_2375785_960_7201;
+            this.Column10.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 52;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Excluir";
+            this.Column11.Image = global::MagicJoy.Properties.Resources.depositphotos_126646752_stock_illustration_the_trashcan_icon_dustbin_symbol1;
+            this.Column11.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 52;
+            // 
+            // mktcnpj
+            // 
+            this.mktcnpj.Location = new System.Drawing.Point(68, 175);
+            this.mktcnpj.Mask = "00,000,000/0000-00";
+            this.mktcnpj.Name = "mktcnpj";
+            this.mktcnpj.Size = new System.Drawing.Size(135, 20);
+            this.mktcnpj.TabIndex = 81;
+            this.mktcnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mktcnpj_MaskInputRejected);
+            // 
             // frmFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 507);
+            this.Controls.Add(this.mktcnpj);
+            this.Controls.Add(this.txtproduto);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.nudpesquisa);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtpesquisanome);
@@ -273,7 +393,6 @@
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.mkttele);
             this.Controls.Add(this.txtendereco);
-            this.Controls.Add(this.mkktcnpj);
             this.Controls.Add(this.txtnome);
             this.Controls.Add(this.nudidfornecedor);
             this.Controls.Add(this.label9);
@@ -288,6 +407,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFornecedor";
             this.Text = "frmFornecedor";
+            this.Load += new System.EventHandler(this.frmFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudidfornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).EndInit();
@@ -309,7 +429,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown nudidfornecedor;
         private System.Windows.Forms.TextBox txtnome;
-        private System.Windows.Forms.MaskedTextBox mkktcnpj;
         private System.Windows.Forms.TextBox txtendereco;
         private System.Windows.Forms.MaskedTextBox mkttele;
         private System.Windows.Forms.TextBox txtemail;
@@ -322,5 +441,19 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown nudpesquisa;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtproduto;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nm_produto;
+        private System.Windows.Forms.DataGridViewImageColumn Column10;
+        private System.Windows.Forms.DataGridViewImageColumn Column11;
+        private System.Windows.Forms.MaskedTextBox mktcnpj;
     }
 }

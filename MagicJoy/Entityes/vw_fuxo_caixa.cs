@@ -12,11 +12,10 @@ namespace MagicJoy.Entityes
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_pedido
+    public partial class vw_fuxo_caixa
     {
-        public int id_pedido { get; set; }
-        public string nm_pedido { get; set; }
-        public string nm_pedinte { get; set; }
-        public System.DateTime dt_pedido { get; set; }
+        public System.DateTime dt_pagamento { get; set; }
+        public Nullable<decimal> vl_total { get; set; }
+        public string tp_operacao { get; set; }
     }
 }
