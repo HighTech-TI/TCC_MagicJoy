@@ -475,6 +475,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Batman-Toy-surface-663086-wallhere.com.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\illustration-logo-cartoon-Super-Mario-brand-1440x900-px-553479-wallhere.com.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
