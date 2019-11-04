@@ -54,7 +54,7 @@
             this.cbousuario.BackColor = System.Drawing.SystemColors.Menu;
             this.cbousuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbousuario.FormattingEnabled = true;
-            this.cbousuario.Location = new System.Drawing.Point(360, 87);
+            this.cbousuario.Location = new System.Drawing.Point(373, 97);
             this.cbousuario.Margin = new System.Windows.Forms.Padding(0);
             this.cbousuario.Name = "cbousuario";
             this.cbousuario.Size = new System.Drawing.Size(247, 21);
@@ -65,7 +65,7 @@
             // 
             this.txtsenha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtsenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtsenha.Location = new System.Drawing.Point(360, 150);
+            this.txtsenha.Location = new System.Drawing.Point(373, 179);
             this.txtsenha.Margin = new System.Windows.Forms.Padding(0);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
@@ -74,14 +74,14 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox24);
             this.panel2.Controls.Add(this.pictureBox26);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(646, 32);
+            this.panel2.Size = new System.Drawing.Size(645, 32);
             this.panel2.TabIndex = 10;
             // 
             // label1
@@ -97,7 +97,7 @@
             // 
             // pictureBox24
             // 
-            this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
             this.pictureBox24.Location = new System.Drawing.Point(582, 3);
@@ -110,7 +110,7 @@
             // 
             // pictureBox26
             // 
-            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
             this.pictureBox26.Location = new System.Drawing.Point(613, 3);
@@ -151,7 +151,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::MagicJoy.Properties.Resources.Senha;
-            this.pictureBox4.Location = new System.Drawing.Point(303, 140);
+            this.pictureBox4.Location = new System.Drawing.Point(303, 160);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -198,8 +198,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.BackgroundImage = global::MagicJoy.Properties.Resources.background_atacado_semi_joias_2;
-            this.ClientSize = new System.Drawing.Size(646, 273);
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.Batman_Toy_surface_663086_wallhere_com;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(645, 313);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
