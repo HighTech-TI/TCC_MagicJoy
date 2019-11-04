@@ -71,6 +71,7 @@
             this.txtsenha.PasswordChar = '*';
             this.txtsenha.Size = new System.Drawing.Size(247, 20);
             this.txtsenha.TabIndex = 6;
+            this.txtsenha.TextChanged += new System.EventHandler(this.txtsenha_TextChanged);
             // 
             // panel2
             // 

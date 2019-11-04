@@ -31,6 +31,20 @@ namespace MagicJoy.DataBase
 
             return usuario;
        }
+        public Entityes.tb_usuario PesquisarParaEnviarEmail(string usuario, string email)
+        {
+            Entityes.tb_usuario usuarioo = db.tb_usuario.FirstOrDefault(t => t.nm_usuario == usuario
+                                                                         && t.ds_email == email);
+
+            return usuarioo;
+        }
+        public Entityes.tb_usuario PesquisarParaRecuperacaoNoEmail(string email)
+        {
+            Entityes.tb_usuario usuario = db.tb_usuario.FirstOrDefault(t => t.ds_email == email);
+                                                                         
+            return usuario;
+        }
+
 
         public Entityes.tb_usuario PesquisarusuariosIguasi(string nome)
         {

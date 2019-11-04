@@ -107,5 +107,10 @@ namespace MagicJoy.Telas.Login
         {
             this.Close();
         }
+
+        private void txtsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

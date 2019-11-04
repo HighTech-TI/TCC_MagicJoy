@@ -46,13 +46,6 @@
             this.mkttcell = new System.Windows.Forms.MaskedTextBox();
             this.mktcpf = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtpesquisanome = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.nudpesquisa = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtproduto = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +57,13 @@
             this.nm_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtpesquisanome = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.nudpesquisa = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtproduto = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.mktcnpj = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudidfornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -234,66 +234,6 @@
             this.dataGridView1.TabIndex = 73;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(32, 445);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 48);
-            this.button1.TabIndex = 74;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtpesquisanome
-            // 
-            this.txtpesquisanome.Location = new System.Drawing.Point(642, 422);
-            this.txtpesquisanome.Name = "txtpesquisanome";
-            this.txtpesquisanome.Size = new System.Drawing.Size(172, 20);
-            this.txtpesquisanome.TabIndex = 76;
-            this.txtpesquisanome.TextChanged += new System.EventHandler(this.txtpesquisanome_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(599, 426);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 75;
-            this.label11.Text = "Nome:";
-            // 
-            // nudpesquisa
-            // 
-            this.nudpesquisa.Location = new System.Drawing.Point(451, 379);
-            this.nudpesquisa.Name = "nudpesquisa";
-            this.nudpesquisa.Size = new System.Drawing.Size(60, 20);
-            this.nudpesquisa.TabIndex = 78;
-            this.nudpesquisa.ValueChanged += new System.EventHandler(this.nudpesquisa_ValueChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(367, 381);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 13);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "ID Fornecedor:";
-            // 
-            // txtproduto
-            // 
-            this.txtproduto.Location = new System.Drawing.Point(63, 140);
-            this.txtproduto.Name = "txtproduto";
-            this.txtproduto.Size = new System.Drawing.Size(166, 20);
-            this.txtproduto.TabIndex = 80;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 144);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "Produto:";
-            // 
             // Column1
             // 
             this.Column1.DataPropertyName = "id_fornecedor";
@@ -363,6 +303,66 @@
             this.Column11.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column11.Name = "Column11";
             this.Column11.Width = 52;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 445);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 48);
+            this.button1.TabIndex = 74;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtpesquisanome
+            // 
+            this.txtpesquisanome.Location = new System.Drawing.Point(642, 422);
+            this.txtpesquisanome.Name = "txtpesquisanome";
+            this.txtpesquisanome.Size = new System.Drawing.Size(172, 20);
+            this.txtpesquisanome.TabIndex = 76;
+            this.txtpesquisanome.TextChanged += new System.EventHandler(this.txtpesquisanome_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(599, 426);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.TabIndex = 75;
+            this.label11.Text = "Nome:";
+            // 
+            // nudpesquisa
+            // 
+            this.nudpesquisa.Location = new System.Drawing.Point(451, 379);
+            this.nudpesquisa.Name = "nudpesquisa";
+            this.nudpesquisa.Size = new System.Drawing.Size(60, 20);
+            this.nudpesquisa.TabIndex = 78;
+            this.nudpesquisa.ValueChanged += new System.EventHandler(this.nudpesquisa_ValueChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(367, 381);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 13);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "ID Fornecedor:";
+            // 
+            // txtproduto
+            // 
+            this.txtproduto.Location = new System.Drawing.Point(63, 140);
+            this.txtproduto.Name = "txtproduto";
+            this.txtproduto.Size = new System.Drawing.Size(166, 20);
+            this.txtproduto.TabIndex = 80;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 144);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "Produto:";
             // 
             // mktcnpj
             // 
