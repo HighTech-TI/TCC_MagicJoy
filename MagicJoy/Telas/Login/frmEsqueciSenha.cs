@@ -138,5 +138,10 @@ namespace MagicJoy.Telas.Login
             comboBox1.DisplayMember = nameof(Entityes.tb_usuario.nm_usuario);
             comboBox1.DataSource = users;
         }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
