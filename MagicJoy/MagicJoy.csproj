@@ -478,6 +478,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\810551.png" />
+    <None Include="Resources\81055.png" />
+    <None Include="Resources\1920x1080-px-colorful-Rubiks-Cube-toys-1278705-wallhere.com.jpg" />
+    <None Include="Resources\danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com.jpg" />
     <None Include="Resources\Batman-Toy-surface-663086-wallhere.com.jpg" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\illustration-logo-cartoon-Super-Mario-brand-1440x900-px-553479-wallhere.com.jpg" />

@@ -130,6 +130,9 @@
   <data name="58387" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\58387.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1920x1080-px-colorful-Rubiks-Cube-toys-1278705-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1920x1080-px-colorful-Rubiks-Cube-toys-1278705-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="controle_estoque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\controle_estoque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,8 +142,11 @@
   <data name="novo usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\novo usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="novo plano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\novo plano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Batman-Toy-surface-663086-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Batman-Toy-surface-663086-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="81055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81055.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Vendas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vendas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +171,9 @@
   </data>
   <data name="minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="514cb82d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\514cb82d9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ocultar senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ocultar senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,6 +244,9 @@
   <data name="confirmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\confirmar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="novo plano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\novo plano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="people.02109c81" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\people.02109c81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -247,8 +259,8 @@
   <data name="maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="514cb82d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\514cb82d9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Funcionários" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Funcionários.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,7 +328,7 @@
   <data name="criar-um-blog-670x419" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\criar-um-blog-670x419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Batman-Toy-surface-663086-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Batman-Toy-surface-663086-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="810551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\810551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

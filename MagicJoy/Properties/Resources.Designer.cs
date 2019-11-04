@@ -93,6 +93,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1920x1080_px_colorful_Rubiks_Cube_toys_1278705_wallhere_com {
+            get {
+                object obj = ResourceManager.GetObject("1920x1080-px-colorful-Rubiks-Cube-toys-1278705-wallhere.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _222_2226413_clipart_resolution_12541253_email_icon {
             get {
                 object obj = ResourceManager.GetObject("222-2226413_clipart-resolution-12541253-email-icon", resourceCulture);
@@ -116,6 +126,26 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap _58387 {
             get {
                 object obj = ResourceManager.GetObject("58387", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _81055 {
+            get {
+                object obj = ResourceManager.GetObject("81055", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _810551 {
+            get {
+                object obj = ResourceManager.GetObject("810551", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +276,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap Criar_um_ebook_e_ganhar_dinheiro_na_internet_1 {
             get {
                 object obj = ResourceManager.GetObject("Criar-um-ebook-e-ganhar-dinheiro-na-internet-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap danboard_box_robot_Toy_bag_pouch_1072564_wallhere_com {
+            get {
+                object obj = ResourceManager.GetObject("danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -44,6 +44,10 @@
             this.lblsenhas = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,6 +58,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -153,7 +160,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::MagicJoy.Properties.Resources.confirmar;
-            this.pictureBox5.Location = new System.Drawing.Point(536, 222);
+            this.pictureBox5.Location = new System.Drawing.Point(540, 222);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(49, 49);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -213,7 +220,7 @@
             this.lblsenhas.BackColor = System.Drawing.Color.Transparent;
             this.lblsenhas.Font = new System.Drawing.Font("High Tower Text", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsenhas.ForeColor = System.Drawing.Color.Red;
-            this.lblsenhas.Location = new System.Drawing.Point(231, 222);
+            this.lblsenhas.Location = new System.Drawing.Point(231, 227);
             this.lblsenhas.Name = "lblsenhas";
             this.lblsenhas.Size = new System.Drawing.Size(217, 22);
             this.lblsenhas.TabIndex = 19;
@@ -226,7 +233,7 @@
             this.lblusuario.BackColor = System.Drawing.Color.Transparent;
             this.lblusuario.Font = new System.Drawing.Font("High Tower Text", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.Red;
-            this.lblusuario.Location = new System.Drawing.Point(405, 45);
+            this.lblusuario.Location = new System.Drawing.Point(405, 43);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(225, 22);
             this.lblusuario.TabIndex = 20;
@@ -236,6 +243,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.label7);
@@ -244,6 +252,53 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(663, 32);
             this.panel2.TabIndex = 21;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.pictureBox24);
+            this.panel1.Controls.Add(this.pictureBox26);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(663, 32);
+            this.panel1.TabIndex = 61;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Splatch", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(6, 6);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 24);
+            this.label9.TabIndex = 58;
+            this.label9.Text = "Login";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.Color.White;
+            this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
+            this.pictureBox24.Location = new System.Drawing.Point(578, 3);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 56;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.BackColor = System.Drawing.Color.White;
+            this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
+            this.pictureBox26.Location = new System.Drawing.Point(613, 3);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 57;
+            this.pictureBox26.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -284,11 +339,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.label1.Location = new System.Drawing.Point(43, 144);
+            this.label1.Location = new System.Drawing.Point(50, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 73);
+            this.label1.Size = new System.Drawing.Size(155, 72);
             this.label1.TabIndex = 62;
             this.label1.Text = "Joy";
             // 
@@ -296,11 +351,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(12, 71);
+            this.label8.Location = new System.Drawing.Point(12, 78);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(226, 73);
+            this.label8.Size = new System.Drawing.Size(255, 72);
             this.label8.TabIndex = 61;
             this.label8.Text = "Magic ";
             // 
@@ -309,7 +364,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::MagicJoy.Properties.Resources._58387;
-            this.pictureBox6.Location = new System.Drawing.Point(481, 222);
+            this.pictureBox6.Location = new System.Drawing.Point(478, 222);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(49, 49);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +375,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 275);
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.danboard_box_robot_Toy_bag_pouch_1072564_wallhere_com;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(663, 291);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -348,6 +405,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -380,5 +441,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox26;
     }
 }

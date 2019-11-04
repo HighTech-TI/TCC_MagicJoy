@@ -40,6 +40,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
@@ -47,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cbousuario
@@ -54,7 +56,7 @@
             this.cbousuario.BackColor = System.Drawing.SystemColors.Menu;
             this.cbousuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbousuario.FormattingEnabled = true;
-            this.cbousuario.Location = new System.Drawing.Point(373, 97);
+            this.cbousuario.Location = new System.Drawing.Point(373, 92);
             this.cbousuario.Margin = new System.Windows.Forms.Padding(0);
             this.cbousuario.Name = "cbousuario";
             this.cbousuario.Size = new System.Drawing.Size(247, 21);
@@ -65,7 +67,7 @@
             // 
             this.txtsenha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtsenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtsenha.Location = new System.Drawing.Point(373, 179);
+            this.txtsenha.Location = new System.Drawing.Point(373, 170);
             this.txtsenha.Margin = new System.Windows.Forms.Padding(0);
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.PasswordChar = '*';
@@ -87,11 +89,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("High Tower Text", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Splatch", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(6, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 19);
+            this.label1.Size = new System.Drawing.Size(53, 24);
             this.label1.TabIndex = 58;
             this.label1.Text = "Login";
             // 
@@ -100,7 +102,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(582, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(578, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +128,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::MagicJoy.Properties.Resources.novo_usuario;
-            this.pictureBox6.Location = new System.Drawing.Point(453, 214);
+            this.pictureBox6.Location = new System.Drawing.Point(445, 214);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 49);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -162,7 +164,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::MagicJoy.Properties.Resources.oie_transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(303, 79);
+            this.pictureBox3.Location = new System.Drawing.Point(303, 83);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(45, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -173,11 +175,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(46, 149);
+            this.label6.Location = new System.Drawing.Point(44, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 73);
+            this.label6.Size = new System.Drawing.Size(155, 72);
             this.label6.TabIndex = 12;
             this.label6.Text = "Joy";
             // 
@@ -185,13 +187,24 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 73);
+            this.label3.Size = new System.Drawing.Size(255, 72);
             this.label3.TabIndex = 11;
             this.label3.Text = "Magic ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.pictureBox1.Image = global::MagicJoy.Properties.Resources.ocultar_senha;
+            this.pictureBox1.Location = new System.Drawing.Point(591, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
@@ -201,6 +214,7 @@
             this.BackgroundImage = global::MagicJoy.Properties.Resources.Batman_Toy_surface_663086_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(645, 313);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
@@ -223,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +256,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
