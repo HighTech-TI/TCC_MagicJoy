@@ -8,18 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MagicJoy.Telas.Suprimentos
+namespace MagicJoy.Telas.Estoque
 {
-    public partial class frmFornecedor : Form
+    public partial class frmPedido : Form
     {
-        public frmFornecedor()
+        public frmPedido()
         {
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        Business.Estoque.PedidoBusiness business = new Business.Estoque.PedidoBusiness();
+        
     }
 }

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\Estoque\EstoqueBusiness.cs" />
+    <Compile Include="Business\Estoque\PedidoBusiness.cs" />
     <Compile Include="Business\Estoque\ProdutoBusiness.cs" />
     <Compile Include="Business\Financeiro\ClienteBusiness.cs" />
     <Compile Include="Business\Financeiro\DespesaBusiness.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Business\Suprimentos\FornecedorBusiness.cs" />
     <Compile Include="Business\Suprimentos\VendaBusiness.cs" />
     <Compile Include="DataBase\Estoque\EstoqueDataBase.cs" />
+    <Compile Include="DataBase\Estoque\PedidoBusiness.cs" />
     <Compile Include="DataBase\Estoque\ProdutoDataBase.cs" />
     <Compile Include="DataBase\Financeiro\ClienteDataBase.cs" />
     <Compile Include="DataBase\Financeiro\DespesasDataBase.cs" />
@@ -169,6 +171,12 @@
     </Compile>
     <Compile Include="Telas\Estoque\frmInserirEstoque.Designer.cs">
       <DependentUpon>frmInserirEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Estoque\frmProduto.cs">
       <SubType>Form</SubType>
@@ -271,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Estoque\frmInserirEstoque.resx">
       <DependentUpon>frmInserirEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\frmPedido.resx">
+      <DependentUpon>frmPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Estoque\frmProduto.resx">
       <DependentUpon>frmProduto.cs</DependentUpon>
