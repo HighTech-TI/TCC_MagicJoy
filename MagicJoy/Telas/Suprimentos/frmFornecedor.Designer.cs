@@ -65,117 +65,143 @@
             this.txtproduto = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.mktcnpj = new System.Windows.Forms.MaskedTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudidfornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 57);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(126, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Fornecedor:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 112);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 178);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 176);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(54, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "CNPJ:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 243);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(90, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Endereço:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(15, 285);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(84, 21);
             this.label5.TabIndex = 4;
             this.label5.Text = "Telefone:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 332);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(15, 321);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(57, 21);
             this.label6.TabIndex = 5;
             this.label6.Text = "Email:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(599, 378);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(564, 373);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.Size = new System.Drawing.Size(80, 21);
             this.label7.TabIndex = 6;
             this.label7.Text = "Produto:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 380);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 363);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.Size = new System.Drawing.Size(72, 21);
             this.label8.TabIndex = 7;
             this.label8.Text = "Celular:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(29, 211);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(26, 209);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
+            this.label9.Size = new System.Drawing.Size(42, 21);
             this.label9.TabIndex = 8;
             this.label9.Text = "CPF:";
             // 
             // nudidfornecedor
             // 
             this.nudidfornecedor.Enabled = false;
-            this.nudidfornecedor.Location = new System.Drawing.Point(90, 53);
+            this.nudidfornecedor.Location = new System.Drawing.Point(138, 60);
             this.nudidfornecedor.Name = "nudidfornecedor";
             this.nudidfornecedor.Size = new System.Drawing.Size(60, 20);
             this.nudidfornecedor.TabIndex = 10;
+            this.nudidfornecedor.ValueChanged += new System.EventHandler(this.nudidfornecedor_ValueChanged);
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(63, 109);
+            this.txtnome.Location = new System.Drawing.Point(94, 112);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(172, 20);
             this.txtnome.TabIndex = 11;
             // 
             // txtendereco
             // 
-            this.txtendereco.Location = new System.Drawing.Point(68, 240);
+            this.txtendereco.Location = new System.Drawing.Point(94, 245);
             this.txtendereco.Name = "txtendereco";
             this.txtendereco.Size = new System.Drawing.Size(172, 20);
             this.txtendereco.TabIndex = 13;
             // 
             // mkttele
             // 
-            this.mkttele.Location = new System.Drawing.Point(73, 282);
+            this.mkttele.Location = new System.Drawing.Point(100, 286);
             this.mkttele.Mask = "(00)00000000";
             this.mkttele.Name = "mkttele";
             this.mkttele.Size = new System.Drawing.Size(85, 20);
@@ -183,7 +209,7 @@
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(73, 329);
+            this.txtemail.Location = new System.Drawing.Point(72, 323);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(167, 20);
             this.txtemail.TabIndex = 68;
@@ -191,7 +217,7 @@
             // 
             // txtpesquisa
             // 
-            this.txtpesquisa.Location = new System.Drawing.Point(650, 374);
+            this.txtpesquisa.Location = new System.Drawing.Point(647, 374);
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.Size = new System.Drawing.Size(166, 20);
             this.txtpesquisa.TabIndex = 69;
@@ -199,7 +225,7 @@
             // 
             // mkttcell
             // 
-            this.mkttcell.Location = new System.Drawing.Point(72, 377);
+            this.mkttcell.Location = new System.Drawing.Point(85, 365);
             this.mkttcell.Mask = "(00)0 0000-0000";
             this.mkttcell.Name = "mkttcell";
             this.mkttcell.Size = new System.Drawing.Size(100, 20);
@@ -306,17 +332,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(32, 445);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 48);
             this.button1.TabIndex = 74;
             this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtpesquisanome
             // 
-            this.txtpesquisanome.Location = new System.Drawing.Point(642, 422);
+            this.txtpesquisanome.Location = new System.Drawing.Point(630, 421);
             this.txtpesquisanome.Name = "txtpesquisanome";
             this.txtpesquisanome.Size = new System.Drawing.Size(172, 20);
             this.txtpesquisanome.TabIndex = 76;
@@ -325,9 +354,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(599, 426);
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(564, 420);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.Size = new System.Drawing.Size(58, 21);
             this.label11.TabIndex = 75;
             this.label11.Text = "Nome:";
             // 
@@ -342,42 +373,97 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(367, 381);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(319, 379);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 13);
+            this.label10.Size = new System.Drawing.Size(126, 21);
             this.label10.TabIndex = 77;
             this.label10.Text = "ID Fornecedor:";
             // 
             // txtproduto
             // 
-            this.txtproduto.Location = new System.Drawing.Point(63, 140);
+            this.txtproduto.Location = new System.Drawing.Point(94, 143);
             this.txtproduto.Name = "txtproduto";
-            this.txtproduto.Size = new System.Drawing.Size(166, 20);
+            this.txtproduto.Size = new System.Drawing.Size(172, 20);
             this.txtproduto.TabIndex = 80;
+            this.txtproduto.TextChanged += new System.EventHandler(this.txtproduto_TextChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 144);
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Candy Beans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(12, 142);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.Size = new System.Drawing.Size(80, 21);
             this.label12.TabIndex = 79;
             this.label12.Text = "Produto:";
             // 
             // mktcnpj
             // 
-            this.mktcnpj.Location = new System.Drawing.Point(68, 175);
+            this.mktcnpj.Location = new System.Drawing.Point(77, 175);
             this.mktcnpj.Mask = "00,000,000/0000-00";
             this.mktcnpj.Name = "mktcnpj";
             this.mktcnpj.Size = new System.Drawing.Size(135, 20);
             this.mktcnpj.TabIndex = 81;
             this.mktcnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mktcnpj_MaskInputRejected);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.pictureBox24);
+            this.panel1.Controls.Add(this.pictureBox26);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(856, 32);
+            this.panel1.TabIndex = 82;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(131, 26);
+            this.label13.TabIndex = 58;
+            this.label13.Text = "Fornecedores";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.Color.White;
+            this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
+            this.pictureBox24.Location = new System.Drawing.Point(797, 3);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox24.TabIndex = 56;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.BackColor = System.Drawing.Color.White;
+            this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
+            this.pictureBox26.Location = new System.Drawing.Point(828, 3);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox26.TabIndex = 57;
+            this.pictureBox26.TabStop = false;
+            // 
             // frmFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(856, 507);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.mktcnpj);
             this.Controls.Add(this.txtproduto);
             this.Controls.Add(this.label12);
@@ -411,6 +497,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudidfornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,5 +545,9 @@
         private System.Windows.Forms.DataGridViewImageColumn Column10;
         private System.Windows.Forms.DataGridViewImageColumn Column11;
         private System.Windows.Forms.MaskedTextBox mktcnpj;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox26;
     }
 }

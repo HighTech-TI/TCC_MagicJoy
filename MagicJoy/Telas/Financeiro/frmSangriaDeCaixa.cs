@@ -16,5 +16,10 @@ namespace MagicJoy.Telas.Financeiro
         {
             InitializeComponent();
         }
+
+        private void frmSangriaDeCaixa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
