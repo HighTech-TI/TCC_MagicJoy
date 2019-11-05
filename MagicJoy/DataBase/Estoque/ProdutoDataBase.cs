@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Estoque
 {
     class ProdutoDataBase
     {
-        Entityes.magicjoydbEntities13 bd = new Entityes.magicjoydbEntities13();
+        Entityes.magicjoydbEntities14 bd = new Entityes.magicjoydbEntities14();
 
         public void Inserir(Entityes.tb_produto produto)
         {

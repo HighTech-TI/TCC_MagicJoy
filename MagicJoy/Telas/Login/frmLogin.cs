@@ -112,5 +112,17 @@ namespace MagicJoy.Telas.Login
         {
 
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Telas.Login.frmEsqueciSenha tela = new frmEsqueciSenha();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

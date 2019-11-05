@@ -23,7 +23,7 @@ namespace MagicJoy.Objetos
             {
                 System.Net.Mail.MailMessage email = new System.Net.Mail.MailMessage();
 
-                string remetente = "hightech.tecnology@gmauil.com";
+                string remetente = "hightech.tecnology@gmail.com";
                 string senha = "fcdsgrd0217";
 
                 // Configura Remetente, Destinatário

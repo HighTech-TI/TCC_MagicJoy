@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities13 db = new Entityes.magicjoydbEntities13();
+        Entityes.magicjoydbEntities14 db = new Entityes.magicjoydbEntities14();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -34,8 +34,7 @@ namespace MagicJoy.DataBase
         public Entityes.tb_usuario PesquisarParaEnviarEmail(string usuario, string email)
         {
             Entityes.tb_usuario usuarioo = db.tb_usuario.FirstOrDefault(t => t.nm_usuario == usuario
-                                                                         && t.ds_email == email);
-
+                                                                         && t.ds_email == email );
             return usuarioo;
         }
         public Entityes.tb_usuario PesquisarParaRecuperacaoNoEmail(string email)
@@ -70,7 +69,9 @@ namespace MagicJoy.DataBase
             string Email = tb.ds_email;
             string Assunto = "Codigo de recuperação";
             int Cod = randNum.Next();
-            string Messagem = ("O Codigo de Verefição é " + Cod);
+            string Messagem = ("Insira uma senha que você lembre na próxima vez que for usar o sistema." + "\r\n" + "O Codigo de Verefição é: " + Cod);
+
+
 
             //Objeto responsavel
             //
@@ -80,9 +81,19 @@ namespace MagicJoy.DataBase
             //Salvando o codigo no banco
             //
            Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.id_usuario == tb.id_usuario);
-           // alterar.ds_recuperacao = Cod;
-            db.SaveChanges();
+           alterar.ds_recuperacao = Cod;
+           db.SaveChanges();
 
+        }
+        public void Alterar(Entityes.tb_usuario usuario)
+        {
+            Random randNum = new Random();
+
+            Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.ds_recuperacao == usuario.ds_recuperacao);
+            int Cod = randNum.Next();
+            alterar.ds_recuperacao = Cod;
+           
+            db.SaveChanges();
         }
         public Entityes.tb_usuario PesquisarParaRecuperar(string email)
         {
