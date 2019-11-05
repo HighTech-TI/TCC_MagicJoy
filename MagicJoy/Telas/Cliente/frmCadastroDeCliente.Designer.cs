@@ -79,7 +79,7 @@
             // 
             this.txtnome.Location = new System.Drawing.Point(188, 126);
             this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(100, 20);
+            this.txtnome.Size = new System.Drawing.Size(129, 20);
             this.txtnome.TabIndex = 2;
             // 
             // label2
@@ -130,10 +130,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(94, 305);
+            this.label6.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(83, 299);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.Size = new System.Drawing.Size(107, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Endereço:";
             // 
@@ -156,10 +156,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(15, 421);
+            this.button2.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(15, 413);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 41);
+            this.button2.Size = new System.Drawing.Size(114, 49);
             this.button2.TabIndex = 23;
             this.button2.Text = "Salvar";
             this.button2.UseVisualStyleBackColor = false;
@@ -194,10 +194,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 338);
+            this.label1.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(106, 333);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 26;
             this.label1.Text = "Celular:";
             // 
@@ -223,16 +223,16 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(84, 380);
+            this.label8.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(74, 367);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 16);
+            this.label8.Size = new System.Drawing.Size(113, 25);
             this.label8.TabIndex = 30;
             this.label8.Text = "ID compra:";
             // 
             // txtidcompra
             // 
-            this.txtidcompra.Location = new System.Drawing.Point(188, 380);
+            this.txtidcompra.Location = new System.Drawing.Point(188, 371);
             this.txtidcompra.Name = "txtidcompra";
             this.txtidcompra.Size = new System.Drawing.Size(54, 20);
             this.txtidcompra.TabIndex = 31;
@@ -351,10 +351,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(672, 372);
+            this.label10.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(672, 368);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(35, 16);
+            this.label10.Size = new System.Drawing.Size(50, 25);
             this.label10.TabIndex = 35;
             this.label10.Text = "Cpf:";
             // 
@@ -370,10 +370,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(497, 371);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 16);
+            this.label11.Size = new System.Drawing.Size(70, 25);
             this.label11.TabIndex = 38;
             this.label11.Text = "Nome:";
             // 
@@ -397,21 +397,21 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(342, 373);
+            this.label12.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(318, 369);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.Size = new System.Drawing.Size(107, 25);
             this.label12.TabIndex = 39;
             this.label12.Text = "ID cliente:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Splatch", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 24);
+            this.label13.Size = new System.Drawing.Size(150, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Cadastrar Cliente";
             // 
