@@ -254,3 +254,4 @@ C:\Users\infod26\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.conf
 C:\Users\infod16\Source\Repos\TCC_MagicJoy12\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Estoque.frmPedido.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Login.frmAlterarLogin.resources
+C:\Users\infod26\Source\Repos\TCC_MagicJoy2\MagicJoy\bin\Debug\MagicJoy.exe.config

@@ -112,9 +112,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::MagicJoy.Properties.Resources.logo;
-            this.pictureBox10.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox10.Location = new System.Drawing.Point(35, 12);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(155, 123);
+            this.pictureBox10.Size = new System.Drawing.Size(170, 151);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 7;
             this.pictureBox10.TabStop = false;
@@ -123,11 +123,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label5.Font = new System.Drawing.Font("High Tower Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Candy Beans", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(0, 538);
+            this.label5.Location = new System.Drawing.Point(0, 530);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 19);
+            this.label5.Size = new System.Drawing.Size(64, 27);
             this.label5.TabIndex = 6;
             this.label5.Text = "Menu";
             // 
@@ -199,11 +199,11 @@
             this.lblLogado.AutoSize = true;
             this.lblLogado.BackColor = System.Drawing.Color.Black;
             this.lblLogado.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblLogado.Font = new System.Drawing.Font("Ananda", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogado.ForeColor = System.Drawing.Color.White;
             this.lblLogado.Location = new System.Drawing.Point(560, 4);
             this.lblLogado.Name = "lblLogado";
-            this.lblLogado.Size = new System.Drawing.Size(169, 26);
+            this.lblLogado.Size = new System.Drawing.Size(167, 18);
             this.lblLogado.TabIndex = 11;
             this.lblLogado.Text = "Seja Bem-Vindo [Nome]";
             this.lblLogado.Click += new System.EventHandler(this.lblLogado_Click);
@@ -329,10 +329,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(454, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 48);
+            this.label2.Size = new System.Drawing.Size(137, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Fluxo de Caixa";
             this.label2.Visible = false;
@@ -341,10 +341,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(454, 354);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 48);
+            this.label3.Size = new System.Drawing.Size(77, 24);
             this.label3.TabIndex = 16;
             this.label3.Text = "Clientes";
             this.label3.Visible = false;
@@ -353,10 +353,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(454, 472);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 48);
+            this.label6.Size = new System.Drawing.Size(93, 24);
             this.label6.TabIndex = 17;
             this.label6.Text = "Despesas";
             this.label6.Visible = false;
@@ -366,7 +366,7 @@
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox14.Image = global::MagicJoy.Properties.Resources.pedidos;
-            this.pictureBox14.Location = new System.Drawing.Point(330, 189);
+            this.pictureBox14.Location = new System.Drawing.Point(621, 207);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(106, 99);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -379,7 +379,7 @@
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox15.Image = global::MagicJoy.Properties.Resources.produtos1;
-            this.pictureBox15.Location = new System.Drawing.Point(357, 328);
+            this.pictureBox15.Location = new System.Drawing.Point(621, 328);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(106, 99);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -392,7 +392,7 @@
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox16.Image = global::MagicJoy.Properties.Resources.produtos1;
-            this.pictureBox16.Location = new System.Drawing.Point(330, 425);
+            this.pictureBox16.Location = new System.Drawing.Point(621, 446);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(106, 99);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

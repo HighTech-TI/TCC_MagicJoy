@@ -277,7 +277,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label27);
-            this.panel2.Location = new System.Drawing.Point(39, 190);
+            this.panel2.Location = new System.Drawing.Point(109, 166);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(382, 226);
             this.panel2.TabIndex = 10;
@@ -321,7 +321,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Default;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(155, 467);
+            this.button3.Location = new System.Drawing.Point(181, 467);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 41);
             this.button3.TabIndex = 55;
@@ -334,7 +334,7 @@
             this.button7.Cursor = System.Windows.Forms.Cursors.Default;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(302, 467);
+            this.button7.Location = new System.Drawing.Point(355, 467);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(112, 41);
             this.button7.TabIndex = 56;
@@ -347,7 +347,7 @@
             this.button8.Cursor = System.Windows.Forms.Cursors.Default;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(445, 467);
+            this.button8.Location = new System.Drawing.Point(507, 467);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(103, 41);
             this.button8.TabIndex = 57;
@@ -363,17 +363,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(582, 32);
+            this.panel1.Size = new System.Drawing.Size(668, 32);
             this.panel1.TabIndex = 63;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(150, 26);
+            this.label13.Size = new System.Drawing.Size(111, 16);
             this.label13.TabIndex = 58;
             this.label13.Text = "Cadastrar Cliente";
             // 
@@ -382,7 +382,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(520, 4);
+            this.pictureBox24.Location = new System.Drawing.Point(609, 4);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -394,7 +394,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(551, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(640, 4);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -407,7 +407,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(582, 542);
+            this.ClientSize = new System.Drawing.Size(668, 523);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
