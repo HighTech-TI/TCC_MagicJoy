@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Suprimentos
 {
     class CompraDataBase
     {
-        Entityes.magicjoydbEntities13 db = new Entityes.magicjoydbEntities13();
+        Entityes.magicjoydbEntities14 db = new Entityes.magicjoydbEntities14();
         public void InserirCompras(Entityes.tb_compra compra)
         {
 

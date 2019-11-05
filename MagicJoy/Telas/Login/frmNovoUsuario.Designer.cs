@@ -281,24 +281,26 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(578, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(606, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox24.TabIndex = 56;
             this.pictureBox24.TabStop = false;
+            this.pictureBox24.Click += new System.EventHandler(this.pictureBox24_Click);
             // 
             // pictureBox26
             // 
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(613, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(635, 3);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox26.TabIndex = 57;
             this.pictureBox26.TabStop = false;
+            this.pictureBox26.Click += new System.EventHandler(this.pictureBox26_Click);
             // 
             // pictureBox3
             // 
@@ -341,7 +343,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.label1.Location = new System.Drawing.Point(50, 170);
+            this.label1.Location = new System.Drawing.Point(33, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 72);
             this.label1.TabIndex = 62;
@@ -353,7 +355,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(12, 78);
+            this.label8.Location = new System.Drawing.Point(12, 62);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(255, 72);
             this.label8.TabIndex = 61;
@@ -370,6 +372,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 63;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // frmNovoUsuario
             // 

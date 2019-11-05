@@ -39,8 +39,8 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            try
-            {
+           // try
+           // {
 
 
                 Entityes.tb_usuario db = new Entityes.tb_usuario();
@@ -67,23 +67,37 @@ namespace MagicJoy.Telas.Login
 
                 string combnome = comboBox1.Text;
                 string eemail = txtemail.Text;
+               
+                
 
-                if(combnome == user.nm_usuario && eemail == email.ds_email)
+                if(combnome == user.nm_usuario && eemail == user.ds_email)
                 {
-                    string re = "zika";
-                    string me = "suave";
+                    Random randNum = new Random();
+                    int Cod = randNum.Next();
+
+                    string re = "RECUPERAÇÃO DE SENHA";
+                    string me = "Insira uma senha que você lembre na próxima vez que for usar o sistema." + "\r\n" + "Seu Código de recuperação é: " + Cod;
+
+
                     Objetos.EnviarEmail fun = new Objetos.EnviarEmail();
                     fun.Enviar(eemail, re, me);
+
+                    DataBase.LoginDataBase log = new DataBase.LoginDataBase();
+                    log.Alterar(db);
+
+
+                    MessageBox.Show("Email enviado com sucesso!", "Magic joy", MessageBoxButtons.OK, MessageBoxIcon.Warning);                   
+                   
                 }
                 
-            }
-            catch (Exception)
-            {
+          // }
+           // catch (Exception)
+          //  {
 
-                MessageBox.Show("Ocorreu um erro, tente novamente ou contate seu administrador de sistema!",
-                                       "Magic Joy", MessageBoxButtons.OK,
-                                                    MessageBoxIcon.Error);
-            }                 
+                //MessageBox.Show("Ocorreu um erro, tente novamente ou contate seu administrador de sistema!",
+                                  //     "Magic Joy", MessageBoxButtons.OK,
+                                                  //  MessageBoxIcon.Error);
+           // }                 
 
         }
 
@@ -100,7 +114,7 @@ namespace MagicJoy.Telas.Login
             if (email == null)
             {
                 txtemail.BackColor = System.Drawing.Color.White;
-                txtemail.Visible = false;
+                lblemail.Visible = false;
                 return;
             }
 
@@ -126,6 +140,7 @@ namespace MagicJoy.Telas.Login
             else
             {               
                 txtemail.BackColor = System.Drawing.Color.Red;
+                lblemail.Visible = true;
             }
         }
 
@@ -142,6 +157,13 @@ namespace MagicJoy.Telas.Login
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtrecuperacao_TextChanged(object sender, EventArgs e)
+        {
+            Telas.Login.frmAlterarLogin alterlog = new frmAlterarLogin();
+            alterlog.Show();
+            this.Hide();
         }
     }
 }

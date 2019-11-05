@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\infod16\Source\Repos\TCC_MagicJoy9\MagicJoy\Entityes\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\Entityes\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

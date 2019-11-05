@@ -174,5 +174,21 @@ namespace MagicJoy.Telas.Login
                 }
 
             }
-        
-}   }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Telas.Login.frmLogin tela = new frmLogin();
+            tela.Show();
+            this.Hide();
+        }
+    }   }
