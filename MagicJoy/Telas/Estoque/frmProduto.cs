@@ -133,5 +133,10 @@ namespace MagicJoy.Telas.Estoque
                 Remover(produto);
             }
         }
+
+        private void txtidestoque_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

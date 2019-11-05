@@ -153,5 +153,15 @@ namespace MagicJoy.Telas.Suprimentos
         {
 
         }
+
+        private void txtproduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudidfornecedor_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
