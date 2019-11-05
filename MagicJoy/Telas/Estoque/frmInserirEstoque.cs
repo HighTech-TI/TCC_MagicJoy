@@ -121,5 +121,9 @@ namespace MagicJoy.Telas.Estoque
             dataGridView1.DataSource = PesquisarId;
         }
 
+        private void nudidforncedor_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
