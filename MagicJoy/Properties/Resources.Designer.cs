@@ -19,7 +19,7 @@ namespace MagicJoy.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -203,6 +203,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clientes1 {
+            get {
+                object obj = ResourceManager.GetObject("clientes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Como_criar_e_gerenciar_um_portfólio_de_inovação {
             get {
                 object obj = ResourceManager.GetObject("Como-criar-e-gerenciar-um-portfólio-de-inovação", resourceCulture);
@@ -323,6 +333,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DOMINIO_CAMPANHA_ONBALANCE_SITE_ICONES_BENEFICIOS_02 {
+            get {
+                object obj = ResourceManager.GetObject("DOMINIO-CAMPANHA-ONBALANCE-SITE-ICONES-BENEFICIOS-02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -436,6 +456,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap fluxo_de_caixa {
             get {
                 object obj = ResourceManager.GetObject("fluxo de caixa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluxo_de_caixa1 {
+            get {
+                object obj = ResourceManager.GetObject("fluxo de caixa1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -704,6 +734,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pedidos {
+            get {
+                object obj = ResourceManager.GetObject("pedidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap people_02109c81 {
             get {
                 object obj = ResourceManager.GetObject("people.02109c81", resourceCulture);
@@ -737,6 +777,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap produtos {
             get {
                 object obj = ResourceManager.GetObject("produtos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap produtos1 {
+            get {
+                object obj = ResourceManager.GetObject("produtos1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

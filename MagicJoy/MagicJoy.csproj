@@ -159,7 +159,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Objetos\EnviarEmail.cs" />
-    <Compile Include="Objetos\SlidesMenu.cs" />
     <Compile Include="Objetos\UsuarioLogado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -303,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
       <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Login\frmAlterarLogin.resx">
+      <DependentUpon>frmAlterarLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>
@@ -493,6 +495,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\produtos1.png" />
+    <None Include="Resources\pedidos.png" />
+    <None Include="Resources\DOMINIO-CAMPANHA-ONBALANCE-SITE-ICONES-BENEFICIOS-02.png" />
+    <None Include="Resources\clientes1.png" />
+    <None Include="Resources\fluxo de caixa1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

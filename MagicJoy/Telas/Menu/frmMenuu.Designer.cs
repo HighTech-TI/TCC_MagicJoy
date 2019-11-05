@@ -42,32 +42,37 @@
             this.lblLogado = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.picfluxo = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picCompra = new System.Windows.Forms.PictureBox();
-            this.picVenda = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picfluxo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCompra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,7 +94,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.SystemColors.InfoText;
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox9);
@@ -97,6 +102,7 @@
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 557);
@@ -193,11 +199,11 @@
             this.lblLogado.AutoSize = true;
             this.lblLogado.BackColor = System.Drawing.Color.Black;
             this.lblLogado.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblLogado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogado.Font = new System.Drawing.Font("Ananda", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogado.ForeColor = System.Drawing.Color.White;
-            this.lblLogado.Location = new System.Drawing.Point(560, 9);
+            this.lblLogado.Location = new System.Drawing.Point(560, 4);
             this.lblLogado.Name = "lblLogado";
-            this.lblLogado.Size = new System.Drawing.Size(154, 16);
+            this.lblLogado.Size = new System.Drawing.Size(169, 26);
             this.lblLogado.TabIndex = 11;
             this.lblLogado.Text = "Seja Bem-Vindo [Nome]";
             this.lblLogado.Click += new System.EventHandler(this.lblLogado_Click);
@@ -213,18 +219,6 @@
             this.timer3.Enabled = true;
             this.timer3.Interval = 1000;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
-            // picfluxo
-            // 
-            this.picfluxo.BackColor = System.Drawing.Color.Transparent;
-            this.picfluxo.Image = global::MagicJoy.Properties.Resources.fluxo_de_caixa;
-            this.picfluxo.Location = new System.Drawing.Point(330, 242);
-            this.picfluxo.Name = "picfluxo";
-            this.picfluxo.Size = new System.Drawing.Size(107, 85);
-            this.picfluxo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picfluxo.TabIndex = 12;
-            this.picfluxo.TabStop = false;
-            this.picfluxo.Visible = false;
             // 
             // pictureBox5
             // 
@@ -292,55 +286,119 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // picCompra
+            // pictureBox11
             // 
-            this.picCompra.BackColor = System.Drawing.Color.Transparent;
-            this.picCompra.Image = global::MagicJoy.Properties.Resources.compras;
-            this.picCompra.Location = new System.Drawing.Point(330, 151);
-            this.picCompra.Name = "picCompra";
-            this.picCompra.Size = new System.Drawing.Size(107, 85);
-            this.picCompra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCompra.TabIndex = 13;
-            this.picCompra.TabStop = false;
-            this.picCompra.Visible = false;
-            this.picCompra.Click += new System.EventHandler(this.pictureBox11_Click);
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox11.Image = global::MagicJoy.Properties.Resources.fluxo_de_caixa1;
+            this.pictureBox11.Location = new System.Drawing.Point(330, 207);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(106, 99);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 12;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
             // 
-            // picVenda
+            // pictureBox12
             // 
-            this.picVenda.BackColor = System.Drawing.Color.Transparent;
-            this.picVenda.Image = global::MagicJoy.Properties.Resources.Vendas;
-            this.picVenda.Location = new System.Drawing.Point(330, 259);
-            this.picVenda.Name = "picVenda";
-            this.picVenda.Size = new System.Drawing.Size(107, 85);
-            this.picVenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picVenda.TabIndex = 14;
-            this.picVenda.TabStop = false;
-            this.picVenda.Visible = false;
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox12.Image = global::MagicJoy.Properties.Resources.clientes1;
+            this.pictureBox12.Location = new System.Drawing.Point(330, 328);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(106, 91);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 13;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
             // 
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Image = global::MagicJoy.Properties.Resources.Fornecedores;
-            this.pictureBox13.Location = new System.Drawing.Point(330, 358);
+            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox13.Image = global::MagicJoy.Properties.Resources.DOMINIO_CAMPANHA_ONBALANCE_SITE_ICONES_BENEFICIOS_02;
+            this.pictureBox13.Location = new System.Drawing.Point(330, 446);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(107, 85);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 15;
+            this.pictureBox13.Size = new System.Drawing.Size(106, 86);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 14;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Visible = false;
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(454, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 48);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Fluxo de Caixa";
+            this.label2.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(454, 354);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 48);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Clientes";
+            this.label3.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Barbecue Personal Use", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(454, 472);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 48);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Despesas";
+            this.label6.Visible = false;
             // 
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Image = global::MagicJoy.Properties.Resources.produtos;
-            this.pictureBox14.Location = new System.Drawing.Point(330, 460);
+            this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox14.Image = global::MagicJoy.Properties.Resources.pedidos;
+            this.pictureBox14.Location = new System.Drawing.Point(330, 189);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(107, 85);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 16;
+            this.pictureBox14.Size = new System.Drawing.Size(106, 99);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 18;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Visible = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox15.Image = global::MagicJoy.Properties.Resources.produtos1;
+            this.pictureBox15.Location = new System.Drawing.Point(357, 328);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(106, 99);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 19;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Visible = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox16.Image = global::MagicJoy.Properties.Resources.produtos1;
+            this.pictureBox16.Location = new System.Drawing.Point(330, 425);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(106, 99);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 20;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Visible = false;
             // 
             // frmMenu
             // 
@@ -350,11 +408,15 @@
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_childhood_diversity_plastic_647007_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 557);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.picVenda);
-            this.Controls.Add(this.picCompra);
-            this.Controls.Add(this.picfluxo);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.lblLogado);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox5);
@@ -367,7 +429,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenu";
-            this.Text = "frmMenuu";
+            this.Text = "V";
             this.Load += new System.EventHandler(this.frmMenuu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -376,16 +438,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picfluxo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCompra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,11 +472,15 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
-        private System.Windows.Forms.PictureBox picfluxo;
-        private System.Windows.Forms.PictureBox picCompra;
-        private System.Windows.Forms.PictureBox picVenda;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }
