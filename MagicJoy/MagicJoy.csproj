@@ -485,6 +485,14 @@
     <None Include="Resources\illustration-logo-cartoon-Super-Mario-brand-1440x900-px-553479-wallhere.com.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\produtos1.png" />
+    <None Include="Resources\pedidos.png" />
+    <None Include="Resources\DOMINIO-CAMPANHA-ONBALANCE-SITE-ICONES-BENEFICIOS-02.png" />
+    <None Include="Resources\clientes1.png" />
+    <None Include="Resources\fluxo de caixa1.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Entityes\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -495,11 +503,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\produtos1.png" />
-    <None Include="Resources\pedidos.png" />
-    <None Include="Resources\DOMINIO-CAMPANHA-ONBALANCE-SITE-ICONES-BENEFICIOS-02.png" />
-    <None Include="Resources\clientes1.png" />
-    <None Include="Resources\fluxo de caixa1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

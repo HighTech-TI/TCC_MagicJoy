@@ -25,7 +25,7 @@ namespace MagicJoy.Telas.Financeiro
                 Entityes.tb_despesa despesa = new Entityes.tb_despesa();
 
                 despesa.ds_descricao = txtdespesa.Text;
-                despesa.vl_despesa = Convert.ToDecimal(txtvalor.Text);
+                despesa.vl_valor = Convert.ToDecimal(txtvalor.Text);
                 despesa.dt_datadevencimento = dtpvencimento.Value;
                 despesa.dt_pagamento = dtppagamento.Value;
                 business.Salvar(despesa);
@@ -129,6 +129,24 @@ namespace MagicJoy.Telas.Financeiro
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Telas.Menu.btnforne tela = new Menu.btnforne();
+            tela.Show();
+            this.Hide();
         }
     }
 }

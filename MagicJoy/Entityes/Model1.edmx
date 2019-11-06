@@ -162,7 +162,6 @@
           <Property Name="nm_senha" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="ds_email" Type="varchar" MaxLength="65" Nullable="false" />
           <Property Name="ds_cargo" Type="varchar" MaxLength="45" Nullable="false" />
-          <Property Name="ds_recuperacao" Type="int" />
         </EntityType>
         <EntityType Name="tb_venda">
           <Key>
@@ -557,7 +556,6 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
           <Property Name="nm_senha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_email" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cargo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_recuperacao" Type="Int32" />
         </EntityType>
         <EntityType Name="tb_venda">
           <Key>
@@ -709,7 +707,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="magicjoydbEntities14" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="magicjoydbEntities15" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
@@ -773,7 +771,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities14">
+        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities15">
           <EntitySetMapping Name="tb_beneficio">
             <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">
@@ -943,7 +941,6 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
                 <ScalarProperty Name="nm_senha" ColumnName="nm_senha" />
                 <ScalarProperty Name="ds_email" ColumnName="ds_email" />
                 <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
-                <ScalarProperty Name="ds_recuperacao" ColumnName="ds_recuperacao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace MagicJoy.Telas.Menu
 {
-    public partial class frmMenu : Form
+    public partial class btnforne : Form
     {
-        public frmMenu()
+        public btnforne()
         {
             InitializeComponent();
 
-            lblLogado.Text = "Seja Bem-Vindo " + Objetos.UsuarioLogado.Nome;
+            lblLogado.Text = "Seja Bem-Vindo " + Objetos.UsuarioLogado.nome;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -55,45 +55,9 @@ namespace MagicJoy.Telas.Menu
         private void frmMenuu_Load(object sender, EventArgs e)
         {
             label4.Text = DateTime.Today.ToShortDateString();
+          
 
-            Thread t = new Thread(new ThreadStart(ChangeLabelColor));
-            t.Start();
-
-        }
-        private void ChangeLabelColor()
-        {
-            while (true)
-            {
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Maroon;
-                label6.ForeColor = Color.Maroon;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Pink;
-                label6.ForeColor = Color.Pink;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Purple;
-                label6.ForeColor = Color.Purple;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.BlueViolet;
-                label6.ForeColor = Color.BlueViolet;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Yellow;
-                label6.ForeColor = Color.Yellow;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Green;
-                label6.ForeColor = Color.Green;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.OrangeRed;
-                label6.ForeColor = Color.OrangeRed;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Blue;
-                label6.ForeColor = Color.Blue;
-                Thread.Sleep(1000);
-                label3.ForeColor = Color.Red;
-                label6.ForeColor = Color.Red;
-            }
-
-        }
+        }       
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
@@ -155,17 +119,43 @@ namespace MagicJoy.Telas.Menu
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-           
+            btndespesa.Visible = true;
+            btnclientes.Visible = true;
+            btnfluxo.Visible = true;
+            btnpedido.Visible = false;
+            btnestoque.Visible = false;
+            btnproduto.Visible = false;
+            btncompras.Visible = false;
+            btnvendas.Visible = false;
+            btnforr.Visible = false;
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            
+            btncompras.Visible = true;
+            btnvendas.Visible = true;
+            btnforr.Visible = true;
+            btnpedido.Visible = false;
+            btnestoque.Visible = false;
+            btnproduto.Visible = false;
+            btndespesa.Visible = false;
+            btnclientes.Visible = false;
+            btnfluxo.Visible = false;
+            btnfolha.Visible = false;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-
+            btnpedido.Visible = true;
+            btnestoque.Visible = true;
+            btnproduto.Visible = true;
+            btndespesa.Visible = false;
+            btnclientes.Visible = false;
+            btnfluxo.Visible = false;
+            btncompras.Visible = false;
+            btnvendas.Visible = false;
+            btnforr.Visible = false;
+            btnfolha.Visible = false;
         }
 
         private void menuFC_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -181,6 +171,106 @@ namespace MagicJoy.Telas.Menu
         private void pictureBox13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            btnpedido.Visible = false;
+            btnestoque.Visible = false;
+            btnproduto.Visible = false;
+            btncompras.Visible = false;
+            btnvendas.Visible = false;
+            btnforr.Visible = false;
+            btndespesa.Visible = false;
+            btnclientes.Visible = false;
+            btnfluxo.Visible = false;
+            btnfunciona.Visible = true;
+            btnfolha.Visible = true;
+            btncontrole.Visible = true;
+        }
+
+        private void btnestoque_Click(object sender, EventArgs e)
+        {
+            Telas.Estoque.frmInserirEstoque tela = new Estoque.frmInserirEstoque();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnproduto_Click(object sender, EventArgs e)
+        {
+            Telas.Estoque.frmProduto tela = new Estoque.frmProduto();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnpedido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndespesa_Click(object sender, EventArgs e)
+        {
+            Telas.Financeiro.frmDespesa tela = new Financeiro.frmDespesa();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnclientes_Click(object sender, EventArgs e)
+        {
+            Telas.Cliente.frmCadastroDeCliente tela = new Cliente.frmCadastroDeCliente();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnforr_Click(object sender, EventArgs e)
+        {
+            Telas.Suprimentos.frmFornecedor tela = new Suprimentos.frmFornecedor();
+            tela.Show();
+            this.Hide(); 
+        }
+
+        private void btnvendas_Click(object sender, EventArgs e)
+        {
+            Telas.Suprimentos.test tela = new Suprimentos.test();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btncompras_Click(object sender, EventArgs e)
+        {
+            Telas.Suprimentos.frmCompra tela = new Suprimentos.frmCompra();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btncontrole_Click(object sender, EventArgs e)
+        {
+            Telas.RH.frmControleDePonto tela = new RH.frmControleDePonto();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnfunciona_Click(object sender, EventArgs e)
+        {
+            Telas.RH.frmCadastroDeFuncionários tela = new RH.frmCadastroDeFuncionários();
+            tela.Show
+                ();
+            this.Hide();
+        }
+
+        private void pictureBox24_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox26_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

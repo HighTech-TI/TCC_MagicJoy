@@ -66,7 +66,8 @@ namespace MagicJoy.Telas.Login
                 Entityes.tb_usuario user = business.PesquisarParaEnviarEmail(comboBox1.Text, txtemail.Text);
 
                 string combnome = comboBox1.Text;
-                string eemail = txtemail.Text;
+                
+            string eemail = txtemail.Text;
                
                 
 
@@ -75,18 +76,23 @@ namespace MagicJoy.Telas.Login
                     Random randNum = new Random();
                     int Cod = randNum.Next();
 
-                    string re = "RECUPERAÇÃO DE SENHA";
-                    string me = "Insira uma senha que você lembre na próxima vez que for usar o sistema." + "\r\n" + "Seu Código de recuperação é: " + Cod;
+                   // string re = "RECUPERAÇÃO DE SENHA";
+                  //  string me = "Insira uma senha que você lembre na próxima vez que for usar o sistema." + "\r\n" + "Seu Código de recuperação é: " + Cod;
+
+                  // string reg = "Boas Vindas";
+               //   string meg = "Seja bem vindo ao sistema Magic Joy, bom trabalho!";
+
+               
+
+                  //Objetos.EnviarEmail fun = new Objetos.EnviarEmail();
+                 //  fun.Enviar(eemail, re, me);
+                 // Objetos.EnviarEmail fun = new Objetos.EnviarEmail();
+                    //fun.Enviar(eemail, re, me);
+
+                   
 
 
-                    Objetos.EnviarEmail fun = new Objetos.EnviarEmail();
-                    fun.Enviar(eemail, re, me);
-
-                    DataBase.LoginDataBase log = new DataBase.LoginDataBase();
-                    log.Alterar(db);
-
-
-                    MessageBox.Show("Email enviado com sucesso!", "Magic joy", MessageBoxButtons.OK, MessageBoxIcon.Warning);                   
+                  //  MessageBox.Show("Email enviado com sucesso!", "Magic joy", MessageBoxButtons.OK, MessageBoxIcon.Warning);                   
                    
                 }
                 

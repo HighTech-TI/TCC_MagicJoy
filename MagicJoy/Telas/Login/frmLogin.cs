@@ -40,7 +40,7 @@ namespace MagicJoy.Telas.Login
             {
                 string nome = cbousuario.Text;
                 string senha = txtsenha.Text;
-
+                Entityes.tb_usuario ds = new Entityes.tb_usuario();
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
                 Entityes.tb_usuario usuario = businesslog.PesquisarParaLogar(nome, senha);
 
@@ -50,8 +50,10 @@ namespace MagicJoy.Telas.Login
                     {
                         Objetos.UsuarioLogado.id = usuario.id_usuario;
                         Objetos.UsuarioLogado.nome = usuario.nm_usuario;
+                       
+                        
 
-                        Telas.Menu.frmMenu tela = new Menu.frmMenu();
+                        Telas.Menu.btnforne tela = new Menu.btnforne();
                         tela.Show();
                         this.Hide();
                     }
@@ -101,6 +103,7 @@ namespace MagicJoy.Telas.Login
         private void pictureBox24_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+            
         }
 
         private void pictureBox26_Click(object sender, EventArgs e)

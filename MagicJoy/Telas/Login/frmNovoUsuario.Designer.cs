@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,28 +70,18 @@
             // 
             this.txtSenha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSenha.Location = new System.Drawing.Point(413, 159);
+            this.txtSenha.Location = new System.Drawing.Point(418, 159);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(0);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(207, 20);
             this.txtSenha.TabIndex = 8;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Location = new System.Drawing.Point(412, 102);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(207, 20);
-            this.txtEmail.TabIndex = 9;
-            // 
             // txtCargo
             // 
             this.txtCargo.BackColor = System.Drawing.SystemColors.Menu;
             this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCargo.Location = new System.Drawing.Point(413, 130);
+            this.txtCargo.Location = new System.Drawing.Point(416, 130);
             this.txtCargo.Margin = new System.Windows.Forms.Padding(0);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(207, 20);
@@ -101,7 +91,7 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.Menu;
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Location = new System.Drawing.Point(413, 76);
+            this.txtUsuario.Location = new System.Drawing.Point(418, 76);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(207, 20);
@@ -112,11 +102,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(324, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 25);
+            this.label2.Size = new System.Drawing.Size(90, 24);
             this.label2.TabIndex = 11;
             this.label2.Text = "Usuário:";
             // 
@@ -124,11 +114,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(339, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 25);
+            this.label3.Size = new System.Drawing.Size(73, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "Senha:";
             // 
@@ -136,11 +126,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(334, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.Size = new System.Drawing.Size(84, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "E-mail:";
             // 
@@ -148,11 +138,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(343, 127);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 25);
+            this.label5.Size = new System.Drawing.Size(68, 24);
             this.label5.TabIndex = 14;
             this.label5.Text = "Cargo:";
             // 
@@ -194,11 +184,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(211, 186);
+            this.label6.Location = new System.Drawing.Point(192, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(233, 25);
+            this.label6.Size = new System.Drawing.Size(220, 24);
             this.label6.TabIndex = 18;
             this.label6.Text = "Confirmação de senha:";
             // 
@@ -206,7 +196,7 @@
             // 
             this.txtonfirmaao.BackColor = System.Drawing.SystemColors.Menu;
             this.txtonfirmaao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtonfirmaao.Location = new System.Drawing.Point(413, 186);
+            this.txtonfirmaao.Location = new System.Drawing.Point(418, 186);
             this.txtonfirmaao.Margin = new System.Windows.Forms.Padding(0);
             this.txtonfirmaao.Name = "txtonfirmaao";
             this.txtonfirmaao.PasswordChar = '*';
@@ -218,11 +208,11 @@
             // 
             this.lblsenhas.AutoSize = true;
             this.lblsenhas.BackColor = System.Drawing.Color.Transparent;
-            this.lblsenhas.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsenhas.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsenhas.ForeColor = System.Drawing.Color.Red;
-            this.lblsenhas.Location = new System.Drawing.Point(231, 227);
+            this.lblsenhas.Location = new System.Drawing.Point(266, 222);
             this.lblsenhas.Name = "lblsenhas";
-            this.lblsenhas.Size = new System.Drawing.Size(238, 25);
+            this.lblsenhas.Size = new System.Drawing.Size(184, 22);
             this.lblsenhas.TabIndex = 19;
             this.lblsenhas.Text = "Senhas não se conincidem";
             this.lblsenhas.Visible = false;
@@ -231,11 +221,11 @@
             // 
             this.lblusuario.AutoSize = true;
             this.lblusuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblusuario.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.Red;
             this.lblusuario.Location = new System.Drawing.Point(369, 39);
             this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(270, 25);
+            this.lblusuario.Size = new System.Drawing.Size(261, 24);
             this.lblusuario.TabIndex = 20;
             this.lblusuario.Text = "Nome de usuário existente";
             this.lblusuario.Visible = false;
@@ -374,6 +364,16 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // txtemail
+            // 
+            this.txtemail.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtemail.Location = new System.Drawing.Point(417, 104);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(0);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(207, 20);
+            this.txtemail.TabIndex = 64;
+            // 
             // frmNovoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,6 +381,7 @@
             this.BackgroundImage = global::MagicJoy.Properties.Resources.danboard_box_robot_Toy_bag_pouch_1072564_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(663, 291);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -395,7 +396,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCargo);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.pictureBox2);
@@ -425,7 +425,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
@@ -448,5 +447,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.TextBox txtemail;
     }
 }

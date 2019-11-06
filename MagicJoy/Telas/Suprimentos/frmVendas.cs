@@ -129,6 +129,13 @@ namespace MagicJoy.Telas.Suprimentos
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Telas.Menu.btnforne tela = new Menu.btnforne();
+            tela.Show();
+            this.Hide();
+        }
     }
 }
 

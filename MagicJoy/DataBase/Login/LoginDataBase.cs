@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities14 db = new Entityes.magicjoydbEntities14();
+        Entityes.magicjoydbEntities15 db = new Entityes.magicjoydbEntities15();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -80,21 +80,21 @@ namespace MagicJoy.DataBase
 
             //Salvando o codigo no banco
             //
-           Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.id_usuario == tb.id_usuario);
-           alterar.ds_recuperacao = Cod;
-           db.SaveChanges();
+          // Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.id_usuario == tb.id_usuario);
+           //alterar.ds_recuperacao = Cod;
+          // db.SaveChanges();
 
         }
-        public void Alterar(Entityes.tb_usuario usuario)
-        {
-            Random randNum = new Random();
+       // public void Alterar(Entityes.tb_usuario usuario)
+     //   {
+          //  Random randNum = new Random();
 
-            Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.ds_recuperacao == usuario.ds_recuperacao);
-            int Cod = randNum.Next();
-            alterar.ds_recuperacao = Cod;
+           // Entityes.tb_usuario alterar = db.tb_usuario.First(t => t.ds_recuperacao == usuario.ds_recuperacao);
+           // int Cod = randNum.Next();
+           // alterar.ds_recuperacao = Cod;
            
-            db.SaveChanges();
-        }
+           // db.SaveChanges();
+       // }
         public Entityes.tb_usuario PesquisarParaRecuperar(string email)
         {
             Entityes.tb_usuario usuario = db.tb_usuario.FirstOrDefault(t => t.ds_email == email);                                                                      

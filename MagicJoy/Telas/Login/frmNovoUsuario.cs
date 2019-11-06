@@ -23,7 +23,7 @@ namespace MagicJoy.Telas.Login
             {
                 Entityes.tb_usuario tabela = new Entityes.tb_usuario();
                                 
-                tabela.ds_email = txtEmail.Text;
+                tabela.ds_email = txtemail.Text;
                 tabela.ds_cargo = txtCargo.Text;
                 tabela.nm_usuario = txtUsuario.Text;
                 tabela.nm_senha = txtSenha.Text; 
@@ -39,22 +39,8 @@ namespace MagicJoy.Telas.Login
                                                        
                 }
 
-                try
-                {
-                    if (txtUsuario.Text == usuario.nm_usuario)
-                    {
-                        txtUsuario.BackColor = System.Drawing.Color.Red;
-
-                        throw new Exception();
-
-                    }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Usuário já existente", "Login", MessageBoxButtons.OK);
-
-                }
-
+                
+                  
 
 
                 if (txtonfirmaao.Text != txtSenha.Text)
@@ -79,7 +65,7 @@ namespace MagicJoy.Telas.Login
 
                 
                 
-            }
+           }
             catch (Exception)
             {
 

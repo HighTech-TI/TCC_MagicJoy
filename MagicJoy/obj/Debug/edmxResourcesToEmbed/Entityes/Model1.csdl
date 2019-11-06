@@ -174,7 +174,6 @@
     <Property Name="nm_senha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_email" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cargo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_recuperacao" Type="Int32" />
   </EntityType>
   <EntityType Name="tb_venda">
     <Key>
@@ -326,7 +325,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="magicjoydbEntities14" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="magicjoydbEntities15" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
