@@ -110,6 +110,7 @@ namespace MagicJoy.Telas.Estoque
             string produto = txtprodutopesquisa.Text;
 
             List<Entityes.tb_produto> lista = business.PesquisarPorPodruto(produto);
+            dataGridView1.DataSource = lista;
         }
 
         private void txtidpesquisa_TextChanged(object sender, EventArgs e)
@@ -117,6 +118,7 @@ namespace MagicJoy.Telas.Estoque
             int id = Convert.ToInt32(txtidpesquisa.Text);
 
             List<Entityes.tb_produto> lista = business.PesquisarPorID(id);
+            dataGridView1.DataSource = lista;
         }
 
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)

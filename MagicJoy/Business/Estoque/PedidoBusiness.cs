@@ -34,6 +34,7 @@ namespace MagicJoy.Business.Estoque
 
             return pesquisa;
         }
+    
 
         public List<Entityes.tb_produto> PesquisarPorID(int id)
         {

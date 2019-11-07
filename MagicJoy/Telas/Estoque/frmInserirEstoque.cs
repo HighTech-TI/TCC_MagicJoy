@@ -28,7 +28,7 @@ namespace MagicJoy.Telas.Estoque
                 estoque.nm_produto = txtproduto.Text;
                 estoque.ds_qtd = Convert.ToInt32(txtqtds.Text);
                 estoque.vl_custo = Convert.ToDecimal(txtvlcusto.Text);
-                estoque.id_fornecedor = Convert.ToInt32(nudidforncedor.Value);
+                estoque.tb_fornecedor.nm_fornecedor = comboBox1.Text;
 
 
                 business.Salvar(estoque);
@@ -53,6 +53,13 @@ namespace MagicJoy.Telas.Estoque
         private void frmInserirEstoque_Load(object sender, EventArgs e)
         {
             ListarTudo();
+
+            Business.Suprimentos.FornecedorBusiness logbusiness = new Business.Suprimentos.FornecedorBusiness();
+
+            List<Entityes.tb_fornecedor> users = logbusiness.Listarfornecedores();
+
+            comboBox1.DisplayMember = nameof(Entityes.tb_fornecedor.nm_fornecedor);
+            comboBox1.DataSource = users;
         }
         private void ListarTudo()
         {
@@ -66,7 +73,7 @@ namespace MagicJoy.Telas.Estoque
             txtproduto.Text = string.Empty;
             txtqtds.Text = string.Empty;
             txtvlcusto.Text = string.Empty;
-            nudidforncedor.Value = 0;
+            comboBox1.Text = string.Empty;
         }
 
         private void Alterar(Entityes.tb_estoque estoque)
@@ -75,7 +82,7 @@ namespace MagicJoy.Telas.Estoque
             txtproduto.Text = estoque.nm_produto;            
             txtqtds.Text = estoque.ds_qtd.ToString();                   
             txtvlcusto.Text = estoque.vl_custo.ToString();
-            nudidforncedor.Value = estoque.id_fornecedor;
+            comboBox1.Text = estoque.tb_fornecedor.nm_fornecedor;
             
         
         }
@@ -143,6 +150,11 @@ namespace MagicJoy.Telas.Estoque
             Telas.Menu.btnforne tela = new Menu.btnforne();
             tela.Show();
             this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

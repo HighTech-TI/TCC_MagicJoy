@@ -15,6 +15,8 @@ namespace MagicJoy.DataBase.Estoque
             banco.tb_estoque.Add(estoque);
             banco.SaveChanges();
         }
+        
+       
 
         public List<Entityes.tb_estoque> ListarIdEstoque(int id)
         {

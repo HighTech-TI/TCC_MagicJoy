@@ -84,12 +84,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Digital-7 Italic", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(312, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 64);
+            this.label1.Size = new System.Drawing.Size(284, 73);
             this.label1.TabIndex = 5;
             this.label1.Text = "00:00:00";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1
             // 
@@ -239,10 +240,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Digital-7 Italic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(333, 104);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 33);
+            this.label4.Size = new System.Drawing.Size(189, 37);
             this.label4.TabIndex = 10;
             this.label4.Text = "00/00/0000";
             // 
@@ -279,7 +280,7 @@
             this.btnpedido.Enabled = false;
             this.btnpedido.FlatAppearance.BorderSize = 2;
             this.btnpedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpedido.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpedido.Location = new System.Drawing.Point(351, 380);
             this.btnpedido.Name = "btnpedido";
             this.btnpedido.Size = new System.Drawing.Size(156, 48);
@@ -294,7 +295,7 @@
             this.btnproduto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproduto.FlatAppearance.BorderSize = 2;
             this.btnproduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnproduto.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproduto.Location = new System.Drawing.Point(351, 288);
             this.btnproduto.Name = "btnproduto";
             this.btnproduto.Size = new System.Drawing.Size(156, 49);
@@ -309,7 +310,7 @@
             this.btnestoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnestoque.FlatAppearance.BorderSize = 2;
             this.btnestoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnestoque.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnestoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnestoque.Location = new System.Drawing.Point(351, 204);
             this.btnestoque.Name = "btnestoque";
             this.btnestoque.Size = new System.Drawing.Size(156, 49);
@@ -324,7 +325,7 @@
             this.btndespesa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndespesa.FlatAppearance.BorderSize = 2;
             this.btndespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndespesa.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndespesa.Location = new System.Drawing.Point(351, 204);
             this.btndespesa.Name = "btndespesa";
             this.btndespesa.Size = new System.Drawing.Size(156, 49);
@@ -340,7 +341,7 @@
             this.btnfluxo.Enabled = false;
             this.btnfluxo.FlatAppearance.BorderSize = 2;
             this.btnfluxo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfluxo.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfluxo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfluxo.Location = new System.Drawing.Point(351, 379);
             this.btnfluxo.Name = "btnfluxo";
             this.btnfluxo.Size = new System.Drawing.Size(156, 49);
@@ -354,7 +355,7 @@
             this.btnclientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnclientes.FlatAppearance.BorderSize = 2;
             this.btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclientes.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclientes.Location = new System.Drawing.Point(351, 288);
             this.btnclientes.Name = "btnclientes";
             this.btnclientes.Size = new System.Drawing.Size(156, 49);
@@ -369,7 +370,7 @@
             this.btncompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncompras.FlatAppearance.BorderSize = 2;
             this.btncompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncompras.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompras.Location = new System.Drawing.Point(351, 204);
             this.btncompras.Name = "btncompras";
             this.btncompras.Size = new System.Drawing.Size(156, 49);
@@ -384,7 +385,7 @@
             this.btnvendas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvendas.FlatAppearance.BorderSize = 2;
             this.btnvendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvendas.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvendas.Location = new System.Drawing.Point(351, 288);
             this.btnvendas.Name = "btnvendas";
             this.btnvendas.Size = new System.Drawing.Size(156, 49);
@@ -399,7 +400,7 @@
             this.btnforr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnforr.FlatAppearance.BorderSize = 2;
             this.btnforr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnforr.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnforr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnforr.Location = new System.Drawing.Point(351, 379);
             this.btnforr.Name = "btnforr";
             this.btnforr.Size = new System.Drawing.Size(156, 49);
@@ -414,7 +415,7 @@
             this.btncontrole.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncontrole.FlatAppearance.BorderSize = 2;
             this.btncontrole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncontrole.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncontrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncontrole.Location = new System.Drawing.Point(351, 204);
             this.btncontrole.Name = "btncontrole";
             this.btncontrole.Size = new System.Drawing.Size(156, 49);
@@ -429,7 +430,7 @@
             this.btnfunciona.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfunciona.FlatAppearance.BorderSize = 2;
             this.btnfunciona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfunciona.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfunciona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfunciona.Location = new System.Drawing.Point(351, 288);
             this.btnfunciona.Name = "btnfunciona";
             this.btnfunciona.Size = new System.Drawing.Size(156, 49);
@@ -445,7 +446,7 @@
             this.btnfolha.Enabled = false;
             this.btnfolha.FlatAppearance.BorderSize = 2;
             this.btnfolha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfolha.Font = new System.Drawing.Font("Ananda", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfolha.Location = new System.Drawing.Point(351, 379);
             this.btnfolha.Name = "btnfolha";
             this.btnfolha.Size = new System.Drawing.Size(178, 49);
@@ -579,6 +580,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "btnforne";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fd";
             this.Load += new System.EventHandler(this.frmMenuu_Load);
             this.panel1.ResumeLayout(false);

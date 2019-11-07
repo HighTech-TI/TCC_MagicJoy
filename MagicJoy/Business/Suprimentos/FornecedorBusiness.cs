@@ -27,12 +27,20 @@ namespace MagicJoy.Business.Suprimentos
                 this.Alterar(fornecedor);
             }
         }
+       
 
 
         public List<Entityes.tb_fornecedor> ListarTodos()
         {
             DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
             List<Entityes.tb_fornecedor> pesquisa = ddb.ListarTodas();
+
+            return pesquisa;
+        }
+        public List<Entityes.tb_fornecedor> Listarfornecedores()
+        {
+            DataBase.Suprimentos.FornecedorDataBase ddb = new DataBase.Suprimentos.FornecedorDataBase();
+            List<Entityes.tb_fornecedor> pesquisa = ddb.ListarTodosforncedores();
 
             return pesquisa;
         }

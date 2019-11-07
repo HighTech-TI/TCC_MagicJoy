@@ -108,7 +108,8 @@ namespace MagicJoy.Telas.Suprimentos
         {
             int id = Convert.ToInt32(nudpesquidass.Value);
 
-            business.PesquisarPorID(id);
+            List<Entityes.tb_venda> com = business.PesquisarPorID(id);
+            dataGridView1.DataSource = com;
         }
 
         private void txtpesquida_TextChanged(object sender, EventArgs e)

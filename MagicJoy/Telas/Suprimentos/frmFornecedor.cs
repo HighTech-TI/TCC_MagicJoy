@@ -127,21 +127,27 @@ namespace MagicJoy.Telas.Suprimentos
         {
             int id = Convert.ToInt32(nudpesquisa.Value);
 
-            business.PesquisarPorID(id);
+            List<Entityes.tb_fornecedor> com = business.PesquisarPorID(id);
+
+            dataGridView1.DataSource = com;
         }
 
         private void txtpesquisa_TextChanged(object sender, EventArgs e)
         {
             string nome = txtpesquisa.Text;
 
-            business.PesquisarPorNome(nome);
+           List<Entityes.tb_fornecedor> com = business.PesquisarPorNome(nome);
+
+            dataGridView1.DataSource = com;
         }
 
         private void txtpesquisanome_TextChanged(object sender, EventArgs e)
         {
             string produto = txtpesquisanome.Text;
+            
+           List<Entityes.tb_fornecedor> com = business.PesquisarPorNomedeProduto(produto);
 
-            business.PesquisarPorNomedeProduto(produto);
+            dataGridView1.DataSource = com;
         }
 
         private void frmFornecedor_Load(object sender, EventArgs e)

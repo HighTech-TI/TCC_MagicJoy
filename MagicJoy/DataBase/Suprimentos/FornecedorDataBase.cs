@@ -23,6 +23,12 @@ namespace MagicJoy.DataBase.Suprimentos
             return tabela;
 
         }
+
+        public List<Entityes.tb_fornecedor> ListarTodosforncedores()
+        {
+            List<Entityes.tb_fornecedor> tabela = db.tb_fornecedor.ToList();
+            return tabela;
+        }
         public List<Entityes.tb_fornecedor> PesquisarPorNomeFornecedor(string nome)
         {
             List<Entityes.tb_fornecedor> fornecedor = db.tb_fornecedor.Where

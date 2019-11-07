@@ -37,8 +37,7 @@ namespace MagicJoy.DataBase.Suprimentos
         }
         public List<Entityes.tb_compra> PesquisarPorProduto(string nome)
         {
-            List<Entityes.tb_compra> compra = db.tb_compra.Where
-                                                      (s => s.nm_produto.Contains(nome)).ToList();
+            List<Entityes.tb_compra> compra = db.tb_compra.Where(s => s.nm_produto.Contains(nome)).ToList();
             return compra;
         }
         public void AlterarCompra(Entityes.tb_compra compra)

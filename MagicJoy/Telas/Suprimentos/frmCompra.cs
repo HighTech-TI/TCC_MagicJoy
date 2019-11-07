@@ -102,21 +102,14 @@ namespace MagicJoy.Telas.Suprimentos
         {
             int id = Convert.ToInt32(nudpesquisa.Value);
 
-            business.PesquisarPorID(id);
+           List<Entityes.tb_compra> com =  business.PesquisarPorID(id);
+
+            dataGridView1.DataSource = com;
         }
-
-        private void txtpesquisa_TextChanged(object sender, EventArgs e)
-        {
-            string nome = txtpesquisa.Text;
-
-            business.PesquisarPorProduto(nome);
-        }
-
+     
         private void dtppesquisa_ValueChanged(object sender, EventArgs e)
         {
-            DateTime data = dtppesquisa.Value;
-
-            business.PesquisarPorData(data);
+          
         }
 
         private void frmCompra_Load(object sender, EventArgs e)
@@ -141,5 +134,13 @@ namespace MagicJoy.Telas.Suprimentos
             tela.Show();
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           List<Entityes.tb_compra> com =  business.PesquisarPorProduto(textBox1.Text);
+            dataGridView1.DataSource = com;
+        }
+
+       
     }
 }

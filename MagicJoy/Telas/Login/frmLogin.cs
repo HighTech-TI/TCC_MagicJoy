@@ -127,5 +127,22 @@ namespace MagicJoy.Telas.Login
             tela.Show();
             this.Hide();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            if(txtsenha.UseSystemPasswordChar == false)
+            {
+                txtsenha.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtsenha.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

@@ -49,27 +49,26 @@
             this.button1 = new System.Windows.Forms.Button();
             this.nudpesquisa = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtpesquisa = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtppesquisa = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudidcompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -79,6 +78,7 @@
             this.Column5,
             this.Column6,
             this.Column7});
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(336, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(498, 241);
@@ -194,7 +194,7 @@
             // 
             this.txtValor.Location = new System.Drawing.Point(128, 295);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(86, 20);
+            this.txtValor.Size = new System.Drawing.Size(99, 20);
             this.txtValor.TabIndex = 6;
             // 
             // nudqtd
@@ -231,7 +231,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Ananda", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(25, 343);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 46);
@@ -242,7 +242,7 @@
             // 
             // nudpesquisa
             // 
-            this.nudpesquisa.Location = new System.Drawing.Point(380, 330);
+            this.nudpesquisa.Location = new System.Drawing.Point(465, 333);
             this.nudpesquisa.Name = "nudpesquisa";
             this.nudpesquisa.Size = new System.Drawing.Size(68, 20);
             this.nudpesquisa.TabIndex = 13;
@@ -253,50 +253,22 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(274, 329);
+            this.label6.Location = new System.Drawing.Point(352, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "ID compra:";
-            // 
-            // txtpesquisa
-            // 
-            this.txtpesquisa.Location = new System.Drawing.Point(540, 330);
-            this.txtpesquisa.Name = "txtpesquisa";
-            this.txtpesquisa.Size = new System.Drawing.Size(156, 20);
-            this.txtpesquisa.TabIndex = 15;
-            this.txtpesquisa.TextChanged += new System.EventHandler(this.txtpesquisa_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(458, 329);
+            this.label7.Location = new System.Drawing.Point(539, 332);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 21);
             this.label7.TabIndex = 14;
             this.label7.Text = "Produto:";
-            // 
-            // dtppesquisa
-            // 
-            this.dtppesquisa.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtppesquisa.Location = new System.Drawing.Point(740, 330);
-            this.dtppesquisa.Name = "dtppesquisa";
-            this.dtppesquisa.Size = new System.Drawing.Size(97, 20);
-            this.dtppesquisa.TabIndex = 17;
-            this.dtppesquisa.ValueChanged += new System.EventHandler(this.dtppesquisa_ValueChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(698, 329);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 21);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Dia:";
             // 
             // panel1
             // 
@@ -311,14 +283,27 @@
             this.panel1.Size = new System.Drawing.Size(840, 32);
             this.panel1.TabIndex = 63;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
+            this.pictureBox1.Location = new System.Drawing.Point(747, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 26);
+            this.label13.Size = new System.Drawing.Size(63, 16);
             this.label13.TabIndex = 58;
             this.label13.Text = "Compras";
             // 
@@ -348,18 +333,13 @@
             this.pictureBox26.TabStop = false;
             this.pictureBox26.Click += new System.EventHandler(this.pictureBox26_Click);
             // 
-            // pictureBox1
+            // textBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(747, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 61;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.textBox1.Location = new System.Drawing.Point(629, 332);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(199, 20);
+            this.textBox1.TabIndex = 64;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmCompra
             // 
@@ -368,10 +348,8 @@
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(840, 409);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtppesquisa);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtpesquisa);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.nudpesquisa);
             this.Controls.Add(this.label6);
@@ -389,6 +367,7 @@
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCompra";
             this.Load += new System.EventHandler(this.frmCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -397,9 +376,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudpesquisa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,10 +400,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown nudpesquisa;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtpesquisa;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtppesquisa;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -437,5 +413,6 @@
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
