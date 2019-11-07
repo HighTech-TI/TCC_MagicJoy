@@ -14,7 +14,7 @@ namespace MagicJoy.DataBase
             
             db.tb_usuario.Add(usuario);
 
-            db.SaveChanges();
+                    db.SaveChanges();
         }
 
        public List<Entityes.tb_usuario> ListarTodosUsuarios()
