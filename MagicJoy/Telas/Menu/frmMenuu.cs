@@ -121,6 +121,7 @@ namespace MagicJoy.Telas.Menu
         {
             btndespesa.Visible = true;
             btnclientes.Visible = true;
+            btncontrole.Visible = false;
             btnfluxo.Visible = true;
             btnpedido.Visible = false;
             btnestoque.Visible = false;
@@ -136,6 +137,7 @@ namespace MagicJoy.Telas.Menu
             btnvendas.Visible = true;
             btnforr.Visible = true;
             btnpedido.Visible = false;
+            btncontrole.Visible = false;
             btnestoque.Visible = false;
             btnproduto.Visible = false;
             btndespesa.Visible = false;
@@ -150,6 +152,7 @@ namespace MagicJoy.Telas.Menu
             btnestoque.Visible = true;
             btnproduto.Visible = true;
             btndespesa.Visible = false;
+            btncontrole.Visible = false;
             btnclientes.Visible = false;
             btnfluxo.Visible = false;
             btncompras.Visible = false;

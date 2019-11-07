@@ -21,5 +21,10 @@ namespace MagicJoy.Telas.RH
         {
 
         }
+
+        private void frmConsultaFolhaDePagamento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

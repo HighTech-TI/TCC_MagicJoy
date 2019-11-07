@@ -346,6 +346,7 @@
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox24.TabIndex = 56;
             this.pictureBox24.TabStop = false;
+            this.pictureBox24.Click += new System.EventHandler(this.pictureBox24_Click);
             // 
             // pictureBox26
             // 
@@ -358,6 +359,7 @@
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox26.TabIndex = 57;
             this.pictureBox26.TabStop = false;
+            this.pictureBox26.Click += new System.EventHandler(this.pictureBox26_Click);
             // 
             // test
             // 

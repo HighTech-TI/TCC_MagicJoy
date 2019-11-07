@@ -136,6 +136,16 @@ namespace MagicJoy.Telas.Suprimentos
             tela.Show();
             this.Hide();
         }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
 

@@ -61,10 +61,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(55, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 25);
+            this.label2.Size = new System.Drawing.Size(143, 24);
             this.label2.TabIndex = 18;
             this.label2.Text = "Id funcionário:";
             // 
@@ -72,7 +72,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(405, 195);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 41);
@@ -123,10 +123,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Candy Beans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(28, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 25);
+            this.label1.Size = new System.Drawing.Size(220, 24);
             this.label1.TabIndex = 26;
             this.label1.Text = "Nome do Funcionário:";
             // 
@@ -202,6 +202,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultaFolhaDePagamento";
             this.Text = "frmConsultaFolhaDePagamento";
+            this.Load += new System.EventHandler(this.frmConsultaFolhaDePagamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class FolhaDepagamentoDataBase
     {
-        Entityes.magicjoydbEntities15 db = new Entityes.magicjoydbEntities15();
+        Entityes.magicjoydbEntities16 db = new Entityes.magicjoydbEntities16();
         public void inserir(Entityes.tb_folha_pagamento rh)
         {
 

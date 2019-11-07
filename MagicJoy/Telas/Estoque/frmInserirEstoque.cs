@@ -38,6 +38,7 @@ namespace MagicJoy.Telas.Estoque
 
 
                 ListarTudo();
+                Limpar();
             }
 
 
