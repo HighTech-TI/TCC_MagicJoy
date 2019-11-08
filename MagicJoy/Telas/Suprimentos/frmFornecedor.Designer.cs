@@ -180,6 +180,7 @@
             // 
             // nudidfornecedor
             // 
+            this.nudidfornecedor.BackColor = System.Drawing.SystemColors.Menu;
             this.nudidfornecedor.Enabled = false;
             this.nudidfornecedor.Location = new System.Drawing.Point(149, 60);
             this.nudidfornecedor.Name = "nudidfornecedor";
@@ -189,20 +190,25 @@
             // 
             // txtnome
             // 
+            this.txtnome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtnome.Location = new System.Drawing.Point(98, 112);
+            this.txtnome.MaxLength = 50;
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(172, 20);
             this.txtnome.TabIndex = 11;
             // 
             // txtendereco
             // 
+            this.txtendereco.BackColor = System.Drawing.SystemColors.Menu;
             this.txtendereco.Location = new System.Drawing.Point(99, 245);
+            this.txtendereco.MaxLength = 50;
             this.txtendereco.Name = "txtendereco";
             this.txtendereco.Size = new System.Drawing.Size(172, 20);
             this.txtendereco.TabIndex = 13;
             // 
             // mkttele
             // 
+            this.mkttele.BackColor = System.Drawing.SystemColors.Menu;
             this.mkttele.Location = new System.Drawing.Point(104, 286);
             this.mkttele.Mask = "(00)00000000";
             this.mkttele.Name = "mkttele";
@@ -211,14 +217,17 @@
             // 
             // txtemail
             // 
+            this.txtemail.BackColor = System.Drawing.SystemColors.Menu;
             this.txtemail.Location = new System.Drawing.Point(80, 323);
+            this.txtemail.MaxLength = 60;
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(167, 20);
+            this.txtemail.Size = new System.Drawing.Size(190, 20);
             this.txtemail.TabIndex = 68;
             this.txtemail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtpesquisa
             // 
+            this.txtpesquisa.BackColor = System.Drawing.SystemColors.Menu;
             this.txtpesquisa.Location = new System.Drawing.Point(647, 374);
             this.txtpesquisa.Name = "txtpesquisa";
             this.txtpesquisa.Size = new System.Drawing.Size(166, 20);
@@ -227,6 +236,7 @@
             // 
             // mkttcell
             // 
+            this.mkttcell.BackColor = System.Drawing.SystemColors.Menu;
             this.mkttcell.Location = new System.Drawing.Point(87, 365);
             this.mkttcell.Mask = "(00)0 0000-0000";
             this.mkttcell.Name = "mkttcell";
@@ -235,6 +245,7 @@
             // 
             // mktcpf
             // 
+            this.mktcpf.BackColor = System.Drawing.SystemColors.Menu;
             this.mktcpf.Location = new System.Drawing.Point(78, 208);
             this.mktcpf.Mask = "000,000,000-00";
             this.mktcpf.Name = "mktcpf";
@@ -338,7 +349,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(30, 420);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 48);
@@ -349,6 +360,7 @@
             // 
             // txtpesquisanome
             // 
+            this.txtpesquisanome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtpesquisanome.Location = new System.Drawing.Point(630, 421);
             this.txtpesquisanome.Name = "txtpesquisanome";
             this.txtpesquisanome.Size = new System.Drawing.Size(172, 20);
@@ -368,6 +380,7 @@
             // 
             // nudpesquisa
             // 
+            this.nudpesquisa.BackColor = System.Drawing.SystemColors.Menu;
             this.nudpesquisa.Location = new System.Drawing.Point(451, 381);
             this.nudpesquisa.Name = "nudpesquisa";
             this.nudpesquisa.Size = new System.Drawing.Size(60, 20);
@@ -387,7 +400,9 @@
             // 
             // txtproduto
             // 
+            this.txtproduto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtproduto.Location = new System.Drawing.Point(95, 143);
+            this.txtproduto.MaxLength = 45;
             this.txtproduto.Name = "txtproduto";
             this.txtproduto.Size = new System.Drawing.Size(172, 20);
             this.txtproduto.TabIndex = 80;
@@ -406,6 +421,7 @@
             // 
             // mktcnpj
             // 
+            this.mktcnpj.BackColor = System.Drawing.SystemColors.Menu;
             this.mktcnpj.Location = new System.Drawing.Point(81, 175);
             this.mktcnpj.Mask = "00,000,000/0000-00";
             this.mktcnpj.Name = "mktcnpj";
@@ -431,7 +447,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(766, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(768, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -442,11 +458,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Location = new System.Drawing.Point(7, 4);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 16);
+            this.label13.Size = new System.Drawing.Size(131, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Fornecedores";
             // 
@@ -455,7 +471,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(797, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(799, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

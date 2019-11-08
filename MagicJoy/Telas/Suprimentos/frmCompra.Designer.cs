@@ -192,6 +192,7 @@
             // 
             // txtValor
             // 
+            this.txtValor.BackColor = System.Drawing.SystemColors.Menu;
             this.txtValor.Location = new System.Drawing.Point(128, 295);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(99, 20);
@@ -199,6 +200,7 @@
             // 
             // nudqtd
             // 
+            this.nudqtd.BackColor = System.Drawing.SystemColors.Menu;
             this.nudqtd.Location = new System.Drawing.Point(126, 247);
             this.nudqtd.Name = "nudqtd";
             this.nudqtd.Size = new System.Drawing.Size(63, 20);
@@ -206,7 +208,9 @@
             // 
             // txtproduto
             // 
+            this.txtproduto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtproduto.Location = new System.Drawing.Point(97, 197);
+            this.txtproduto.MaxLength = 45;
             this.txtproduto.Name = "txtproduto";
             this.txtproduto.Size = new System.Drawing.Size(155, 20);
             this.txtproduto.TabIndex = 8;
@@ -221,17 +225,18 @@
             // 
             // nudidcompra
             // 
+            this.nudidcompra.BackColor = System.Drawing.SystemColors.Menu;
             this.nudidcompra.Enabled = false;
             this.nudidcompra.Location = new System.Drawing.Point(126, 68);
             this.nudidcompra.Name = "nudidcompra";
-            this.nudidcompra.Size = new System.Drawing.Size(68, 20);
+            this.nudidcompra.Size = new System.Drawing.Size(63, 20);
             this.nudidcompra.TabIndex = 10;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(25, 343);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 46);
@@ -242,6 +247,7 @@
             // 
             // nudpesquisa
             // 
+            this.nudpesquisa.BackColor = System.Drawing.SystemColors.Menu;
             this.nudpesquisa.Location = new System.Drawing.Point(465, 333);
             this.nudpesquisa.Name = "nudpesquisa";
             this.nudpesquisa.Size = new System.Drawing.Size(68, 20);
@@ -288,7 +294,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(747, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(748, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -299,11 +305,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 16);
+            this.label13.Size = new System.Drawing.Size(86, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Compras";
             // 
@@ -312,7 +318,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(778, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(779, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,6 +341,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Location = new System.Drawing.Point(629, 332);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(199, 20);

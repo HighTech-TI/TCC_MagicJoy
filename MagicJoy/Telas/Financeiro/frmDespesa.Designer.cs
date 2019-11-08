@@ -113,7 +113,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(22, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 51);
@@ -189,21 +189,25 @@
             // 
             // txtid
             // 
+            this.txtid.BackColor = System.Drawing.SystemColors.Menu;
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(140, 111);
+            this.txtid.Location = new System.Drawing.Point(142, 111);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(64, 20);
             this.txtid.TabIndex = 7;
             // 
             // txtdespesa
             // 
+            this.txtdespesa.BackColor = System.Drawing.SystemColors.Menu;
             this.txtdespesa.Location = new System.Drawing.Point(140, 149);
+            this.txtdespesa.MaxLength = 45;
             this.txtdespesa.Name = "txtdespesa";
             this.txtdespesa.Size = new System.Drawing.Size(170, 20);
             this.txtdespesa.TabIndex = 8;
             // 
             // txtvalor
             // 
+            this.txtvalor.BackColor = System.Drawing.SystemColors.Menu;
             this.txtvalor.Location = new System.Drawing.Point(104, 192);
             this.txtvalor.Name = "txtvalor";
             this.txtvalor.Size = new System.Drawing.Size(97, 20);
@@ -219,7 +223,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(411, 329);
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.Location = new System.Drawing.Point(411, 326);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(64, 20);
             this.textBox1.TabIndex = 12;
@@ -239,6 +244,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox2.Location = new System.Drawing.Point(579, 328);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 20);
@@ -313,7 +319,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(683, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(685, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -324,11 +330,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Bollinsh Hunt Personal Use Only", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Location = new System.Drawing.Point(6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 16);
+            this.label13.Size = new System.Drawing.Size(85, 28);
             this.label13.TabIndex = 58;
             this.label13.Text = "Despesas\r\n";
             // 
@@ -337,7 +343,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(713, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(715, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

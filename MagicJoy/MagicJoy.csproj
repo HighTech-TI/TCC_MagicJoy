@@ -228,6 +228,12 @@
     <Compile Include="Telas\Login\frmNovoUsuario.Designer.cs">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Login\frmRecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login\frmRecuperarSenha.Designer.cs">
+      <DependentUpon>frmRecuperarSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Menu\frmMenuu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +330,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Login\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Login\frmRecuperarSenha.resx">
+      <DependentUpon>frmRecuperarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Menu\frmMenuu.resx">
       <DependentUpon>frmMenuu.cs</DependentUpon>

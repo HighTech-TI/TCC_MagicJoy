@@ -145,7 +145,9 @@
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.SystemColors.Menu;
             this.txtNome.Location = new System.Drawing.Point(87, 106);
+            this.txtNome.MaxLength = 65;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 20);
             this.txtNome.TabIndex = 45;
@@ -154,10 +156,10 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(12, 361);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 56);
+            this.button4.Size = new System.Drawing.Size(124, 46);
             this.button4.TabIndex = 57;
             this.button4.Text = "Salvar";
             this.button4.UseVisualStyleBackColor = false;
@@ -165,7 +167,9 @@
             // 
             // txtendereco
             // 
+            this.txtendereco.BackColor = System.Drawing.SystemColors.Menu;
             this.txtendereco.Location = new System.Drawing.Point(388, 117);
+            this.txtendereco.MaxLength = 60;
             this.txtendereco.Name = "txtendereco";
             this.txtendereco.Size = new System.Drawing.Size(149, 20);
             this.txtendereco.TabIndex = 59;
@@ -243,6 +247,7 @@
             // 
             // mktcell
             // 
+            this.mktcell.BackColor = System.Drawing.SystemColors.Menu;
             this.mktcell.Location = new System.Drawing.Point(434, 212);
             this.mktcell.Mask = "(00)0 0000-0000";
             this.mktcell.Name = "mktcell";
@@ -251,6 +256,7 @@
             // 
             // mkttele
             // 
+            this.mkttele.BackColor = System.Drawing.SystemColors.Menu;
             this.mkttele.Location = new System.Drawing.Point(434, 161);
             this.mkttele.Mask = "(00)00000000";
             this.mkttele.Name = "mkttele";
@@ -259,6 +265,7 @@
             // 
             // mktcpf
             // 
+            this.mktcpf.BackColor = System.Drawing.SystemColors.Menu;
             this.mktcpf.Location = new System.Drawing.Point(81, 142);
             this.mktcpf.Mask = "000,000,000-00";
             this.mktcpf.Name = "mktcpf";
@@ -267,6 +274,7 @@
             // 
             // mktrg
             // 
+            this.mktrg.BackColor = System.Drawing.SystemColors.Menu;
             this.mktrg.Location = new System.Drawing.Point(81, 184);
             this.mktrg.Mask = "00.000.000-0";
             this.mktrg.Name = "mktrg";
@@ -286,6 +294,7 @@
             // 
             // nudidfuncio
             // 
+            this.nudidfuncio.BackColor = System.Drawing.SystemColors.Menu;
             this.nudidfuncio.Enabled = false;
             this.nudidfuncio.Location = new System.Drawing.Point(173, 66);
             this.nudidfuncio.Name = "nudidfuncio";
@@ -323,6 +332,7 @@
             // 
             // txtidfolha
             // 
+            this.txtidfolha.BackColor = System.Drawing.SystemColors.Menu;
             this.txtidfolha.Location = new System.Drawing.Point(509, 293);
             this.txtidfolha.Name = "txtidfolha";
             this.txtidfolha.Size = new System.Drawing.Size(57, 20);
@@ -517,7 +527,9 @@
             // 
             // txtcargo
             // 
+            this.txtcargo.BackColor = System.Drawing.SystemColors.Menu;
             this.txtcargo.Location = new System.Drawing.Point(389, 82);
+            this.txtcargo.MaxLength = 30;
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(149, 20);
             this.txtcargo.TabIndex = 86;
@@ -540,7 +552,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(995, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(1002, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -551,20 +563,20 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(6, 6);
+            this.label17.Location = new System.Drawing.Point(6, 4);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(147, 16);
+            this.label17.Size = new System.Drawing.Size(121, 26);
             this.label17.TabIndex = 58;
-            this.label17.Text = "Cadastrar Funcionários";
+            this.label17.Text = "Funcionários";
             // 
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(1026, 5);
+            this.pictureBox24.Location = new System.Drawing.Point(1033, 5);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -577,7 +589,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(1057, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(1063, 4);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

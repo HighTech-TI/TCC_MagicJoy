@@ -29,14 +29,11 @@
         private void InitializeComponent()
         {
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblemail = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
@@ -44,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -58,23 +54,12 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::MagicJoy.Properties.Resources._81055;
-            this.pictureBox4.Location = new System.Drawing.Point(281, 141);
+            this.pictureBox4.Location = new System.Drawing.Point(278, 139);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(36, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::MagicJoy.Properties.Resources.oie_transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(282, 86);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -100,9 +85,10 @@
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(332, 146);
+            this.txtemail.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtemail.Location = new System.Drawing.Point(317, 141);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(214, 20);
+            this.txtemail.Size = new System.Drawing.Size(247, 20);
             this.txtemail.TabIndex = 17;
             this.txtemail.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -122,34 +108,13 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::MagicJoy.Properties.Resources.confirmar;
-            this.pictureBox6.Location = new System.Drawing.Point(452, 222);
+            this.pictureBox6.Location = new System.Drawing.Point(434, 222);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(51, 49);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(332, 91);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 21);
-            this.comboBox1.TabIndex = 20;
-            // 
-            // lblemail
-            // 
-            this.lblemail.AutoSize = true;
-            this.lblemail.BackColor = System.Drawing.Color.Transparent;
-            this.lblemail.Font = new System.Drawing.Font("Candy Beans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblemail.ForeColor = System.Drawing.Color.Red;
-            this.lblemail.Location = new System.Drawing.Point(358, 169);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(162, 25);
-            this.lblemail.TabIndex = 21;
-            this.lblemail.Text = "Email incorreto";
-            this.lblemail.Visible = false;
             // 
             // panel1
             // 
@@ -228,25 +193,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MagicJoy.Properties.Resources._1920x1080_px_colorful_Rubiks_Cube_toys_1278705_wallhere_com;
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.Batman_Toy_surface_663086_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(570, 283);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblemail);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEsqueciSenha";
             this.Text = "frmEsqueciSenha";
             this.Load += new System.EventHandler(this.frmEsqueciSenha_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -264,13 +225,10 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox24;

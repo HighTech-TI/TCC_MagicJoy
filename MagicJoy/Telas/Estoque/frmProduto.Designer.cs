@@ -64,6 +64,7 @@
             // 
             // txtidproduto
             // 
+            this.txtidproduto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtidproduto.Enabled = false;
             this.txtidproduto.Location = new System.Drawing.Point(140, 97);
             this.txtidproduto.Name = "txtidproduto";
@@ -85,10 +86,10 @@
             // 
             this.btnsalvar.BackColor = System.Drawing.Color.Transparent;
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalvar.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(12, 305);
+            this.btnsalvar.Font = new System.Drawing.Font("Ananda", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalvar.Location = new System.Drawing.Point(12, 297);
             this.btnsalvar.Name = "btnsalvar";
-            this.btnsalvar.Size = new System.Drawing.Size(103, 41);
+            this.btnsalvar.Size = new System.Drawing.Size(135, 51);
             this.btnsalvar.TabIndex = 33;
             this.btnsalvar.Text = "Salvar";
             this.btnsalvar.UseVisualStyleBackColor = false;
@@ -109,7 +110,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(327, 40);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(443, 255);
+            this.dataGridView1.Size = new System.Drawing.Size(451, 255);
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
@@ -155,13 +156,16 @@
             // 
             // txtproduto
             // 
+            this.txtproduto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtproduto.Location = new System.Drawing.Point(139, 136);
+            this.txtproduto.MaxLength = 45;
             this.txtproduto.Name = "txtproduto";
-            this.txtproduto.Size = new System.Drawing.Size(160, 20);
+            this.txtproduto.Size = new System.Drawing.Size(169, 20);
             this.txtproduto.TabIndex = 40;
             // 
             // txtpreco
             // 
+            this.txtpreco.BackColor = System.Drawing.SystemColors.Menu;
             this.txtpreco.Location = new System.Drawing.Point(140, 174);
             this.txtpreco.Name = "txtpreco";
             this.txtpreco.Size = new System.Drawing.Size(87, 20);
@@ -202,6 +206,7 @@
             // 
             // txtidestoque
             // 
+            this.txtidestoque.BackColor = System.Drawing.SystemColors.Menu;
             this.txtidestoque.Location = new System.Drawing.Point(155, 213);
             this.txtidestoque.Name = "txtidestoque";
             this.txtidestoque.Size = new System.Drawing.Size(53, 20);
@@ -210,7 +215,9 @@
             // 
             // txtprodutopesquisa
             // 
+            this.txtprodutopesquisa.BackColor = System.Drawing.SystemColors.Menu;
             this.txtprodutopesquisa.Location = new System.Drawing.Point(594, 321);
+            this.txtprodutopesquisa.MaxLength = 45;
             this.txtprodutopesquisa.Name = "txtprodutopesquisa";
             this.txtprodutopesquisa.Size = new System.Drawing.Size(163, 20);
             this.txtprodutopesquisa.TabIndex = 43;
@@ -229,7 +236,8 @@
             // 
             // txtidpesquisa
             // 
-            this.txtidpesquisa.Location = new System.Drawing.Point(415, 318);
+            this.txtidpesquisa.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtidpesquisa.Location = new System.Drawing.Point(419, 322);
             this.txtidpesquisa.Name = "txtidpesquisa";
             this.txtidpesquisa.Size = new System.Drawing.Size(55, 20);
             this.txtidpesquisa.TabIndex = 45;
@@ -240,7 +248,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(302, 315);
+            this.label8.Location = new System.Drawing.Point(302, 321);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 21);
             this.label8.TabIndex = 44;
@@ -279,7 +287,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(691, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(696, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -290,11 +298,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Location = new System.Drawing.Point(6, 3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 16);
+            this.label13.Size = new System.Drawing.Size(77, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Produto";
             // 
@@ -303,7 +311,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(722, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(728, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,7 +324,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(753, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(759, 3);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

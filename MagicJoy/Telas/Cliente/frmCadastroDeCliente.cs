@@ -84,6 +84,18 @@ namespace MagicJoy.Telas.Cliente
             mktrg.Text = cliente.ds_rg;
             mkttele.Text = cliente.ds_telefone;
             dtpnascimento.Value = cliente.dt_nascimento;
+
+            Entityes.tb_cliente clientee = dataGridView1.CurrentRow.DataBoundItem as Entityes.tb_cliente;
+            clientee.nm_nome = txtnome.Text;
+            clientee.ds_celular = mktcell.Text;
+            clientee.id_compras = Convert.ToInt32(txtidcompra.Text);
+            clientee.ds_endereço = txtendereco.Text;
+            clientee.ds_telefone = mkttele.Text;
+            clientee.ds_cpf = mktcpf.Text;
+            clientee.ds_rg = mktrg.Text;
+            clientee.dt_nascimento = dtpnascimento.Value;
+
+            business.Alterar(clientee);
         }
         private void Remover(Entityes.tb_cliente cliente)
         {

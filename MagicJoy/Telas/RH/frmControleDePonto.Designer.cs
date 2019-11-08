@@ -75,6 +75,7 @@
             // 
             // nudfuncionario
             // 
+            this.nudfuncionario.BackColor = System.Drawing.SystemColors.Menu;
             this.nudfuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudfuncionario.Location = new System.Drawing.Point(177, 95);
             this.nudfuncionario.Name = "nudfuncionario";
@@ -195,7 +196,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(25, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 45);
@@ -307,6 +308,7 @@
             // 
             // nudcontrole
             // 
+            this.nudcontrole.BackColor = System.Drawing.SystemColors.Menu;
             this.nudcontrole.Enabled = false;
             this.nudcontrole.Location = new System.Drawing.Point(209, 59);
             this.nudcontrole.Name = "nudcontrole";
@@ -315,6 +317,7 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.BackColor = System.Drawing.SystemColors.Menu;
             this.numericUpDown1.Location = new System.Drawing.Point(534, 322);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(53, 20);
@@ -334,6 +337,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Location = new System.Drawing.Point(715, 321);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(161, 20);
@@ -369,7 +373,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(798, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(802, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -380,11 +384,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(6, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 16);
+            this.label13.Size = new System.Drawing.Size(161, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Controle de Ponto\r\n";
             // 
@@ -393,7 +397,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(829, 4);
+            this.pictureBox24.Location = new System.Drawing.Point(831, 4);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -113,6 +113,7 @@
             // 
             // txtqtds
             // 
+            this.txtqtds.BackColor = System.Drawing.SystemColors.Menu;
             this.txtqtds.Location = new System.Drawing.Point(153, 147);
             this.txtqtds.Name = "txtqtds";
             this.txtqtds.Size = new System.Drawing.Size(100, 20);
@@ -120,6 +121,7 @@
             // 
             // txtvlcusto
             // 
+            this.txtvlcusto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtvlcusto.Location = new System.Drawing.Point(166, 184);
             this.txtvlcusto.Name = "txtvlcusto";
             this.txtvlcusto.Size = new System.Drawing.Size(100, 20);
@@ -127,7 +129,9 @@
             // 
             // txtproduto
             // 
+            this.txtproduto.BackColor = System.Drawing.SystemColors.Menu;
             this.txtproduto.Location = new System.Drawing.Point(130, 111);
+            this.txtproduto.MaxLength = 45;
             this.txtproduto.Name = "txtproduto";
             this.txtproduto.Size = new System.Drawing.Size(160, 20);
             this.txtproduto.TabIndex = 25;
@@ -205,7 +209,7 @@
             // 
             this.btnsalvar.BackColor = System.Drawing.Color.Transparent;
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalvar.Font = new System.Drawing.Font("Sweet Pea", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalvar.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalvar.Location = new System.Drawing.Point(10, 303);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(114, 45);
@@ -227,6 +231,7 @@
             // 
             // txtidestoque
             // 
+            this.txtidestoque.BackColor = System.Drawing.SystemColors.Menu;
             this.txtidestoque.Enabled = false;
             this.txtidestoque.Location = new System.Drawing.Point(155, 79);
             this.txtidestoque.Name = "txtidestoque";
@@ -235,7 +240,8 @@
             // 
             // txtpesquisaproduto
             // 
-            this.txtpesquisaproduto.Location = new System.Drawing.Point(442, 316);
+            this.txtpesquisaproduto.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtpesquisaproduto.Location = new System.Drawing.Point(442, 320);
             this.txtpesquisaproduto.Name = "txtpesquisaproduto";
             this.txtpesquisaproduto.Size = new System.Drawing.Size(160, 20);
             this.txtpesquisaproduto.TabIndex = 33;
@@ -246,7 +252,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 317);
+            this.label5.Location = new System.Drawing.Point(352, 322);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 21);
             this.label5.TabIndex = 32;
@@ -254,7 +260,8 @@
             // 
             // txtqtdpesquisa
             // 
-            this.txtqtdpesquisa.Location = new System.Drawing.Point(718, 315);
+            this.txtqtdpesquisa.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtqtdpesquisa.Location = new System.Drawing.Point(718, 318);
             this.txtqtdpesquisa.Name = "txtqtdpesquisa";
             this.txtqtdpesquisa.Size = new System.Drawing.Size(58, 20);
             this.txtqtdpesquisa.TabIndex = 35;
@@ -265,7 +272,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(603, 314);
+            this.label7.Location = new System.Drawing.Point(603, 318);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 21);
             this.label7.TabIndex = 34;
@@ -284,9 +291,10 @@
             // 
             // txtidestoquepesquisa
             // 
-            this.txtidestoquepesquisa.Location = new System.Drawing.Point(303, 318);
+            this.txtidestoquepesquisa.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtidestoquepesquisa.Location = new System.Drawing.Point(300, 322);
             this.txtidestoquepesquisa.Name = "txtidestoquepesquisa";
-            this.txtidestoquepesquisa.Size = new System.Drawing.Size(43, 20);
+            this.txtidestoquepesquisa.Size = new System.Drawing.Size(46, 20);
             this.txtidestoquepesquisa.TabIndex = 37;
             this.txtidestoquepesquisa.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -328,7 +336,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(687, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(692, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -339,11 +347,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Location = new System.Drawing.Point(3, 3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 16);
+            this.label13.Size = new System.Drawing.Size(88, 26);
             this.label13.TabIndex = 58;
             this.label13.Text = "Estoque\r\n";
             // 
@@ -352,7 +360,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(718, 3);
+            this.pictureBox24.Location = new System.Drawing.Point(721, 3);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -365,7 +373,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(747, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(749, 3);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -375,6 +383,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(131, 217);
             this.comboBox1.Name = "comboBox1";
@@ -386,6 +395,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Menu;
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(780, 374);

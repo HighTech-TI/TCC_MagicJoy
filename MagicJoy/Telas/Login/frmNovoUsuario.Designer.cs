@@ -41,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtonfirmaao = new System.Windows.Forms.TextBox();
             this.lblsenhas = new System.Windows.Forms.Label();
-            this.lblusuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -72,6 +71,7 @@
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenha.Location = new System.Drawing.Point(418, 159);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(0);
+            this.txtSenha.MaxLength = 45;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(207, 20);
@@ -83,6 +83,7 @@
             this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCargo.Location = new System.Drawing.Point(416, 130);
             this.txtCargo.Margin = new System.Windows.Forms.Padding(0);
+            this.txtCargo.MaxLength = 45;
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(207, 20);
             this.txtCargo.TabIndex = 10;
@@ -93,6 +94,7 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsuario.Location = new System.Drawing.Point(418, 76);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(0);
+            this.txtUsuario.MaxLength = 45;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(207, 20);
             this.txtUsuario.TabIndex = 7;
@@ -198,6 +200,7 @@
             this.txtonfirmaao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtonfirmaao.Location = new System.Drawing.Point(418, 186);
             this.txtonfirmaao.Margin = new System.Windows.Forms.Padding(0);
+            this.txtonfirmaao.MaxLength = 45;
             this.txtonfirmaao.Name = "txtonfirmaao";
             this.txtonfirmaao.PasswordChar = '*';
             this.txtonfirmaao.Size = new System.Drawing.Size(207, 20);
@@ -216,19 +219,6 @@
             this.lblsenhas.TabIndex = 19;
             this.lblsenhas.Text = "Senhas não se conincidem";
             this.lblsenhas.Visible = false;
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.AutoSize = true;
-            this.lblusuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusuario.ForeColor = System.Drawing.Color.Red;
-            this.lblusuario.Location = new System.Drawing.Point(369, 39);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(261, 24);
-            this.lblusuario.TabIndex = 20;
-            this.lblusuario.Text = "Nome de usuário existente";
-            this.lblusuario.Visible = false;
             // 
             // panel2
             // 
@@ -370,6 +360,7 @@
             this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtemail.Location = new System.Drawing.Point(417, 104);
             this.txtemail.Margin = new System.Windows.Forms.Padding(0);
+            this.txtemail.MaxLength = 65;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(207, 20);
             this.txtemail.TabIndex = 64;
@@ -386,7 +377,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.lblsenhas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtonfirmaao);
@@ -436,7 +426,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtonfirmaao;
         private System.Windows.Forms.Label lblsenhas;
-        private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;

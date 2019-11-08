@@ -102,7 +102,7 @@ namespace MagicJoy.Telas.Login
                 if(usuario == null)
                 {
                   txtUsuario.BackColor = System.Drawing.Color.White;
-                 lblusuario.Visible = false;
+                
                   return;
                 }
 
@@ -113,7 +113,7 @@ namespace MagicJoy.Telas.Login
                 {
 
                     txtUsuario.BackColor = System.Drawing.Color.Red;
-                    lblusuario.Visible = true;
+                    
                 }
 
                 catch (Exception)
@@ -136,7 +136,7 @@ namespace MagicJoy.Telas.Login
                     tabela.nm_usuario = txtUsuario.Text;
 
                     txtUsuario.BackColor = System.Drawing.Color.White;
-                    lblusuario.Visible = false;
+                   
 
                 
 
