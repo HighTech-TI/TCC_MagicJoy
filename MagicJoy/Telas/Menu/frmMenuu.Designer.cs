@@ -285,7 +285,7 @@
             this.btnpedido.Name = "btnpedido";
             this.btnpedido.Size = new System.Drawing.Size(156, 48);
             this.btnpedido.TabIndex = 12;
-            this.btnpedido.Text = "Pedido";
+            this.btnpedido.Text = ";";
             this.btnpedido.UseVisualStyleBackColor = true;
             this.btnpedido.Visible = false;
             this.btnpedido.Click += new System.EventHandler(this.btnpedido_Click);
@@ -349,6 +349,7 @@
             this.btnfluxo.Text = "Fluxo de caixa";
             this.btnfluxo.UseVisualStyleBackColor = true;
             this.btnfluxo.Visible = false;
+            this.btnfluxo.Click += new System.EventHandler(this.btnfluxo_Click);
             // 
             // btnclientes
             // 
@@ -443,7 +444,6 @@
             // btnfolha
             // 
             this.btnfolha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnfolha.Enabled = false;
             this.btnfolha.FlatAppearance.BorderSize = 2;
             this.btnfolha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnfolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -451,9 +451,10 @@
             this.btnfolha.Name = "btnfolha";
             this.btnfolha.Size = new System.Drawing.Size(178, 49);
             this.btnfolha.TabIndex = 23;
-            this.btnfolha.Text = "Folha de Pagamento";
+            this.btnfolha.Text = "Pró-Labore";
             this.btnfolha.UseVisualStyleBackColor = true;
             this.btnfolha.Visible = false;
+            this.btnfolha.Click += new System.EventHandler(this.btnfolha_Click);
             // 
             // pictureBox24
             // 

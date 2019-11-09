@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase
 {
     class LoginDataBase
     {
-        Entityes.magicjoydbEntities16 db = new Entityes.magicjoydbEntities16();
+        Entityes.db_a4f992_magicEntities db = new Entityes.db_a4f992_magicEntities();
         public void inserir (Entityes.tb_usuario usuario)
         {
             
@@ -51,12 +51,28 @@ namespace MagicJoy.DataBase
                                                                          
             return usuario;
         }
+        public void remover(Entityes.tb_codigo codigo)
+        {
+            var deleteCommand = db.Database.Connection.CreateCommand();
+            deleteCommand.CommandText = "DELETE FROM tb_codigo";
+            db.Database.Connection.Open();
+
+            deleteCommand.ExecuteNonQuery();
+
+            db.Database.Connection.Close();
+
+        }
+        public void inserirrcd(Entityes.tb_codigo tabela)
+        {
+            db.tb_codigo.Add(tabela);
+            db.SaveChanges();
+        }
         public void AlterarDadosUsuario(Entityes.tb_usuario usuario)
         {
-            Entityes.tb_usuario altera = db.tb_usuario.First(a => a.nm_usuario == usuario.nm_usuario);
-            altera.nm_usuario = usuario.nm_usuario;
+            Entityes.tb_usuario altera = db.tb_usuario.First(a => a.nm_usuario == usuario.nm_usuario);    
             altera.nm_senha = usuario.nm_senha;
-            altera.ds_email = usuario.ds_email;
+            db.SaveChanges();
+            
         }
         public void EnviarCod(Entityes.tb_usuario tb)
         {

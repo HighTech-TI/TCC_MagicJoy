@@ -63,8 +63,9 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::MagicJoy.Properties.Resources.download__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(489, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(501, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -74,6 +75,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.download__1_;
             this.pictureBox1.Location = new System.Drawing.Point(531, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -87,6 +89,7 @@
             // 
             this.txtemail.BackColor = System.Drawing.SystemColors.Menu;
             this.txtemail.Location = new System.Drawing.Point(317, 141);
+            this.txtemail.MaxLength = 65;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(247, 20);
             this.txtemail.TabIndex = 17;

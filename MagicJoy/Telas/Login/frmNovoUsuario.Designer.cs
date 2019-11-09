@@ -71,11 +71,11 @@
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSenha.Location = new System.Drawing.Point(418, 159);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(0);
-            this.txtSenha.MaxLength = 45;
+            this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(207, 20);
             this.txtSenha.TabIndex = 8;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtCargo
             // 
@@ -200,11 +200,11 @@
             this.txtonfirmaao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtonfirmaao.Location = new System.Drawing.Point(418, 186);
             this.txtonfirmaao.Margin = new System.Windows.Forms.Padding(0);
-            this.txtonfirmaao.MaxLength = 45;
+            this.txtonfirmaao.MaxLength = 10;
             this.txtonfirmaao.Name = "txtonfirmaao";
-            this.txtonfirmaao.PasswordChar = '*';
             this.txtonfirmaao.Size = new System.Drawing.Size(207, 20);
             this.txtonfirmaao.TabIndex = 17;
+            this.txtonfirmaao.UseSystemPasswordChar = true;
             this.txtonfirmaao.TextChanged += new System.EventHandler(this.txtonfirmaao_TextChanged);
             // 
             // lblsenhas
@@ -321,11 +321,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.label1.Location = new System.Drawing.Point(33, 134);
+            this.label1.Location = new System.Drawing.Point(41, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 79);
+            this.label1.Size = new System.Drawing.Size(155, 72);
             this.label1.TabIndex = 62;
             this.label1.Text = "Joy";
             // 
@@ -333,11 +333,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(12, 62);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(236, 79);
+            this.label8.Size = new System.Drawing.Size(255, 72);
             this.label8.TabIndex = 61;
             this.label8.Text = "Magic ";
             // 

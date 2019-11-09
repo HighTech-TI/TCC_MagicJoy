@@ -113,6 +113,9 @@
     <Compile Include="Entityes\tb_cliente.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entityes\tb_codigo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entityes\tb_compra.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -203,12 +206,6 @@
     </Compile>
     <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.Designer.cs">
       <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Login\frmAlterarLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Login\frmAlterarLogin.Designer.cs">
-      <DependentUpon>frmAlterarLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
@@ -308,9 +305,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
       <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Login\frmAlterarLogin.resx">
-      <DependentUpon>frmAlterarLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>

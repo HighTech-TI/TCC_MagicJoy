@@ -8,23 +8,59 @@ namespace MagicJoy.Objetos
 {
     class EnviarEmail
     {
-        // Certifique-se que seu GMAIL esteja habilitado para envio de e-mail.
-        // https://myaccount.google.com/lesssecureapps
+        Entityes.db_a4f992_magicEntities db = new Entityes.db_a4f992_magicEntities();
+        public bool login(string login, string senha, string email)
+        {
 
-        /// <summary>
-        /// Função responsável por enviar um e-mail a partir da configuração feita na função ConfigurarCredenciais
-        /// </summary>
-        /// <param name="emailPara">E-mail para enviar a mensagem</param>
-        /// <param name="assunto">Assunto do e-mail</param>
-        /// <param name="mensagem">Mensagem do e-mail</param>
+
+            var usuario = db.tb_usuario.FirstOrDefault(x => (x.nm_usuario == login || x.ds_email == email) && x.nm_senha == senha);
+            if (usuario != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool esqueceusenha(string email)
+        {
+
+            var usuario = db.tb_usuario.FirstOrDefault(x => x.ds_email == email);
+            if (usuario != null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool codigo(int codigo)
+        {
+            var tabela = db.tb_codigo.FirstOrDefault(x => x.ds_codigo == codigo);
+
+            if (tabela != null)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        public bool usuario(string usuario)
+        {
+            var tabela = db.tb_usuario.FirstOrDefault(x => x.nm_usuario == usuario);
+
+            if (tabela != null)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        
         public void Enviar(string emailPara, string assunto, string mensagem)
         {
             Task.Factory.StartNew(() =>
             {
                 System.Net.Mail.MailMessage email = new System.Net.Mail.MailMessage();
 
-                string remetente = "";
-                string senha = "";
+                string remetente = "hightech.tecnology@gmail.com";
+                string senha = "fcdsgrd0217";
 
                 // Configura Remetente, Destinatário
                 email.From = new System.Net.Mail.MailAddress(remetente);

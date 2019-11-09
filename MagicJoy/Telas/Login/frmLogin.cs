@@ -144,5 +144,12 @@ namespace MagicJoy.Telas.Login
                 txtsenha.UseSystemPasswordChar = false;
             }
         }
+
+        private void linkLabel1_LinkClicked_2(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Telas.Login.frmEsqueciSenha tela = new frmEsqueciSenha();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

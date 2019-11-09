@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class DespesasDataBase
     {
-        Entityes.magicjoydbEntities16 db = new Entityes.magicjoydbEntities16();
+        Entityes.db_a4f992_magicEntities db = new Entityes.db_a4f992_magicEntities();
         public void InserirDespesas(Entityes.tb_despesa despesas)
         {
 

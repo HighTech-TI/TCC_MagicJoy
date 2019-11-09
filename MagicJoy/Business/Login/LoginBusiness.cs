@@ -75,6 +75,16 @@ namespace MagicJoy.Business
             return usuario;
 
         }
+        public void remover(Entityes.tb_codigo codigo)
+        {
+            DataBase.LoginDataBase db = new DataBase.LoginDataBase();
+            db.remover(codigo);
+        }
+        public void inserircodicd(Entityes.tb_codigo tabela)
+        {
+            DataBase.LoginDataBase db = new DataBase.LoginDataBase();
+            db.inserirrcd(tabela);
+        }
         public void Alterar(Entityes.tb_usuario usuario)
         {
             DataBase.LoginDataBase db = new DataBase.LoginDataBase();

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="magicjoydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="db_a4f992_magicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="tb_beneficio">
     <Key>
       <PropertyRef Name="id_beneficios" />
@@ -13,15 +13,22 @@
       <PropertyRef Name="id_cliente" />
     </Key>
     <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_endereço" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="id_compras" Type="Int32" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tb_compra" Relationship="Self.tb_cliente_ibfk_1" FromRole="tb_cliente" ToRole="tb_compra" />
+  </EntityType>
+  <EntityType Name="tb_codigo">
+    <Key>
+      <PropertyRef Name="id_codigo" />
+    </Key>
+    <Property Name="id_codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ds_codigo" Type="Int32" />
   </EntityType>
   <EntityType Name="tb_compra">
     <Key>
@@ -108,7 +115,7 @@
     <Property Name="ds_cnpj" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_endereço" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
@@ -119,7 +126,7 @@
       <PropertyRef Name="id_funcionario" />
     </Key>
     <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
@@ -325,9 +332,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="magicjoydbEntities16" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="db_a4f992_magicEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
+    <EntitySet Name="tb_codigo" EntityType="Self.tb_codigo" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
     <EntitySet Name="tb_compra_item" EntityType="Self.tb_compra_item" />
     <EntitySet Name="tb_controle_ponto" EntityType="Self.tb_controle_ponto" />

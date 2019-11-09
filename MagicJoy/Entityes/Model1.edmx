@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="magicjoydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="db_a4f992_magicModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_beneficio">
           <Key>
             <PropertyRef Name="id_beneficios" />
@@ -17,14 +17,21 @@
             <PropertyRef Name="id_cliente" />
           </Key>
           <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="nm_nome" Type="varchar" MaxLength="65" Nullable="false" />
           <Property Name="ds_telefone" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
           <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="ds_endereço" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="ds_endereço" Type="varchar" MaxLength="65" Nullable="false" />
           <Property Name="id_compras" Type="int" Nullable="false" />
           <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_rg" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_codigo">
+          <Key>
+            <PropertyRef Name="id_codigo" />
+          </Key>
+          <Property Name="id_codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ds_codigo" Type="int" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
@@ -103,7 +110,7 @@
           <Property Name="ds_cnpj" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_endereço" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ds_telefone" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="ds_email" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="ds_email" Type="varchar" MaxLength="60" Nullable="false" />
           <Property Name="nm_produto" Type="varchar" MaxLength="45" Nullable="false" />
           <Property Name="ds_celular" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
@@ -113,7 +120,7 @@
             <PropertyRef Name="id_funcionario" />
           </Key>
           <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_nome" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="nm_nome" Type="varchar" MaxLength="65" Nullable="false" />
           <Property Name="ds_rg" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_cpf" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
@@ -182,7 +189,7 @@
           <Property Name="id_venda_d" Type="int" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'def.magicjoydb.vw_fuxo_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'def.db_a4f992_magic.vw_fuxo_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vw_fuxo_caixa">
           <Key>
             <PropertyRef Name="dt_pagamento" />
@@ -312,24 +319,25 @@ warning 6002: The table/view 'def.magicjoydb.vw_fuxo_caixa' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="magicjoydbModelStoreContainer">
-          <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_compra_item" EntityType="Self.tb_compra_item" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_controle_ponto" EntityType="Self.tb_controle_ponto" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_venda" EntityType="Self.tb_venda" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" Schema="magicjoydb" store:Type="Tables" />
-          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" store:Type="Views" store:Schema="magicjoydb">
+        <EntityContainer Name="db_a4f992_magicModelStoreContainer">
+          <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_codigo" EntityType="Self.tb_codigo" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_compra_item" EntityType="Self.tb_compra_item" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_controle_ponto" EntityType="Self.tb_controle_ponto" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_pedido" EntityType="Self.tb_pedido" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_produto_venda" EntityType="Self.tb_produto_venda" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_usuario" EntityType="Self.tb_usuario" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_venda" EntityType="Self.tb_venda" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" Schema="db_a4f992_magic" store:Type="Tables" />
+          <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" store:Type="Views" store:Schema="db_a4f992_magic">
             <DefiningQuery>SELECT
 `vw_fuxo_caixa`.`dt_pagamento`, 
 `vw_fuxo_caixa`.`vl_total`, 
@@ -381,7 +389,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="magicjoydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="db_a4f992_magicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="tb_beneficio">
           <Key>
             <PropertyRef Name="id_beneficios" />
@@ -395,15 +403,22 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             <PropertyRef Name="id_cliente" />
           </Key>
           <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
           <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_endereço" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_compras" Type="Int32" Nullable="false" />
           <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tb_compra" Relationship="Self.tb_cliente_ibfk_1" FromRole="tb_cliente" ToRole="tb_compra" />
+        </EntityType>
+        <EntityType Name="tb_codigo">
+          <Key>
+            <PropertyRef Name="id_codigo" />
+          </Key>
+          <Property Name="id_codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ds_codigo" Type="Int32" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
@@ -490,7 +505,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
           <Property Name="ds_cnpj" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_endereço" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
@@ -501,7 +516,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             <PropertyRef Name="id_funcionario" />
           </Key>
           <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
@@ -707,9 +722,10 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="magicjoydbEntities16" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="db_a4f992_magicEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
+          <EntitySet Name="tb_codigo" EntityType="Self.tb_codigo" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
           <EntitySet Name="tb_compra_item" EntityType="Self.tb_compra_item" />
           <EntitySet Name="tb_controle_ponto" EntityType="Self.tb_controle_ponto" />
@@ -771,9 +787,9 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="magicjoydbModelStoreContainer" CdmEntityContainer="magicjoydbEntities16">
+        <EntityContainerMapping StorageEntityContainer="db_a4f992_magicModelStoreContainer" CdmEntityContainer="db_a4f992_magicEntities">
           <EntitySetMapping Name="tb_beneficio">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_beneficio">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">
                 <ScalarProperty Name="id_beneficios" ColumnName="id_beneficios" />
                 <ScalarProperty Name="vl_transporte" ColumnName="vl_transporte" />
@@ -781,7 +797,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_cliente">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_cliente">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_cliente">
               <MappingFragment StoreEntitySet="tb_cliente">
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
                 <ScalarProperty Name="nm_nome" ColumnName="nm_nome" />
@@ -795,8 +811,16 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tb_codigo">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_codigo">
+              <MappingFragment StoreEntitySet="tb_codigo">
+                <ScalarProperty Name="id_codigo" ColumnName="id_codigo" />
+                <ScalarProperty Name="ds_codigo" ColumnName="ds_codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tb_compra">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_compra">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_compra">
               <MappingFragment StoreEntitySet="tb_compra">
                 <ScalarProperty Name="id_compras" ColumnName="id_compras" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
@@ -807,7 +831,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_compra_item">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_compra_item">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_compra_item">
               <MappingFragment StoreEntitySet="tb_compra_item">
                 <ScalarProperty Name="id_compra" ColumnName="id_compra" />
                 <ScalarProperty Name="id_produto" ColumnName="id_produto" />
@@ -816,7 +840,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_controle_ponto">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_controle_ponto">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_controle_ponto">
               <MappingFragment StoreEntitySet="tb_controle_ponto">
                 <ScalarProperty Name="id_controle_ponto" ColumnName="id_controle_ponto" />
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
@@ -829,7 +853,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_despesa">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_despesa">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_despesa">
               <MappingFragment StoreEntitySet="tb_despesa">
                 <ScalarProperty Name="id_despesa" ColumnName="id_despesa" />
                 <ScalarProperty Name="vl_valor" ColumnName="vl_valor" />
@@ -841,7 +865,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_estoque">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_estoque">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_estoque">
               <MappingFragment StoreEntitySet="tb_estoque">
                 <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
                 <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
@@ -852,7 +876,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_folha_pagamento">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_folha_pagamento">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_folha_pagamento">
               <MappingFragment StoreEntitySet="tb_folha_pagamento">
                 <ScalarProperty Name="id_folha_pagamento" ColumnName="id_folha_pagamento" />
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
@@ -870,7 +894,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_fornecedor">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_fornecedor">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_fornecedor">
               <MappingFragment StoreEntitySet="tb_fornecedor">
                 <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
                 <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
@@ -885,7 +909,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_funcionario">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_funcionario">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_funcionario">
               <MappingFragment StoreEntitySet="tb_funcionario">
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
                 <ScalarProperty Name="nm_nome" ColumnName="nm_nome" />
@@ -904,7 +928,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_pedido">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_pedido">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_pedido">
               <MappingFragment StoreEntitySet="tb_pedido">
                 <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
                 <ScalarProperty Name="nm_pedido" ColumnName="nm_pedido" />
@@ -914,7 +938,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_produto">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_produto">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_produto">
               <MappingFragment StoreEntitySet="tb_produto">
                 <ScalarProperty Name="id_produto" ColumnName="id_produto" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
@@ -924,7 +948,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_produto_venda">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_produto_venda">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_produto_venda">
               <MappingFragment StoreEntitySet="tb_produto_venda">
                 <ScalarProperty Name="id_produto_v" ColumnName="id_produto_v" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
@@ -934,7 +958,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_usuario">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_usuario">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_usuario">
               <MappingFragment StoreEntitySet="tb_usuario">
                 <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
                 <ScalarProperty Name="nm_usuario" ColumnName="nm_usuario" />
@@ -945,7 +969,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_venda">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_venda">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_venda">
               <MappingFragment StoreEntitySet="tb_venda">
                 <ScalarProperty Name="id_venda_d" ColumnName="id_venda_d" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
@@ -956,7 +980,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_venda_item">
-            <EntityTypeMapping TypeName="magicjoydbModel.tb_venda_item">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.tb_venda_item">
               <MappingFragment StoreEntitySet="tb_venda_item">
                 <ScalarProperty Name="id_venda" ColumnName="id_venda" />
                 <ScalarProperty Name="id_produto_v" ColumnName="id_produto_v" />
@@ -965,7 +989,7 @@ FROM `vw_fuxo_caixa` AS `vw_fuxo_caixa`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vw_fuxo_caixa">
-            <EntityTypeMapping TypeName="magicjoydbModel.vw_fuxo_caixa">
+            <EntityTypeMapping TypeName="db_a4f992_magicModel.vw_fuxo_caixa">
               <MappingFragment StoreEntitySet="vw_fuxo_caixa">
                 <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
                 <ScalarProperty Name="vl_total" ColumnName="vl_total" />

@@ -213,7 +213,9 @@ namespace MagicJoy.Telas.Menu
 
         private void btnpedido_Click(object sender, EventArgs e)
         {
-
+            Telas.Estoque.frmPedido tela = new Estoque.frmPedido();
+            tela.Show();
+            this.Hide();
         }
 
         private void btndespesa_Click(object sender, EventArgs e)
@@ -279,6 +281,20 @@ namespace MagicJoy.Telas.Menu
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnfolha_Click(object sender, EventArgs e)
+        {
+            Telas.RH.frmFolhaDePagamento tela = new RH.frmFolhaDePagamento();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnfluxo_Click(object sender, EventArgs e)
+        {
+            Telas.Financeiro.frmFluxoDeCaixa tela = new Financeiro.frmFluxoDeCaixa();
+            tela.Show();
+            this.Hide();
         }
     }
 }
