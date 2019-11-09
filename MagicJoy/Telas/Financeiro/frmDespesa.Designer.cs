@@ -69,10 +69,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 107);
+            this.label1.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 21);
+            this.label1.Size = new System.Drawing.Size(121, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Despesa:";
             // 
@@ -80,10 +80,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 145);
+            this.label2.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(31, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 21);
+            this.label2.Size = new System.Drawing.Size(97, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Despesa:";
             // 
@@ -91,10 +91,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 187);
+            this.label3.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 21);
+            this.label3.Size = new System.Drawing.Size(65, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "Valor:";
             // 
@@ -102,10 +102,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 234);
+            this.label4.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(31, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 21);
+            this.label4.Size = new System.Drawing.Size(211, 27);
             this.label4.TabIndex = 4;
             this.label4.Text = "Data de vencimento:";
             // 
@@ -113,8 +113,8 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(22, 352);
+            this.button1.Font = new System.Drawing.Font("Keep Calm Med", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(21, 364);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 51);
             this.button1.TabIndex = 5;
@@ -191,7 +191,7 @@
             // 
             this.txtid.BackColor = System.Drawing.SystemColors.Menu;
             this.txtid.Enabled = false;
-            this.txtid.Location = new System.Drawing.Point(142, 111);
+            this.txtid.Location = new System.Drawing.Point(35, 89);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(64, 20);
             this.txtid.TabIndex = 7;
@@ -199,7 +199,7 @@
             // txtdespesa
             // 
             this.txtdespesa.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtdespesa.Location = new System.Drawing.Point(140, 149);
+            this.txtdespesa.Location = new System.Drawing.Point(35, 136);
             this.txtdespesa.MaxLength = 45;
             this.txtdespesa.Name = "txtdespesa";
             this.txtdespesa.Size = new System.Drawing.Size(170, 20);
@@ -208,7 +208,7 @@
             // txtvalor
             // 
             this.txtvalor.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtvalor.Location = new System.Drawing.Point(104, 192);
+            this.txtvalor.Location = new System.Drawing.Point(35, 182);
             this.txtvalor.Name = "txtvalor";
             this.txtvalor.Size = new System.Drawing.Size(97, 20);
             this.txtvalor.TabIndex = 9;
@@ -216,7 +216,7 @@
             // dtpvencimento
             // 
             this.dtpvencimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpvencimento.Location = new System.Drawing.Point(218, 237);
+            this.dtpvencimento.Location = new System.Drawing.Point(35, 230);
             this.dtpvencimento.Name = "dtpvencimento";
             this.dtpvencimento.Size = new System.Drawing.Size(97, 20);
             this.dtpvencimento.TabIndex = 10;
@@ -224,7 +224,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Location = new System.Drawing.Point(411, 326);
+            this.textBox1.Location = new System.Drawing.Point(342, 349);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(64, 20);
             this.textBox1.TabIndex = 12;
@@ -234,10 +234,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(293, 325);
+            this.label5.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(338, 325);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 21);
+            this.label5.Size = new System.Drawing.Size(121, 27);
             this.label5.TabIndex = 11;
             this.label5.Text = "ID Despesa:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -245,7 +245,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.Location = new System.Drawing.Point(579, 328);
+            this.textBox2.Location = new System.Drawing.Point(529, 349);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 20);
             this.textBox2.TabIndex = 14;
@@ -255,17 +255,17 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(493, 325);
+            this.label6.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(525, 325);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 21);
+            this.label6.Size = new System.Drawing.Size(97, 27);
             this.label6.TabIndex = 13;
             this.label6.Text = "Despesa:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(597, 367);
+            this.dateTimePicker1.Location = new System.Drawing.Point(342, 396);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(111, 20);
             this.dateTimePicker1.TabIndex = 16;
@@ -275,17 +275,17 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(385, 364);
+            this.label7.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(338, 372);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(185, 21);
+            this.label7.Size = new System.Drawing.Size(211, 27);
             this.label7.TabIndex = 15;
             this.label7.Text = "Data de vencimento:";
             // 
             // dtppagamento
             // 
             this.dtppagamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtppagamento.Location = new System.Drawing.Point(218, 288);
+            this.dtppagamento.Location = new System.Drawing.Point(35, 278);
             this.dtppagamento.Name = "dtppagamento";
             this.dtppagamento.Size = new System.Drawing.Size(97, 20);
             this.dtppagamento.TabIndex = 18;
@@ -294,10 +294,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(8, 283);
+            this.label8.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(28, 252);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(179, 21);
+            this.label8.Size = new System.Drawing.Size(209, 27);
             this.label8.TabIndex = 17;
             this.label8.Text = "Data de pagamento:";
             // 
@@ -330,11 +330,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bollinsh Hunt Personal Use Only", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 0);
+            this.label13.Location = new System.Drawing.Point(2, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 28);
+            this.label13.Size = new System.Drawing.Size(96, 21);
             this.label13.TabIndex = 58;
             this.label13.Text = "Despesas\r\n";
             // 
@@ -370,7 +370,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(772, 421);
+            this.ClientSize = new System.Drawing.Size(772, 440);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtppagamento);
             this.Controls.Add(this.label8);

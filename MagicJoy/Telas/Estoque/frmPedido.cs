@@ -18,6 +18,10 @@ namespace MagicJoy.Telas.Estoque
         }
 
         Business.Estoque.PedidoBusiness business = new Business.Estoque.PedidoBusiness();
-        
+
+        private void frmPedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

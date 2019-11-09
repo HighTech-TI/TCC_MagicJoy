@@ -71,10 +71,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 108);
+            this.label1.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(159, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 24);
+            this.label1.Size = new System.Drawing.Size(91, 27);
             this.label1.TabIndex = 3;
             this.label1.Text = "Produto:";
             // 
@@ -82,10 +82,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 144);
+            this.label6.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 24);
+            this.label6.Size = new System.Drawing.Size(129, 27);
             this.label6.TabIndex = 14;
             this.label6.Text = "Quantidade:";
             // 
@@ -93,10 +93,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 180);
+            this.label3.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 24);
+            this.label3.Size = new System.Drawing.Size(156, 27);
             this.label3.TabIndex = 18;
             this.label3.Text = "Valor de custo:";
             // 
@@ -104,17 +104,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 215);
+            this.label2.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 234);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 24);
+            this.label2.Size = new System.Drawing.Size(125, 27);
             this.label2.TabIndex = 19;
             this.label2.Text = "Fornecedor:";
             // 
             // txtqtds
             // 
             this.txtqtds.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtqtds.Location = new System.Drawing.Point(153, 147);
+            this.txtqtds.Location = new System.Drawing.Point(19, 161);
             this.txtqtds.Name = "txtqtds";
             this.txtqtds.Size = new System.Drawing.Size(100, 20);
             this.txtqtds.TabIndex = 21;
@@ -122,7 +122,7 @@
             // txtvlcusto
             // 
             this.txtvlcusto.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtvlcusto.Location = new System.Drawing.Point(166, 184);
+            this.txtvlcusto.Location = new System.Drawing.Point(19, 211);
             this.txtvlcusto.Name = "txtvlcusto";
             this.txtvlcusto.Size = new System.Drawing.Size(100, 20);
             this.txtvlcusto.TabIndex = 24;
@@ -130,10 +130,10 @@
             // txtproduto
             // 
             this.txtproduto.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtproduto.Location = new System.Drawing.Point(130, 111);
+            this.txtproduto.Location = new System.Drawing.Point(163, 111);
             this.txtproduto.MaxLength = 45;
             this.txtproduto.Name = "txtproduto";
-            this.txtproduto.Size = new System.Drawing.Size(160, 20);
+            this.txtproduto.Size = new System.Drawing.Size(149, 20);
             this.txtproduto.TabIndex = 25;
             // 
             // dataGridView1
@@ -209,8 +209,8 @@
             // 
             this.btnsalvar.BackColor = System.Drawing.Color.Transparent;
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalvar.Font = new System.Drawing.Font("Ananda Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(10, 303);
+            this.btnsalvar.Font = new System.Drawing.Font("Keep Calm Med", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalvar.Location = new System.Drawing.Point(17, 313);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(114, 45);
             this.btnsalvar.TabIndex = 28;
@@ -222,10 +222,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 78);
+            this.label4.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 24);
+            this.label4.Size = new System.Drawing.Size(119, 27);
             this.label4.TabIndex = 30;
             this.label4.Text = "ID estoque:";
             // 
@@ -233,7 +233,7 @@
             // 
             this.txtidestoque.BackColor = System.Drawing.SystemColors.Menu;
             this.txtidestoque.Enabled = false;
-            this.txtidestoque.Location = new System.Drawing.Point(155, 79);
+            this.txtidestoque.Location = new System.Drawing.Point(16, 111);
             this.txtidestoque.Name = "txtidestoque";
             this.txtidestoque.Size = new System.Drawing.Size(53, 20);
             this.txtidestoque.TabIndex = 31;
@@ -241,7 +241,7 @@
             // txtpesquisaproduto
             // 
             this.txtpesquisaproduto.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtpesquisaproduto.Location = new System.Drawing.Point(442, 320);
+            this.txtpesquisaproduto.Location = new System.Drawing.Point(401, 342);
             this.txtpesquisaproduto.Name = "txtpesquisaproduto";
             this.txtpesquisaproduto.Size = new System.Drawing.Size(160, 20);
             this.txtpesquisaproduto.TabIndex = 33;
@@ -251,17 +251,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 322);
+            this.label5.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(397, 322);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 21);
+            this.label5.Size = new System.Drawing.Size(91, 27);
             this.label5.TabIndex = 32;
             this.label5.Text = "Produto:";
             // 
             // txtqtdpesquisa
             // 
             this.txtqtdpesquisa.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtqtdpesquisa.Location = new System.Drawing.Point(718, 318);
+            this.txtqtdpesquisa.Location = new System.Drawing.Point(607, 344);
             this.txtqtdpesquisa.Name = "txtqtdpesquisa";
             this.txtqtdpesquisa.Size = new System.Drawing.Size(58, 20);
             this.txtqtdpesquisa.TabIndex = 35;
@@ -271,10 +271,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Modern No. 20", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(603, 318);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 21);
+            this.label7.Size = new System.Drawing.Size(129, 27);
             this.label7.TabIndex = 34;
             this.label7.Text = "Quantidade:";
             // 
@@ -282,17 +282,17 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(187, 320);
+            this.label8.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(237, 320);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 21);
+            this.label8.Size = new System.Drawing.Size(119, 27);
             this.label8.TabIndex = 36;
             this.label8.Text = "ID estoque:";
             // 
             // txtidestoquepesquisa
             // 
             this.txtidestoquepesquisa.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtidestoquepesquisa.Location = new System.Drawing.Point(300, 322);
+            this.txtidestoquepesquisa.Location = new System.Drawing.Point(241, 344);
             this.txtidestoquepesquisa.Name = "txtidestoquepesquisa";
             this.txtidestoquepesquisa.Size = new System.Drawing.Size(46, 20);
             this.txtidestoquepesquisa.TabIndex = 37;
@@ -347,11 +347,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Keep Calm Med", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 3);
+            this.label13.Location = new System.Drawing.Point(2, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 26);
+            this.label13.Size = new System.Drawing.Size(84, 21);
             this.label13.TabIndex = 58;
             this.label13.Text = "Estoque\r\n";
             // 
@@ -385,7 +385,7 @@
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(131, 217);
+            this.comboBox1.Location = new System.Drawing.Point(19, 261);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(131, 21);
             this.comboBox1.TabIndex = 64;
@@ -396,7 +396,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(780, 374);
             this.Controls.Add(this.comboBox1);

@@ -136,11 +136,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Splatch", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(6, 6);
+            this.label13.Location = new System.Drawing.Point(1, 6);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 26);
+            this.label13.Size = new System.Drawing.Size(146, 21);
             this.label13.TabIndex = 58;
             this.label13.Text = "Esqueci Senha ";
             // 
@@ -172,11 +172,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Double•Bubble Shadow", 54F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label1.Location = new System.Drawing.Point(21, 74);
+            this.label1.Location = new System.Drawing.Point(21, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 72);
+            this.label1.Size = new System.Drawing.Size(246, 91);
             this.label1.TabIndex = 65;
             this.label1.Text = "Magic ";
             // 
@@ -184,11 +184,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Sketch 3D", 51.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Double•Bubble Shadow", 54F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label2.Location = new System.Drawing.Point(64, 146);
+            this.label2.Location = new System.Drawing.Point(60, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 72);
+            this.label2.Size = new System.Drawing.Size(152, 91);
             this.label2.TabIndex = 66;
             this.label2.Text = "Joy";
             // 

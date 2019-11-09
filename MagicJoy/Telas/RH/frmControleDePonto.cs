@@ -147,6 +147,11 @@ namespace MagicJoy.Telas.RH
             tela.Show();
             this.Hide();
         }
+
+        private void dtpSaida_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
          
 }
