@@ -61,10 +61,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(55, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 24);
+            this.label2.Size = new System.Drawing.Size(148, 27);
             this.label2.TabIndex = 18;
             this.label2.Text = "Id funcionário:";
             // 
@@ -123,10 +123,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(55, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 24);
+            this.label1.Size = new System.Drawing.Size(215, 27);
             this.label1.TabIndex = 26;
             this.label1.Text = "Nome do Funcionário:";
             // 
@@ -158,7 +158,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(203, 21);
             this.label13.TabIndex = 58;
-            this.label13.Text = "Cadastrar Pró-labore";
+            this.label13.Text = "Consultar Pró-labore";
             // 
             // pictureBox24
             // 
@@ -189,6 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(542, 410);
             this.Controls.Add(this.panel1);
