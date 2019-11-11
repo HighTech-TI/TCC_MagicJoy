@@ -36,5 +36,33 @@ namespace MagicJoy.Telas.Financeiro
         {
 
         }
+
+        private void frmFluxoDeCaixa_Load(object sender, EventArgs e)
+        {
+            ListarTudo();
+        }
+        private void ListarTudo()
+        {
+            Business.View.ViewBusiness business = new Business.View.ViewBusiness();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = business.ListarTudo();
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Telas.Menu.btnforne tela = new Menu.btnforne();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

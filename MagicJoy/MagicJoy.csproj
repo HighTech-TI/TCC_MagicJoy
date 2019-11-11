@@ -56,6 +56,7 @@
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,6 +80,7 @@
     <Compile Include="Business\Suprimentos\CompraBusiness.cs" />
     <Compile Include="Business\Suprimentos\FornecedorBusiness.cs" />
     <Compile Include="Business\Suprimentos\VendaBusiness.cs" />
+    <Compile Include="Business\View\ViewBusiness.cs" />
     <Compile Include="DataBase\Estoque\EstoqueDataBase.cs" />
     <Compile Include="DataBase\Estoque\PedidoBusiness.cs" />
     <Compile Include="DataBase\Estoque\ProdutoDataBase.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="DataBase\Suprimentos\CompraDataBase.cs" />
     <Compile Include="DataBase\Suprimentos\FornecedorDataBase.cs" />
     <Compile Include="DataBase\Suprimentos\VendaDataBase.cs" />
+    <Compile Include="DataBase\View\ViewDataBase.cs" />
     <Compile Include="Entityes\Class1.cs" />
     <Compile Include="Entityes\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -201,12 +204,6 @@
     <Compile Include="Telas\Financeiro\frmFluxoDeCaixa.Designer.cs">
       <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Financeiro\frmSangriaDeCaixa.Designer.cs">
-      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Login\frmEsqueciSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -302,9 +299,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Financeiro\frmFluxoDeCaixa.resx">
       <DependentUpon>frmFluxoDeCaixa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Financeiro\frmSangriaDeCaixa.resx">
-      <DependentUpon>frmSangriaDeCaixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login\frmEsqueciSenha.resx">
       <DependentUpon>frmEsqueciSenha.cs</DependentUpon>

@@ -10,49 +10,43 @@ namespace MagicJoy.DataBase.Estoque
     {
         Entityes.db_a4f992_magicEntities banco = new Entityes.db_a4f992_magicEntities();
 
-        public void Inserir(Entityes.tb_estoque estoque)
+        public void Inserir(Entityes.tb_pedido pedido)
         {
-            banco.tb_estoque.Add(estoque);
+            banco.tb_pedido.Add(pedido);
             banco.SaveChanges();
         }
 
-        public List<Entityes.tb_estoque> ListarIdEstoque(int id)
+        public List<Entityes.tb_pedido> ListarIdEstoque(int id)
         {
-            List<Entityes.tb_estoque> lista = banco.tb_estoque.Where(x => x.id_estoque == id).ToList();
+            List<Entityes.tb_pedido> lista = banco.tb_pedido.Where(x => x.id_pedido == id).ToList();
             return lista;
         }
 
-        public List<Entityes.tb_estoque> ListarQTd(int qtd)
+        public List<Entityes.tb_pedido> ListarPedinte(string pedinte)
         {
-            List<Entityes.tb_estoque> lista = banco.tb_estoque.Where(x => x.ds_qtd == qtd).ToList();
+            List<Entityes.tb_pedido> lista = banco.tb_pedido.Where(x => x.nm_pedinte.Contains(pedinte)).ToList();
             return lista;
         }
 
-        public List<Entityes.tb_estoque> ListarProduto(string produto)
+        public List<Entityes.tb_pedido> ListarTodosProdutos()
         {
-            List<Entityes.tb_estoque> lista = banco.tb_estoque.Where(x => x.nm_produto.Contains(produto)).ToList();
+            List<Entityes.tb_pedido> lista = banco.tb_pedido.ToList();
             return lista;
         }
 
-        public List<Entityes.tb_estoque> ListarTodosProdutos()
+        public void AlterarEstoque(Entityes.tb_pedido pedido)
         {
-            List<Entityes.tb_estoque> lista = banco.tb_estoque.ToList();
-            return lista;
-        }
-
-        public void AlterarEstoque(Entityes.tb_estoque estoque)
-        {
-            Entityes.tb_estoque alterar = banco.tb_estoque.First(s => s.id_estoque == estoque.id_estoque);
-            alterar.nm_produto = estoque.nm_produto;
-            alterar.ds_qtd = estoque.ds_qtd;
-            alterar.vl_custo = estoque.vl_custo;
+            Entityes.tb_pedido alterar = banco.tb_pedido.First(s => s.id_pedido == pedido.id_pedido);
+            alterar.nm_pedido = pedido.nm_pedido;
+            alterar.nm_pedinte = pedido.nm_pedinte;
+            alterar.dt_pedido = pedido.dt_pedido;
             banco.SaveChanges();
         }
 
-        public void RemoverEstoque(Entityes.tb_estoque estoque)
+        public void RemoverEstoque(Entityes.tb_pedido pedido)
         {
-            Entityes.tb_estoque remover = banco.tb_estoque.First(x => x.id_estoque == estoque.id_estoque);
-            banco.tb_estoque.Remove(remover);
+            Entityes.tb_pedido remover = banco.tb_pedido.First(x => x.id_pedido == pedido.id_pedido);
+            banco.tb_pedido.Remove(remover);
             banco.SaveChanges();
         }
     }

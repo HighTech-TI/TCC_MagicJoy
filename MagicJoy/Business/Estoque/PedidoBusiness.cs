@@ -8,65 +8,59 @@ namespace MagicJoy.Business.Estoque
 {
     class PedidoBusiness
     {
-        public void InserirProduto(Entityes.tb_produto produto)
+        public void InserirProduto(Entityes.tb_pedido produto)
         {
            
-            DataBase.Estoque.ProdutoDataBase produtoo = new DataBase.Estoque.ProdutoDataBase();
+            DataBase.Estoque.PedidoDataBase produtoo = new DataBase.Estoque.PedidoDataBase();
             produtoo.Inserir(produto);
         }
-        public void Salvar(Entityes.tb_produto produto)
+        public void Salvar(Entityes.tb_pedido pedido)
         {
-            if (produto.id_produto == 0)
+            if (pedido.id_pedido == 0)
             {
-                this.InserirProduto(produto);
+                this.InserirProduto(pedido);
             }
             else
             {
-                this.Alterar(produto);
+                this.Alterar(pedido);
             }
         }
 
 
-        public List<Entityes.tb_produto> ListarTodosProdutos()
+        public List<Entityes.tb_pedido> ListarTodosProdutos()
         {
-            DataBase.Estoque.ProdutoDataBase ddb = new DataBase.Estoque.ProdutoDataBase();
-            List<Entityes.tb_produto> pesquisa = ddb.ListarTodosProdutos();
+            DataBase.Estoque.PedidoDataBase ddb = new DataBase.Estoque.PedidoDataBase();
+            List<Entityes.tb_pedido> pesquisa = ddb.ListarTodosProdutos();
 
             return pesquisa;
         }
     
 
-        public List<Entityes.tb_produto> PesquisarPorID(int id)
+        public List<Entityes.tb_pedido> PesquisarPorID(int id)
         {
-            DataBase.Estoque.ProdutoDataBase ddb = new DataBase.Estoque.ProdutoDataBase();
-            List<Entityes.tb_produto> pesquisa = ddb.ListarIdProduto(id);
+            DataBase.Estoque.PedidoDataBase ddb = new DataBase.Estoque.PedidoDataBase();
+            List<Entityes.tb_pedido> pesquisa = ddb.ListarIdEstoque(id);
 
             return pesquisa;
         }
-        public List<Entityes.tb_produto> PesquisarPorPreco(decimal preco)
+       
+        public List<Entityes.tb_pedido> PesquisarPedinte(string pedinte)
         {
-            DataBase.Estoque.ProdutoDataBase ddb = new DataBase.Estoque.ProdutoDataBase();
-            List<Entityes.tb_produto> pesquisa = ddb.Listarpreco(preco);
+            DataBase.Estoque.PedidoDataBase ddb = new DataBase.Estoque.PedidoDataBase();
+            List<Entityes.tb_pedido> pesquisa = ddb.ListarPedinte(pedinte);
 
             return pesquisa;
         }
-        public List<Entityes.tb_produto> PesquisarPorPodruto(string produto)
+        public void Alterar(Entityes.tb_pedido pedido)
         {
-            DataBase.Estoque.ProdutoDataBase ddb = new DataBase.Estoque.ProdutoDataBase();
-            List<Entityes.tb_produto> pesquisa = ddb.ListarProduto(produto);
-
-            return pesquisa;
-        }
-        public void Alterar(Entityes.tb_produto produto)
-        {
-            DataBase.Estoque.ProdutoDataBase db = new DataBase.Estoque.ProdutoDataBase();
-            db.AlterarEstoque(produto);
+            DataBase.Estoque.PedidoDataBase db = new DataBase.Estoque.PedidoDataBase();
+            db.AlterarEstoque(pedido);
 
 
         }
-        public void Remover(Entityes.tb_produto produto)
+        public void Remover(Entityes.tb_pedido produto)
         {
-            DataBase.Estoque.ProdutoDataBase db = new DataBase.Estoque.ProdutoDataBase();
+            DataBase.Estoque.PedidoDataBase db = new DataBase.Estoque.PedidoDataBase();
             db.RemoverEstoque(produto);
 
         }

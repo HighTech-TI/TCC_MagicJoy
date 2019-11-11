@@ -279,7 +279,7 @@
             this.btnpedido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnpedido.FlatAppearance.BorderSize = 2;
             this.btnpedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpedido.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpedido.Location = new System.Drawing.Point(351, 380);
             this.btnpedido.Name = "btnpedido";
             this.btnpedido.Size = new System.Drawing.Size(156, 48);
@@ -294,7 +294,7 @@
             this.btnproduto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproduto.FlatAppearance.BorderSize = 2;
             this.btnproduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnproduto.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproduto.Location = new System.Drawing.Point(351, 297);
             this.btnproduto.Name = "btnproduto";
             this.btnproduto.Size = new System.Drawing.Size(156, 49);
@@ -309,7 +309,7 @@
             this.btnestoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnestoque.FlatAppearance.BorderSize = 2;
             this.btnestoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnestoque.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnestoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnestoque.Location = new System.Drawing.Point(351, 204);
             this.btnestoque.Name = "btnestoque";
             this.btnestoque.Size = new System.Drawing.Size(156, 49);
@@ -324,7 +324,7 @@
             this.btndespesa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndespesa.FlatAppearance.BorderSize = 2;
             this.btndespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndespesa.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndespesa.Location = new System.Drawing.Point(351, 204);
             this.btndespesa.Name = "btndespesa";
             this.btndespesa.Size = new System.Drawing.Size(156, 49);
@@ -339,8 +339,8 @@
             this.btnfluxo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfluxo.FlatAppearance.BorderSize = 2;
             this.btnfluxo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfluxo.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfluxo.Location = new System.Drawing.Point(351, 379);
+            this.btnfluxo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfluxo.Location = new System.Drawing.Point(351, 381);
             this.btnfluxo.Name = "btnfluxo";
             this.btnfluxo.Size = new System.Drawing.Size(156, 49);
             this.btnfluxo.TabIndex = 16;
@@ -354,7 +354,7 @@
             this.btnclientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnclientes.FlatAppearance.BorderSize = 2;
             this.btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclientes.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclientes.Location = new System.Drawing.Point(351, 297);
             this.btnclientes.Name = "btnclientes";
             this.btnclientes.Size = new System.Drawing.Size(156, 49);
@@ -369,7 +369,7 @@
             this.btncompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncompras.FlatAppearance.BorderSize = 2;
             this.btncompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncompras.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompras.Location = new System.Drawing.Point(351, 204);
             this.btncompras.Name = "btncompras";
             this.btncompras.Size = new System.Drawing.Size(156, 49);
@@ -384,7 +384,7 @@
             this.btnvendas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvendas.FlatAppearance.BorderSize = 2;
             this.btnvendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvendas.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvendas.Location = new System.Drawing.Point(351, 297);
             this.btnvendas.Name = "btnvendas";
             this.btnvendas.Size = new System.Drawing.Size(156, 49);
@@ -399,8 +399,8 @@
             this.btnforr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnforr.FlatAppearance.BorderSize = 2;
             this.btnforr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnforr.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnforr.Location = new System.Drawing.Point(351, 379);
+            this.btnforr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnforr.Location = new System.Drawing.Point(351, 381);
             this.btnforr.Name = "btnforr";
             this.btnforr.Size = new System.Drawing.Size(156, 49);
             this.btnforr.TabIndex = 20;
@@ -414,7 +414,7 @@
             this.btncontrole.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncontrole.FlatAppearance.BorderSize = 2;
             this.btncontrole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncontrole.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncontrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncontrole.Location = new System.Drawing.Point(351, 204);
             this.btncontrole.Name = "btncontrole";
             this.btncontrole.Size = new System.Drawing.Size(156, 59);
@@ -429,7 +429,7 @@
             this.btnfunciona.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfunciona.FlatAppearance.BorderSize = 2;
             this.btnfunciona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfunciona.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfunciona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfunciona.Location = new System.Drawing.Point(351, 297);
             this.btnfunciona.Name = "btnfunciona";
             this.btnfunciona.Size = new System.Drawing.Size(156, 49);
@@ -444,8 +444,8 @@
             this.btnfolha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfolha.FlatAppearance.BorderSize = 2;
             this.btnfolha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfolha.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfolha.Location = new System.Drawing.Point(351, 379);
+            this.btnfolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfolha.Location = new System.Drawing.Point(351, 381);
             this.btnfolha.Name = "btnfolha";
             this.btnfolha.Size = new System.Drawing.Size(160, 49);
             this.btnfolha.TabIndex = 23;
