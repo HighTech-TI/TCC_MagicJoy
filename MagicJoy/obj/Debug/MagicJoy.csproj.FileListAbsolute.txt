@@ -63,9 +63,7 @@ C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\teste\Source\Repos\TCC_MagicJoy7\MagicJoy\obj\Debug\MagicJoy.pdb
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmFluxoDeCaixa.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmConsultaFolhaDePagamento.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmControleDePonto.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmFolhaDePagamento.resources
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\infod14\Source\Repos\TCC_MagicJoy3\MagicJoy\obj\Debug\MagicJoy.pdb
@@ -110,7 +108,6 @@ C:\Users\teste\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\teste\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.pdb
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Cliente.frmCadastroDeCliente.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Estoque.frmInserirEstoque.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Financeiro.frmSangriaDeCaixa.resources
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.frmCadastroDeFuncionários.resources
 C:\Users\infod14\Source\Repos\TCC_MagicJoy20\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod14\Source\Repos\TCC_MagicJoy20\MagicJoy\obj\Debug\MagicJoy.exe
@@ -241,7 +238,6 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy9\MagicJoy\obj\Debug\MagicJoy.pdb
 C:\Users\infod26\Source\Repos\TCC_MagicJoy3\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\infod16\Source\Repos\TCC_MagicJoy12\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Estoque.frmPedido.resources
-C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Login.frmAlterarLogin.resources
 C:\Users\infod26\Source\Repos\TCC_MagicJoy2\MagicJoy\bin\Debug\MagicJoy.exe.config
 C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Menu.btnforne.resources
 C:\Users\infod16\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.Estoque.frmPedido.resources
@@ -357,3 +353,4 @@ C:\Users\infod16\Source\Repos\TCC_MagicJoy13\MagicJoy\obj\Debug\MagicJoy.Telas.S
 C:\Users\infod16\Source\Repos\TCC_MagicJoy13\MagicJoy\obj\Debug\MagicJoy.csproj.GenerateResource.Cache
 C:\Users\infod16\Source\Repos\TCC_MagicJoy13\MagicJoy\obj\Debug\MagicJoy.exe
 C:\Users\infod16\Source\Repos\TCC_MagicJoy13\MagicJoy\obj\Debug\MagicJoy.pdb
+C:\Users\Windows\Source\Repos\TCC_MagicJoy\MagicJoy\obj\Debug\MagicJoy.Telas.RH.txt.resources

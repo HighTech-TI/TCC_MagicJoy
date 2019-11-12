@@ -16,6 +16,13 @@ namespace MagicJoy.DataBase.RH
 
             db.SaveChanges();
         }
+        public Entityes.tb_folha_pagamento PesquisarParaSalario(int id, decimal salario)
+        {
+            Entityes.tb_folha_pagamento folha = db.tb_folha_pagamento.FirstOrDefault(t => t.id_funcionario == id
+                                                                         && t.vl_bruto == salario);
+
+            return folha;
+        }
         public List<Entityes.tb_folha_pagamento> ListarTodasFolha()
         {
             List<Entityes.tb_folha_pagamento> tabela = db.tb_folha_pagamento.ToList();

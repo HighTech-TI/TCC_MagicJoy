@@ -19,6 +19,13 @@ namespace MagicJoy.Business.RH
             db.InserirControleDePonto(ponto);
 
         }
+        public Entityes.tb_folha_pagamento PesquisarParaSalario(int id, decimal salrio)
+        {
+            DataBase.RH.FolhaDepagamentoDataBase logdatabase = new DataBase.RH.FolhaDepagamentoDataBase();
+            Entityes.tb_folha_pagamento folha = logdatabase.PesquisarParaSalario(id, salrio);
+
+            return folha;
+        }
 
         public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
         {

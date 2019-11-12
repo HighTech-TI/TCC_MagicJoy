@@ -285,7 +285,7 @@ namespace MagicJoy.Telas.Menu
 
         private void btnfolha_Click(object sender, EventArgs e)
         {
-            Telas.RH.frmFolhaDePagamento tela = new RH.frmFolhaDePagamento();
+            Telas.RH.txt tela = new RH.txt();
             tela.Show();
             this.Hide();
         }

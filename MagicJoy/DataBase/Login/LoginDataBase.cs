@@ -25,7 +25,7 @@ namespace MagicJoy.DataBase
        }
 
        public Entityes.tb_usuario PesquisarParaLogar(string nome, string senha)
-        {
+       {
             Entityes.tb_usuario usuario = db.tb_usuario.FirstOrDefault(t => t.nm_usuario == nome
                                                                          && t.nm_senha == senha);
 
