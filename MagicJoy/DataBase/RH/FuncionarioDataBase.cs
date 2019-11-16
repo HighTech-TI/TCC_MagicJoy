@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class FuncionarioDataBase
     {
-        Entityes.db_a4f992_magicEntities db = new Entityes.db_a4f992_magicEntities();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
         public void InserirFuncionario(Entityes.tb_funcionario funcionario)
         {
 
@@ -51,12 +51,10 @@ namespace MagicJoy.DataBase.RH
             altera.ds_cpf = funcionario.ds_cpf;
             altera.ds_rg = funcionario.ds_rg;
             altera.dt_nascimento = funcionario.dt_nascimento;
-            altera.dt_admissao = funcionario.dt_admissao;
-            altera.dt_demissao = funcionario.dt_demissao;
+            altera.dt_admissao = funcionario.dt_admissao;           
             altera.ds_celular = funcionario.ds_celular;
             altera.ds_telefone = funcionario.ds_telefone;
-            altera.id_beneficios = funcionario.id_beneficios;
-            altera.id_folha_pagamento = funcionario.id_folha_pagamento;
+            altera.id_beneficios = funcionario.id_beneficios;       
             altera.nm_cargo = funcionario.nm_cargo;
             
             

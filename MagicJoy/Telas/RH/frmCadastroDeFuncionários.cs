@@ -30,13 +30,13 @@ namespace MagicJoy.Telas.RH
                 funcionario.ds_rg = mktrg.Text;
                 funcionario.dt_nascimento = dtpnascmiento.Value;
                 funcionario.dt_admissao = dtpadmissao.Value;
-                funcionario.dt_demissao = dtpdemissao.Value;
+                funcionario.ds_transporte = rdnsim.Checked;
+                funcionario.ds_transporte = rdnNao.Checked;
                 funcionario.ds_endereco = txtendereco.Text;
                 funcionario.ds_telefone = mkttele.Text;
                 funcionario.ds_celular = mktcell.Text;
-                funcionario.id_beneficios = Convert.ToInt32(nufbeneficio.Value);
-                funcionario.id_folha_pagamento = Convert.ToInt32(txtidfolha.Text);
-
+                
+                
                 business.Salvar(funcionario);
 
                 MessageBox.Show("Salvo com sucesso!",
@@ -70,8 +70,8 @@ namespace MagicJoy.Telas.RH
             txtendereco.Text = string.Empty;
             mkttele.Text = string.Empty;
             mktcell.Text = string.Empty;
-            nufbeneficio.Value = 0;
-            txtidfolha.Text = string.Empty;
+            rdnsim.Text = string.Empty;
+            rdnNao.Text = string.Empty;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -95,15 +95,14 @@ namespace MagicJoy.Telas.RH
             txtNome.Text = funcionario.nm_nome;
             mktcpf.Text = funcionario.ds_cpf;
             mktrg.Text = funcionario.ds_rg;
-            dtpadmissao.Value = funcionario.dt_admissao;
-            dtpdemissao.Value = funcionario.dt_demissao;
+            dtpadmissao.Value = funcionario.dt_admissao;         
             txtcargo.Text = funcionario.nm_cargo;
             dtpnascmiento.Value = funcionario.dt_nascimento;
             txtendereco.Text = funcionario.ds_endereco;
             mkttele.Text = funcionario.ds_telefone;
             mktcell.Text = funcionario.ds_celular;
-            nufbeneficio.Value = funcionario.id_beneficios;
-            txtidfolha.Text = funcionario.id_folha_pagamento.ToString();
+            rdnsim.Checked = funcionario.ds_transporte;
+            rdnNao.Checked = funcionario.ds_transporte;
 
         }
         private void Remover(Entityes.tb_funcionario funcionario)

@@ -26,25 +26,26 @@ namespace MagicJoy.Telas.Estoque
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Entityes.tb_pedido pedido = new Entityes.tb_pedido();
+
             try
             {
-                Entityes.tb_pedido pedido = new Entityes.tb_pedido();
+               
+                    pedido.nm_pedido = txtpedido.Text;
+                    pedido.nm_pedinte = txtpedinte.Text;
+                    pedido.dt_pedido = dtpdata.Value;
 
-                pedido.nm_pedido = txtpedido.Text;
-                pedido.nm_pedinte = txtpedinte.Text;
-                pedido.dt_pedido = dtpdata.Value;
+                    business.Salvar(pedido);
 
-                business.Salvar(pedido);
-
-                MessageBox.Show("Salvo com sucesso!",
-                                "Magic Joy", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Salvo com sucesso!",
+                                    "Magic Joy", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                ListarTudo();
-                Limpar();
+                    ListarTudo();
+                    Limpar();
+                
+                                     
             }
-
-
             catch (Exception)
             {
 

@@ -8,11 +8,18 @@ namespace MagicJoy.Business.Estoque
 {
     class PedidoBusiness
     {
-        public void InserirProduto(Entityes.tb_pedido produto)
+        public void InserirProduto(Entityes.tb_pedido pedido)
         {
-           
+            if (pedido.nm_pedido == string.Empty)
+            {
+                throw new Exception("Pedido obrigatório");
+            }
+            if(pedido.nm_pedinte == string.Empty)
+            {
+                throw new Exception("Pedinte obrigatório");
+            }                   
             DataBase.Estoque.PedidoDataBase produtoo = new DataBase.Estoque.PedidoDataBase();
-            produtoo.Inserir(produto);
+            produtoo.Inserir(pedido);
         }
         public void Salvar(Entityes.tb_pedido pedido)
         {

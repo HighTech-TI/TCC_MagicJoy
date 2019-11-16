@@ -10,6 +10,14 @@ namespace MagicJoy.Business.Financeiro
     {
         public void InserirCliente(Entityes.tb_despesa despesa)
         {
+            if(despesa.ds_descricao == string.Empty)
+            {
+                throw new Exception("Descrição obrigatório");
+            }
+            if(despesa.vl_despesa == 0)
+            {
+                throw new Exception("Valor obrigatório");
+            }
 
             DataBase.Financeiro.DespesasDataBase db = new DataBase.Financeiro.DespesasDataBase();
             db.InserirDespesas(despesa);

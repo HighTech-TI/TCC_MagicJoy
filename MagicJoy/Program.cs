@@ -16,7 +16,7 @@ namespace MagicJoy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas.RH.txt());
+            Application.Run(new Telas.Menu.btnforne());
         }
     }
 }

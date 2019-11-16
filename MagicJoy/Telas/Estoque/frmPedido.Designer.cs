@@ -44,16 +44,16 @@
             this.txtpedinte = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtpesquisapedinet = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtpesquisapedinet = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
@@ -91,9 +91,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(51, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 25);
+            this.label2.Size = new System.Drawing.Size(114, 25);
             this.label2.TabIndex = 8;
-            this.label2.Text = "ID Pedido:";
+            this.label2.Text = "ID Pedido";
             // 
             // label3
             // 
@@ -102,9 +102,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(51, 118);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 25);
+            this.label3.Size = new System.Drawing.Size(85, 25);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Pedido:";
+            this.label3.Text = "Pedido";
             // 
             // label5
             // 
@@ -113,9 +113,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(51, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 25);
+            this.label5.Size = new System.Drawing.Size(174, 25);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Data do Pedido:";
+            this.label5.Text = "Data do Pedido";
             // 
             // dtpdata
             // 
@@ -215,9 +215,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(56, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 50);
+            this.label4.Size = new System.Drawing.Size(92, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Pedinte\r\n:";
+            this.label4.Text = "Pedinte\r\n";
             // 
             // dataGridView1
             // 
@@ -236,44 +236,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(451, 255);
             this.dataGridView1.TabIndex = 70;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(315, 334);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 25);
-            this.label6.TabIndex = 71;
-            this.label6.Text = "ID Pedido:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(56, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 20);
-            this.textBox1.TabIndex = 72;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(511, 335);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 25);
-            this.label7.TabIndex = 73;
-            this.label7.Text = "Pedinte:";
-            // 
-            // txtpesquisapedinet
-            // 
-            this.txtpesquisapedinet.Location = new System.Drawing.Point(616, 339);
-            this.txtpesquisapedinet.Name = "txtpesquisapedinet";
-            this.txtpesquisapedinet.Size = new System.Drawing.Size(130, 20);
-            this.txtpesquisapedinet.TabIndex = 74;
-            this.txtpesquisapedinet.TextChanged += new System.EventHandler(this.txtpesquisapedinet_TextChanged);
             // 
             // Column1
             // 
@@ -314,6 +276,44 @@
             this.Column6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column6.Name = "Column6";
             this.Column6.Width = 52;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(315, 334);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 25);
+            this.label6.TabIndex = 71;
+            this.label6.Text = "ID Pedido:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(56, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(61, 20);
+            this.textBox1.TabIndex = 72;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(511, 335);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 25);
+            this.label7.TabIndex = 73;
+            this.label7.Text = "Pedinte:";
+            // 
+            // txtpesquisapedinet
+            // 
+            this.txtpesquisapedinet.Location = new System.Drawing.Point(616, 339);
+            this.txtpesquisapedinet.Name = "txtpesquisapedinet";
+            this.txtpesquisapedinet.Size = new System.Drawing.Size(130, 20);
+            this.txtpesquisapedinet.TabIndex = 74;
+            this.txtpesquisapedinet.TextChanged += new System.EventHandler(this.txtpesquisapedinet_TextChanged);
             // 
             // frmPedido
             // 

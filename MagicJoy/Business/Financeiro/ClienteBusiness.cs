@@ -24,10 +24,21 @@ namespace MagicJoy.Business.Financeiro
             {
                 throw new ArgumentException("Endereço obrigatório");
             }
-           if(cliente.ds_telefone == string.Empty)
+            if(cliente.ds_telefone == string.Empty)
             {
                 throw new ArgumentException("Telefone obrigatório");
-           }
+            }
+            if(cliente.ds_celular == string.Empty)
+            {
+                throw new Exception("Celular obrigatório");
+            }
+            if(cliente.ds_rg == string.Empty)
+            {
+                throw new Exception("RG obrigatório");
+            }
+            
+                
+                    
             
             DataBase.Financeiro.ClienteDataBase db = new DataBase.Financeiro.ClienteDataBase();
             db.InserirClientes(cliente);

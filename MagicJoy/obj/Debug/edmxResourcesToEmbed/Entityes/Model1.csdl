@@ -1,23 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="db_a4f992_magicModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="magicjoydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="tb_beneficio">
     <Key>
       <PropertyRef Name="id_beneficios" />
     </Key>
     <Property Name="id_beneficios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="vl_transporte" Type="Decimal" Nullable="false" />
-    <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_funcionario_ibfk_2" FromRole="tb_beneficio" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_cliente">
     <Key>
       <PropertyRef Name="id_cliente" />
     </Key>
     <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_endereço" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_endereço" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="id_compras" Type="Int32" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
@@ -104,7 +103,6 @@
     <Property Name="vl_total" Type="Decimal" Nullable="false" />
     <Property Name="vl_salario" Type="Decimal" Nullable="false" />
     <Property Name="vl_gratificacao" Type="Decimal" Nullable="false" />
-    <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_funcionario_ibfk_1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_fornecedor">
     <Key>
@@ -115,7 +113,7 @@
     <Property Name="ds_cnpj" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_endereço" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ds_email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ds_email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nm_produto" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
@@ -126,21 +124,18 @@
       <PropertyRef Name="id_funcionario" />
     </Key>
     <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_nome" Type="String" MaxLength="65" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nm_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_rg" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_cpf" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-    <Property Name="id_folha_pagamento" Type="Int32" Nullable="false" />
     <Property Name="ds_endereco" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="dt_admissao" Type="DateTime" Nullable="false" />
-    <Property Name="dt_demissao" Type="DateTime" Nullable="false" />
+    <Property Name="ds_transporte" Type="Boolean" Nullable="false" />
     <Property Name="id_beneficios" Type="Int32" Nullable="false" />
     <Property Name="ds_telefone" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ds_celular" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nm_cargo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="tb_beneficio" Relationship="Self.tb_funcionario_ibfk_2" FromRole="tb_funcionario" ToRole="tb_beneficio" />
     <NavigationProperty Name="tb_controle_ponto" Relationship="Self.tb_controle_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_controle_ponto" />
-    <NavigationProperty Name="tb_folha_pagamento" Relationship="Self.tb_funcionario_ibfk_1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
   </EntityType>
   <EntityType Name="tb_pedido">
     <Key>
@@ -212,18 +207,6 @@
     <Property Name="vl_total" Type="Decimal" />
     <Property Name="tp_operacao" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
-  <Association Name="tb_funcionario_ibfk_2">
-    <End Role="tb_beneficio" Type="Self.tb_beneficio" Multiplicity="1" />
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_beneficio">
-        <PropertyRef Name="id_beneficios" />
-      </Principal>
-      <Dependent Role="tb_funcionario">
-        <PropertyRef Name="id_beneficios" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="tb_cliente_ibfk_1">
     <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="1" />
     <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="*" />
@@ -296,18 +279,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="tb_funcionario_ibfk_1">
-    <End Role="tb_folha_pagamento" Type="Self.tb_folha_pagamento" Multiplicity="1" />
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_folha_pagamento">
-        <PropertyRef Name="id_folha_pagamento" />
-      </Principal>
-      <Dependent Role="tb_funcionario">
-        <PropertyRef Name="id_folha_pagamento" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="tb_venda_item_ibfk_1">
     <End Role="tb_produto_venda" Type="Self.tb_produto_venda" Multiplicity="1" />
     <End Role="tb_venda_item" Type="Self.tb_venda_item" Multiplicity="*" />
@@ -332,7 +303,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="db_a4f992_magicEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="magicjoydbEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
     <EntitySet Name="tb_codigo" EntityType="Self.tb_codigo" />
@@ -351,10 +322,6 @@
     <EntitySet Name="tb_venda" EntityType="Self.tb_venda" />
     <EntitySet Name="tb_venda_item" EntityType="Self.tb_venda_item" />
     <EntitySet Name="vw_fuxo_caixa" EntityType="Self.vw_fuxo_caixa" />
-    <AssociationSet Name="tb_funcionario_ibfk_2" Association="Self.tb_funcionario_ibfk_2">
-      <End Role="tb_beneficio" EntitySet="tb_beneficio" />
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-    </AssociationSet>
     <AssociationSet Name="tb_cliente_ibfk_1" Association="Self.tb_cliente_ibfk_1">
       <End Role="tb_compra" EntitySet="tb_compra" />
       <End Role="tb_cliente" EntitySet="tb_cliente" />
@@ -378,10 +345,6 @@
     <AssociationSet Name="tb_produto_ibfk_1" Association="Self.tb_produto_ibfk_1">
       <End Role="tb_estoque" EntitySet="tb_estoque" />
       <End Role="tb_produto" EntitySet="tb_produto" />
-    </AssociationSet>
-    <AssociationSet Name="tb_funcionario_ibfk_1" Association="Self.tb_funcionario_ibfk_1">
-      <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
     </AssociationSet>
     <AssociationSet Name="tb_venda_item_ibfk_1" Association="Self.tb_venda_item_ibfk_1">
       <End Role="tb_produto_venda" EntitySet="tb_produto_venda" />

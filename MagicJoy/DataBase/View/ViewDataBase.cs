@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.View
 {
     class ViewDataBase
     {
-        Entityes.db_a4f992_magicEntities db = new Entityes.db_a4f992_magicEntities();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
         public List<Entityes.vw_fuxo_caixa> ListarTudo()
         {
             List<Entityes.vw_fuxo_caixa> lista = db.vw_fuxo_caixa.ToList();

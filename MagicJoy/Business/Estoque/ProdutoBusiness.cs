@@ -23,6 +23,7 @@ namespace MagicJoy.Business.Estoque
             {
                 throw new ArgumentException("Id do estoque é obrigatório");
             }
+            
 
             DataBase.Estoque.ProdutoDataBase produtoo = new DataBase.Estoque.ProdutoDataBase();
             produtoo.Inserir(produto);

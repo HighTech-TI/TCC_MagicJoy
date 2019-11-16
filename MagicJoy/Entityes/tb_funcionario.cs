@@ -25,18 +25,15 @@ namespace MagicJoy.Entityes
         public string ds_rg { get; set; }
         public string ds_cpf { get; set; }
         public System.DateTime dt_nascimento { get; set; }
-        public int id_folha_pagamento { get; set; }
         public string ds_endereco { get; set; }
         public System.DateTime dt_admissao { get; set; }
-        public System.DateTime dt_demissao { get; set; }
+        public bool ds_transporte { get; set; }
         public int id_beneficios { get; set; }
         public string ds_telefone { get; set; }
         public string ds_celular { get; set; }
         public string nm_cargo { get; set; }
     
-        public virtual tb_beneficio tb_beneficio { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_controle_ponto> tb_controle_ponto { get; set; }
-        public virtual tb_folha_pagamento tb_folha_pagamento { get; set; }
     }
 }

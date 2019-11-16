@@ -10,6 +10,37 @@ namespace MagicJoy.Business.RH
     {
         public void InserirFuncionario(Entityes.tb_funcionario ponto)
         {         
+           
+            if(ponto.nm_nome == string.Empty)
+            {
+                throw new Exception("Nome obrigatório");
+            }
+            if(ponto.nm_cargo == string.Empty)
+            {
+                throw new Exception("Cargo obrigatório");
+            }
+            if(ponto.ds_celular == string.Empty)
+            {
+                throw new Exception("Celular obrigatório");
+            }
+            if(ponto.ds_cpf == string.Empty)
+            {
+                throw new Exception("CPF obrigatório");
+            }
+            if(ponto.ds_endereco == string.Empty)
+            {
+                throw new Exception("Endereço obrigatório");
+            }
+            if(ponto.ds_rg == string.Empty)
+            {
+                throw new Exception("RG obrigatório");
+            }
+            if(ponto.ds_telefone == string.Empty)
+            {
+                throw new Exception("Telefone obrigatório");
+            }
+            
+                   
             DataBase.RH.FuncionarioDataBase db = new DataBase.RH.FuncionarioDataBase();
             db.InserirFuncionario(ponto);
 

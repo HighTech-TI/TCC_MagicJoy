@@ -64,5 +64,22 @@ namespace MagicJoy.Telas.Financeiro
             tela.Show();
             this.Hide();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Telas.Menu.btnforne tela = new Menu.btnforne();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

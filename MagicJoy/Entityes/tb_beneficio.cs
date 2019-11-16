@@ -14,16 +14,7 @@ namespace MagicJoy.Entityes
     
     public partial class tb_beneficio
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tb_beneficio()
-        {
-            this.tb_funcionario = new HashSet<tb_funcionario>();
-        }
-    
         public int id_beneficios { get; set; }
         public decimal vl_transporte { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tb_funcionario> tb_funcionario { get; set; }
     }
 }
