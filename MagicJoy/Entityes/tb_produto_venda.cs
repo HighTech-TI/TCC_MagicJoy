@@ -14,9 +14,18 @@ namespace MagicJoy.Entityes
     
     public partial class tb_produto_venda
     {
-        public int id_produto { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_produto_venda()
+        {
+            this.tb_venda_item = new HashSet<tb_venda_item>();
+        }
+    
+        public int id_produto_v { get; set; }
         public string nm_produto { get; set; }
         public decimal vl_produto { get; set; }
         public decimal vl_total { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_venda_item> tb_venda_item { get; set; }
     }
 }

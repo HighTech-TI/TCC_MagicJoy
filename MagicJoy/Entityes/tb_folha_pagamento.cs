@@ -16,13 +16,16 @@ namespace MagicJoy.Entityes
     {
         public int id_folha_pagamento { get; set; }
         public int id_funcionario { get; set; }
-        public decimal vl_salario_liquido { get; set; }
-        public decimal vl_salario_bruto { get; set; }
-        public int ds_faltas { get; set; }
-        public decimal ds_gratificacao { get; set; }
-        public decimal ds_plr { get; set; }
-        public int hr_extras { get; set; }
-        public decimal vl_transporte { get; set; }
-        public System.DateTime dt_data { get; set; }
+        public int vl_fgts { get; set; }
+        public decimal ds_inss { get; set; }
+        public decimal vl_irrf { get; set; }
+        public decimal vl_salario_familia { get; set; }
+        public decimal vl_VT { get; set; }
+        public decimal vl_ferias { get; set; }
+        public decimal vl_liquido { get; set; }
+        public decimal vl_terceiro { get; set; }
+        public decimal vl_bruto { get; set; }
+        public System.DateTime dt_pagamento { get; set; }
+        public decimal vl_gratificacao { get; set; }
     }
 }

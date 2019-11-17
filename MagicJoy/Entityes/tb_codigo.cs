@@ -12,15 +12,9 @@ namespace MagicJoy.Entityes
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_controle_ponto1
+    public partial class tb_codigo
     {
-        public int id_controle_ponto { get; set; }
-        public int tb_funcionario_id_funcionario { get; set; }
-        public System.DateTime hr_entrada { get; set; }
-        public System.DateTime hr_intervalo { get; set; }
-        public System.DateTime hr_retorno { get; set; }
-        public System.DateTime hr_saida { get; set; }
-    
-        public virtual tb_funcionario1 tb_funcionario { get; set; }
+        public int id_codigo { get; set; }
+        public Nullable<int> ds_codigo { get; set; }
     }
 }

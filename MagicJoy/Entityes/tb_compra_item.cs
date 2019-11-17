@@ -15,7 +15,10 @@ namespace MagicJoy.Entityes
     public partial class tb_compra_item
     {
         public int id_compra { get; set; }
-        public int tb_produto_id_produto { get; set; }
-        public int tb_compra_id_compras { get; set; }
+        public int id_produto { get; set; }
+        public int id_compras { get; set; }
+    
+        public virtual tb_compra tb_compra { get; set; }
+        public virtual tb_produto tb_produto { get; set; }
     }
 }

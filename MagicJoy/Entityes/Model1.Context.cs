@@ -13,10 +13,10 @@ namespace MagicJoy.Entityes
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class magicjoydbEntities11 : DbContext
+    public partial class magicjoydbEntities12 : DbContext
     {
-        public magicjoydbEntities11()
-            : base("name=magicjoydbEntities11")
+        public magicjoydbEntities12()
+            : base("name=magicjoydbEntities12")
         {
         }
     
@@ -27,33 +27,21 @@ namespace MagicJoy.Entityes
     
         public virtual DbSet<tb_beneficio> tb_beneficio { get; set; }
         public virtual DbSet<tb_cliente> tb_cliente { get; set; }
+        public virtual DbSet<tb_codigo> tb_codigo { get; set; }
         public virtual DbSet<tb_compra> tb_compra { get; set; }
         public virtual DbSet<tb_compra_item> tb_compra_item { get; set; }
         public virtual DbSet<tb_controle_ponto> tb_controle_ponto { get; set; }
-        public virtual DbSet<tb_despesas> tb_despesas { get; set; }
+        public virtual DbSet<tb_despesa> tb_despesa { get; set; }
         public virtual DbSet<tb_estoque> tb_estoque { get; set; }
         public virtual DbSet<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public virtual DbSet<tb_fornecedor> tb_fornecedor { get; set; }
         public virtual DbSet<tb_funcionario> tb_funcionario { get; set; }
+        public virtual DbSet<tb_pedido> tb_pedido { get; set; }
         public virtual DbSet<tb_produto> tb_produto { get; set; }
         public virtual DbSet<tb_produto_venda> tb_produto_venda { get; set; }
         public virtual DbSet<tb_usuario> tb_usuario { get; set; }
         public virtual DbSet<tb_venda> tb_venda { get; set; }
         public virtual DbSet<tb_venda_item> tb_venda_item { get; set; }
-        public virtual DbSet<tb_beneficio1> tb_beneficio1Set { get; set; }
-        public virtual DbSet<tb_cliente1> tb_cliente1Set { get; set; }
-        public virtual DbSet<tb_compra1> tb_compra1Set { get; set; }
-        public virtual DbSet<tb_compra_item1> tb_compra_item1Set { get; set; }
-        public virtual DbSet<tb_controle_ponto1> tb_controle_ponto1Set { get; set; }
-        public virtual DbSet<tb_despesa> tb_despesa { get; set; }
-        public virtual DbSet<tb_estoque1> tb_estoque1Set { get; set; }
-        public virtual DbSet<tb_folha_pagamento1> tb_folha_pagamento1Set { get; set; }
-        public virtual DbSet<tb_fornecedor1> tb_fornecedor1Set { get; set; }
-        public virtual DbSet<tb_funcionario1> tb_funcionario1Set { get; set; }
-        public virtual DbSet<tb_produto1> tb_produto1Set { get; set; }
-        public virtual DbSet<tb_produto_venda1> tb_produto_venda1Set { get; set; }
-        public virtual DbSet<tb_usuario1> tb_usuario1Set { get; set; }
-        public virtual DbSet<tb_venda1> tb_venda1Set { get; set; }
-        public virtual DbSet<tb_venda_item1> tb_venda_item1Set { get; set; }
+        public virtual DbSet<vw_fuxo_caixa> vw_fuxo_caixa { get; set; }
     }
 }

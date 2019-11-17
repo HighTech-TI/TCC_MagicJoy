@@ -12,12 +12,11 @@ namespace MagicJoy.Entityes
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_usuario1
+    public partial class tb_pedido
     {
-        public int id_usuario { get; set; }
-        public string nm_usuario { get; set; }
-        public string nm_senha { get; set; }
-        public string ds_email { get; set; }
-        public string ds_cargo { get; set; }
+        public int id_pedido { get; set; }
+        public string nm_pedido { get; set; }
+        public string nm_pedinte { get; set; }
+        public System.DateTime dt_pedido { get; set; }
     }
 }

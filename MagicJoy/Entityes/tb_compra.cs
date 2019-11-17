@@ -14,11 +14,20 @@ namespace MagicJoy.Entityes
     
     public partial class tb_compra
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_compra()
+        {
+            this.tb_cliente = new HashSet<tb_cliente>();
+        }
+    
         public int id_compras { get; set; }
         public string nm_produto { get; set; }
         public int qts_produtos { get; set; }
         public decimal vl_total { get; set; }
-        public decimal ds_frete { get; set; }
         public System.DateTime dt_compra { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_cliente> tb_cliente { get; set; }
+        public virtual tb_compra_item tb_compra_item { get; set; }
     }
 }
