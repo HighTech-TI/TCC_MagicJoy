@@ -37,11 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblLogado = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -58,6 +53,7 @@
             this.btncontrole = new System.Windows.Forms.Button();
             this.btnfunciona = new System.Windows.Forms.Button();
             this.btnfolha = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -65,12 +61,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -78,6 +76,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -174,68 +178,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Menu";
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::MagicJoy.Properties.Resources.logo;
-            this.pictureBox10.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(170, 151);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::MagicJoy.Properties.Resources.people_02109c81;
-            this.pictureBox9.Location = new System.Drawing.Point(65, 448);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(99, 83);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 5;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::MagicJoy.Properties.Resources._12a;
-            this.pictureBox8.Location = new System.Drawing.Point(65, 353);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(99, 75);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::MagicJoy.Properties.Resources.controle_estoque;
-            this.pictureBox7.Location = new System.Drawing.Point(65, 261);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(99, 75);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::MagicJoy.Properties.Resources.icone_financeiro__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(65, 168);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(99, 75);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -279,7 +221,7 @@
             this.btnpedido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnpedido.FlatAppearance.BorderSize = 2;
             this.btnpedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpedido.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpedido.Location = new System.Drawing.Point(351, 380);
             this.btnpedido.Name = "btnpedido";
             this.btnpedido.Size = new System.Drawing.Size(156, 48);
@@ -294,7 +236,7 @@
             this.btnproduto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproduto.FlatAppearance.BorderSize = 2;
             this.btnproduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnproduto.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnproduto.Location = new System.Drawing.Point(351, 297);
             this.btnproduto.Name = "btnproduto";
             this.btnproduto.Size = new System.Drawing.Size(156, 49);
@@ -309,7 +251,7 @@
             this.btnestoque.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnestoque.FlatAppearance.BorderSize = 2;
             this.btnestoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnestoque.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnestoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnestoque.Location = new System.Drawing.Point(351, 204);
             this.btnestoque.Name = "btnestoque";
             this.btnestoque.Size = new System.Drawing.Size(156, 49);
@@ -324,7 +266,7 @@
             this.btndespesa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btndespesa.FlatAppearance.BorderSize = 2;
             this.btndespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndespesa.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndespesa.Location = new System.Drawing.Point(351, 204);
             this.btndespesa.Name = "btndespesa";
             this.btndespesa.Size = new System.Drawing.Size(156, 49);
@@ -339,7 +281,7 @@
             this.btnfluxo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfluxo.FlatAppearance.BorderSize = 2;
             this.btnfluxo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfluxo.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfluxo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfluxo.Location = new System.Drawing.Point(351, 379);
             this.btnfluxo.Name = "btnfluxo";
             this.btnfluxo.Size = new System.Drawing.Size(156, 49);
@@ -354,7 +296,7 @@
             this.btnclientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnclientes.FlatAppearance.BorderSize = 2;
             this.btnclientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnclientes.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclientes.Location = new System.Drawing.Point(351, 297);
             this.btnclientes.Name = "btnclientes";
             this.btnclientes.Size = new System.Drawing.Size(156, 49);
@@ -369,7 +311,7 @@
             this.btncompras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncompras.FlatAppearance.BorderSize = 2;
             this.btncompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncompras.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncompras.Location = new System.Drawing.Point(351, 204);
             this.btncompras.Name = "btncompras";
             this.btncompras.Size = new System.Drawing.Size(156, 49);
@@ -384,7 +326,7 @@
             this.btnvendas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvendas.FlatAppearance.BorderSize = 2;
             this.btnvendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvendas.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvendas.Location = new System.Drawing.Point(351, 297);
             this.btnvendas.Name = "btnvendas";
             this.btnvendas.Size = new System.Drawing.Size(156, 49);
@@ -399,7 +341,7 @@
             this.btnforr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnforr.FlatAppearance.BorderSize = 2;
             this.btnforr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnforr.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnforr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnforr.Location = new System.Drawing.Point(351, 379);
             this.btnforr.Name = "btnforr";
             this.btnforr.Size = new System.Drawing.Size(156, 49);
@@ -414,7 +356,7 @@
             this.btncontrole.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncontrole.FlatAppearance.BorderSize = 2;
             this.btncontrole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncontrole.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncontrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncontrole.Location = new System.Drawing.Point(351, 204);
             this.btncontrole.Name = "btncontrole";
             this.btncontrole.Size = new System.Drawing.Size(156, 59);
@@ -429,7 +371,7 @@
             this.btnfunciona.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfunciona.FlatAppearance.BorderSize = 2;
             this.btnfunciona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfunciona.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfunciona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfunciona.Location = new System.Drawing.Point(351, 297);
             this.btnfunciona.Name = "btnfunciona";
             this.btnfunciona.Size = new System.Drawing.Size(156, 49);
@@ -444,7 +386,7 @@
             this.btnfolha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnfolha.FlatAppearance.BorderSize = 2;
             this.btnfolha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfolha.Font = new System.Drawing.Font("Keep Calm Med", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfolha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfolha.Location = new System.Drawing.Point(347, 379);
             this.btnfolha.Name = "btnfolha";
             this.btnfolha.Size = new System.Drawing.Size(160, 49);
@@ -453,6 +395,16 @@
             this.btnfolha.UseVisualStyleBackColor = true;
             this.btnfolha.Visible = false;
             this.btnfolha.Click += new System.EventHandler(this.btnfolha_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::MagicJoy.Properties.Resources.Music_Microphone_2_icon;
+            this.pictureBox11.Location = new System.Drawing.Point(637, 55);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(56, 44);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 60;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox24
             // 
@@ -546,6 +498,78 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::MagicJoy.Properties.Resources.logo;
+            this.pictureBox10.Location = new System.Drawing.Point(35, 12);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(170, 151);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::MagicJoy.Properties.Resources.people_02109c81;
+            this.pictureBox9.Location = new System.Drawing.Point(65, 448);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(99, 83);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 5;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::MagicJoy.Properties.Resources._12a;
+            this.pictureBox8.Location = new System.Drawing.Point(65, 353);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(99, 75);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = global::MagicJoy.Properties.Resources.controle_estoque;
+            this.pictureBox7.Location = new System.Drawing.Point(65, 261);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(99, 75);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::MagicJoy.Properties.Resources.icone_financeiro__1_;
+            this.pictureBox6.Location = new System.Drawing.Point(65, 168);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(99, 75);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::MagicJoy.Properties.Resources.Record_Normal_icon;
+            this.pictureBox12.Location = new System.Drawing.Point(637, 104);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(56, 44);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 61;
+            this.pictureBox12.TabStop = false;
+            // 
             // btnforne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,6 +577,8 @@
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 577);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox26);
             this.Controls.Add(this.btnfolha);
@@ -584,11 +610,7 @@
             this.Load += new System.EventHandler(this.frmMenuu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -596,6 +618,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -638,5 +666,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

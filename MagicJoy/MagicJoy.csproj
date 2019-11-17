@@ -405,5 +405,11 @@
     <None Include="Resources\clientes1.png" />
     <None Include="Resources\fluxo de caixa1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music-Microphone-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record-Normal-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

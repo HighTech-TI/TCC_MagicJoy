@@ -654,6 +654,16 @@ namespace MagicJoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Music_Microphone_2_icon {
+            get {
+                object obj = ResourceManager.GetObject("Music-Microphone-2-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap novo_plano {
             get {
                 object obj = ResourceManager.GetObject("novo plano", resourceCulture);
@@ -797,6 +807,16 @@ namespace MagicJoy.Properties {
         internal static System.Drawing.Bitmap produtos1 {
             get {
                 object obj = ResourceManager.GetObject("produtos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Record_Normal_icon {
+            get {
+                object obj = ResourceManager.GetObject("Record-Normal-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

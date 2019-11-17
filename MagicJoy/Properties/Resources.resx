@@ -127,9 +127,6 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit-icon-2375785_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit-icon-2375785_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fluco de caixa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluco de caixa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +148,9 @@
   <data name="Batman-Toy-surface-663086-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Batman-Toy-surface-663086-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="81055" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\81055.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -159,6 +159,9 @@
   </data>
   <data name="oie_transparent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oie_transparent1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music-Microphone-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music-Microphone-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Criar-um-ebook-e-ganhar-dinheiro-na-internet-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Criar-um-ebook-e-ganhar-dinheiro-na-internet-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +184,9 @@
   <data name="minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="514cb82d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\514cb82d9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ocultar senha" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ocultar senha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,6 +205,9 @@
   <data name="oie_transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oie_transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="toys-embroidery-beautiful-1029444-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toys-embroidery-beautiful-1029444-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="estoquue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estoquue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,8 +220,8 @@
   <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit-icon-2375785_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-icon-2375785_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="the-background-1304388_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\the-background-1304388_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,11 +280,8 @@
   <data name="toys-childhood-diversity-plastic-647007-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toys-childhood-diversity-plastic-647007-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="514cb82d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\514cb82d9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="produtos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\produtos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danboard-box-robot-Toy-bag-pouch-1072564-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Funcionários" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Funcionários.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,14 +331,14 @@
   <data name="mudança-de-identidade-visual-384x215" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mudança-de-identidade-visual-384x215.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toys-embroidery-beautiful-1029444-wallhere.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\toys-embroidery-beautiful-1029444-wallhere.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gif para splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gif para splash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="folha-de-pagamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folha-de-pagamento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gif para splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gif para splash.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="produtos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\produtos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="100487" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\100487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,7 +364,7 @@
   <data name="criar-um-blog-670x419" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\criar-um-blog-670x419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Record-Normal-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Record-Normal-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
