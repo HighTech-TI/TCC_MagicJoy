@@ -40,7 +40,7 @@ namespace MagicJoy.Telas.Login
             {
                 string nome = cbousuario.Text;
                 string senha = txtsenha.Text;
-
+                Entityes.tb_usuario ds = new Entityes.tb_usuario();
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
                 Entityes.tb_usuario usuario = businesslog.PesquisarParaLogar(nome, senha);
 
@@ -48,7 +48,12 @@ namespace MagicJoy.Telas.Login
                 {
                     if (nome == usuario.nm_usuario && senha == usuario.nm_senha)
                     {
-                        Telas.Menu.frmMenuu tela = new Menu.frmMenuu();
+                        Objetos.UsuarioLogado.id = usuario.id_usuario;
+                        Objetos.UsuarioLogado.nome = usuario.nm_usuario;
+                       
+                        
+
+                        Telas.Menu.btnforne tela = new Menu.btnforne();
                         tela.Show();
                         this.Hide();
                     }
@@ -92,8 +97,59 @@ namespace MagicJoy.Telas.Login
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+           
         }
 
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Telas.Login.frmEsqueciSenha tela = new frmEsqueciSenha();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+            if(txtsenha.UseSystemPasswordChar == false)
+            {
+                txtsenha.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtsenha.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void linkLabel1_LinkClicked_2(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Telas.Login.frmEsqueciSenha tela = new frmEsqueciSenha();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

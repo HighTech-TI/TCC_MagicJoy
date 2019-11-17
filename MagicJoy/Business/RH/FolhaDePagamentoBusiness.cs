@@ -10,14 +10,23 @@ namespace MagicJoy.Business.RH
     {
         public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+            if (ponto.id_funcionario == 0)
             {
                 throw new ArgumentException("Selecione o ID do funcionário");
             }
+            
+
 
             DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
             db.InserirControleDePonto(ponto);
 
+        }
+        public Entityes.tb_folha_pagamento PesquisarParaSalario(int id, decimal salrio)
+        {
+            DataBase.RH.FolhaDepagamentoDataBase logdatabase = new DataBase.RH.FolhaDepagamentoDataBase();
+            Entityes.tb_folha_pagamento folha = logdatabase.PesquisarParaSalario(id, salrio);
+
+            return folha;
         }
 
         public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
@@ -48,21 +57,12 @@ namespace MagicJoy.Business.RH
             db.AlterarControleDePonto(ponto);
 
         }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
-
-        }
-        public void Remover(int id)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
-        }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
-        }
+        
+       // public void Remover(int id)
+      //  {
+         //   DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
+           // db.RemoverControleDePOnto(id);
+        //}
+       
     }
 }

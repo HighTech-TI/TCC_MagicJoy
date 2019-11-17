@@ -8,61 +8,87 @@ namespace MagicJoy.Business.Estoque
 {
     class EstoqueBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void Inserir(Entityes.tb_estoque estoque)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+            if (estoque.nm_produto == string.Empty)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                throw new ArgumentException("Nome do produto é obrigatório");
+            }
+            if(estoque.ds_qtd == 0)
+            {
+                throw new ArgumentException("Quantidade do produto é obrigatório");
+            }
+            if(estoque.vl_custo == 0)
+            {
+                throw new ArgumentException("Valor de custo é obrigatório");
+            }
+            if(estoque.id_fornecedor == 0)
+            {
+                throw new ArgumentException("Id do fornecedor é obrigatório");
             }
 
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
+            DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
+            db.Inserir(estoque);
 
         }
-
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+        public void Salvar(Entityes.tb_estoque estoque)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
+            if (estoque.id_estoque == 0)
+            {
+                this.Inserir(estoque);
+            }
+            else
+            {
+                this.Alterar(estoque);
+            }
+        }
+
+
+        public List<Entityes.tb_estoque> ListarTodosProdutos()
+        {
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarTodosProdutos();
 
             return pesquisa;
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_estoque> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarIdEstoque(id);
 
             return pesquisa;
         }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
+        public List<Entityes.tb_estoque> PesquisarPorqtd(int qtd)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarQTd(qtd);
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
+        public List<Entityes.tb_estoque> PesquisarPorPodruto(string produto)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
+            DataBase.Estoque.EstoqueDataBase ddb = new DataBase.Estoque.EstoqueDataBase();
+            List<Entityes.tb_estoque> pesquisa = ddb.ListarProduto(produto);
+
+            return pesquisa;
+        }
+        public void Alterar(Entityes.tb_estoque estoque)
+        {
+            DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
+            db.AlterarEstoque(estoque);
+         
 
         }
         public void AlterarPorData(Entityes.tb_controle_ponto ponto)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
-
+            DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
+            
         }
-        public void Remover(int id)
+        public void Remover(Entityes.tb_estoque estoque)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
-        }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
+            DataBase.Estoque.EstoqueDataBase db = new DataBase.Estoque.EstoqueDataBase();
+            db.RemoverEstoque(estoque);
         }
     }
 }

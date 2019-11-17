@@ -8,13 +8,20 @@ namespace MagicJoy.DataBase.RH
 {
     class FolhaDepagamentoDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
         public void inserir(Entityes.tb_folha_pagamento rh)
         {
 
             db.tb_folha_pagamento.Add(rh);
 
             db.SaveChanges();
+        }
+        public Entityes.tb_folha_pagamento PesquisarParaSalario(int id, decimal salario)
+        {
+            Entityes.tb_folha_pagamento folha = db.tb_folha_pagamento.FirstOrDefault(t => t.id_funcionario == id
+                                                                         && t.vl_bruto == salario);
+
+            return folha;
         }
         public List<Entityes.tb_folha_pagamento> ListarTodasFolha()
         {
@@ -39,7 +46,7 @@ namespace MagicJoy.DataBase.RH
         {
 
             Entityes.tb_folha_pagamento alterar = db.tb_folha_pagamento.First(a => a.id_folha_pagamento == folha.id_folha_pagamento);
-            alterar.ds_faltas = folha.ds_faltas;
+            
 
             db.SaveChanges();
         }

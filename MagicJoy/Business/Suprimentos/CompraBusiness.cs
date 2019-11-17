@@ -8,61 +8,66 @@ namespace MagicJoy.Business.Suprimentos
 {
     class CompraBusiness
     {
-        public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
+        public void Inserir(Entityes.tb_compra compra)
         {
-            if (ponto.tb_funcionario_id_funcionario == 0)
+
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            db.InserirCompras(compra);
+
+        }
+        public void Salvar(Entityes.tb_compra compra)
+        {
+            if (compra.id_compras == 0)
             {
-                throw new ArgumentException("Selecione o ID do funcionário");
+                this.Inserir(compra);
             }
-
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.InserirControleDePonto(ponto);
-
+            else
+            {
+                this.Alterar(compra);
+            }
         }
-
-        public List<Entityes.tb_controle_ponto> ListarTodosUsuarios()
+        public List<Entityes.tb_compra> ListarTodos()
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.ListarTodosControlePontos();
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            List<Entityes.tb_compra> pesquisa = db.ListarTodasCompras();
 
             return pesquisa;
         }
 
-        public List<Entityes.tb_controle_ponto> PesquisarPorData(DateTime data)
+        public List<Entityes.tb_compra> PesquisarPorData(DateTime data)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorData(data);
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            List<Entityes.tb_compra> pesquisa = db.PesquisarPorDataCompra(data);
 
             return pesquisa;
         }
-        public List<Entityes.tb_controle_ponto> PesquisarPorID(int id)
+        public List<Entityes.tb_compra> PesquisarPorProduto(string nome)
         {
-            DataBase.RH.ControleDePontoDataBase ddb = new DataBase.RH.ControleDePontoDataBase();
-            List<Entityes.tb_controle_ponto> pesquisa = ddb.PesquisarPorIdControleDePonto(id);
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            List<Entityes.tb_compra> pesquisa = db.PesquisarPorProduto(nome);
 
             return pesquisa;
         }
-        public void Alterar(Entityes.tb_controle_ponto ponto)
+
+        public List<Entityes.tb_compra> PesquisarPorID(int id)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarControleDePonto(ponto);
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            List<Entityes.tb_compra> pesquisa = db.PesquisarPorIdCompras(id);
+
+            return pesquisa;
+        }
+        public void Alterar(Entityes.tb_compra compra)
+        {
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            db.AlterarCompra(compra);          
 
         }
-        public void AlterarPorData(Entityes.tb_controle_ponto ponto)
+       
+        public void Remover(Entityes.tb_compra compra)
         {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.AlterarPontoPorData(ponto);
-
+            DataBase.Suprimentos.CompraDataBase db = new DataBase.Suprimentos.CompraDataBase();
+            db.RemoverCompra(compra);
         }
-        public void Remover(int id)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverControleDePOnto(id);
-        }
-        public void RemoverPorData(DateTime data)
-        {
-            DataBase.RH.ControleDePontoDataBase db = new DataBase.RH.ControleDePontoDataBase();
-            db.RemoverPontoPorData(data);
-        }
+       
     }
 }

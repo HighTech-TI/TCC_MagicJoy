@@ -19,52 +19,49 @@ namespace MagicJoy.Telas.Login
             InitializeComponent();
         }
 
+        Business.LoginBusiness business = new Business.LoginBusiness();
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            txtemail.Text = string.Empty;
+           
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            //Enviar Email
-            SmtpClient cliente = new SmtpClient(); //objeto para enviar email
-            NetworkCredential credencial = new NetworkCredential(); //Para entrar dentro do endereço eletrÔnico
 
-            //Configurações do cliente
-            cliente.Host = "smtp.gmail.com";
-            cliente.Port = 587;
-            cliente.EnableSsl = true;
-            cliente.DeliveryMethod = SmtpDeliveryMethod.Network;
-            cliente.UseDefaultCredentials = false;
 
-            //credencias de acessos
-            credencial.UserName = "gabrielrocha.d320";
-            credencial.Password = "felicidade19";
+            Entityes.tb_codigo db = new Entityes.tb_codigo();
 
-            //definir credenciais
-            cliente.Credentials = credencial;
+            Random rdn = new Random();
+            rdn.Next();
+            string codigo = rdn.Next(0, 1000) + Environment.NewLine;
+            string email;
+            email = txtemail.Text;
+            string assunto = "CÓDIGO DE RECUPERAÇÃO";
+            db.ds_codigo = Convert.ToInt32(codigo);
+            Business.LoginBusiness bs = new Business.LoginBusiness();
+            bs.inserircodicd(db);
 
-            //estruturar a menssagem
-            MailMessage messagem = new MailMessage();
-            messagem.From = new MailAddress("gabrielrocha.d320@gmail.com");
-            messagem.Subject = "Assunto";
-            messagem.Body = "Corpo do email";
-            messagem.To.Add("gabrielrocha.d320@gmail.com");
+            Objetos.EnviarEmail obee = new Objetos.EnviarEmail();
+            obee.Enviar(email, assunto, codigo);
 
-            //envio da menssagem 
-            cliente.Send(messagem);
+            MessageBox.Show("Email enviado com sucesso!", "Magic Joy",
+                       MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show("Enviado com sucesso");
+            Telas.Login.frmRecuperarSenha tela = new frmRecuperarSenha();
+            tela.Show();
+            this.Hide();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,17 +71,23 @@ namespace MagicJoy.Telas.Login
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+           
 
+
+           
+            
         }
 
         private void frmEsqueciSenha_Load(object sender, EventArgs e)
         {
-            Business.LoginBusiness logbusiness = new Business.LoginBusiness();
-
-            List<Entityes.tb_usuario> users = logbusiness.ListarTodosUsuarios();
-
-            comboBox1.DisplayMember = nameof(Entityes.tb_usuario.nm_usuario);
-            comboBox1.DataSource = users;
+            
         }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

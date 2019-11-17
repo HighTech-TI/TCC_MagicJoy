@@ -30,5 +30,10 @@ namespace MagicJoy.Telas.Splash
             
             timer1.Stop();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

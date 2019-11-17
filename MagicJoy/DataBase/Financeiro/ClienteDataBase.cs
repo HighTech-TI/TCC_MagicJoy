@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Financeiro
 {
     class ClienteDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
         public void InserirClientes(Entityes.tb_cliente cliente)
         {
 
@@ -16,7 +16,7 @@ namespace MagicJoy.DataBase.Financeiro
 
             db.SaveChanges();
         }
-        public List<Entityes.tb_cliente> ListarTodosControlePontos()
+        public List<Entityes.tb_cliente> ListarTodosClientes()
         {
             List<Entityes.tb_cliente> tabela = db.tb_cliente.ToList();
             return tabela;
@@ -25,7 +25,7 @@ namespace MagicJoy.DataBase.Financeiro
         public List<Entityes.tb_cliente> PesquisarPorNome(string nome)
         {
             List<Entityes.tb_cliente> cliente = db.tb_cliente.Where
-                                                      (s => s.nm_nome == nome).ToList();
+                                                      (s => s.nm_nome.Contains(nome)).ToList();
             return cliente;
 
         }
@@ -33,6 +33,12 @@ namespace MagicJoy.DataBase.Financeiro
         {
             List<Entityes.tb_cliente> cliente = db.tb_cliente.Where
                                                       (s => s.id_cliente == id).ToList();
+            return cliente;
+        }
+        public List<Entityes.tb_cliente> PesquisarPorCpf(string cpf)
+        {
+            List<Entityes.tb_cliente> cliente = db.tb_cliente.Where
+                                                      (s => s.ds_cpf == cpf).ToList();
             return cliente;
         }
         public void AlterarCliente(Entityes.tb_cliente cliente)
@@ -43,37 +49,18 @@ namespace MagicJoy.DataBase.Financeiro
             altera.ds_endereço = cliente.ds_endereço;
             altera.nm_nome = cliente.nm_nome;
             altera.dt_nascimento = cliente.dt_nascimento;
-            altera.ds_CPF = cliente.ds_CPF;
-            altera.tb_compra_id_compras = cliente.tb_compra_id_compras;            
+            altera.ds_cpf = cliente.ds_cpf;
+                     
 
             db.SaveChanges();
         }
-        public void AlterarClientePorNome(Entityes.tb_cliente cliente)
+        public void RemoverCliente(Entityes.tb_cliente cliente)
         {
 
-            Entityes.tb_cliente altera = db.tb_cliente.First(a => a.nm_nome == cliente.nm_nome);
-            altera.ds_telefone = cliente.ds_telefone;
-            altera.ds_endereço = cliente.ds_endereço;
-            altera.nm_nome = cliente.nm_nome;
-            altera.dt_nascimento = cliente.dt_nascimento;
-            altera.ds_CPF = cliente.ds_CPF;
-            altera.tb_compra_id_compras = cliente.tb_compra_id_compras;
-        }
-        public void RemoverCliente(int id)
-        {
-
-            Entityes.tb_cliente remover = db.tb_cliente.First(r => r.id_cliente == id);
+            Entityes.tb_cliente remover = db.tb_cliente.First(r => r.id_cliente == cliente.id_cliente);
             db.tb_cliente.Remove(remover);
 
             db.SaveChanges();
-        }
-        public void RemoverClientePorNome(string nome)
-        {
-
-            Entityes.tb_cliente remover = db.tb_cliente.First(r => r.nm_nome == nome);
-            db.tb_cliente.Remove(remover);
-
-            db.SaveChanges();
-        }
+        }         
     }
 }

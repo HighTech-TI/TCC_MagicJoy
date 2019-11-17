@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.RH
 {
     class ControleDePontoDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
         public void InserirControleDePonto(Entityes.tb_controle_ponto ponto)
         {
 
@@ -35,6 +35,12 @@ namespace MagicJoy.DataBase.RH
                                                       (s => s.id_controle_ponto == id).ToList();
             return ponto;
         }
+        public List<Entityes.tb_controle_ponto> PesquisaPorNomeFuncio (string nome)
+        {
+            List<Entityes.tb_controle_ponto> ponto = db.tb_controle_ponto.Where
+                                                      (s => s.tb_funcionario.nm_nome.Contains(nome)).ToList();
+            return ponto;
+        }
         public void AlterarControleDePonto(Entityes.tb_controle_ponto ponto)
         {
 
@@ -45,33 +51,14 @@ namespace MagicJoy.DataBase.RH
             altera.hr_saida = ponto.hr_saida;
 
             db.SaveChanges();
-        }
-        public void AlterarPontoPorData(Entityes.tb_controle_ponto ponto)
+        }    
+        public void RemoverControleDePOnto(Entityes.tb_controle_ponto ponto)
         {
 
-            Entityes.tb_controle_ponto altera = db.tb_controle_ponto.First(a => a.dt_dia == ponto.dt_dia);
-            altera.hr_entrada = ponto.hr_entrada;
-            altera.hr_intervalo = ponto.hr_intervalo;
-            altera.dt_dia = ponto.dt_dia;
-            altera.hr_saida = ponto.hr_saida;
-
-            db.SaveChanges();
-        }
-        public void RemoverControleDePOnto(int id)
-        {
-
-            Entityes.tb_controle_ponto remover = db.tb_controle_ponto.First(r => r.id_controle_ponto == id);
+            Entityes.tb_controle_ponto remover = db.tb_controle_ponto.First(r => r.id_controle_ponto == ponto.id_controle_ponto);
             db.tb_controle_ponto.Remove(remover);
 
             db.SaveChanges();
-        }
-        public void RemoverPontoPorData(DateTime data)
-        {
-
-            Entityes.tb_controle_ponto remover = db.tb_controle_ponto.First(r => r.dt_dia == data);
-            db.tb_controle_ponto.Remove(remover);
-
-            db.SaveChanges();
-        }
+        }       
     }
 }

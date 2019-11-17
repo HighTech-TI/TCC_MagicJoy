@@ -8,7 +8,7 @@ namespace MagicJoy.DataBase.Suprimentos
 {
     class FornecedorDataBase
     {
-        Entityes.magicjoydbEntities11 db = new Entityes.magicjoydbEntities11();
+        Entityes.magicjoydbEntities2 db = new Entityes.magicjoydbEntities2();
        
         public void InserirForncedor(Entityes.tb_fornecedor fornecedor)
         {
@@ -17,11 +17,17 @@ namespace MagicJoy.DataBase.Suprimentos
 
             db.SaveChanges();
         }
-        public List<Entityes.tb_folha_pagamento> ListarTodasFolha()
+        public List<Entityes.tb_fornecedor> ListarTodas()
         {
-            List<Entityes.tb_folha_pagamento> tabela = db.tb_folha_pagamento.ToList();
+            List<Entityes.tb_fornecedor> tabela = db.tb_fornecedor.ToList();
             return tabela;
 
+        }
+
+        public List<Entityes.tb_fornecedor> ListarTodosforncedores()
+        {
+            List<Entityes.tb_fornecedor> tabela = db.tb_fornecedor.ToList();
+            return tabela;
         }
         public List<Entityes.tb_fornecedor> PesquisarPorNomeFornecedor(string nome)
         {
@@ -36,6 +42,12 @@ namespace MagicJoy.DataBase.Suprimentos
                                                       (s => s.id_fornecedor == id).ToList();
             return fornecedor;
         }
+        public List<Entityes.tb_fornecedor> PesquisarPorProduto(string nome)
+        {
+            List<Entityes.tb_fornecedor> fornecedor = db.tb_fornecedor.Where
+                                                      (s => s.nm_produto.Contains(nome)).ToList();
+            return fornecedor;
+        }
         public void AlterarFornecedor(Entityes.tb_fornecedor fornecedor)
         {
 
@@ -44,15 +56,18 @@ namespace MagicJoy.DataBase.Suprimentos
             fornece.ds_telefone = fornecedor.ds_telefone;
             fornece.ds_email = fornecedor.ds_email;
             fornece.nm_produto = fornecedor.nm_produto;
-            fornece.nm_CNPJ_CPF = fornecedor.nm_CNPJ_CPF;
-            fornece.nm_produto = fornecedor.nm_produto;            
+            fornece.ds_celular = fornecedor.ds_celular;
+            fornece.nm_fornecedor = fornecedor.nm_fornecedor;
+            fornece.ds_cnpj = fornecedor.ds_cnpj;
+            fornece.ds_cpf = fornecedor.ds_cpf;
+                                           
 
             db.SaveChanges();
         }
-        public void RemoverFornecedor(int id)
+        public void RemoverFornecedor(Entityes.tb_fornecedor fornecedor)
         {
 
-            Entityes.tb_fornecedor remover = db.tb_fornecedor.First(r => r.id_fornecedor == id);
+            Entityes.tb_fornecedor remover = db.tb_fornecedor.First(r => r.id_fornecedor == fornecedor.id_fornecedor);
             db.tb_fornecedor.Remove(remover);
 
             db.SaveChanges();

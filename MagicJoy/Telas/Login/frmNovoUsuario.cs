@@ -23,13 +23,13 @@ namespace MagicJoy.Telas.Login
             {
                 Entityes.tb_usuario tabela = new Entityes.tb_usuario();
                                 
-                tabela.ds_email = txtEmail.Text;
+                tabela.ds_email = txtemail.Text;
                 tabela.ds_cargo = txtCargo.Text;
                 tabela.nm_usuario = txtUsuario.Text;
-                tabela.nm_senha = txtUsuario.Text;
+                tabela.nm_senha = txtSenha.Text; 
 
                 Business.LoginBusiness businesslog = new Business.LoginBusiness();
-                Entityes.tb_usuario usuario = businesslog.PesquisarusuariosIguasi(txtUsuario.Text);
+               Entityes.tb_usuario usuario = businesslog.PesquisarusuariosIguasi(txtUsuario.Text);
             
                 if (txtUsuario.Text != tabela.nm_usuario)
                 {
@@ -39,22 +39,8 @@ namespace MagicJoy.Telas.Login
                                                        
                 }
 
-                try
-                {
-                    if (txtUsuario.Text == txtUsuario.Text)
-                    {
-                        txtUsuario.BackColor = System.Drawing.Color.Red;
-
-                        throw new Exception();
-
-                    }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Usuário já existente", "Login", MessageBoxButtons.OK);
-
-                }
-
+                
+                  
 
 
                 if (txtonfirmaao.Text != txtSenha.Text)
@@ -80,7 +66,7 @@ namespace MagicJoy.Telas.Login
                 
                 
             }
-            catch (Exception)
+           catch (Exception)
             {
 
                 MessageBox.Show("Ocorreu um erro, " +
@@ -116,34 +102,33 @@ namespace MagicJoy.Telas.Login
                 if(usuario == null)
                 {
                   txtUsuario.BackColor = System.Drawing.Color.White;
-                  lblusuario.Visible = false;
+                
                   return;
                 }
 
-               
-                if(txtUsuario.Text == usuario.nm_usuario)
+
+            if (txtUsuario.Text == usuario.nm_usuario)
+            {
+                try
                 {
-                    try
-                    {
 
-                        txtUsuario.BackColor = System.Drawing.Color.Red;
-                        lblusuario.Visible = true;
-                    }
+                    txtUsuario.BackColor = System.Drawing.Color.Red;
+                    
+                }
 
-                    catch (Exception)
+                catch (Exception)
 
-                    {
+                {
 
-                        MessageBox.Show("Nome de usuário já está em uso!",
-                                        "Cadastro de usuário", MessageBoxButtons.OK);
-                    }
+                    MessageBox.Show("Nome de usuário já está em uso!",
+                                      "Cadastro de usuário", MessageBoxButtons.OK);
 
                 }
+            }
                   
                
                         
-                if (txtUsuario.Text != usuario.nm_usuario)
-                {
+               
                     Entityes.tb_usuario tabela = new Entityes.tb_usuario();
 
 
@@ -151,11 +136,11 @@ namespace MagicJoy.Telas.Login
                     tabela.nm_usuario = txtUsuario.Text;
 
                     txtUsuario.BackColor = System.Drawing.Color.White;
-                    lblusuario.Visible = false;
+                   
 
-                }
+                
 
-                 return;
+                 
                                     
             }
             private void txtonfirmaao_TextChanged(object sender, EventArgs e)
@@ -174,5 +159,21 @@ namespace MagicJoy.Telas.Login
                 }
 
             }
-        
-}   }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Telas.Login.frmLogin tela = new frmLogin();
+            tela.Show();
+            this.Hide();
+        }
+    }   }
