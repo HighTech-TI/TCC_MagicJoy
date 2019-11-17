@@ -142,9 +142,9 @@
             this.label1.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 27);
+            this.label1.Size = new System.Drawing.Size(108, 27);
             this.label1.TabIndex = 1;
-            this.label1.Text = "ID compra:";
+            this.label1.Text = "ID compra";
             // 
             // label2
             // 
@@ -153,9 +153,9 @@
             this.label2.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 27);
+            this.label2.Size = new System.Drawing.Size(86, 27);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Produto:";
+            this.label2.Text = "Produto";
             // 
             // label3
             // 
@@ -164,9 +164,9 @@
             this.label3.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(21, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 27);
+            this.label3.Size = new System.Drawing.Size(124, 27);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Quantidade:";
+            this.label3.Text = "Quantidade";
             // 
             // label4
             // 
@@ -175,9 +175,9 @@
             this.label4.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(21, 256);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 27);
+            this.label4.Size = new System.Drawing.Size(115, 27);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Valor Total:";
+            this.label4.Text = "Valor Total";
             // 
             // label5
             // 
@@ -186,9 +186,9 @@
             this.label5.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(21, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 27);
+            this.label5.Size = new System.Drawing.Size(41, 27);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Dia:";
+            this.label5.Text = "Dia";
             // 
             // txtValor
             // 
@@ -261,9 +261,9 @@
             this.label6.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(352, 333);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 27);
+            this.label6.Size = new System.Drawing.Size(108, 27);
             this.label6.TabIndex = 12;
-            this.label6.Text = "ID compra:";
+            this.label6.Text = "ID compra";
             // 
             // label7
             // 
@@ -272,9 +272,9 @@
             this.label7.Font = new System.Drawing.Font("Double•Bubble Shadow", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(539, 332);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 27);
+            this.label7.Size = new System.Drawing.Size(86, 27);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Produto:";
+            this.label7.Text = "Produto";
             // 
             // panel1
             // 
