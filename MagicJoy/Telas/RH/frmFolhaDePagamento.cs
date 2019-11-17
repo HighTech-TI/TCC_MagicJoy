@@ -47,14 +47,36 @@ namespace MagicJoy.Telas.RH
         private void txtbruto_TextChanged(object sender, EventArgs e)
         {
             {
-                decimal bruto = Convert.ToDecimal(txtbruto.Text);
+                decimal salario = Convert.ToDecimal(txtbruto.Text);
 
-                decimal vt = bruto * 0.06m;
+                Objetos.Folha funcao = new Objetos.Folha();
+                decimal vt = funcao.CalcularVT(salario);
 
                 txtvaletranposter.Text = Convert.ToString(vt);
-            }
 
-          
+                decimal total = 0;
+                
+                if (salario <= 1751.81m)
+                {
+                    total = salario * 0;
+                }
+                if (salario == 1751.81m)
+                {
+                    total = salario * 0.08m;
+                }
+
+                if (salario == 1751.82m && salario <= 2919.72m)
+                {
+                    total = salario * 0.09m;
+                }
+                if (salario == 2919.73m && salario <= 5839.45m)
+                {
+                    total = salario * 0.11m;
+                }
+                
+                txtinss.Text = Convert.ToString(total);
+
+            }         
            
 
         }
@@ -84,6 +106,23 @@ namespace MagicJoy.Telas.RH
             Telas.Menu.btnforne tela = new Menu.btnforne();
             tela.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Entityes.tb_folha_pagamento tabela = new Entityes.tb_folha_pagamento();
+
+            tabela.ds_inss = Convert.ToDecimal(txtinss.Text);
+            tabela.dt_pagamento = dtpdata.Value;
+            tabela.id_funcionario = Convert.ToInt32(nudid.Value);
+            tabela.vl_bruto = Convert.ToDecimal(txtbruto.Text);
+            tabela.vl_gratificacao = Convert.ToDecimal(txtgratificacao.Text);
+            tabela.vl_irrf = Convert.ToDecimal(txtirrf.Text);
+            tabela.vl_liquido = Convert.ToDecimal(txtliquido.Text);
+            tabela.vl_salario_familia = Convert.ToDecimal(txtfamilia.Text);
+            tabela.vl_VT = Convert.ToDecimal(txtvaletranposter.Text);
+            tabela.
+
         }
     }
 }

@@ -39,8 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpadmissao = new System.Windows.Forms.DateTimePicker();
-            this.dtpdemissao = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.mktcell = new System.Windows.Forms.MaskedTextBox();
@@ -203,25 +201,6 @@
             this.dtpadmissao.Size = new System.Drawing.Size(100, 20);
             this.dtpadmissao.TabIndex = 61;
             // 
-            // dtpdemissao
-            // 
-            this.dtpdemissao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpdemissao.Location = new System.Drawing.Point(27, 353);
-            this.dtpdemissao.Name = "dtpdemissao";
-            this.dtpdemissao.Size = new System.Drawing.Size(100, 20);
-            this.dtpdemissao.TabIndex = 63;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 329);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 25);
-            this.label7.TabIndex = 62;
-            this.label7.Text = "Data de demissão";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -320,7 +299,7 @@
             this.Column13,
             this.Column14});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.Location = new System.Drawing.Point(599, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(544, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(483, 264);
             this.dataGridView1.TabIndex = 78;
@@ -506,7 +485,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1044, 32);
+            this.panel1.Size = new System.Drawing.Size(1040, 32);
             this.panel1.TabIndex = 87;
             // 
             // pictureBox1
@@ -514,7 +493,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::MagicJoy.Properties.Resources.menu;
-            this.pictureBox1.Location = new System.Drawing.Point(1002, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(941, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -538,7 +517,7 @@
             this.pictureBox24.BackColor = System.Drawing.Color.White;
             this.pictureBox24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox24.Image = global::MagicJoy.Properties.Resources.minimizar;
-            this.pictureBox24.Location = new System.Drawing.Point(1033, 5);
+            this.pictureBox24.Location = new System.Drawing.Point(972, 4);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(25, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -551,7 +530,7 @@
             this.pictureBox26.BackColor = System.Drawing.Color.White;
             this.pictureBox26.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox26.Image = global::MagicJoy.Properties.Resources._130877;
-            this.pictureBox26.Location = new System.Drawing.Point(1063, 4);
+            this.pictureBox26.Location = new System.Drawing.Point(1002, 3);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(25, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -613,7 +592,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MagicJoy.Properties.Resources.toys_embroidery_beautiful_1029444_wallhere_com;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1044, 471);
+            this.ClientSize = new System.Drawing.Size(1040, 471);
             this.Controls.Add(this.rdnNao);
             this.Controls.Add(this.rdnsim);
             this.Controls.Add(this.label12);
@@ -636,8 +615,6 @@
             this.Controls.Add(this.mkttele);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dtpdemissao);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpadmissao);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtendereco);
@@ -680,8 +657,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtpadmissao;
-        private System.Windows.Forms.DateTimePicker dtpdemissao;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox mktcell;

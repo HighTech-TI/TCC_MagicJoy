@@ -329,10 +329,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(440, 280);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(195, 21);
+            this.label8.Size = new System.Drawing.Size(204, 24);
             this.label8.TabIndex = 16;
             this.label8.Text = "ID Controle de Ponto";
             // 
